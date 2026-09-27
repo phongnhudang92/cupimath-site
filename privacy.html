@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Chính sách bảo mật — Cú Pi Math</title>
 <meta name="description" content="Cú Pi Math thu thập dữ liệu gì, dùng để làm gì, lưu ở đâu và quyền của phụ huynh đối với dữ liệu của con.">
 <meta name="theme-color" content="#fbf8f1" media="(prefers-color-scheme: light)">
@@ -13,6 +13,8 @@
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 <script src="site.js" defer></script>
+<!-- Cloudflare Web Analytics (không cookie) -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9c95a7cb9b64460fb7d4b5045077dded"}'></script>
 </head>
 <body>
 <a class="skip" href="#main">Bỏ qua, tới nội dung chính</a>
@@ -40,7 +42,7 @@
     thuộc tài khoản đó. Chúng tôi chỉ thu thập dữ liệu cần thiết để app hoạt động, <b>không hiển thị quảng cáo</b> và
     <b>không bán hay chia sẻ dữ liệu</b> cho bên thứ ba vì mục đích quảng cáo.</p>
     <div class="page-meta">
-      <span>Cập nhật: 27/09/2026</span>
+      <span>Cập nhật: 28/09/2026</span>
       <span>Đơn vị vận hành: HKD Phong Nhu Dang</span>
       <span>Liên hệ: <a href="mailto:cupimath@gmail.com">cupimath@gmail.com</a></span>
     </div>
@@ -58,6 +60,7 @@
   <tr><td>Khi đăng nhập bằng Google hoặc Apple: email và mã định danh tài khoản do Google/Apple cung cấp (không nhận mật khẩu Google/Apple). Với Apple, bạn có thể chọn ẩn email thật.</td><td>Đăng nhập</td></tr>
   <tr><td>Hồ sơ con: tên hiển thị (có thể là biệt danh), năm sinh hoặc lớp, sticker đại diện</td><td>Chọn bài phù hợp lớp học, phân biệt tiến độ từng bé</td></tr>
   <tr><td>Tiến độ học: bài đã học, điểm luyện tập, kết quả bài thi, sticker, Cú Pi đang nuôi</td><td>Lưu và đồng bộ tiến độ giữa các thiết bị</td></tr>
+  <tr><td>Dữ liệu sử dụng app: bài và màn hình đã mở, thời lượng và kết quả từng lượt học/thi, cách đăng nhập, loại thiết bị (web, Android, iOS), phiên bản app — gắn với mã tài khoản và mã hồ sơ, không kèm tên bé, email hay nội dung câu trả lời</td><td>Thống kê tổng hợp để cải thiện bài học (ví dụ dạng bài nào hay bị bỏ dở, đề nào quá dài)</td></tr>
   <tr><td>Góp ý và báo lỗi câu hỏi do phụ huynh gửi (kèm phiên bản app, hệ điều hành)</td><td>Sửa lỗi nội dung, cải thiện app</td></tr>
   <tr><td>Báo cáo lỗi kỹ thuật khi app gặp sự cố (loại thiết bị, phiên bản hệ điều hành, thông tin lỗi) — không kèm email hay tên bé</td><td>Tìm và sửa lỗi crash</td></tr>
   </tbody>
@@ -74,10 +77,13 @@ Khuyến nghị dùng biệt danh cho tên hồ sơ.</p>
 <ul>
   <li><b>Supabase</b> — lưu trữ tài khoản và dữ liệu học (máy chủ đặt tại Singapore, AWS ap-southeast-1).</li>
   <li><b>Sentry</b> — nhận báo cáo lỗi kỹ thuật, không chứa dữ liệu cá nhân (máy chủ đặt tại Đức, EU).</li>
+  <li><b>Cloudflare Web Analytics</b> — đếm lượt xem trang cupimath.com (trang giới thiệu), không dùng cookie, không nhận dạng từng người.</li>
   <li><b>Google (Gmail)</b> — gửi email giao dịch (xác nhận tài khoản, mã đặt lại mật khẩu) từ địa chỉ <b>cupimath@gmail.com</b>. Chúng tôi không gửi email quảng cáo.</li>
 </ul>
 <p>Dữ liệu được truyền qua kết nối mã hoá (HTTPS). Mỗi tài khoản chỉ truy cập được dữ liệu của chính mình.</p>
-<p>Khi học trên web (cupimath.com/app), phiên đăng nhập và bản sao nội dung bài học được lưu trong bộ nhớ của trình duyệt trên máy bạn. Chúng tôi không dùng cookie quảng cáo hay công cụ theo dõi.</p>
+<p>Khi học trên web (cupimath.com/app), phiên đăng nhập được lưu trong bộ nhớ của trình duyệt trên máy bạn.
+Dữ liệu sử dụng app được lưu trên máy chủ của chúng tôi (Supabase), không chia sẻ cho bên thứ ba, không dùng để quảng cáo.
+Chúng tôi không dùng cookie quảng cáo hay công cụ theo dõi của bên thứ ba trong app.</p>
 
 <h2><span class="n">4.</span> Thời gian lưu và quyền của bạn</h2>
 <p>Dữ liệu được lưu khi tài khoản còn hoạt động. Phụ huynh có thể xem, sửa hồ sơ con trong app, và

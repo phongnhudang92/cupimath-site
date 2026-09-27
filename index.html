@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com https://txazogklicpkjovpvjjb.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Cú Pi Math — Luyện thi Toán quốc tế cho học sinh lớp 1–5</title>
 <meta name="description" content="Lộ trình 199 dạng toán tư duy, hơn 11.000 câu có lời giải và đề thi thử đúng cấu trúc TIMO, HKIMO, FMO, Kangaroo, ASMO, SEAMO, SASMO, AMO, IMAS, Big Bay Bei cho học sinh lớp 1–5.">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -76,7 +76,10 @@
  ]
 }
 </script>
+<script src="site-config.js" defer></script>
 <script src="site.js" defer></script>
+<!-- Cloudflare Web Analytics (không cookie) -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9c95a7cb9b64460fb7d4b5045077dded"}'></script>
 </head>
 <body>
 <a class="skip" href="#main">Bỏ qua, tới nội dung chính</a>
@@ -91,7 +94,7 @@
       <a href="#hoi-dap">Hỏi đáp</a>
       <a href="#ho-tro">Hỗ trợ</a>
     </nav>
-    <a class="btn btn-sm header-cta" href="app/">Học trên web</a>
+    <a class="btn btn-sm header-cta" href="app/" data-track="header">Học trên web</a>
   </div>
 </header>
 
@@ -104,9 +107,9 @@
       <h1 id="hero-title">Chuẩn bị cho con vào phòng thi <em>thật tự tin</em>.</h1>
       <p class="lead">Cú Pi Math dẫn con đi qua từng dạng toán tư duy — học bài có hình minh hoạ, luyện câu có lời giải từng bước — rồi thi thử theo đúng số câu, thời gian và cách tính điểm của TIMO, HKIMO, FMO, Kangaroo và nhiều cuộc thi khác.</p>
       <div class="hero-actions">
-        <a class="btn" href="app/">Cho con học thử ngay
+        <a class="btn" href="app/" data-track="hero">Cho con học thử ngay
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-ghost" href="#tinh-nang">Xem tính năng</a>
+        <a class="btn btn-ghost" href="#tinh-nang" data-track="hero">Xem tính năng</a>
       </div>
       <p class="hero-note">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4 4 10-10"/></svg>Học trên trình duyệt, không cần cài đặt</span>
@@ -434,7 +437,7 @@
       </div>
       <img class="owl" src="img/owl.webp" alt="" width="360" height="360" loading="lazy" decoding="async">
       <div class="hero-actions">
-        <a class="btn" href="app/">Học trên web
+        <a class="btn" href="app/" data-track="cta_band">Học trên web
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>

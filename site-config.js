@@ -1,0 +1,1 @@
+window.CUPI_SITE = { url: "https://txazogklicpkjovpvjjb.supabase.co", key: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR4YXpvZ2tsaWNwa2pvdnB2ampiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUzNzY4MjksImV4cCI6MjA2MDk1MjgyOX0.2eEXWVGgaTYg9QgrUZRp3HSwdEH7kVpyLzieWIHQ5eQ" };
