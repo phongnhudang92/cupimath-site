@@ -11,6 +11,7 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  firstTouch();
   track();
 
   var items = document.querySelectorAll('.reveal');
@@ -25,6 +26,17 @@
     });
   }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
   items.forEach(function (el) { io.observe(el); });
+
+  // Lần ghé đầu tiên (utm_source, trang giới thiệu) → app /app đọc cùng khoá khi phụ huynh đăng ký
+  // (src/lib/attribution.ts). Chỉ lưu trong trình duyệt của phụ huynh, không gửi đi ở đây.
+  function firstTouch() {
+    try {
+      if (localStorage.getItem('cupi.firstTouch')) return;
+      localStorage.setItem('cupi.firstTouch', JSON.stringify({
+        search: location.search, referrer: document.referrer, landing: location.href, at: new Date().toISOString()
+      }));
+    } catch (e) { /* chặn lưu trữ: bỏ qua */ }
+  }
 
   // Đếm lượt bấm nút (data-track="vị trí") và lượt mở câu hỏi thường gặp → Supabase cu_app_track (0015).
   // Chỉ gửi vị trí nút, đích đến, câu hỏi — không cookie, không thông tin cá nhân.
