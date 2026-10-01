@@ -1,0 +1,87 @@
+# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-02)
+
+Ứng dụng học toán tư duy và thi thử Toán quốc tế cho học sinh lớp 1–5. Tổng: 199 dạng toán, 12.182 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
+
+## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
+
+### TIMO
+- TIMO — Vòng loại (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: 5 mảng × 5 câu. Dạng trắc nghiệm và thời gian vòng loại là ước tính.
+- TIMO — Vòng quốc gia (Heat Round) (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 5 câu × 4 điểm, điền đáp số; Số học & Đại số: 5 câu × 4 điểm, điền đáp số; Lý thuyết số: 5 câu × 4 điểm, điền đáp số; Hình học: 5 câu × 4 điểm, điền đáp số; Tổ hợp: 5 câu × 4 điểm, điền đáp số. Ghi chú: 5 mảng × 5 câu, chỉ ghi đáp số. Mốc giải 80/60/40/20 điểm.
+- TIMO — Chung kết quốc tế (lớp 1–5): 30 câu, 120 phút, tối đa 150 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 6 câu × 5 điểm, điền đáp số; Số học & Đại số: 6 câu × 5 điểm, điền đáp số; Lý thuyết số: 6 câu × 5 điểm, điền đáp số; Hình học: 6 câu × 5 điểm, điền đáp số; Tổ hợp: 6 câu × 5 điểm, điền đáp số. Ghi chú: Mốc giải 120/90/60/30 trên 150 điểm. Chia 6 câu mỗi mảng là ước tính.
+
+### HKIMO
+- HKIMO — Vòng loại (lớp 1–5): 25 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: Điểm chuẩn vào vòng quốc gia năm 2023 khoảng 40–48/100.
+- HKIMO — Vòng quốc gia (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 5 câu × 4 điểm, điền đáp số; Số học & Đại số: 5 câu × 4 điểm, điền đáp số; Lý thuyết số: 5 câu × 4 điểm, điền đáp số; Hình học: 5 câu × 4 điểm, điền đáp số; Tổ hợp: 5 câu × 4 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng được đi thi quốc tế. Mốc giải lấy theo TIMO (ước tính).
+- HKIMO — Chung kết quốc tế (Hồng Kông) (lớp 1–5): 30 câu, 120 phút, tối đa 150 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 6 câu × 5 điểm, điền đáp số; Số học & Đại số: 6 câu × 5 điểm, điền đáp số; Lý thuyết số: 6 câu × 5 điểm, điền đáp số; Hình học: 6 câu × 5 điểm, điền đáp số; Tổ hợp: 6 câu × 5 điểm, điền đáp số. Ghi chú: Mốc giải 120/90/60/30 trên 150 điểm.
+
+### FMO
+- FMO — Vòng loại (lớp 1–5): 21 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Khởi động: 10 câu × 3 điểm, trắc nghiệm 4 lựa chọn; Tăng tốc: 5 câu × 5 điểm, trắc nghiệm 4 lựa chọn; Thử thách: 5 câu × 7 điểm, trắc nghiệm 4 lựa chọn; Ngôi sao hy vọng: 1 câu × 10 điểm, điền đáp số, sai trừ 10. Ghi chú: Câu "Ngôi sao hy vọng": đúng +10, sai −10, có thể bỏ trống. Số phương án trắc nghiệm là ước tính.
+- FMO — Vòng quốc gia (lớp 1–5): 21 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Khởi động: 10 câu × 3 điểm, trắc nghiệm 4 lựa chọn; Tăng tốc: 5 câu × 5 điểm, trắc nghiệm 4 lựa chọn; Thử thách: 5 câu × 7 điểm, trắc nghiệm 4 lựa chọn; Ngôi sao hy vọng: 1 câu × 10 điểm, điền đáp số, sai trừ 10. Ghi chú: Mốc giải chưa công bố — dùng mốc 80/60/40/20 (ước tính).
+- FMO — Vòng quốc tế (lớp 1–5): 21 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Khởi động: 10 câu × 3 điểm, trắc nghiệm 4 lựa chọn; Tăng tốc: 5 câu × 5 điểm, trắc nghiệm 4 lựa chọn; Thử thách: 5 câu × 7 điểm, trắc nghiệm 4 lựa chọn; Ngôi sao hy vọng: 1 câu × 10 điểm, điền đáp số, sai trừ 10. Ghi chú: Đề tiếng Anh. Mốc giải chưa công bố — dùng mốc 80/60/40/20 (ước tính).
+
+### Big Bay Bei (BBB)
+- BBB — Vòng loại (lớp 1–5): 20 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Phần A (cơ bản): 10 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Phần B (nâng cao): 10 câu × 6 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: Số phương án trắc nghiệm là ước tính.
+- BBB — Vòng quốc gia (lớp 1–5): 25 câu, 90 phút, tối đa 125 điểm; ngôn ngữ: tiếng anh. Phần A: 10 câu × 4 điểm, điền đáp số; Phần B: 10 câu × 5 điểm, điền đáp số; Phần C: 5 câu × 7 điểm, điền đáp số. Ghi chú: Format vòng quốc gia và mốc giải là ước tính.
+
+### ASMO
+- ASMO — Vòng khu vực (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Câu 1–10: 10 câu × 3 điểm, trắc nghiệm 4 lựa chọn; Câu 11–20: 10 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Câu 21–25: 5 câu × 6 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng 10%/20%/30% thí sinh. Tỉ lệ trắc nghiệm/điền đáp án là ước tính.
+- ASMO — Vòng quốc gia (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Câu 1–10: 10 câu × 3 điểm, trắc nghiệm 4 lựa chọn; Câu 11–20: 10 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Câu 21–25: 5 câu × 6 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng 6%/12%/18% thí sinh. Format giống vòng khu vực (ước tính).
+
+### IMAS
+- IMAS — Vòng 1 (Middle Primary) (lớp 3–5): 25 câu, 75 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Trắc nghiệm dễ: 10 câu × 3 điểm, trắc nghiệm 5 lựa chọn; Trắc nghiệm trung bình: 10 câu × 4 điểm, trắc nghiệm 5 lựa chọn; Đáp số nguyên 0–999: 5 câu × 6 điểm, điền đáp số. Ghi chú: Top 5–10% được vào vòng 2. Mốc giải là ước tính.
+
+### Kangaroo (IKMC)
+- Kangaroo (IKMC) — Pre-Ecolier (lớp 1–2): 18 câu, 45 phút, tối đa 90 điểm, cho sẵn 18 điểm; ngôn ngữ: song ngữ việt – anh. Câu 3 điểm: 6 câu × 3 điểm, trắc nghiệm 5 lựa chọn, sai trừ 0.75; Câu 4 điểm: 6 câu × 4 điểm, trắc nghiệm 5 lựa chọn, sai trừ 1; Câu 5 điểm: 6 câu × 5 điểm, trắc nghiệm 5 lựa chọn, sai trừ 1.25. Ghi chú: Sai bị trừ ¼ số điểm của câu, bỏ trống không trừ. Giải xét theo % thí sinh — mốc điểm ở đây là ước tính.
+- Kangaroo (IKMC) — Ecolier (lớp 3–4): 24 câu, 60 phút, tối đa 120 điểm, cho sẵn 24 điểm; ngôn ngữ: song ngữ việt – anh. Câu 3 điểm: 8 câu × 3 điểm, trắc nghiệm 5 lựa chọn, sai trừ 0.75; Câu 4 điểm: 8 câu × 4 điểm, trắc nghiệm 5 lựa chọn, sai trừ 1; Câu 5 điểm: 8 câu × 5 điểm, trắc nghiệm 5 lựa chọn, sai trừ 1.25. Ghi chú: Sai bị trừ ¼ số điểm của câu, bỏ trống không trừ. Giải xét theo % thí sinh — mốc điểm ở đây là ước tính.
+- Kangaroo (IKMC) — Benjamin (lớp 5): 30 câu, 75 phút, tối đa 150 điểm, cho sẵn 30 điểm; ngôn ngữ: song ngữ việt – anh. Câu 3 điểm: 10 câu × 3 điểm, trắc nghiệm 5 lựa chọn, sai trừ 0.75; Câu 4 điểm: 10 câu × 4 điểm, trắc nghiệm 5 lựa chọn, sai trừ 1; Câu 5 điểm: 10 câu × 5 điểm, trắc nghiệm 5 lựa chọn, sai trừ 1.25. Ghi chú: Sai bị trừ ¼ số điểm của câu, bỏ trống không trừ. Giải xét theo % thí sinh — mốc điểm ở đây là ước tính.
+
+### SEAMO
+- SEAMO — Paper A (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Trắc nghiệm 3 điểm: 10 câu × 3 điểm, trắc nghiệm 5 lựa chọn; Trắc nghiệm 4 điểm: 10 câu × 4 điểm, trắc nghiệm 5 lựa chọn; Điền đáp án 6 điểm: 5 câu × 6 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng 8%/12%/20% thí sinh. 5 phương án là ước tính.
+
+### SASMO
+- SASMO (lớp 2–5): 25 câu, 90 phút, tối đa 85 điểm, cho sẵn 15 điểm; ngôn ngữ: song ngữ việt – anh. Trắc nghiệm: 15 câu × 2 điểm, trắc nghiệm 5 lựa chọn, sai trừ 1; Điền đáp án: 10 câu × 4 điểm, điền đáp số. Ghi chú: Cho sẵn 15 điểm; trắc nghiệm sai trừ 1 điểm. Vàng/Bạc/Đồng 8%/12%/20% thí sinh.
+
+### AMO
+- AMO (lớp 2–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Phần A — trắc nghiệm: 15 câu × 3 điểm, trắc nghiệm 5 lựa chọn; Phần B — điền đáp án: 5 câu × 5 điểm, điền đáp số; Phần C — điền đáp án: 5 câu × 6 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng/Khích lệ 8%/12%/20%/10% thí sinh.
+
+## Dạng toán theo lớp
+
+### Lớp 1 (27 dạng, 1.131 câu luyện tập)
+- Tư duy logic: Cái cân, Xếp hàng, Tính tuổi, Thứ, tháng và giờ, Tìm quy luật trong bảng, Suy luận vui, Xem lịch, Trồng cây và leo cầu thang
+- Số học: Tính nhẩm cộng trừ, Toán có lời văn, Tìm số và dấu còn thiếu, Que diêm
+- Lý thuyết số: Số chẵn, số lẻ, Chia đều, Dãy số, dãy chữ, Chục và đơn vị
+- Hình học: Nhận biết các hình, Dãy hình, Đếm hình, Đo độ dài, Hình khối và cắt ghép hình
+- Tổ hợp / Đếm: So sánh số, Tiền và mua đồ, Lập số, So sánh có phép tính
+- Thống kê: Bảng và biểu đồ, Phân loại và sơ đồ Venn
+
+### Lớp 2 (34 dạng, 1.246 câu luyện tập)
+- Tư duy logic: Dãy số, dãy chữ có quy luật, Tuổi, thứ trong tuần và xem giờ, Xếp hàng và đếm người, Cái cân và xếp hạng, Câu đố số, Đường đi trên lưới, Thử và chọn khéo, Xem đồng hồ, Đổi giờ và xem lịch, Trồng cây và khoảng cách, Tổng số tuổi, Suy luận khéo, Bài toán gà – thỏ và tổng – hiệu
+- Số học: Cộng trừ số có 2 và 3 chữ số, Phép nhân, Tìm số bị giấu, Cân bằng phép tính và đố hình, Bài toán nhiều hơn, ít hơn, Phép tính khuyết chữ số, Đơn vị đo: m, dm, cm, kg, lít
+- Lý thuyết số: Số chẵn và số lẻ, Đếm số theo điều kiện, Dãy số cách đều, Điền dấu và ký hiệu lạ, Chia đều và san bằng
+- Hình học: Đếm hình, cạnh và chu vi, Dãy hình có quy luật, Hình đối xứng, Khối lập phương
+- Tổ hợp / Đếm: So sánh và sắp xếp số, Thành lập số, Đi chợ và đổi tiền, Quy tắc nhân và đếm cách chọn
+- Thống kê: Đọc biểu đồ
+
+### Lớp 3 (38 dạng, 1.427 câu luyện tập)
+- Tư duy logic: Dãy hình và dãy lặp, Toán có lời văn, Tìm số chưa biết & tính ngược, Đoán số & chép nhầm chữ số, Cái cân và so sánh, Đồng hồ, lịch và thứ trong tuần, Bài toán tuổi, Trồng cây & cưa gỗ, Xếp hàng, vòng tròn & toa tàu, Cho và nhận, Sơ đồ Venn (hai nhóm), Ô số kì diệu & tháp số, Giả thiết tạm & chia thừa – thiếu, Suy luận logic
+- Số học: Tính nhanh bằng cách ghép cặp, Tính chất phân phối & thứ tự phép tính, Bài toán rút về đơn vị, Gấp, giảm & một phần mấy, Đổi đơn vị đo, Nhân nhanh
+- Lý thuyết số: Số chẵn, số lẻ, Chia hết và chia có dư, Dãy số có quy luật, Phép toán mới & quy luật ẩn, Tổng–hiệu, tổng–tỉ & hiệu–tỉ, Số liên tiếp & tích–hiệu, Tỉ số trong bài toán thực tế, Đếm số theo chữ số
+- Hình học: Chu vi & diện tích, Đếm hình, Hình khối 3D, Thay đổi kích thước hình
+- Tổ hợp / Đếm: Đổi tiền & đóng hộp, Mua nhiều nhất & khuyến mãi, Lập số & quy tắc nhân, Đếm đường đi & cách lên cầu thang, Dạng toán trường hợp xấu nhất
+- Thống kê: Đọc biểu đồ
+
+### Lớp 4 (42 dạng, 1.408 câu luyện tập)
+- Tư duy logic: Dãy số, dãy hình & chu kì, Lịch & đồng hồ, Bài toán tuổi, Trung bình cộng, Trồng cây & đếm khoảng, Bài toán làm ngược, Số trong hình & bảng quy luật, Suy luận logic, Giả thiết tạm & chia thừa – thiếu, Đếm số hạng & tổng dãy lặp lại, Muộn – sớm & ghép nhóm
+- Số học: Tính nhanh, tính hợp lí, Tổng dãy số, Mật thư & cấu tạo số, Phân số: bằng nhau, so sánh và tính
+- Lý thuyết số: Phép toán mới, Đếm bội và ước, Chia hết & số dư, Chữ số tận cùng, Số liên tiếp, Tổng-tỉ, hiệu-tỉ, tích-tỉ, Tỉ số nâng cao, Phân số của một số, Đánh số trang sách, Sơ đồ đoạn thẳng & tổng – hiệu mở rộng, Tổng – tỉ, hiệu – tỉ với tỉ số phân số, Chuyển đồ & hiệu không đổi với tỉ số
+- Hình học: Chu vi & diện tích, Đếm hình, Chu vi, diện tích lớn nhất – nhỏ nhất, Khối lập phương & hình khối, Hình bình hành & hình thoi, Cắt & biến đổi hình vuông, hình chữ nhật
+- Tổ hợp / Đếm: Cái cân & đố hình, Đếm số & lập số, Rút về đơn vị & công việc, Qua sông, Nối điểm & đếm trận đấu, Đếm cách & đường đi, Trường hợp xấu nhất, So sánh hai lần mua
+- Thống kê: Đọc biểu đồ
+
+### Lớp 5 (58 dạng, 1.907 câu luyện tập)
+- Tư duy logic: Dãy số, dãy hình & dãy lặp, Vị trí trong hàng & vòng tròn, Tìm quy luật ẩn & ma phương, Mật mã số & mật mã chữ, Suy luận: nói thật – nói dối, Lịch, tháng & đồng hồ, Cưa gỗ & làm việc có nghỉ, Trồng cây & đếm khoảng, Bài toán làm ngược, Tổng từng cặp & cho qua lại, Trung bình cộng & điểm số, Bài toán tuổi, Cái cân & hệ biểu tượng, Giả thiết tạm & chia thừa – thiếu, Công việc & rút về đơn vị, Vận tốc & gặp nhau, Đuổi nhau & chuyển động đặc biệt, Giả thiết tạm nâng cao, Số đo thời gian, Vận tốc trung bình & dòng nước
+- Số học: Tìm số chưa biết, Tính nhanh phép nhân, Tính tổng dãy số, Phân số: cộng, trừ & so sánh, Phân số của một lượng, Dãy đan dấu & phân số sai phân, Số thập phân, Tính với số thập phân, Tỉ số phần trăm, Tính nhanh cộng trừ & dấu ngoặc
+- Lý thuyết số: Chia hết & chia có dư, Chữ số ẩn & chữ số tận cùng, Bội chung nhỏ nhất (BCNN), Ước chung lớn nhất & số ước, Chia nhóm, chở xe & mua hộp, Định nghĩa phép toán mới, Tổng–tỉ, hiệu–tỉ & tích–tỉ, Tích–hiệu & số liên tiếp, Tỉ số nâng cao, Số nguyên tố & chia hết nâng cao
+- Hình học: Chu vi & diện tích hình phẳng, Chu vi & diện tích: biến đổi và lớn nhất, nhỏ nhất, Đếm hình & chia phần, Đa giác đều & phép biến hình, Khối 3D & đếm khối lập phương, Hình hộp: thể tích & diện tích, Tam giác & hình thang, Hình tròn, Hình hộp & hình lập phương nâng cao
+- Tổ hợp / Đếm: Lập số & quy tắc đếm, Đếm đường đi & đếm cách, Trường hợp xấu nhất, Sơ đồ Venn & phần chung, Sắp xếp: hàng & vật giống nhau, Chọn nhóm: tổ hợp & chỉnh hợp, Đếm cách trả tiền & gieo xúc xắc
+- Thống kê: Bảng số liệu & biểu đồ tranh, Biểu đồ tròn & biểu đồ đường
