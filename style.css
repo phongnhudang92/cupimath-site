@@ -567,9 +567,6 @@ figure.phone { margin: 0; }
     border-color: var(--teal);
     transform: translateY(-2px);
   }
-  .learn-card > a:hover {
-    text-decoration: underline;
-  }
 }
 
 /* focus-accessible cho keyboard */
