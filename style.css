@@ -568,7 +568,7 @@ figure.phone { margin: 0; }
     transform: translateY(-2px);
   }
   .learn-card > a:hover {
-    text-decoration: none;  
+    text-decoration: none;
   }
 }
 
