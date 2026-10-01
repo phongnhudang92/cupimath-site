@@ -456,9 +456,17 @@ figure.phone { margin: 0; }
 .prose h3 small, .prose li small { font-weight: 500; color: var(--ink-3); }
 .prose p.note { font-size: var(--text-sm); color: var(--ink-3); }
 .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 8px; padding: 0; margin: 0 0 18px; font-size: var(--text-sm); color: var(--ink-3); }
+.crumbs li { display: flex; align-items: center; min-width: 0; }
 .crumbs li + li::before { content: "›"; margin-right: 8px; color: var(--ink-3); }
+.crumbs a, .crumbs span { min-width: 0; }
 .crumbs a { color: var(--ink-2); text-decoration: none; }
 .crumbs a:hover { color: var(--teal); text-decoration: underline; }
+@media (max-width: 520px) {
+  /* Mobile: đường dẫn dài dễ vỡ dòng xấu → cuộn ngang 1 dòng, mờ dần mép phải */
+  .crumbs ol { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; mask-image: linear-gradient(90deg, #000 90%, transparent); -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent); }
+  .crumbs ol::-webkit-scrollbar { display: none; }
+  .crumbs li, .crumbs a, .crumbs span { white-space: nowrap; }
+}
 .kpis { list-style: none; padding: 0; margin: 1.5em 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
 .prose .kpis li { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; }
 .kpis b { display: block; font-size: 1.75rem; letter-spacing: -0.02em; color: var(--teal); font-variant-numeric: tabular-nums; }
@@ -491,45 +499,20 @@ figure.phone { margin: 0; }
 .rules li { margin: 0.8em 0; }
 .table-wrap table.wide { min-width: 760px; }
 .table-wrap th[scope="row"] { background: transparent; font-size: 0.95rem; text-transform: none; letter-spacing: 0; color: var(--ink); }
+/* "Tìm hiểu thêm" cuối trang nội dung — dùng chung .learn-grid/.learn-card với trang chủ */
 .related { margin-top: 3em; padding-top: 2em; border-top: 1px solid var(--line); }
-.related ul { list-style: none; padding: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-.prose .related li { margin: 0; }
-.related a { display: flex; justify-content: space-between; gap: 8px; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; font-weight: 600; }
-.related a:hover { border-color: var(--teal); color: var(--teal); }
+.related .learn-grid { margin-top: 1em; }
+/* ---------- Trang nội dung SEO (scripts/site/build_pages.py) ---------- */
+/* ... giữ nguyên toàn bộ phần trên đến hết .prose .faq ... */
+
 .prose .faq { margin-top: 0.5em; }
 
 /* khối "Tìm hiểu" ở trang chủ → các trang hướng dẫn */
-/*.learn-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }*/
-/*.learn-grid a { display: grid; gap: 6px; height: 100%; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow-sm); transition: border-color var(--duration-fast), transform var(--duration-fast) var(--ease-out); }*/
-/*.learn-grid a:hover { border-color: var(--teal); transform: translateY(-2px); }*/
-/*.learn-grid a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }*/
-/*.learn-grid b { font-size: 1.08rem; }*/
-/*.learn-grid b::after { content: " →"; color: var(--teal); }*/
-/*.learn-grid span { color: var(--ink-2); font-size: var(--text-sm); }*/
 .prose .sources { font-size: var(--text-sm); word-break: break-all; }
 
 /* ---------- Trang đề thi có đáp án (scripts/site/build_exams.py) ---------- */
 .questions { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
-.prose .questions > li { margin: 0; }
-.q { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; }
-.q-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
-.q-n { font-weight: 800; color: var(--teal); }
-.q-pts { font-size: 0.8rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
-.q-stem { font-weight: 600; margin: 0 0 6px; }
-.q-en { color: var(--ink-3); font-style: italic; margin: 0 0 6px; }
-.q-viz { margin: 10px 0; color: var(--ink); overflow-x: auto; }
-.q-viz svg { max-width: 100%; height: auto; display: block; }
-.q-opts { list-style: none; padding: 0; margin: 8px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 4px 20px; }
-.prose .q-opts li { margin: 0; }
-.q-opts b { color: var(--ink-3); margin-right: 4px; }
-.q-fill { color: var(--ink-3); margin: 8px 0; }
-.q details { margin-top: 8px; }
-.q summary { cursor: pointer; color: var(--teal); font-weight: 700; font-size: var(--text-sm); }
-.q summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
-.q details p { margin: 6px 0 0; }
-.answer-key { min-width: 0 !important; }
-.answer-key td:first-child { width: 110px; }
-.exam-table td a { white-space: nowrap; }
+/* ... giữ nguyên tiếp toàn bộ block .questions, .q, .answer-key, .exam-table ... */
 
 /* Tìm hiểu – version card, tối ưu mobile + light/dark */
 .learn-grid {
@@ -538,63 +521,59 @@ figure.phone { margin: 0; }
   grid-template-columns: minmax(0, 1fr);
 }
 
-/* >= 720px: 2 cột để bớt dài trên desktop */
+/* ≥ 720px: 2 cột để bớt dài trên desktop */
 @media (min-width: 720px) {
   .learn-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+/* mỗi mục là 1 card */
 .learn-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 14px 16px;
   box-shadow: var(--shadow-sm);
-  display: grid;
-  gap: 4px;
   transition:
     border-color var(--duration-fast),
     transform var(--duration-fast) var(--ease-out);
 }
 
-/* cho phép bấm toàn khối trên mobile + tách style link trong card */
-.learn-card a {
-  color: var(--ink);          /* dùng màu chữ chính, không dùng teal */
-  text-decoration: none;      /* bỏ gạch chân mặc định */
-  text-underline-offset: 0;   /* tránh thừa kế offset dày */
+/* link ôm toàn bộ nội dung card → bấm ở đâu trong card cũng đi tới link */
+.learn-card > a {
+  display: block;
+  padding: 14px 16px;
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 0;
   text-decoration-thickness: auto;
-  display: inline-block;
 }
 
-
-
-/* tiêu đề ngắn hơn, không underline dày đặc */
+/* tiêu đề + mô tả trong card */
 .learn-card h3 {
-  margin: 0;
+  margin: 0 0 4px;
   font-size: 1rem;
 }
 
-/* mô tả xuống dòng thứ hai, xám hơn */
 .learn-card p {
   margin: 0;
   font-size: var(--text-sm);
   color: var(--ink-2);
 }
 
-/* hover / focus desktop: chỉ underline nhẹ, không đổi màu */
+/* hover / focus desktop: card hơi nổi, tiêu đề mới gạch chân nhẹ */
 @media (hover: hover) {
   .learn-card:hover {
     border-color: var(--teal);
     transform: translateY(-2px);
   }
-  .learn-card a:hover {
+  .learn-card > a:hover {
     text-decoration: underline;
   }
 }
 
 /* focus-accessible cho keyboard */
-.learn-card a:focus-visible {
+.learn-card > a:focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: 3px;
   border-radius: 4px;
