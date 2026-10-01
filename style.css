@@ -530,3 +530,47 @@ figure.phone { margin: 0; }
 .answer-key { min-width: 0 !important; }
 .answer-key td:first-child { width: 110px; }
 .exam-table td a { white-space: nowrap; }
+
+/* dùng lại hệ màu hiện tại nên auto light/dark */
+.learn-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.learn-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--duration-fast),
+              transform var(--duration-fast) var(--ease-out);
+  display: grid;
+  gap: 6px;
+}
+
+.learn-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.learn-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.learn-card a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.learn-card a:hover {
+  text-decoration: underline;
+}
+
+.learn-card p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: var(--text-sm);
+}
