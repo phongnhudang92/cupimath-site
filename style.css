@@ -531,46 +531,67 @@ figure.phone { margin: 0; }
 .answer-key td:first-child { width: 110px; }
 .exam-table td a { white-space: nowrap; }
 
-/* dùng lại hệ màu hiện tại nên auto light/dark */
+/* Tìm hiểu – version card, tối ưu mobile + light/dark */
 .learn-grid {
   display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* >= 720px: 2 cột để bớt dài trên desktop */
+@media (min-width: 720px) {
+  .learn-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .learn-card {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 20px 22px;
+  padding: 14px 16px;
   box-shadow: var(--shadow-sm);
-  transition: border-color var(--duration-fast),
-              transform var(--duration-fast) var(--ease-out);
   display: grid;
-  gap: 6px;
+  gap: 4px;
+  transition:
+    border-color var(--duration-fast),
+    transform var(--duration-fast) var(--ease-out);
 }
 
-.learn-card:hover {
-  border-color: var(--teal);
-  transform: translateY(-2px);
-}
-
-.learn-card h3 {
-  margin: 0;
-  font-size: 1.08rem;
-}
-
+/* cho phép bấm toàn khối trên mobile */
 .learn-card a {
   color: var(--ink);
   text-decoration: none;
+  display: inline-block;
 }
 
-.learn-card a:hover {
-  text-decoration: underline;
+/* tiêu đề ngắn hơn, không underline dày đặc */
+.learn-card h3 {
+  margin: 0;
+  font-size: 1rem;
 }
 
+/* mô tả xuống dòng thứ hai, xám hơn */
 .learn-card p {
   margin: 0;
-  color: var(--ink-2);
   font-size: var(--text-sm);
+  color: var(--ink-2);
+}
+
+/* hover / focus desktop */
+@media (hover: hover) {
+  .learn-card:hover {
+    border-color: var(--teal);
+    transform: translateY(-2px);
+  }
+  .learn-card a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* focus-accessible cho keyboard */
+.learn-card a:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
