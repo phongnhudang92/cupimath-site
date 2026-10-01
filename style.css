@@ -558,12 +558,16 @@ figure.phone { margin: 0; }
     transform var(--duration-fast) var(--ease-out);
 }
 
-/* cho phép bấm toàn khối trên mobile */
+/* cho phép bấm toàn khối trên mobile + tách style link trong card */
 .learn-card a {
-  color: var(--ink);
-  text-decoration: none;
+  color: var(--ink);          /* dùng màu chữ chính, không dùng teal */
+  text-decoration: none;      /* bỏ gạch chân mặc định */
+  text-underline-offset: 0;   /* tránh thừa kế offset dày */
+  text-decoration-thickness: auto;
   display: inline-block;
 }
+
+
 
 /* tiêu đề ngắn hơn, không underline dày đặc */
 .learn-card h3 {
@@ -578,7 +582,7 @@ figure.phone { margin: 0; }
   color: var(--ink-2);
 }
 
-/* hover / focus desktop */
+/* hover / focus desktop: chỉ underline nhẹ, không đổi màu */
 @media (hover: hover) {
   .learn-card:hover {
     border-color: var(--teal);
