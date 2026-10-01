@@ -499,13 +499,13 @@ figure.phone { margin: 0; }
 .prose .faq { margin-top: 0.5em; }
 
 /* khối "Tìm hiểu" ở trang chủ → các trang hướng dẫn */
-.learn-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-.learn-grid a { display: grid; gap: 6px; height: 100%; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow-sm); transition: border-color var(--duration-fast), transform var(--duration-fast) var(--ease-out); }
-.learn-grid a:hover { border-color: var(--teal); transform: translateY(-2px); }
-.learn-grid a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
-.learn-grid b { font-size: 1.08rem; }
-.learn-grid b::after { content: " →"; color: var(--teal); }
-.learn-grid span { color: var(--ink-2); font-size: var(--text-sm); }
+/*.learn-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }*/
+/*.learn-grid a { display: grid; gap: 6px; height: 100%; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow-sm); transition: border-color var(--duration-fast), transform var(--duration-fast) var(--ease-out); }*/
+/*.learn-grid a:hover { border-color: var(--teal); transform: translateY(-2px); }*/
+/*.learn-grid a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }*/
+/*.learn-grid b { font-size: 1.08rem; }*/
+/*.learn-grid b::after { content: " →"; color: var(--teal); }*/
+/*.learn-grid span { color: var(--ink-2); font-size: var(--text-sm); }*/
 .prose .sources { font-size: var(--text-sm); word-break: break-all; }
 
 /* ---------- Trang đề thi có đáp án (scripts/site/build_exams.py) ---------- */
