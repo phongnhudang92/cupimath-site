@@ -387,7 +387,7 @@ figure.phone { margin: 0; }
 
 /* ---------- Hỗ trợ ---------- */
 .support-grid { display: grid; gap: 16px; }
-@media (min-width: 760px) { .support-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 760px) { .support-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); } }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .card h3 { font-size: 1.125rem; margin-bottom: 10px; }
 .card p:last-child, .card ol:last-child, .card ul:last-child { margin-bottom: 0; }
@@ -396,12 +396,21 @@ figure.phone { margin: 0; }
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--line); padding: 48px 0 40px; font-size: var(--text-sm); color: var(--ink-3); }
 .site-footer .wrap { display: grid; gap: 28px; }
-@media (min-width: 860px) { .site-footer .wrap { grid-template-columns: 1.4fr repeat(auto-fit, minmax(160px, 1fr)); } }
+@media (min-width: 860px) {
+  .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 28px 40px; }
+  .site-footer .wrap > div { flex: 1 1 160px; min-width: 0; }
+  .site-footer .wrap > div:first-child { flex: 1.6 1 240px; }
+  .site-footer .wrap > .legal { flex-basis: 100%; }
+}
 .site-footer h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-2); margin-bottom: 12px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .site-footer a { color: var(--ink-2); text-decoration: none; }
 .site-footer a:hover { color: var(--ink); text-decoration: underline; }
 .site-footer .brand { margin-bottom: 12px; }
+.site-footer .social-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-2); font-weight: 600; transition: border-color var(--duration-fast), color var(--duration-fast); }
+.site-footer .social-link:hover { border-color: #1877f2; color: var(--ink); text-decoration: none; }
+.site-footer .social-link svg { color: #1877f2; flex: none; }
+.site-footer .social-link:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .site-footer .legal { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 
 /* ---------- Trang văn bản (chính sách, xoá tài khoản…) ---------- */
