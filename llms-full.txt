@@ -5,7 +5,7 @@
 ## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
 
 ### TIMO
-- TIMO — Vòng loại (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: 5 mảng × 5 câu. Dạng trắc nghiệm và thời gian vòng loại là ước tính.
+- TIMO — Vòng loại (lớp 1–5): 25 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: 5 mảng × 5 câu trắc nghiệm, 60 phút.
 - TIMO — Vòng quốc gia (Heat Round) (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 5 câu × 4 điểm, điền đáp số; Số học & Đại số: 5 câu × 4 điểm, điền đáp số; Lý thuyết số: 5 câu × 4 điểm, điền đáp số; Hình học: 5 câu × 4 điểm, điền đáp số; Tổ hợp: 5 câu × 4 điểm, điền đáp số. Ghi chú: 5 mảng × 5 câu, chỉ ghi đáp số. Mốc giải 80/60/40/20 điểm.
 - TIMO — Chung kết quốc tế (lớp 1–5): 30 câu, 120 phút, tối đa 150 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 6 câu × 5 điểm, điền đáp số; Số học & Đại số: 6 câu × 5 điểm, điền đáp số; Lý thuyết số: 6 câu × 5 điểm, điền đáp số; Hình học: 6 câu × 5 điểm, điền đáp số; Tổ hợp: 6 câu × 5 điểm, điền đáp số. Ghi chú: Mốc giải 120/90/60/30 trên 150 điểm. Chia 6 câu mỗi mảng là ước tính.
 
