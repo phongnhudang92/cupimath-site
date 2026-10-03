@@ -1,16 +1,20 @@
 # Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-03)
 
-Ứng dụng học toán tư duy và thi thử Toán quốc tế cho học sinh lớp 1–5. Tổng: 199 dạng toán, 12.182 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
+Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 221 dạng toán, 14.667 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
 
 ## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
 
 ### TIMO
+- TIMO Mầm non — Vòng loại (mầm non): 25 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: Đề Kindergarten: 5 mảng × 5 câu trắc nghiệm, 60 phút. Đề song ngữ.
 - TIMO — Vòng loại (lớp 1–5): 25 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: 5 mảng × 5 câu trắc nghiệm, 60 phút.
+- TIMO Mầm non — Vòng quốc gia (mầm non): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, điền đáp số; Số học & Đại số: 5 câu × 4 điểm, điền đáp số; Lý thuyết số: 5 câu × 4 điểm, điền đáp số; Hình học: 5 câu × 4 điểm, điền đáp số; Tổ hợp: 5 câu × 4 điểm, điền đáp số. Ghi chú: 5 mảng × 5 câu, chỉ ghi đáp số. Mốc giải 80/60/40/20 điểm. Đề song ngữ cho bé mầm non.
 - TIMO — Vòng quốc gia (Heat Round) (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 5 câu × 4 điểm, điền đáp số; Số học & Đại số: 5 câu × 4 điểm, điền đáp số; Lý thuyết số: 5 câu × 4 điểm, điền đáp số; Hình học: 5 câu × 4 điểm, điền đáp số; Tổ hợp: 5 câu × 4 điểm, điền đáp số. Ghi chú: 5 mảng × 5 câu, chỉ ghi đáp số. Mốc giải 80/60/40/20 điểm.
 - TIMO — Chung kết quốc tế (lớp 1–5): 30 câu, 120 phút, tối đa 150 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 6 câu × 5 điểm, điền đáp số; Số học & Đại số: 6 câu × 5 điểm, điền đáp số; Lý thuyết số: 6 câu × 5 điểm, điền đáp số; Hình học: 6 câu × 5 điểm, điền đáp số; Tổ hợp: 6 câu × 5 điểm, điền đáp số. Ghi chú: Mốc giải 120/90/60/30 trên 150 điểm. Chia 6 câu mỗi mảng là ước tính.
 
 ### HKIMO
+- HKIMO Mầm non — Vòng loại (mầm non): 25 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: Đề Khối mầm non: 5 mảng × 5 câu trắc nghiệm song ngữ, 60 phút.
 - HKIMO — Vòng loại (lớp 1–5): 25 câu, 60 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Số học & Đại số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Lý thuyết số: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Hình học: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Tổ hợp: 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: Điểm chuẩn vào vòng quốc gia năm 2023 khoảng 40–48/100.
+- HKIMO Mầm non — Vòng quốc gia (mầm non): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Tư duy logic: 5 câu × 4 điểm, điền đáp số; Số học & Đại số: 5 câu × 4 điểm, điền đáp số; Lý thuyết số: 5 câu × 4 điểm, điền đáp số; Hình học: 5 câu × 4 điểm, điền đáp số; Tổ hợp: 5 câu × 4 điểm, điền đáp số. Ghi chú: 5 mảng × 5 câu điền đáp số, 90 phút. Mốc giải lấy theo TIMO (ước tính).
 - HKIMO — Vòng quốc gia (lớp 1–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 5 câu × 4 điểm, điền đáp số; Số học & Đại số: 5 câu × 4 điểm, điền đáp số; Lý thuyết số: 5 câu × 4 điểm, điền đáp số; Hình học: 5 câu × 4 điểm, điền đáp số; Tổ hợp: 5 câu × 4 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng được đi thi quốc tế. Mốc giải lấy theo TIMO (ước tính).
 - HKIMO — Chung kết quốc tế (Hồng Kông) (lớp 1–5): 30 câu, 120 phút, tối đa 150 điểm; ngôn ngữ: tiếng anh. Tư duy logic: 6 câu × 5 điểm, điền đáp số; Số học & Đại số: 6 câu × 5 điểm, điền đáp số; Lý thuyết số: 6 câu × 5 điểm, điền đáp số; Hình học: 6 câu × 5 điểm, điền đáp số; Tổ hợp: 6 câu × 5 điểm, điền đáp số. Ghi chú: Mốc giải 120/90/60/30 trên 150 điểm.
 
@@ -44,7 +48,14 @@
 ### AMO
 - AMO (lớp 2–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Phần A — trắc nghiệm: 15 câu × 3 điểm, trắc nghiệm 5 lựa chọn; Phần B — điền đáp án: 5 câu × 5 điểm, điền đáp số; Phần C — điền đáp án: 5 câu × 6 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng/Khích lệ 8%/12%/20%/10% thí sinh.
 
-## Dạng toán theo lớp
+## Dạng toán theo khối lớp
+
+### Mầm non (22 dạng, 1.475 câu luyện tập)
+- Tư duy logic: Đếm đồ vật, Cái cân, Quy luật hình, Dãy số quy luật, Chữ cái, Thứ trong tuần và giờ, Tính tuổi
+- Số học: Cộng và trừ, Dãy tính, Tìm số bị che, Toán có lời văn
+- Lý thuyết số: Số chẵn, số lẻ, Chia đều, Điền dấu + −
+- Hình học: Hình trong tranh, Đếm hình vuông, tam giác, Khối lập phương, Cạnh, góc, đoạn thẳng
+- Tổ hợp / Đếm: So sánh và sắp xếp số, Đếm số, Lập số từ thẻ, Tiền
 
 ### Lớp 1 (27 dạng, 1.131 câu luyện tập)
 - Tư duy logic: Cái cân, Xếp hàng, Tính tuổi, Thứ, tháng và giờ, Tìm quy luật trong bảng, Suy luận vui, Xem lịch, Trồng cây và leo cầu thang
