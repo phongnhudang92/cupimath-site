@@ -48,6 +48,10 @@
 ### AMO
 - AMO (lớp 2–5): 25 câu, 90 phút, tối đa 100 điểm; ngôn ngữ: tiếng anh. Phần A — trắc nghiệm: 15 câu × 3 điểm, trắc nghiệm 5 lựa chọn; Phần B — điền đáp án: 5 câu × 5 điểm, điền đáp số; Phần C — điền đáp án: 5 câu × 6 điểm, điền đáp số. Ghi chú: Vàng/Bạc/Đồng/Khích lệ 8%/12%/20%/10% thí sinh.
 
+### ITMC
+- ITMC — Vòng 1 tại Việt Nam (lớp 2–5): 30 câu, 90 phút, tối đa 175 điểm; ngôn ngữ: tiếng anh. Phần 1 — trắc nghiệm: 12 câu × 4 điểm, trắc nghiệm 4 lựa chọn, bỏ trống +1; Phần 2 — trắc nghiệm: 12 câu × 6 điểm, trắc nghiệm 4 lựa chọn, bỏ trống +1.5; Phần 3 — điền đáp án: 5 câu × 7 điểm, điền đáp số; Câu thưởng: 1 câu × 20 điểm, điền đáp số, sai trừ 7. Ghi chú: Bỏ trống: phần 1 được 1 điểm, phần 2 được 1,5 điểm; câu thưởng đúng +20, sai −7. Giải cần đủ ngưỡng điểm và nằm trong tỉ lệ thí sinh (Vàng 7%, Bạc 15%, Đồng 20%). Số phương án trắc nghiệm là ước tính.
+- ITMC — Vòng quốc tế (Thái Lan) (lớp 2–5): 30 câu, 90 phút, tối đa 175 điểm; ngôn ngữ: tiếng anh. Phần 1 — trắc nghiệm: 12 câu × 4 điểm, trắc nghiệm 4 lựa chọn, bỏ trống +1; Phần 2 — trắc nghiệm: 12 câu × 6 điểm, trắc nghiệm 4 lựa chọn, bỏ trống +1.5; Phần 3 — điền đáp án: 5 câu × 7 điểm, điền đáp số; Câu thưởng: 1 câu × 20 điểm, điền đáp số, sai trừ 7. Ghi chú: Format giống vòng 1. Bỏ trống: phần 1 được 1 điểm, phần 2 được 1,5 điểm; câu thưởng đúng +20, sai −7. Giải cần đủ ngưỡng điểm và nằm trong tỉ lệ thí sinh (Vàng 7%, Bạc 15%, Đồng 20%). Số phương án trắc nghiệm là ước tính.
+
 ## Dạng toán theo khối lớp
 
 ### Mầm non (22 dạng, 1.475 câu luyện tập)
