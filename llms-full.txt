@@ -1,4 +1,4 @@
-# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-05)
+# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-06)
 
 Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 221 dạng toán, 14.667 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
 
