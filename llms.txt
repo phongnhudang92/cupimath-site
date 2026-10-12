@@ -1,19 +1,19 @@
 # Cú Pi Math
 
-> Cú Pi Math (cupimath.com) là ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non (dưới 6 tuổi) và học sinh tiểu học lớp 1–5 tại Việt Nam: 221 dạng toán, 14.667 câu hỏi có lời giải từng bước (song ngữ Việt – Anh), đề thi thử đúng cấu trúc 19 cuộc thi (TIMO, HKIMO, FMO, Kangaroo/IKMC, ASMO, SEAMO, SASMO, AMO, IMAS, Big Bay Bei, ITMC, AIMO, VIAMC, IMEC, PIMSO, JMMC, ELMO, CREST, SiL). Học trên web tại https://cupimath.com/app/, miễn phí, không quảng cáo.
+> Cú Pi Math (cupimath.com) là ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non (dưới 6 tuổi) và học sinh tiểu học lớp 1–5 tại Việt Nam: 241 dạng toán, 16.459 câu hỏi có lời giải từng bước (song ngữ Việt – Anh), đề thi thử đúng cấu trúc 19 cuộc thi (TIMO, HKIMO, FMO, Kangaroo/IKMC, ASMO, SEAMO, SASMO, AMO, IMAS, Big Bay Bei, ITMC, AIMO, VIAMC, IMEC, PIMSO, JMMC, ELMO, CREST, SiL). Học trên web tại https://cupimath.com/app/, miễn phí, không quảng cáo.
 
 Cú Pi Math là sản phẩm độc lập, không liên kết với ban tổ chức các cuộc thi. Mức giải trong đề thi thử chỉ là ước tính.
 
 ## Hướng dẫn và thông tin cuộc thi
 
-- [Toán tư duy là gì? Lộ trình học toán tư duy cho bé từ mầm non đến lớp 5](https://cupimath.com/toan-tu-duy/): Toán tư duy giúp trẻ suy luận và giải bài toán lạ thay vì học thuộc. 6 mảng, 221 dạng toán tư duy từ mầm non đến lớp 5 và cách cho con học hiệu quả.
-- [Toán tiểu học lớp 1–5: học toán theo từng lớp, bài tập có lời giải chi tiết](https://cupimath.com/toan-tieu-hoc/): Học toán tiểu học lớp 1–5: 199 dạng toán tư duy, hơn 12.000 bài tập có lời giải từng bước, bài giảng có hình minh hoạ. Học miễn phí.
+- [Toán tư duy là gì? Lộ trình học toán tư duy cho bé từ mầm non đến lớp 5](https://cupimath.com/toan-tu-duy/): Toán tư duy giúp trẻ suy luận và giải bài toán lạ thay vì học thuộc. 6 mảng, 241 dạng toán tư duy từ mầm non đến lớp 5 và cách cho con học hiệu quả.
+- [Toán tiểu học lớp 1–5: học toán theo từng lớp, bài tập có lời giải chi tiết](https://cupimath.com/toan-tieu-hoc/): Học toán tiểu học lớp 1–5: 219 dạng toán tư duy, hơn 13.000 bài tập có lời giải từng bước, bài giảng có hình minh hoạ. Học miễn phí.
 - [Toán mầm non: toán tư duy cho bé 4–6 tuổi bằng hình ảnh, thi thử TIMO, HKIMO](https://cupimath.com/toan-mam-non/): Toán tư duy mầm non cho bé dưới 6 tuổi: 22 dạng toán học qua tranh, 1.475 câu luyện tập có lời giải và đề thi thử TIMO, HKIMO mầm non.
-- [Toán lớp 1: 27 dạng toán tư duy, bài tập có lời giải](https://cupimath.com/toan-tieu-hoc/lop-1/): Học toán lớp 1: 27 dạng toán tư duy, 1.131 bài tập có lời giải từng bước, bài tập mẫu và đề thi thử Toán quốc tế lớp 1.
+- [Toán lớp 1: 27 dạng toán tư duy, bài tập có lời giải](https://cupimath.com/toan-tieu-hoc/lop-1/): Học toán lớp 1: 27 dạng toán tư duy, 1.130 bài tập có lời giải từng bước, bài tập mẫu và đề thi thử Toán quốc tế lớp 1.
 - [Toán lớp 2: 34 dạng toán tư duy, bài tập có lời giải](https://cupimath.com/toan-tieu-hoc/lop-2/): Học toán lớp 2: 34 dạng toán tư duy, 1.246 bài tập có lời giải từng bước, bài tập mẫu và đề thi thử Toán quốc tế lớp 2.
 - [Toán lớp 3: 38 dạng toán tư duy, bài tập có lời giải](https://cupimath.com/toan-tieu-hoc/lop-3/): Học toán lớp 3: 38 dạng toán tư duy, 1.427 bài tập có lời giải từng bước, bài tập mẫu và đề thi thử Toán quốc tế lớp 3.
 - [Toán lớp 4: 42 dạng toán tư duy, bài tập có lời giải](https://cupimath.com/toan-tieu-hoc/lop-4/): Học toán lớp 4: 42 dạng toán tư duy, 1.408 bài tập có lời giải từng bước, bài tập mẫu và đề thi thử Toán quốc tế lớp 4.
-- [Toán lớp 5: 58 dạng toán tư duy, bài tập có lời giải](https://cupimath.com/toan-tieu-hoc/lop-5/): Học toán lớp 5: 58 dạng toán tư duy, 1.907 bài tập có lời giải từng bước, bài tập mẫu và đề thi thử Toán quốc tế lớp 5.
+- [Toán lớp 5: 78 dạng toán tư duy, bài tập có lời giải](https://cupimath.com/toan-tieu-hoc/lop-5/): Học toán lớp 5: 78 dạng toán tư duy, 2.987 bài tập có lời giải từng bước, bài tập mẫu và đề thi thử Toán quốc tế lớp 5.
 - [Toán quốc tế cho học sinh tiểu học: so sánh TIMO, HKIMO, ASMO, Kangaroo, SEAMO, SASMO…](https://cupimath.com/toan-quoc-te/): So sánh 19 kỳ thi Toán quốc tế từ mầm non đến lớp 5 tại Việt Nam: số câu, thời gian, thang điểm, ngôn ngữ, lịch thi 2026–2027. Thi thử đúng cấu trúc.
 - [Thi TIMO Mầm non –> lớp 5: cấu trúc đề, cách tính điểm, mốc giải, đề thi thử](https://cupimath.com/thi-timo/): Thi TIMO Mầm non –> lớp 5: cấu trúc 25 câu – 5 mảng từng vòng, cách tính điểm, mốc giải 80/60/40/20 và đề thi thử TIMO miễn phí có lời giải.
 - [Thi HKIMO Mầm non –> lớp 5: cấu trúc đề 5 mảng, cách tính điểm, mốc giải](https://cupimath.com/thi-hkimo/): Thi HKIMO Mầm non –> lớp 5: vòng loại 25 câu 60 phút song ngữ, vòng quốc gia 25 câu tiếng Anh, chung kết 30 câu 150 điểm. Mốc giải và đề thi thử miễn phí.

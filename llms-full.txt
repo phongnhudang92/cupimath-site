@@ -1,6 +1,6 @@
-# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-06)
+# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-12)
 
-Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 221 dạng toán, 14.667 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
+Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 241 dạng toán, 16.459 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
 
 ## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
 
@@ -94,7 +94,7 @@
 - Hình học: Hình trong tranh, Đếm hình vuông, tam giác, Khối lập phương, Cạnh, góc, đoạn thẳng
 - Tổ hợp / Đếm: So sánh và sắp xếp số, Đếm số, Lập số từ thẻ, Tiền
 
-### Lớp 1 (27 dạng, 1.131 câu luyện tập)
+### Lớp 1 (27 dạng, 1.130 câu luyện tập)
 - Tư duy logic: Cái cân, Xếp hàng, Tính tuổi, Thứ, tháng và giờ, Tìm quy luật trong bảng, Suy luận vui, Xem lịch, Trồng cây và leo cầu thang
 - Số học: Tính nhẩm cộng trừ, Toán có lời văn, Tìm số và dấu còn thiếu, Que diêm
 - Lý thuyết số: Số chẵn, số lẻ, Chia đều, Dãy số, dãy chữ, Chục và đơn vị
@@ -126,10 +126,10 @@
 - Tổ hợp / Đếm: Cái cân & đố hình, Đếm số & lập số, Rút về đơn vị & công việc, Qua sông, Nối điểm & đếm trận đấu, Đếm cách & đường đi, Trường hợp xấu nhất, So sánh hai lần mua
 - Thống kê: Đọc biểu đồ
 
-### Lớp 5 (58 dạng, 1.907 câu luyện tập)
-- Tư duy logic: Dãy số, dãy hình & dãy lặp, Vị trí trong hàng & vòng tròn, Tìm quy luật ẩn & ma phương, Mật mã số & mật mã chữ, Suy luận: nói thật – nói dối, Lịch, tháng & đồng hồ, Cưa gỗ & làm việc có nghỉ, Trồng cây & đếm khoảng, Bài toán làm ngược, Tổng từng cặp & cho qua lại, Trung bình cộng & điểm số, Bài toán tuổi, Cái cân & hệ biểu tượng, Giả thiết tạm & chia thừa – thiếu, Công việc & rút về đơn vị, Vận tốc & gặp nhau, Đuổi nhau & chuyển động đặc biệt, Giả thiết tạm nâng cao, Số đo thời gian, Vận tốc trung bình & dòng nước
-- Số học: Tìm số chưa biết, Tính nhanh phép nhân, Tính tổng dãy số, Phân số: cộng, trừ & so sánh, Phân số của một lượng, Dãy đan dấu & phân số sai phân, Số thập phân, Tính với số thập phân, Tỉ số phần trăm, Tính nhanh cộng trừ & dấu ngoặc
-- Lý thuyết số: Chia hết & chia có dư, Chữ số ẩn & chữ số tận cùng, Bội chung nhỏ nhất (BCNN), Ước chung lớn nhất & số ước, Chia nhóm, chở xe & mua hộp, Định nghĩa phép toán mới, Tổng–tỉ, hiệu–tỉ & tích–tỉ, Tích–hiệu & số liên tiếp, Tỉ số nâng cao, Số nguyên tố & chia hết nâng cao
-- Hình học: Chu vi & diện tích hình phẳng, Chu vi & diện tích: biến đổi và lớn nhất, nhỏ nhất, Đếm hình & chia phần, Đa giác đều & phép biến hình, Khối 3D & đếm khối lập phương, Hình hộp: thể tích & diện tích, Tam giác & hình thang, Hình tròn, Hình hộp & hình lập phương nâng cao
-- Tổ hợp / Đếm: Lập số & quy tắc đếm, Đếm đường đi & đếm cách, Trường hợp xấu nhất, Sơ đồ Venn & phần chung, Sắp xếp: hàng & vật giống nhau, Chọn nhóm: tổ hợp & chỉnh hợp, Đếm cách trả tiền & gieo xúc xắc
-- Thống kê: Bảng số liệu & biểu đồ tranh, Biểu đồ tròn & biểu đồ đường
+### Lớp 5 (78 dạng, 2.987 câu luyện tập)
+- Tư duy logic: Dãy số & dãy hình, Dãy lặp, Vị trí trong hàng & vòng tròn, Tìm quy luật ẩn & ma phương, Mật mã số & mật mã chữ, Suy luận: nói thật – nói dối, Lịch, tháng & đồng hồ, Cưa gỗ & làm việc có nghỉ, Trồng cây & đếm khoảng, Bài toán làm ngược, Tổng từng cặp & cho qua lại, Trung bình cộng & điểm số, Bài toán tuổi, Cái cân & hệ biểu tượng, Giả thiết tạm & chia thừa – thiếu, Công việc & rút về đơn vị, Vận tốc & gặp nhau, Đuổi nhau & chuyển động đặc biệt, Giả thiết tạm nâng cao, Số đo thời gian, Đổi đơn vị thời gian, Vận tốc trung bình & dòng nước, Đến sớm – đến muộn
+- Số học: Tìm số chưa biết, Tính nhanh phép nhân 1, Tính nhanh phép nhân 2, Tính tổng dãy số 1, Tính tổng dãy số 2, Phân số 1, Phân số 2, Phân số của một lượng, Dãy đan dấu & phân số sai phân, Số thập phân 1, Số thập phân 2, Tính với số thập phân 1, Tính với số thập phân 2, Tỉ số phần trăm 1, Tỉ số phần trăm 2, Tỉ số phần trăm 3, Tính nhanh cộng trừ & dấu ngoặc 1, Tính nhanh cộng trừ & dấu ngoặc 2
+- Lý thuyết số: Chia hết & chia có dư, Chữ số ẩn & số lớn nhất, nhỏ nhất, Chữ số tận cùng, Bội chung nhỏ nhất (BCNN), Ước chung lớn nhất & số ước, Chia nhóm, chở xe & mua hộp, Định nghĩa phép toán mới, Tổng–tỉ, hiệu–tỉ & tích–tỉ, Tích–hiệu & số liên tiếp, Tỉ số nâng cao, Số nguyên tố, Chia hết cho 11, 8, 25, 125
+- Hình học: Chu vi & diện tích hình phẳng 1, Chu vi & diện tích hình phẳng 2, Chu vi & diện tích: biến đổi và lớn nhất, nhỏ nhất, Đếm hình & chia phần, Đa giác đều & phép biến hình, Khối 3D & đếm khối lập phương, Hình hộp: thể tích & diện tích 1, Hình hộp: thể tích & diện tích 2, Tam giác & hình thang 1, Tam giác & hình thang 2, Hình tròn 1, Hình tròn 2, Hình hộp & hình lập phương nâng cao
+- Tổ hợp / Đếm: Lập số & quy tắc nhân, Đếm số theo điều kiện, Đếm đường đi & đếm cách, Trường hợp xấu nhất, Sơ đồ Venn & phần chung, Sắp xếp: hàng & vật giống nhau, Chọn nhóm & chọn có xếp thứ tự, Đếm cách trả tiền & gieo xúc xắc
+- Thống kê: Biểu đồ tranh, Bảng số liệu, Biểu đồ tròn, Biểu đồ đường
