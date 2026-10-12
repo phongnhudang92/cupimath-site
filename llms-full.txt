@@ -1,6 +1,6 @@
-# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-12)
+# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-13)
 
-Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 241 dạng toán, 16.459 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
+Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 264 dạng toán, 17.333 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
 
 ## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
 
@@ -118,13 +118,13 @@
 - Tổ hợp / Đếm: Đổi tiền & đóng hộp, Mua nhiều nhất & khuyến mãi, Lập số & quy tắc nhân, Đếm đường đi & cách lên cầu thang, Dạng toán trường hợp xấu nhất
 - Thống kê: Đọc biểu đồ
 
-### Lớp 4 (42 dạng, 1.408 câu luyện tập)
-- Tư duy logic: Dãy số, dãy hình & chu kì, Lịch & đồng hồ, Bài toán tuổi, Trung bình cộng, Trồng cây & đếm khoảng, Bài toán làm ngược, Số trong hình & bảng quy luật, Suy luận logic, Giả thiết tạm & chia thừa – thiếu, Đếm số hạng & tổng dãy lặp lại, Muộn – sớm & ghép nhóm
-- Số học: Tính nhanh, tính hợp lí, Tổng dãy số, Mật thư & cấu tạo số, Phân số: bằng nhau, so sánh và tính
-- Lý thuyết số: Phép toán mới, Đếm bội và ước, Chia hết & số dư, Chữ số tận cùng, Số liên tiếp, Tổng-tỉ, hiệu-tỉ, tích-tỉ, Tỉ số nâng cao, Phân số của một số, Đánh số trang sách, Sơ đồ đoạn thẳng & tổng – hiệu mở rộng, Tổng – tỉ, hiệu – tỉ với tỉ số phân số, Chuyển đồ & hiệu không đổi với tỉ số
-- Hình học: Chu vi & diện tích, Đếm hình, Chu vi, diện tích lớn nhất – nhỏ nhất, Khối lập phương & hình khối, Hình bình hành & hình thoi, Cắt & biến đổi hình vuông, hình chữ nhật
-- Tổ hợp / Đếm: Cái cân & đố hình, Đếm số & lập số, Rút về đơn vị & công việc, Qua sông, Nối điểm & đếm trận đấu, Đếm cách & đường đi, Trường hợp xấu nhất, So sánh hai lần mua
-- Thống kê: Đọc biểu đồ
+### Lớp 4 (65 dạng, 1.930 câu luyện tập)
+- Tư duy logic: Dãy số, Dãy hình & dãy lặp lại, Lịch & đồng hồ, Bài toán tuổi, Tuổi ở thời điểm khác, Trung bình cộng 1, Trung bình cộng 2, Trồng cây & đếm khoảng, Đếm khoảng trong đời sống, Bài toán làm ngược, Số trong hình & bảng quy luật, Suy luận logic, Giả thiết tạm, Chia thừa – thiếu, Đếm số hạng của dãy cách đều, Tổng dãy lặp lại, Muộn – sớm & ghép nhóm
+- Số học: Tính nhanh, tính hợp lí 1, Tính nhanh, tính hợp lí 2, Tổng dãy số 1, Tổng dãy số 2, Mật thư, Viết sai & viết thêm chữ số, Phân số 1, Phân số 2
+- Lý thuyết số: Phép toán mới, Đếm bội và ước, Chia hết & số dư, Chia đồ hai cách: thừa, thiếu, Chữ số tận cùng, Số liên tiếp, Hai số biết có mấy số ở giữa, Tổng-tỉ, hiệu-tỉ, tích-tỉ, Tỉ số nâng cao, Phân số của một số, Đánh số trang sách, Tờ sách bị rơi, Sơ đồ đoạn thẳng với ba số, Tổng – hiệu ẩn, Tổng – tỉ, hiệu – tỉ với tỉ số phân số, Chuyển đồ & hiệu không đổi với tỉ số
+- Hình học: Chu vi & diện tích 1, Chu vi & diện tích 2, Đếm hình 1, Đếm hình 2, Chu vi, diện tích lớn nhất – nhỏ nhất, Hình chóp, lăng trụ & xúc xắc, Đếm khối lập phương & sơn mặt, Hình bình hành, Hình thoi, Cắt & biến đổi hình vuông, hình chữ nhật
+- Tổ hợp / Đếm: Cái cân & tìm xu giả, Đố hình, Lập số từ các chữ số, Đếm số theo điều kiện, Rút về đơn vị & công việc, Qua sông, Đếm trận đấu & đoạn thẳng, Nối điểm & chia hình tròn, Đếm cách & đường đi, Trường hợp xấu nhất, Nguyên lí ngăn kéo, So sánh hai lần mua
+- Thống kê: Biểu đồ cột, Biểu đồ tranh
 
 ### Lớp 5 (78 dạng, 2.987 câu luyện tập)
 - Tư duy logic: Dãy số & dãy hình, Dãy lặp, Vị trí trong hàng & vòng tròn, Tìm quy luật ẩn & ma phương, Mật mã số & mật mã chữ, Suy luận: nói thật – nói dối, Lịch, tháng & đồng hồ, Cưa gỗ & làm việc có nghỉ, Trồng cây & đếm khoảng, Bài toán làm ngược, Tổng từng cặp & cho qua lại, Trung bình cộng & điểm số, Bài toán tuổi, Cái cân & hệ biểu tượng, Giả thiết tạm & chia thừa – thiếu, Công việc & rút về đơn vị, Vận tốc & gặp nhau, Đuổi nhau & chuyển động đặc biệt, Giả thiết tạm nâng cao, Số đo thời gian, Đổi đơn vị thời gian, Vận tốc trung bình & dòng nước, Đến sớm – đến muộn
