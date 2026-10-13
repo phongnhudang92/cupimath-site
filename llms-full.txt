@@ -1,6 +1,6 @@
 # Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-13)
 
-Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 321 dạng toán, 18.931 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
+Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 334 dạng toán, 18.931 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
 
 ## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
 
@@ -87,12 +87,12 @@
 
 ## Dạng toán theo khối lớp
 
-### Mầm non (22 dạng, 1.475 câu luyện tập)
-- Tư duy logic: Đếm đồ vật, Cái cân, Quy luật hình, Dãy số quy luật, Chữ cái, Thứ trong tuần và giờ, Tính tuổi
-- Số học: Cộng và trừ, Dãy tính, Tìm số bị che, Toán có lời văn
-- Lý thuyết số: Số chẵn, số lẻ, Chia đều, Điền dấu + −
-- Hình học: Hình trong tranh, Đếm hình vuông, tam giác, Khối lập phương, Cạnh, góc, đoạn thẳng
-- Tổ hợp / Đếm: So sánh và sắp xếp số, Đếm số, Lập số từ thẻ, Tiền
+### Mầm non (35 dạng, 1.475 câu luyện tập)
+- Tư duy logic: Đếm đồ vật, Đếm chân, đếm nhóm, Cái cân, Quy luật hình, Đếm ô ở hình tiếp theo, Dãy số quy luật, Hai dãy đan nhau, Chữ cái, Thứ trong tuần và giờ, Tính tuổi
+- Số học: Cộng và trừ, Dãy tính, Trừ liên tiếp, Tìm số bị che, Tháp số, Toán có lời văn, Hơn nhau bao nhiêu
+- Lý thuyết số: Số chẵn, số lẻ, Số chẵn, lẻ lớn nhất – bé nhất, Chia đều, Điền dấu + −
+- Hình học: Hình trong tranh, Gọi tên hình, Đếm hình vuông, tam giác, Hình tròn chồng nhau, Khối lập phương, Cạnh và góc, Đếm đoạn thẳng
+- Tổ hợp / Đếm: So sánh và xếp thứ tự số, Chọn nhóm số, Đếm số chữ số, số chẵn, số lẻ, Đếm số trong khoảng, Lập số hai chữ số, Lập số ba chữ số, Tiền
 
 ### Lớp 1 (41 dạng, 1.341 câu luyện tập)
 - Tư duy logic: Cái cân, Xếp hàng, Tính tuổi, Thứ, tháng và giờ, Tìm quy luật trong bảng, Suy luận vui, Xem lịch, Trồng cây thành hàng, Leo cầu thang
