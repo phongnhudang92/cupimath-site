@@ -1,6 +1,6 @@
-# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-14)
+# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-10-16)
 
-Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 334 dạng toán, 18.931 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
+Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non và học sinh lớp 1–5. Tổng: 346 dạng toán, 18.930 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
 
 ## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
 
@@ -87,19 +87,19 @@
 
 ## Dạng toán theo khối lớp
 
-### Mầm non (35 dạng, 1.475 câu luyện tập)
-- Tư duy logic: Đếm đồ vật, Đếm chân, đếm nhóm, Cái cân, Quy luật hình, Đếm ô ở hình tiếp theo, Dãy số quy luật, Hai dãy đan nhau, Chữ cái, Thứ trong tuần và giờ, Tính tuổi
-- Số học: Cộng và trừ, Dãy tính, Trừ liên tiếp, Tìm số bị che, Tháp số, Toán có lời văn, Hơn nhau bao nhiêu
-- Lý thuyết số: Số chẵn, số lẻ, Số chẵn, lẻ lớn nhất – bé nhất, Chia đều, Điền dấu + −
+### Mầm non (39 dạng, 1.474 câu luyện tập)
+- Tư duy logic: Đếm đồ vật, Đếm chân, đếm nhóm, Cái cân, Quy luật hình, Đếm ô ở hình tiếp theo, Dãy số quy luật, Hai dãy đan nhau, Chữ cái, Thứ trong tuần và giờ, Tính tuổi, Hơn nhau mấy tuổi
+- Số học: Cộng và trừ, Dãy tính, Trừ liên tiếp, Tìm số bị che, Tháp số, Chữ cái thay số, Toán có lời văn, Hơn nhau bao nhiêu
+- Lý thuyết số: Số chẵn, số lẻ, Chẵn lẻ trong câu chuyện, Số chẵn, lẻ lớn nhất – bé nhất, Chia đều, Điền dấu + −
 - Hình học: Hình trong tranh, Gọi tên hình, Đếm hình vuông, tam giác, Hình tròn chồng nhau, Khối lập phương, Cạnh và góc, Đếm đoạn thẳng
-- Tổ hợp / Đếm: So sánh và xếp thứ tự số, Chọn nhóm số, Đếm số chữ số, số chẵn, số lẻ, Đếm số trong khoảng, Lập số hai chữ số, Lập số ba chữ số, Tiền
+- Tổ hợp / Đếm: So sánh và xếp thứ tự số, Chọn nhóm số, Đếm số chữ số, số chẵn, số lẻ, Đếm số trong khoảng, Lập số hai chữ số, Lập số ba chữ số, Tiền, Tiền trả lại
 
-### Lớp 1 (41 dạng, 1.341 câu luyện tập)
-- Tư duy logic: Cái cân, Xếp hàng, Tính tuổi, Thứ, tháng và giờ, Tìm quy luật trong bảng, Suy luận vui, Xem lịch, Trồng cây thành hàng, Leo cầu thang
-- Số học: Tính nhẩm cộng trừ, Chữ số bị che, Toán có lời văn, Nhóm bằng nhau, Tìm số còn thiếu, Đố hình, Ghép phép tính, Que diêm
-- Lý thuyết số: Số chẵn, số lẻ, Đếm số, Chia đều và chia khác nhau, Chia đều nâng cao, Dãy số, Dãy chữ, Chục, đơn vị, tách và gộp số, Liền trước, liền sau
-- Hình học: Nhận biết các hình, Dãy hình, Đếm hình, Khối lập phương, Đo độ dài, Hình khối và cắt ghép hình
-- Tổ hợp / Đếm: So sánh số, Tổng lớn nhất và số đặc biệt, Mua bán, Đổi tiền, Lập số, So sánh có phép tính, Chọn phép tính đúng
+### Lớp 1 (48 dạng, 1.341 câu luyện tập)
+- Tư duy logic: Cái cân, Cân thay thế, Xếp hàng, Tính tuổi, Thứ, tháng và giờ, Đọc đồng hồ, Tìm quy luật trong bảng, Suy luận vui, Xem lịch, Trồng cây thành hàng, Leo cầu thang
+- Số học: Tính nhẩm cộng trừ, Chữ số bị che, Toán có lời văn, Nhóm bằng nhau, Tìm số còn thiếu, Đố hình, Ghép phép tính, Que diêm, Sửa phép tính que diêm
+- Lý thuyết số: Số chẵn, số lẻ, Đếm số, Số khác nhóm, Chia đều và chia khác nhau, Chia đều nâng cao, Dãy số, Dãy chữ, Chục và đơn vị, Liền trước, liền sau, Tách và gộp số
+- Hình học: Trái, phải, ở giữa, Nhận biết các hình, Dãy hình, Đếm hình, Khối lập phương, Đo độ dài, Hình khối và cắt ghép hình
+- Tổ hợp / Đếm: So sánh số, Tổng lớn nhất và số đặc biệt, Mua bán, Mua được nhiều nhất, Đổi tiền, Lập số, So sánh có phép tính, Chọn phép tính đúng
 - Thống kê: Bảng và biểu đồ cột, Biểu đồ kí hiệu, Phân loại và sơ đồ Venn
 
 ### Lớp 2 (58 dạng, 1.576 câu luyện tập)
@@ -110,8 +110,8 @@
 - Tổ hợp / Đếm: So sánh và sắp xếp số, Dấu so sánh và cấu tạo số, Thành lập số, Số lớn nhất, nhỏ nhất rồi tính, Đi chợ, Đổi tiền, Quy tắc nhân và đếm cách chọn
 - Thống kê: Đọc biểu đồ, Chắc chắn, có thể, không thể
 
-### Lớp 3 (57 dạng, 1.845 câu luyện tập)
-- Tư duy logic: Dãy hình và dãy lặp, Toán có lời văn, Tìm số chưa biết & tính ngược, Đoán số & chép nhầm chữ số, Viết thêm chữ số vào số, Cái cân và so sánh, Đồng hồ và lịch lặp đều, Thứ và ngày trong tháng, Bài toán tuổi, Trồng cây thẳng hàng, Trồng cây quanh đường khép kín, Cưa gỗ, chuông và cầu thang, Xếp hàng, vòng tròn & toa tàu, Cho và nhận, Sơ đồ Venn (hai nhóm), Ô số kì diệu & tháp số, Giả thiết tạm & chia thừa – thiếu, Suy luận logic
+### Lớp 3 (58 dạng, 1.845 câu luyện tập)
+- Tư duy logic: Dãy hình và dãy lặp, Toán có lời văn, Tìm số chưa biết & tính ngược, Đoán số & chép nhầm chữ số, Viết thêm chữ số vào số, Cái cân và so sánh, Thay thế và khử vật, Đồng hồ và lịch lặp đều, Thứ và ngày trong tháng, Bài toán tuổi, Trồng cây thẳng hàng, Trồng cây quanh đường khép kín, Cưa gỗ, chuông và cầu thang, Xếp hàng, vòng tròn & toa tàu, Cho và nhận, Sơ đồ Venn (hai nhóm), Ô số kì diệu & tháp số, Giả thiết tạm & chia thừa – thiếu, Suy luận logic
 - Số học: Tính nhanh bằng cách ghép cặp, Dãy lên xuống & dãy đan dấu, Tính chất phân phối & thứ tự phép tính, Bỏ dấu ngoặc, Bài toán rút về đơn vị, Bán bớt rồi còn lại, Một phần mấy, Gấp, giảm nhiều bước, Đổi đơn vị độ dài & khối lượng, Đổi đơn vị thời gian, Nhân với 25, 125 và 11, Nhân với số gần tròn
 - Lý thuyết số: Số chẵn, số lẻ, Chia hết, Chia có dư, Dãy số có quy luật, Phép toán mới & quy luật ẩn, Tổng–hiệu, tổng–tỉ & hiệu–tỉ, Số liên tiếp & tích–hiệu, Tỉ số trong bài toán thực tế, Đếm số theo chữ số
 - Hình học: Chu vi & diện tích, Hình ghép & đường đi trên lưới, Đếm hình, Nối điểm, chia hình & trục đối xứng, Hình khối 3D, Thay đổi kích thước hình
