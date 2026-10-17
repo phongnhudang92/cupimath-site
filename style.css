@@ -434,6 +434,11 @@ figure.phone { margin: 0; }
 .site-footer .social-link svg { color: #1877f2; flex: none; }
 .site-footer .social-link:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .site-footer .legal { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+/* Thông tin đơn vị vận hành (bắt buộc với website TMĐT): chiếm cả dòng, chữ đậm hơn phần bản quyền. */
+.site-footer .legal-org { flex-basis: 100%; margin: 0; color: var(--ink-2); line-height: 1.6; overflow-wrap: anywhere; }
+.site-footer .legal-links { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px 20px; }
+.site-footer .legal-links a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); }
+.site-footer .legal-links a:hover { text-decoration-color: currentColor; }
 
 /* ---------- Trang văn bản (chính sách, xoá tài khoản…) ---------- */
 .page-head { padding: clamp(2.5rem, 2rem + 3vw, 5rem) 0 clamp(2rem, 1.5rem + 2vw, 3rem); border-bottom: 1px solid var(--line); }
