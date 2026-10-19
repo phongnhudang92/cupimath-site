@@ -136,7 +136,7 @@
     if (c.award) return 'Chúc mừng ' + who + ' đạt kết quả: ' + c.award + '! Cả nhà tự hào lắm đó.';
     if (s && s.num >= GREAT_SCORE) return 'Chúc mừng ' + who + ' đạt ' + s.value + ' điểm, một kết quả thật xuất sắc!';
     if (s) return 'Chúc mừng ' + who + ' đã hoàn thành bài thi với ' + s.value + ' điểm. Mỗi kỳ thi là một bước tiến!';
-    return 'Ban tổ chức chưa cập nhật điểm của ' + who + '. Bố mẹ quay lại sau vài ngày nhé.';
+    return 'Ban tổ chức chưa cập nhật điểm của ' + who + '. Bố mẹ quay lại sau vài giờ nhé.';
   }
 
   // Lời mời nhỏ cuối thẻ, theo kết quả của từng bé.
