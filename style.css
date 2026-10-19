@@ -131,12 +131,13 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 1.125rem; letter-spacing: -0.01em; }
 .brand img { width: 38px; height: 38px; }
 .brand span { white-space: nowrap; }
-.site-nav { display: flex; gap: 4px; margin-left: auto; }
-.site-nav a { color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 0.95rem; padding: 8px 12px; border-radius: 999px; transition: background var(--duration-fast), color var(--duration-fast); }
+.site-nav { display: flex; gap: 2px; margin-left: auto; }
+.site-nav a { color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 0.95rem; padding: 8px 10px; white-space: nowrap; border-radius: 999px; transition: background var(--duration-fast), color var(--duration-fast); }
 .site-nav a:hover { background: var(--paper-2); color: var(--ink); }
 .site-nav a[aria-current="page"] { color: var(--ink); background: var(--paper-2); }
 .header-cta { flex-shrink: 0; }
-@media (max-width: 859px) {
+/* 8 mục menu cần ~1140px cho một dòng; hẹp hơn thì menu xuống hàng riêng, cuộn ngang */
+@media (max-width: 1149px) {
   .site-header .wrap { flex-wrap: wrap; gap: 0 12px; padding-top: 10px; }
   .header-cta { margin-left: auto; }
   .site-nav { order: 3; width: 100%; margin: 4px 0 6px; overflow-x: auto; scrollbar-width: none; mask-image: linear-gradient(90deg, #000 88%, transparent); }
@@ -580,3 +581,54 @@ figure.phone { margin: 0; }
 }
 .learn-card > a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .learn-card, .learn-card h3::after { transition: none; } .learn-card:hover { transform: none; } }
+
+/* ---------- Tra cứu điểm thi (/tra-cuu-diem-thi/) ---------- */
+.lookup { margin: 0 0 2.5em; display: grid; gap: 20px; }
+.lookup-form { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(20px, 3vw, 32px); box-shadow: var(--shadow-sm); display: grid; gap: 16px; overflow: hidden; }
+.lookup-form::before { content: ""; position: absolute; inset: 0 0 auto; height: 6px; background: linear-gradient(90deg, var(--teal) 0 60%, var(--orange) 60%); }
+.prose .lookup-form h2 { margin: 4px 0 0; display: block; }
+.lookup-field { display: grid; gap: 6px; }
+.lookup-field[hidden] { display: none; }
+.lookup-field label, .lookup-by legend { font-weight: 700; font-size: var(--text-sm); color: var(--ink-2); }
+.lookup-field input, .lookup-field select {
+  font: inherit; color: var(--ink); background: var(--paper); border: 1.5px solid var(--line); border-radius: 12px;
+  min-height: 48px; padding: 10px 14px; width: 100%; transition: border-color var(--duration-fast), box-shadow var(--duration-fast);
+}
+.lookup-field input:hover, .lookup-field select:hover { border-color: color-mix(in srgb, var(--teal) 40%, var(--line)); }
+.lookup-field input:focus, .lookup-field select:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 4px var(--teal-soft); }
+.lookup-by { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.lookup-by legend { padding: 0; margin-bottom: 6px; }
+.lookup-by label { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; cursor: pointer; font-weight: 500; transition: border-color var(--duration-fast), background var(--duration-fast); }
+.lookup-by label:has(input:checked) { border-color: var(--teal); background: var(--teal-soft); color: var(--ink); font-weight: 700; }
+.lookup-by input { accent-color: var(--teal); margin: 0; }
+.lookup-submit { justify-self: start; min-width: 160px; }
+.lookup-submit[aria-disabled="true"] { opacity: 0.7; cursor: progress; transform: none; }
+.lookup-field input[aria-invalid="true"] { border-color: var(--orange); }
+.lookup-msg:focus { outline: none; }
+/* ô bẫy bot: người thật không thấy, không tab tới được */
+.lookup-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.lookup-privacy { margin: 0; font-size: var(--text-sm); color: var(--ink-3); }
+.lookup-result:empty { display: none; }
+.lookup-msg { margin: 0; padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }
+.lookup-msg-warn { border-color: color-mix(in srgb, var(--orange) 45%, var(--line)); background: var(--orange-soft); }
+.lookup-msg-info { color: var(--ink-2); }
+.prose .lookup-result-title { margin: 0 0 12px; display: block; }
+.lookup-result-title:focus { outline: none; }
+.lookup-cards { display: grid; gap: 14px; }
+.lookup-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: grid; gap: 12px; animation: lookup-in var(--duration) var(--ease-out) both; }
+.lookup-card.has-score { border-color: color-mix(in srgb, var(--teal) 50%, var(--line)); }
+.lookup-card-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 12px; }
+.prose .lookup-card h3 { margin: 0; font-size: 1.2rem; }
+.lookup-sbd { font-size: var(--text-sm); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.lookup-score { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.lookup-score b { font-size: clamp(2.4rem, 2rem + 2vw, 3.2rem); line-height: 1; color: var(--teal); font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+.lookup-score small { color: var(--ink-3); font-weight: 700; }
+.lookup-award { background: var(--orange-soft); color: color-mix(in srgb, var(--orange) 65%, var(--ink)); font-size: 0.85rem; }
+.lookup-cheer { margin: 0; font-weight: 700; color: var(--ink); }
+.lookup-info { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0; font-size: var(--text-sm); }
+.lookup-info dt { color: var(--ink-3); }
+.lookup-info dd { margin: 0; color: var(--ink-2); }
+.lookup-cta { margin: 20px 0 0; }
+.lookup-cta p + p { margin-top: 8px; }
+@keyframes lookup-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .lookup-card { animation: none; } }
