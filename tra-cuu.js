@@ -121,14 +121,34 @@
     return word ? word.charAt(0).toLocaleUpperCase('vi') + word.slice(1) : 'con';
   }
 
+  // "84 / 100" hoặc "84" → { value: '84', max: '100' }; dạng lạ thì giữ nguyên chữ.
+  function splitScore(raw) {
+    var m = String(raw).match(/^\s*(\d+(?:[.,]\d+)?)\s*(?:\/\s*(\d+))?\s*$/);
+    return m ? { value: m[1], max: m[2] || '100', num: Number(m[1].replace(',', '.')) } : { value: raw, max: '', num: NaN };
+  }
+
+  function notPassed(c) { return !!c.award && NOT_PASSED.test(c.award); }
+
   function cheer(c) {
     var who = callName(c.name);
-    var n = Number(c.score);
-    if (c.award && NOT_PASSED.test(c.award)) return who + ' đã cố gắng hết mình rồi. Mỗi kỳ thi là một bài học, lần sau mình làm tốt hơn nhé!';
+    var s = c.score ? splitScore(c.score) : null;
+    if (notPassed(c)) return who + ' đã cố gắng hết mình rồi. Mỗi kỳ thi là một bài học, lần sau mình làm tốt hơn nhé!';
     if (c.award) return 'Chúc mừng ' + who + ' đạt kết quả: ' + c.award + '! Cả nhà tự hào lắm đó.';
-    if (c.score && n >= GREAT_SCORE) return 'Chúc mừng ' + who + ' đạt ' + c.score + ' điểm, một kết quả thật xuất sắc!';
-    if (c.score) return 'Chúc mừng ' + who + ' đã hoàn thành bài thi với ' + c.score + ' điểm. Mỗi kỳ thi là một bước tiến!';
+    if (s && s.num >= GREAT_SCORE) return 'Chúc mừng ' + who + ' đạt ' + s.value + ' điểm, một kết quả thật xuất sắc!';
+    if (s) return 'Chúc mừng ' + who + ' đã hoàn thành bài thi với ' + s.value + ' điểm. Mỗi kỳ thi là một bước tiến!';
     return 'Ban tổ chức chưa cập nhật điểm của ' + who + '. Bố mẹ quay lại sau vài ngày nhé.';
+  }
+
+  // Lời mời nhỏ cuối thẻ, theo kết quả của từng bé.
+  function nudge(c) {
+    var who = callName(c.name);
+    var text = notPassed(c) ? 'Cùng Cú Pi ôn lại cho ' + who + ' để lần sau tốt hơn'
+      : c.score ? 'Luyện đề vòng quốc gia cho ' + who
+      : 'Cho ' + who + ' luyện đề trong lúc chờ điểm';
+    var a = el('a', 'lookup-nudge', text);
+    a.href = '/app/';
+    a.setAttribute('data-track', 'tra-cuu-the');
+    return a;
   }
 
   function row(dl, label, value) {
@@ -142,8 +162,8 @@
     head.append(el('h3', null, c.name), el('span', 'lookup-sbd', 'SBD ' + c.sbd));
     var score = el('div', 'lookup-score');
     if (c.score) {
-      var big = el('b', null, c.score);
-      score.append(big, el('small', null, /^\d+(\.\d+)?$/.test(c.score) ? '/100 điểm' : 'điểm'));
+      var s = splitScore(c.score);
+      score.append(el('b', null, s.value), el('small', null, s.max ? '/' + s.max + ' điểm' : 'điểm'));
     } else {
       score.append(el('span', 'pill pill-warn', 'Chưa có điểm'));
     }
@@ -153,7 +173,7 @@
     row(dl, 'Trường', c.school);
     row(dl, 'Vòng thi', c.round);
     row(dl, 'Tỉnh thành', c.province);
-    art.append(head, score, el('p', 'lookup-cheer', cheer(c)), dl);
+    art.append(head, score, el('p', 'lookup-cheer', cheer(c)), dl, nudge(c));
     return art;
   }
 

@@ -628,7 +628,17 @@ figure.phone { margin: 0; }
 .lookup-info { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0; font-size: var(--text-sm); }
 .lookup-info dt { color: var(--ink-3); }
 .lookup-info dd { margin: 0; color: var(--ink-2); }
+.lookup-nudge {
+  justify-self: start; display: inline-flex; align-items: center; gap: 6px; margin-top: 2px;
+  font-size: var(--text-sm); font-weight: 700; color: var(--teal); text-decoration: none;
+  padding: 6px 12px; border-radius: 999px; background: var(--teal-soft);
+  transition: background var(--duration-fast), transform var(--duration-fast) var(--ease-out);
+}
+.lookup-nudge::after { content: "→"; transition: transform var(--duration-fast) var(--ease-out); }
+.lookup-nudge:hover { background: color-mix(in srgb, var(--teal) 22%, var(--teal-soft)); }
+.lookup-nudge:hover::after { transform: translateX(3px); }
+.lookup-nudge:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .lookup-cta { margin: 20px 0 0; }
 .lookup-cta p + p { margin-top: 8px; }
 @keyframes lookup-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) { .lookup-card { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .lookup-card { animation: none; } .lookup-nudge::after { transition: none; } }
