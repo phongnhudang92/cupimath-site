@@ -11,6 +11,12 @@
   var SCROLL = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
   var COOLDOWN_MS = 3000;   // chặn bấm liên tục: chờ giữa hai lần tra
   var REUSE_MS = 120000;    // tra lại đúng thông tin trong 2 phút thì dùng lại kết quả (bằng bộ đệm của server)
+  // Chờ lâu thì báo dần cho phụ huynh: trang gốc ngày công bố điểm có lúc gần 2 phút mới trả lời.
+  var WAIT_NOTES = [
+    [5000, 'Trang tra cứu của ban tổ chức đang có nhiều người truy cập nên phản hồi chậm. Bố mẹ vui lòng đợi thêm một chút nhé…'],
+    [30000, 'Kết quả có thể mất 1–2 phút mới về. Cú Pi Math lấy điểm trực tiếp từ trang tra cứu của ban tổ chức, '
+      + 'nên khi trang này quá tải thì cần chờ lâu hơn. Bố mẹ vui lòng giữ nguyên trang, không cần tải lại nhé…']
+  ];
   var busy = false;
   var last = { key: '', data: null, at: 0 };
 
@@ -18,7 +24,8 @@
     CUPI_RATE: 'Bạn tra hơi nhanh. Đợi khoảng 1 phút rồi thử lại nhé.',
     CUPI_QUOTA: 'Mạng của bạn đã tra quá nhiều lượt hôm nay. Bạn thử lại vào ngày mai nhé.',
     CUPI_BAD_REQUEST: 'Thông tin chưa đúng định dạng. Kiểm tra lại số điện thoại hoặc họ tên, ngày sinh.',
-    CUPI_SERVER: 'Trang tra cứu của ban tổ chức đang chậm hoặc lỗi. Bạn thử lại sau ít phút.'
+    CUPI_SERVER: 'Hiện trang tra cứu của ban tổ chức đang quá tải nên chưa trả kết quả. Cú Pi Math chỉ hiển thị điểm '
+      + 'lấy trực tiếp từ ban tổ chức, rất mong bố mẹ thông cảm và thử lại sau ít phút ạ.'
   };
 
   // Trình duyệt có thể giữ lựa chọn "Tra theo" khi tải lại / quay lại trang → đồng bộ cả lúc mở trang.
@@ -83,6 +90,7 @@
     btn.setAttribute('aria-disabled', 'true');
     btn.textContent = 'Đang tra cứu…';
     showMessage('Đang hỏi trang tra cứu của ban tổ chức…', 'info');
+    var timers = WAIT_NOTES.map(function (n) { return setTimeout(function () { showMessage(n[1], 'info'); }, n[0]); });
     fetch(form.getAttribute('data-api'), {
       method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
     })
@@ -92,7 +100,7 @@
         render(data, payload.by);
       })
       .catch(function () { showMessage('Không kết nối được. Kiểm tra mạng rồi thử lại.', 'warn', true); })
-      .then(function () { busy = false; btn.removeAttribute('aria-disabled'); btn.textContent = 'Xem điểm'; });
+      .then(function () { timers.forEach(clearTimeout); busy = false; btn.removeAttribute('aria-disabled'); btn.textContent = 'Xem điểm'; });
   }
 
   // ---------- vẽ kết quả ----------
