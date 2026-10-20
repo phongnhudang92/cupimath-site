@@ -1,5 +1,5 @@
-// Ô tra cứu điểm thi ở /tra-cuu-diem-thi/: gửi số điện thoại hoặc họ tên + ngày sinh tới Edge Function
-// "score-lookup" (supabase/functions/score-lookup), vẽ kết quả kèm lời chúc mừng và lời mời học trên web app.
+// Ô tra cứu điểm thi ở /tra-cuu-diem-thi/: gửi số điện thoại hoặc họ tên + ngày sinh tới dịch vụ
+// "cupi-score-lookup" trên Cloud Run (workers/score-lookup), vẽ kết quả kèm lời chúc mừng và lời mời học trên web app.
 // Dữ liệu trả về chỉ gắn bằng textContent, không dùng innerHTML.
 (function () {
   var form = document.getElementById('lookup-form');
@@ -11,13 +11,13 @@
   var SCROLL = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
   var COOLDOWN_MS = 3000;   // chặn bấm liên tục: chờ giữa hai lần tra
   var REUSE_MS = 120000;    // tra lại đúng thông tin trong 2 phút thì dùng lại kết quả (bằng bộ đệm của server)
-  // Chờ lâu thì báo dần cho phụ huynh: trang gốc ngày công bố điểm có lúc hơn 2 phút mới trả lời.
+  // Chờ lâu thì báo dần cho phụ huynh: trang gốc ngày công bố điểm có lúc vài phút mới trả lời.
   var WAIT_NOTES = [
     [5000, 'Trang tra cứu của ban tổ chức đang có nhiều người truy cập nên phản hồi chậm. Bố mẹ vui lòng đợi thêm một chút nhé…'],
-    [30000, 'Kết quả có thể mất 2–3 phút mới về. Cú Pi Math lấy điểm trực tiếp từ trang tra cứu của ban tổ chức, '
+    [30000, 'Kết quả có thể mất vài phút mới về. Cú Pi Math lấy điểm trực tiếp từ trang tra cứu của ban tổ chức, '
       + 'nên khi trang này quá tải thì cần chờ lâu hơn. Bố mẹ vui lòng giữ nguyên trang, không cần tải lại nhé…']
   ];
-  // Mọi lỗi (trang gốc quá tải, mất mạng, Supabase cắt request…) → tự gọi lại sau khoảng nghỉ cho tới khi có kết quả,
+  // Mọi lỗi (trang gốc quá tải, mất mạng, kết nối bị cắt…) → tự gọi lại sau khoảng nghỉ cho tới khi có kết quả,
   // trừ hết lượt trong ngày và thông tin sai (thử lại cũng vô ích). Nghỉ giữa các lần để không dội thêm tải cho trang gốc.
   var STOP_ERRORS = { CUPI_QUOTA: true, CUPI_BAD_REQUEST: true };
   var RETRY_MS = 15000;
