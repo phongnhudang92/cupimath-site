@@ -612,6 +612,15 @@ figure.phone { margin: 0; }
 .lookup-msg { margin: 0; padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }
 .lookup-msg-warn { border-color: color-mix(in srgb, var(--orange) 45%, var(--line)); background: var(--orange-soft); }
 .lookup-msg-info { color: var(--ink-2); }
+.lookup-waiting { display: grid; gap: 10px; }
+.lookup-waiting p { margin: 0; }
+.lookup-stop {
+  justify-self: start; font: inherit; font-size: var(--text-sm); font-weight: 700; color: var(--ink-2);
+  background: transparent; border: 1.5px solid var(--line); border-radius: 999px; padding: 4px 12px; cursor: pointer;
+  transition: border-color var(--duration-fast), color var(--duration-fast);
+}
+.lookup-stop:hover { border-color: var(--ink-3); color: var(--ink); }
+.lookup-stop:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .prose .lookup-result-title { margin: 0 0 12px; display: block; }
 .lookup-result-title:focus { outline: none; }
 .lookup-cards { display: grid; gap: 14px; }

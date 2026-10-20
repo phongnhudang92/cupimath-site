@@ -17,8 +17,12 @@
     [30000, 'Kết quả có thể mất 1–2 phút mới về. Cú Pi Math lấy điểm trực tiếp từ trang tra cứu của ban tổ chức, '
       + 'nên khi trang này quá tải thì cần chờ lâu hơn. Bố mẹ vui lòng giữ nguyên trang, không cần tải lại nhé…']
   ];
+  // Lỗi tạm thời (trang gốc quá tải, mất mạng, tra hơi nhanh) → tự gọi lại sau khoảng nghỉ cho tới khi có kết quả.
+  // Nghỉ giữa các lần để không dội thêm tải cho trang gốc.
+  var RETRY_MS = { CUPI_SERVER: 15000, NETWORK: 15000, CUPI_RATE: 60000 };
   var busy = false;
   var last = { key: '', data: null, at: 0 };
+  var baseTitle = document.title;
 
   var ERRORS = {
     CUPI_RATE: 'Bạn tra hơi nhanh. Đợi khoảng 1 phút rồi thử lại nhé.',
@@ -84,24 +88,76 @@
     showMessage(ERRORS[data.error] || ERRORS.CUPI_SERVER, 'warn', true);
   }
 
+  function waitedText(started) {
+    var min = Math.floor((Date.now() - started) / 60000);
+    return min < 1 ? 'chưa tới 1 phút' : 'khoảng ' + min + ' phút';
+  }
+
+  function retryText(attempt, started, pause, error) {
+    var why = error === 'NETWORK' ? 'Mạng đang chập chờn nên chưa gửi được yêu cầu.'
+      : 'Trang tra cứu của ban tổ chức đang quá tải nên chưa trả kết quả.';
+    return why + ' Cú Pi đang tự thử lại cho bố mẹ (lần '
+      + attempt + ', đã chờ ' + waitedText(started) + (pause ? ', thử tiếp sau ' + Math.round(pause / 1000) + ' giây' : '')
+      + '). Bố mẹ cứ để nguyên trang này, có kết quả sẽ hiện ngay ạ.';
+  }
+
   // Giữ nút bấm được focus (aria-disabled thay vì disabled) để người dùng bàn phím không mất vị trí.
   function lookup(payload, key) {
+    var started = Date.now();
+    var attempt = 0;
+    var timers = [];
+    var ctrl = null;
+    var stopped = false;
     busy = true;
     btn.setAttribute('aria-disabled', 'true');
     btn.textContent = 'Đang tra cứu…';
-    showMessage('Đang hỏi trang tra cứu của ban tổ chức…', 'info');
-    var timers = WAIT_NOTES.map(function (n) { return setTimeout(function () { showMessage(n[1], 'info'); }, n[0]); });
-    fetch(form.getAttribute('data-api'), {
-      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload)
-    })
-      .then(function (res) { return res.json().catch(function () { return { error: 'CUPI_SERVER' }; }); })
-      .then(function (data) {
-        last = { key: data.status ? key : '', data: data.status ? data : null, at: Date.now() };
-        render(data, payload.by);
+
+    function clear() { timers.forEach(clearTimeout); timers = []; }
+    function finish() { clear(); busy = false; btn.removeAttribute('aria-disabled'); btn.textContent = 'Xem điểm'; }
+    function stop() {
+      stopped = true;
+      if (ctrl) ctrl.abort();
+      finish();
+      showMessage('Đã dừng tra cứu. Bố mẹ bấm Xem điểm để tra lại khi cần nhé.', 'info', true);
+    }
+    function wait(text) { showWaiting(text, stop); }
+
+    function tryOnce() {
+      attempt += 1;
+      if (attempt === 1) {
+        wait('Đang hỏi trang tra cứu của ban tổ chức…');
+        timers = WAIT_NOTES.map(function (n) { return setTimeout(function () { wait(n[1]); }, n[0]); });
+      } else {
+        wait(retryText(attempt, started));
+      }
+      ctrl = window.AbortController ? new AbortController() : null;
+      fetch(form.getAttribute('data-api'), {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
+        signal: ctrl ? ctrl.signal : undefined
       })
-      .catch(function () { showMessage('Không kết nối được. Kiểm tra mạng rồi thử lại.', 'warn', true); })
-      .then(function () { timers.forEach(clearTimeout); busy = false; btn.removeAttribute('aria-disabled'); btn.textContent = 'Xem điểm'; });
+        .then(function (res) { return res.json().catch(function () { return { error: 'CUPI_SERVER' }; }); },
+              function () { return { error: 'NETWORK' }; })
+        .then(function (data) {
+          if (stopped) return;
+          clear();
+          var pause = data.status ? 0 : RETRY_MS[data.error];
+          if (pause) {
+            wait(retryText(attempt + 1, started, pause, data.error));
+            timers.push(setTimeout(tryOnce, pause));
+            return;
+          }
+          finish();
+          last = { key: data.status ? key : '', data: data.status ? data : null, at: Date.now() };
+          render(data, payload.by);
+          if (data.status && document.hidden) document.title = '✓ Đã có kết quả · ' + baseTitle;
+        });
+    }
+    tryOnce();
   }
+
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) document.title = baseTitle;
+  });
 
   // ---------- vẽ kết quả ----------
   function el(tag, cls, text) {
@@ -115,6 +171,16 @@
     var msg = el('p', 'lookup-msg lookup-msg-' + kind, text);
     out.replaceChildren(msg);
     if (focus) focusOn(msg);
+  }
+
+  // Thông báo đang chờ kèm nút Dừng nhỏ.
+  function showWaiting(text, onStop) {
+    var box = el('div', 'lookup-msg lookup-msg-info lookup-waiting');
+    var stopBtn = el('button', 'lookup-stop', 'Dừng tra cứu');
+    stopBtn.type = 'button';
+    stopBtn.addEventListener('click', onStop);
+    box.append(el('p', null, text), stopBtn);
+    out.replaceChildren(box);
   }
 
   function focusOn(node) {
