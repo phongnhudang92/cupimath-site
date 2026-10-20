@@ -17,9 +17,11 @@
     [30000, 'Kết quả có thể mất 1–2 phút mới về. Cú Pi Math lấy điểm trực tiếp từ trang tra cứu của ban tổ chức, '
       + 'nên khi trang này quá tải thì cần chờ lâu hơn. Bố mẹ vui lòng giữ nguyên trang, không cần tải lại nhé…']
   ];
-  // Lỗi tạm thời (trang gốc quá tải, mất mạng, tra hơi nhanh) → tự gọi lại sau khoảng nghỉ cho tới khi có kết quả.
-  // Nghỉ giữa các lần để không dội thêm tải cho trang gốc.
-  var RETRY_MS = { CUPI_SERVER: 15000, NETWORK: 15000, CUPI_RATE: 60000 };
+  // Mọi lỗi (trang gốc quá tải, mất mạng, Supabase cắt request…) → tự gọi lại sau khoảng nghỉ cho tới khi có kết quả,
+  // trừ hết lượt trong ngày và thông tin sai (thử lại cũng vô ích). Nghỉ giữa các lần để không dội thêm tải cho trang gốc.
+  var STOP_ERRORS = { CUPI_QUOTA: true, CUPI_BAD_REQUEST: true };
+  var RETRY_MS = 15000;
+  var RATE_RETRY_MS = 60000;
   var busy = false;
   var last = { key: '', data: null, at: 0 };
   var baseTitle = document.title;
@@ -88,6 +90,13 @@
     showMessage(ERRORS[data.error] || ERRORS.CUPI_SERVER, 'warn', true);
   }
 
+  // 0 = dừng (đã có kết quả, hết lượt, sai thông tin); còn lại là số ms nghỉ trước khi thử lại.
+  function retryPause(data) {
+    if (data.status || STOP_ERRORS[data.error]) return 0;
+    if (data.error === 'CUPI_RATE') return RATE_RETRY_MS;
+    return RETRY_MS;
+  }
+
   function waitedText(started) {
     var min = Math.floor((Date.now() - started) / 60000);
     return min < 1 ? 'chưa tới 1 phút' : 'khoảng ' + min + ' phút';
@@ -140,7 +149,7 @@
         .then(function (data) {
           if (stopped) return;
           clear();
-          var pause = data.status ? 0 : RETRY_MS[data.error];
+          var pause = retryPause(data);
           if (pause) {
             wait(retryText(attempt + 1, started, pause, data.error));
             timers.push(setTimeout(tryOnce, pause));
