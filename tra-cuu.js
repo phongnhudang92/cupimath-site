@@ -11,10 +11,10 @@
   var SCROLL = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
   var COOLDOWN_MS = 3000;   // chặn bấm liên tục: chờ giữa hai lần tra
   var REUSE_MS = 120000;    // tra lại đúng thông tin trong 2 phút thì dùng lại kết quả (bằng bộ đệm của server)
-  // Chờ lâu thì báo dần cho phụ huynh: trang gốc ngày công bố điểm có lúc gần 2 phút mới trả lời.
+  // Chờ lâu thì báo dần cho phụ huynh: trang gốc ngày công bố điểm có lúc hơn 2 phút mới trả lời.
   var WAIT_NOTES = [
     [5000, 'Trang tra cứu của ban tổ chức đang có nhiều người truy cập nên phản hồi chậm. Bố mẹ vui lòng đợi thêm một chút nhé…'],
-    [30000, 'Kết quả có thể mất 1–2 phút mới về. Cú Pi Math lấy điểm trực tiếp từ trang tra cứu của ban tổ chức, '
+    [30000, 'Kết quả có thể mất 2–3 phút mới về. Cú Pi Math lấy điểm trực tiếp từ trang tra cứu của ban tổ chức, '
       + 'nên khi trang này quá tải thì cần chờ lâu hơn. Bố mẹ vui lòng giữ nguyên trang, không cần tải lại nhé…']
   ];
   // Mọi lỗi (trang gốc quá tải, mất mạng, Supabase cắt request…) → tự gọi lại sau khoảng nghỉ cho tới khi có kết quả,
