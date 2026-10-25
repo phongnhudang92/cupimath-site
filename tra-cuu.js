@@ -1,4 +1,4 @@
-// Ô tra cứu điểm thi ở /tra-cuu-diem-thi/: gửi số điện thoại hoặc họ tên + ngày sinh tới dịch vụ
+// Ô tra cứu điểm thi ở /tra-cuu-diem-thi/ và các trang con theo cuộc thi: gửi số điện thoại hoặc họ tên + ngày sinh tới dịch vụ
 // "cupi-score-lookup" trên Cloud Run (workers/score-lookup), vẽ kết quả kèm lời chúc mừng và lời mời học trên web app.
 // Dữ liệu trả về chỉ gắn bằng textContent, không dùng innerHTML.
 (function () {
@@ -6,7 +6,7 @@
   var out = document.getElementById('lookup-result');
   if (!form || !out) return;
   var btn = form.querySelector('.lookup-submit');
-  var GREAT_SCORE = 80;   // mốc huy chương Vàng theo thang quốc tế
+  var GREAT_RATIO = 0.8;   // từ 80% điểm tối đa: mốc huy chương Vàng thang quốc tế TIMO
   var NOT_PASSED = /không|chưa|trượt/i;   // mục Giải ghi "Không đạt"… thì động viên, không chúc mừng
   var SCROLL = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
   var COOLDOWN_MS = 3000;   // chặn bấm liên tục: chờ giữa hai lần tra
@@ -23,6 +23,7 @@
   var RETRY_MS = 15000;
   var RATE_RETRY_MS = 60000;
   var busy = false;
+  var exam = null;   // kỳ thi của lượt tra đang hiện: lời mời, lời nhắn theo cuộc thi
   var last = { key: '', data: null, at: 0 };
   var baseTitle = document.title;
 
@@ -40,7 +41,16 @@
     form.querySelectorAll('[data-by]').forEach(function (el) { el.hidden = el.getAttribute('data-by') !== by; });
   }
   form.querySelectorAll('input[name=by]').forEach(function (r) { r.addEventListener('change', syncFields); });
-  syncFields();
+  // Kỳ thi có data-phone="0" (SEAMO) chỉ tra theo họ tên → ẩn lựa chọn số điện thoại.
+  function syncExam() {
+    var phoneOk = selectedExam().getAttribute('data-phone') !== '0';
+    form.querySelector('[data-phone-only]').hidden = !phoneOk;
+    if (!phoneOk) form.querySelector('input[name=by][value=name]').checked = true;
+    syncFields();
+  }
+  function selectedExam() { return form.exam.options[form.exam.selectedIndex]; }
+  form.exam.addEventListener('change', syncExam);
+  syncExam();
 
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
@@ -48,6 +58,7 @@
     form.querySelectorAll('[aria-invalid]').forEach(function (i) { i.removeAttribute('aria-invalid'); });
     var by = form.querySelector('input[name=by]:checked').value;
     var payload = { exam: form.exam.value, by: by };
+    exam = { key: form.exam.value, label: selectedExam().textContent, phone: selectedExam().getAttribute('data-phone') !== '0' };
     var bad = by === 'phone' ? fillPhone(payload) : fillName(payload);
     if (!bad) return submit(payload);
     bad.input.setAttribute('aria-invalid', 'true');
@@ -217,7 +228,7 @@
     var s = c.score ? splitScore(c.score) : null;
     if (notPassed(c)) return who + ' đã cố gắng hết mình rồi. Mỗi kỳ thi là một bài học, lần sau mình làm tốt hơn nhé!';
     if (c.award) return 'Chúc mừng ' + who + ' đạt kết quả: ' + c.award + '! Cả nhà tự hào lắm đó.';
-    if (s && s.num >= GREAT_SCORE) return 'Chúc mừng ' + who + ' đạt ' + s.value + ' điểm, một kết quả thật xuất sắc!';
+    if (s && s.num >= GREAT_RATIO * Number(s.max)) return 'Chúc mừng ' + who + ' đạt ' + s.value + ' điểm, một kết quả thật xuất sắc!';
     if (s) return 'Chúc mừng ' + who + ' đã hoàn thành bài thi với ' + s.value + ' điểm. Mỗi kỳ thi là một bước tiến!';
     return 'Ban tổ chức chưa cập nhật điểm của ' + who + '. Bố mẹ quay lại sau vài giờ nhé.';
   }
@@ -226,7 +237,7 @@
   function nudge(c) {
     var who = callName(c.name);
     var text = notPassed(c) ? 'Cùng Cú Pi ôn lại cho ' + who + ' để lần sau tốt hơn'
-      : c.score ? 'Luyện đề vòng quốc gia cho ' + who
+      : c.score ? (isTimo() ? 'Luyện đề vòng quốc gia cho ' : 'Luyện đề vòng tiếp theo cho ') + who
       : 'Cho ' + who + ' luyện đề trong lúc chờ điểm';
     var a = el('a', 'lookup-nudge', text);
     a.href = '/app/';
@@ -242,7 +253,8 @@
   function card(c) {
     var art = el('article', 'lookup-card' + (c.score ? ' has-score' : ''));
     var head = el('header', 'lookup-card-head');
-    head.append(el('h3', null, c.name), el('span', 'lookup-sbd', 'SBD ' + c.sbd));
+    head.append(el('h3', null, c.name));
+    if (c.sbd) head.append(el('span', 'lookup-sbd', 'SBD ' + c.sbd));   // SEAMO có thể không trả số báo danh
     var score = el('div', 'lookup-score');
     if (c.score) {
       var s = splitScore(c.score);
@@ -260,13 +272,19 @@
     return art;
   }
 
+  function isTimo() { return /^timo-/.test(exam.key); }
+
   function invite(hasScore) {
     var box = el('aside', 'cta-box lookup-cta');
     var text = el('div');
+    var round = isTimo() ? 'vòng quốc gia' : 'vòng tiếp theo';
     text.append(
-      el('h2', null, hasScore ? 'Tiếp đà cho vòng quốc gia' : 'Trong lúc chờ điểm, ôn trước vòng quốc gia'),
-      el('p', null, 'Vòng quốc gia TIMO thi đề tiếng Anh và chỉ ghi đáp số. Trên Cú Pi Math, con luyện đề thi thử vòng quốc gia '
-        + 'đúng cấu trúc, có chú thích tiếng Việt và lời giải từng câu.'),
+      el('h2', null, hasScore ? 'Tiếp đà cho ' + round : 'Trong lúc chờ điểm, ôn trước ' + round),
+      el('p', null, isTimo()
+        ? 'Vòng quốc gia TIMO thi đề tiếng Anh và chỉ ghi đáp số. Trên Cú Pi Math, con luyện đề thi thử vòng quốc gia '
+          + 'đúng cấu trúc, có chú thích tiếng Việt và lời giải từng câu.'
+        : 'Trên Cú Pi Math, con luyện đề thi thử ' + exam.label.replace(/\s*\d{4}(-\d{4})?.*$/, '')
+          + ' và nhiều cuộc thi Toán quốc tế khác đúng cấu trúc, chấm điểm và có lời giải từng câu.'),
       el('p', null, 'Muốn con học toán tư duy đều đặn? Cú Pi có bài giảng từng dạng toán từ mầm non đến lớp 9, '
         + 'bố mẹ theo dõi được tiến độ của con.'));
     var a = el('a', 'btn', 'Tạo tài khoản học cho con');
@@ -289,7 +307,8 @@
     var tips = by === 'phone'
       ? 'Không tìm thấy thí sinh với số điện thoại này. Nếu con thi qua trường hoặc trung tâm, số đăng ký có thể là số của giáo viên. '
         + 'Bạn thử tra theo họ tên và ngày sinh nhé.'
-      : 'Không tìm thấy thí sinh. Kiểm tra họ tên có đủ dấu và ngày sinh dạng ngày/tháng/năm, hoặc thử tra theo số điện thoại đăng ký.';
+      : 'Không tìm thấy thí sinh. Kiểm tra họ tên có đủ dấu và ngày sinh dạng ngày/tháng/năm'
+        + (exam.phone ? ', hoặc thử tra theo số điện thoại đăng ký.' : ', đúng như lúc đăng ký thi.');
     showMessage(tips, 'warn', true);
   }
 })();

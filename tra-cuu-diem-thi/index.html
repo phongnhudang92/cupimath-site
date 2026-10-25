@@ -67,7 +67,7 @@
    "headline": "Tra cứu điểm thi TIMO 2026-2027: xem kết quả vòng loại",
    "description": "Tra cứu điểm thi TIMO 2026-2027 nhanh bằng số điện thoại hoặc họ tên và ngày sinh: xem điểm, giải, điểm chuẩn vào vòng quốc gia và cách ôn tiếp.",
    "inLanguage": "vi",
-   "dateModified": "2026-10-20",
+   "dateModified": "2026-10-26",
    "datePublished": "2026-10-02",
    "mainEntityOfPage": "https://cupimath.com/tra-cuu-diem-thi/",
    "image": "https://cupimath.com/img/og-de-thi.png?v=3",
@@ -154,7 +154,7 @@
 </script>
 <script src="/site-config.js" defer></script>
 <script src="/site.js" defer></script>
-<script src="/tra-cuu.js?v=10" defer></script>
+<script src="/tra-cuu.js?v=11" defer></script>
 <!-- Cloudflare Web Analytics (không cookie) -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9c95a7cb9b64460fb7d4b5045077dded"}'></script>
 </head>
@@ -184,8 +184,8 @@
     <nav class="crumbs" aria-label="Đường dẫn"><ol><li><a href="/">Trang chủ</a></li><li><span aria-current="page">Tra cứu điểm thi</span></li></ol></nav>
     <span class="kicker">Tra cứu điểm thi</span>
     <h1>Tra cứu điểm thi TIMO 2026-2027: xem kết quả vòng loại</h1>
-    <p>Nhập số điện thoại đã đăng ký thi để xem điểm và giải TIMO của con. Kết quả lấy trực tiếp từ trang tra cứu của đơn vị tổ chức tại Việt Nam, sẽ có thêm các cuộc thi khác.</p>
-    <div class="page-meta"><span>Cập nhật: 20/10/2026</span><span>Biên soạn: đội ngũ Cú Pi Math</span></div>
+    <p>Nhập số điện thoại đã đăng ký thi để xem điểm và giải TIMO của con. Kết quả lấy trực tiếp từ trang tra cứu của đơn vị tổ chức tại Việt Nam; tra được cả SEAMO, Big Bay Bei, FMO, HKIMO, PIMSO, IMEC.</p>
+    <div class="page-meta"><span>Cập nhật: 26/10/2026</span><span>Biên soạn: đội ngũ Cú Pi Math</span></div>
   </div>
 </section>
 
@@ -196,11 +196,11 @@
     <h2 id="lookup-title">Tra cứu điểm thi</h2>
     <div class="lookup-field">
       <label for="lk-exam">Kỳ thi</label>
-      <select id="lk-exam" name="exam"><option value="timo-2026-2027">TIMO 2026-2027</option></select>
+      <select id="lk-exam" name="exam"><option value="timo-2026-2027" selected>TIMO 2026-2027</option><option value="seamo-2026" data-phone="0">SEAMO 2026</option><option value="bbb-2026-2027">Big Bay Bei 2026-2027</option><option value="fmo-2026-2027">FMO 2026-2027</option><option value="hkimo-2026">HKIMO 2026</option><option value="hkimo-2026-vqt">HKIMO 2026 vòng quốc tế</option><option value="pimso-2025-2026">PIMSO 2025-2026</option><option value="imec-2025-2026">IMEC 2025-2026</option></select>
     </div>
     <fieldset class="lookup-by">
       <legend>Tra theo</legend>
-      <label><input type="radio" name="by" value="phone" checked> Số điện thoại</label>
+      <label data-phone-only><input type="radio" name="by" value="phone" checked> Số điện thoại</label>
       <label><input type="radio" name="by" value="name"> Họ tên và ngày sinh</label>
     </fieldset>
     <div class="lookup-field" data-by="phone">
@@ -253,6 +253,8 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </aside>
 
+<h2>Tra điểm các cuộc thi khác</h2>
+<ul><li><a href="/tra-cuu-diem-thi/seamo/">Tra cứu điểm thi SEAMO</a></li><li><a href="/tra-cuu-diem-thi/bbb/">Tra cứu điểm thi Big Bay Bei (BBB)</a></li><li><a href="/tra-cuu-diem-thi/fmo/">Tra cứu điểm thi FMO</a></li><li><a href="/tra-cuu-diem-thi/hkimo/">Tra cứu điểm thi HKIMO</a></li><li><a href="/tra-cuu-diem-thi/pimso/">Tra cứu điểm thi PIMSO</a></li><li><a href="/tra-cuu-diem-thi/imec/">Tra cứu điểm thi IMEC</a></li></ul>
 <p class="note">Cú Pi Math là sản phẩm độc lập, không liên kết với ban tổ chức TIMO hay Fermat Education. Kết quả hiển thị đúng như trang tra cứu của đơn vị tổ chức trả về; nếu có sai khác, kết quả do ban tổ chức công bố là chính thức.</p>
 
 <h2 id="hoi-dap">Câu hỏi thường gặp</h2>
