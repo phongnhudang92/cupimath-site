@@ -2,6 +2,14 @@
 // "cupi-score-lookup" trên Cloud Run (workers/score-lookup), vẽ kết quả kèm lời chúc mừng và lời mời học trên web app.
 // Dữ liệu trả về chỉ gắn bằng textContent, không dùng innerHTML.
 (function () {
+  // Thanh chọn cuộc thi cuộn ngang trên điện thoại: kéo chip trang đang xem vào giữa (không cuộn cả trang).
+  var navList = document.querySelector('.lookup-nav ul');
+  var navCurrent = navList && navList.querySelector('[aria-current]');
+  if (navCurrent) {
+    var gap = navCurrent.getBoundingClientRect().left - navList.getBoundingClientRect().left;
+    navList.scrollLeft += gap - (navList.clientWidth - navCurrent.offsetWidth) / 2;
+  }
+
   var form = document.getElementById('lookup-form');
   var out = document.getElementById('lookup-result');
   if (!form || !out) return;

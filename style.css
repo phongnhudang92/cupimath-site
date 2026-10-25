@@ -585,6 +585,21 @@ figure.phone { margin: 0; }
 
 /* ---------- Tra cứu điểm thi (/tra-cuu-diem-thi/) ---------- */
 .lookup { margin: 0 0 2.5em; display: grid; gap: 20px; }
+/* Thanh chọn cuộc thi đầu trang tra điểm: cuộn ngang trên điện thoại, trang đang xem tô đậm */
+.lookup-nav { margin: 0 0 16px; }
+.lookup-nav ul { list-style: none; margin: 0 -16px; padding: 2px 16px 8px; display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; scroll-padding-inline: 16px; scrollbar-width: none; }
+.lookup-nav ul::-webkit-scrollbar { display: none; }
+.prose .lookup-nav li { flex: none; margin: 0; scroll-snap-align: start; }
+.prose .lookup-nav a {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px;
+  border: 1.5px solid var(--line); background: var(--surface); color: var(--ink-2); font-weight: 700; font-size: var(--text-sm);
+  text-decoration: none; white-space: nowrap; transition: border-color var(--duration-fast), color var(--duration-fast), transform var(--duration-fast) var(--ease-out);
+}
+.prose .lookup-nav a:hover { border-color: var(--teal); color: var(--ink); }
+.prose .lookup-nav a:active { transform: scale(0.96); }
+.prose .lookup-nav a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.prose .lookup-nav a[aria-current="page"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+@media (prefers-reduced-motion: reduce) { .prose .lookup-nav a { transition: none; } .prose .lookup-nav a:active { transform: none; } }
 .lookup-form { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(20px, 3vw, 32px); box-shadow: var(--shadow-sm); display: grid; gap: 16px; overflow: hidden; }
 .lookup-form::before { content: ""; position: absolute; inset: 0 0 auto; height: 6px; background: linear-gradient(90deg, var(--teal) 0 60%, var(--orange) 60%); }
 .prose .lookup-form h2 { margin: 4px 0 0; display: block; }
@@ -602,6 +617,7 @@ figure.phone { margin: 0; }
 .lookup-by label { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1.5px solid var(--line); border-radius: 999px; cursor: pointer; font-weight: 500; transition: border-color var(--duration-fast), background var(--duration-fast); }
 .lookup-by label:has(input:checked) { border-color: var(--teal); background: var(--teal-soft); color: var(--ink); font-weight: 700; }
 .lookup-by input { accent-color: var(--teal); margin: 0; }
+.lookup-by label[hidden] { display: none; }
 .lookup-submit { justify-self: start; min-width: 160px; }
 .lookup-submit[aria-disabled="true"] { opacity: 0.7; cursor: progress; transform: none; }
 .lookup-field input[aria-invalid="true"] { border-color: var(--orange); }
