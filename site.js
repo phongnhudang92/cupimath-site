@@ -54,11 +54,12 @@
         }).catch(function () {});
       } catch (e) { /* trình duyệt cũ: bỏ qua, trang vẫn chạy bình thường */ }
     };
-    document.querySelectorAll('[data-track]').forEach(function (a) {
-      a.addEventListener('click', function () {
-        var href = a.getAttribute('href') || '';
-        send('site_cta_click', { where: a.getAttribute('data-track'), target: href.indexOf('app') === 0 ? 'app' : href.slice(0, 40) });
-      });
+    // bắt ở document: nút vẽ sau khi tải trang (thẻ kết quả tra điểm trong tra-cuu.js) cũng được đếm
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('[data-track]') : null;
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      send('site_cta_click', { where: a.getAttribute('data-track'), target: href.indexOf('app') === 0 ? 'app' : href.slice(0, 40) });
     });
     document.querySelectorAll('details').forEach(function (d) {
       d.addEventListener('toggle', function () {

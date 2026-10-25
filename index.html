@@ -28,7 +28,7 @@
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preload" href="fonts/be-vietnam-pro-800-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=13">
+<link rel="stylesheet" href="style.css?v=14">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -187,6 +187,7 @@
     <nav class="site-nav" aria-label="Điều hướng chính">
       <a href="#tinh-nang">Tính năng</a>
       <a href="#thi-thu">Thi thử</a>
+      <a href="#dau-truong">Đấu trường</a>
       <a href="#bang-xep-hang">Xếp hạng</a>
       <a href="#phu-huynh">Phụ huynh</a>
       <a href="tra-cuu-diem-thi/">Tra cứu điểm</a>
@@ -219,10 +220,10 @@
 
     <div class="hero-visual" aria-label="Ảnh chụp màn hình app Cú Pi Math">
       <figure class="phone phone-back">
-        <img src="img/grades.webp" alt="Ô chọn lớp trong app: lớp 1 đến lớp 9, mỗi lớp ghi số dạng toán đã học" width="600" height="1299" fetchpriority="high">
+        <img src="img/grades.webp?v=2" alt="Ô chọn lớp trong app: mầm non và lớp 1 đến lớp 9, phía sau là trang Lớp 3 với 14 trên 58 dạng đã học" width="600" height="1299" fetchpriority="high">
       </figure>
       <figure class="phone phone-front">
-        <img src="img/result.webp" alt="Kết quả thi thử Kangaroo: 22 trên 24 câu đúng, 111,25 trên 120 điểm, mức High Distinction ước tính" width="600" height="1299" fetchpriority="high">
+        <img src="img/result.webp?v=2" alt="Kết quả thi thử Kangaroo lớp 3: 111,25 trên 120 điểm, 22 trên 24 câu đúng, mức High Distinction ước tính, thưởng 19 sao và một sticker mới" width="600" height="1299" fetchpriority="high">
       </figure>
       <div class="chip-float chip-award" aria-hidden="true">
         <span class="ico">★</span><span><b>High Distinction</b><small>Kangaroo · ước tính</small></span>
@@ -349,7 +350,7 @@
     <article class="feature reveal">
       <div class="feature-media tint-teal">
         <figure class="phone tilt-l">
-          <img src="img/roadmap.webp" alt="Màn lớp 8: chọn cuộc thi TIMO và vòng thi (25 câu, 60 phút, song ngữ Việt–Anh), bên dưới là lộ trình học từng dạng" width="600" height="1299" loading="lazy" decoding="async">
+          <img src="img/roadmap.webp?v=2" alt="Trang Lớp 3: 14 trên 58 dạng đã học, thẻ Thi thử như thật, nút Học tiếp, Ôn câu sai (6 câu tới lịch), Ôn tất cả bài đã học và mảng Tư duy logic 14/19" width="600" height="1299" loading="lazy" decoding="async">
         </figure>
       </div>
       <div class="feature-copy">
@@ -366,15 +367,16 @@
     <article class="feature is-flipped reveal">
       <div class="feature-media tint-blue">
         <figure class="phone tilt-r">
-          <img src="img/lesson.webp" alt="Thẻ ví dụ lớp 1 Hạt thứ mấy là hạt màu gì: chuỗi hạt trắng, đen, đỏ lặp lại, lời giải có nhãn Đề cho, Ý tưởng, Bước 1–3, Vậy, Mẹo" width="600" height="1299" loading="lazy" decoding="async">
+          <img src="img/lesson.webp?v=2" alt="Thẻ ví dụ lớp 3 Hình thứ mấy trong dãy: nhãn Gặp đề thế này, Ý tưởng, Bước 1, Bước 2 hiện dần cùng hình que tăm, hình 1 có 3 que, mỗi hình thêm 2 que, hình 8 cần 14 que" width="600" height="1299" loading="lazy" decoding="async">
         </figure>
       </div>
       <div class="feature-copy">
         <span class="step" aria-hidden="true">02</span>
         <h3>Bài giảng có ví dụ giải mẫu từng bước</h3>
-        <p>Mỗi dạng toán mở đầu bằng một đoạn giải thích ngắn, sau đó là vài ví dụ giải mẫu. Lời giải chia thành từng bước, mỗi bước một nhãn màu, nên con nhìn là biết mình đang ở đâu: <span class="pill">Đề cho</span> <span class="pill">Ý tưởng</span> <span class="pill">Bước 1</span> <span class="pill">Vậy</span> <span class="pill pill-warn">Mẹo</span></p>
+        <p>Mỗi dạng toán mở đầu bằng một đoạn giải thích ngắn, sau đó là vài ví dụ giải mẫu. Lời giải chia thành từng bước, mỗi bước một nhãn màu, nên con nhìn là biết mình đang ở đâu: <span class="pill">Nhận dạng</span> <span class="pill">Ý tưởng</span> <span class="pill">Bước 1</span> <span class="pill">Vậy</span> <span class="pill pill-warn">Mẹo</span></p>
         <ul class="ticks">
           <li><span><b>Vừa sức từng tuổi</b>: bé mầm non học qua tranh và biểu tượng; lớp 1–2 đi từ đề bài đến đáp số qua vài bước ngắn; từ lớp 3 có thêm bước nhận dạng bài và mẹo làm nhanh.</span></li>
+          <li><span><b>Mỗi màn một thẻ, mỗi lần bấm Tiếp hiện thêm một bước</b>: con kịp tự nghĩ trước khi xem bước sau, hình minh hoạ cũng vẽ dần theo lời giải.</span></li>
           <li><span><b>Có hình minh hoạ</b> ngay trong bài, kèm từ tiếng Anh như square (hình vuông), perimeter (chu vi) để con quen đề thi tiếng Anh.</span></li>
         </ul>
       </div>
@@ -383,7 +385,7 @@
     <article class="feature reveal">
       <div class="feature-media tint-orange">
         <figure class="phone tilt-l">
-          <img src="img/practice.webp" alt="Câu luyện tập lớp 1 biểu đồ kí hiệu song ngữ Anh–Việt: mỗi hình tròn ứng với 2 con, hỏi có bao nhiêu con thỏ; Bi chọn đúng 8, Cú Pi khen" width="600" height="1299" loading="lazy" decoding="async">
+          <img src="img/practice.webp?v=2" alt="Câu luyện tập lớp 3 song ngữ Anh–Việt về biểu đồ cột không ghi số: con chọn đúng, Cú Pi khen Chính xác, dải Đúng rồi nêu ý chính của cách giải và dạng toán liên quan" width="600" height="1299" loading="lazy" decoding="async">
         </figure>
       </div>
       <div class="feature-copy">
@@ -392,7 +394,7 @@
         <p>Hơn 35.000 câu hỏi song ngữ Việt – Anh. Làm xong mỗi câu, con thấy ngay đúng sai và lời giải đi đúng các bước của thẻ ví dụ. Học sao, giải vậy.</p>
         <ul class="ticks">
           <li><span><b>Luyện theo dạng và ôn tổng hợp</b>: trộn câu từ mọi dạng con đã học.</span></li>
-          <li><span><b>Xem lại câu sai</b> kèm lời giải, sửa đúng chỗ bị nhầm.</span></li>
+          <li><span><b>Sổ câu sai</b>: câu con làm sai được giữ lại và hẹn ngày ôn, giãn dần khi con làm đúng. Tới lịch, trang lớp hiện nút <b>Ôn câu sai</b>, mỗi lượt 5 câu.</span></li>
           <li><span><b>Báo lỗi câu này</b>: bố mẹ thấy câu chưa ổn, bấm một chạm là Cú Pi nhận được và sửa.</span></li>
         </ul>
       </div>
@@ -412,8 +414,8 @@
       <article class="tile tile-a reveal">
         <h3>Chọn cuộc thi, nhận đề đúng cấu trúc</h3>
         <p>Số câu, số phần, dạng câu, thời gian và ngôn ngữ theo đúng cuộc thi và vòng thi: loại, quốc gia, quốc tế. Lớp 6–9 có đề của hầu hết các cuộc thi, đổi đúng cấp độ theo lớp (vd. Kangaroo Cadet cho lớp 7–8).</p>
-        <figure class="phone is-dimmed">
-          <img src="img/contest-picker.webp" alt="Danh sách chọn cuộc thi: TIMO, HKIMO, FMO, Big Bay Bei, Kangaroo, ASMO, SEAMO, SASMO, AMO, kèm số câu và thời gian" width="600" height="1299" loading="lazy" decoding="async">
+        <figure class="phone">
+          <img src="img/contest-picker.webp?v=2" alt="Khung chọn cuộc thi và vòng thi: TIMO vòng loại, 25 câu, 60 phút, song ngữ Việt–Anh, tối đa 100 điểm, nút Bắt đầu thi TIMO" width="600" height="1299" loading="lazy" decoding="async">
         </figure>
       </article>
 
@@ -436,10 +438,10 @@
         <div class="tile-split">
           <div>
             <h3>Đề tiếng Anh có chú thích từ khoá</h3>
-            <p>Vòng quốc gia TIMO, HKIMO thi bằng tiếng Anh. Cú Pi chú thích nghĩa tiếng Việt ngay cạnh thuật ngữ — <b>sum (tổng)</b>, <b>consecutive (liên tiếp)</b> — để con không mất điểm vì không hiểu đề.</p>
+            <p>Vòng quốc gia TIMO, HKIMO thi bằng tiếng Anh. Cú Pi chú thích nghĩa tiếng Việt ngay cạnh thuật ngữ — <b>sum (tổng)</b>, <b>odd numbers (số lẻ)</b> — để con không mất điểm vì không hiểu đề.</p>
           </div>
           <figure class="phone is-short">
-            <img src="img/exam-glossary.webp" alt="Câu hỏi TIMO bằng tiếng Anh với chú thích tiếng Việt: The sum (tổng) of 10 consecutive (liên tiếp) whole numbers (số tự nhiên)" width="600" height="1299" loading="lazy" decoding="async">
+            <img src="img/exam-glossary.webp?v=2" alt="Câu hỏi TIMO bằng tiếng Anh với chú thích tiếng Việt: Find the sum (tổng) of all odd numbers (số lẻ) from 51 to 81, ô điền đáp số" width="600" height="1299" loading="lazy" decoding="async">
           </figure>
         </div>
       </article>
@@ -454,11 +456,11 @@
         <div class="tile-split">
           <div>
             <h3>Xem lại từng câu sau khi nộp bài</h3>
-            <p>Mỗi câu hiện đáp án của con, đáp án đúng và lời giải. Câu sai kèm gợi ý dạng toán cần ôn lại trong lộ trình — bố mẹ không phải tự tìm tài liệu chữa đề.</p>
+            <p>Mỗi câu hiện đáp án của con, đáp án đúng và lời giải. Câu sai kèm gợi ý dạng toán cần ôn lại trong lộ trình và tự vào Sổ câu sai để con ôn sau — bố mẹ không phải tự tìm tài liệu chữa đề.</p>
             <p class="tile-note">Mức giải trong app chỉ là ước tính để tham khảo, không thay cho kết quả chính thức.</p>
           </div>
           <figure class="phone">
-            <img src="img/review.webp" alt="Xem lại bài thi: câu sai hiện đáp án con chọn, đáp án đúng, lời giải và gợi ý ôn lại bài Toán có lời văn" width="600" height="1299" loading="lazy" decoding="async">
+            <img src="img/review.webp?v=2" alt="Xem lại bài Kangaroo: lưới 24 câu tô màu đúng, sai, bỏ trống; bên dưới là câu 2 con làm sai kèm đề song ngữ" width="600" height="1299" loading="lazy" decoding="async">
           </figure>
         </div>
       </article>
@@ -471,7 +473,7 @@
     <article class="feature is-flipped reveal">
       <div class="feature-media tint-orange">
         <figure class="phone tilt-r">
-          <img src="img/home.webp" alt="Màn hình chính: Cú Pi của bé, chuỗi ngày học, số bữa đã ăn và nhiệm vụ hôm nay của Cú Pi" width="600" height="1299" loading="lazy" decoding="async">
+          <img src="img/home.webp?v=2" alt="Màn hình chính: Cú Pi tên Bông trong tổ đã trang trí cành đào, hoa cúc, bướm; chuỗi 20 ngày học, 358 sao, 7 lượt quay may mắn và nhiệm vụ hôm nay" width="600" height="1299" loading="lazy" decoding="async">
         </figure>
       </div>
       <div class="feature-copy">
@@ -479,7 +481,7 @@
         <h3 id="motivate-title">Cú Pi — bạn đồng hành để con tự muốn học</h3>
         <p>Con đặt tên cho Cú Pi của mình. Học xong bài, Cú Pi được ăn và lớn dần; học đều mỗi ngày thì chuỗi ngày học dài thêm.</p>
         <ul class="ticks">
-          <li><span><b>Nhiệm vụ hằng ngày</b>: làm xong được quay vòng quay may mắn; chạm mốc chuỗi 3, 7, 14, 30 ngày… có lượt quay quà to hơn.</span></li>
+          <li><span><b>Nhiệm vụ hằng ngày</b>: làm xong được quay vòng quay may mắn. Chuỗi ngày học tính theo tháng: chạm mốc 3, 6, 9… ngày thì vòng quay có quà to hơn; lỡ một ngày, con dùng sao để bù.</span></li>
           <li><span><b>Sao Cú Pi và cửa hàng ổ</b>: con dùng sao mua đồ trang trí ổ cho Cú Pi.</span></li>
           <li><span><b>Bộ sưu tập sticker</b>: làm chủ dạng toán mới hoặc đạt mức giải trong đề thi thử thì nhận sticker; giải càng cao, sticker càng hiếm.</span></li>
         </ul>
@@ -493,7 +495,7 @@
     <article class="feature reveal">
       <div class="feature-media tint-blue">
         <figure class="phone tilt-l">
-          <img src="img/leaderboard.webp" alt="Bảng xếp hạng lớp 3, TIMO vòng loại tuần này: top 3 có cúp vàng, bạc, đồng; dòng của con (Minh An, hạng 5, 84/100) được tô nổi bật" width="600" height="1299" loading="lazy" decoding="async">
+          <img src="img/leaderboard.webp?v=2" alt="Bảng xếp hạng lớp 3, TIMO vòng loại tuần này: top 3 có cúp vàng, bạc, đồng; dòng của con (Minh An, hạng 5, 84/100) được tô nổi bật" width="600" height="1299" loading="lazy" decoding="async">
         </figure>
         <div class="chip-float board-chip">
           <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
@@ -515,12 +517,57 @@
   </div>
 </section>
 
+<section class="section" id="dau-truong" aria-labelledby="battle-title">
+  <div class="wrap">
+    <article class="feature is-flipped reveal">
+      <div class="feature-media tint-teal">
+        <figure class="phone tilt-r">
+          <img src="img/battle.webp" alt="Trận Đấu trường lớp 3, câu 2 trên 20: Cú Pi Hoàng Đế Pi của bé đối đầu Cú Pi của bạn, thanh máu, Ngôi sao hi vọng, đồng hồ 59 giây và câu hỏi biểu đồ cột" width="600" height="1299" loading="lazy" decoding="async">
+        </figure>
+        <div class="chip-float board-chip">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+          <span><b>Bố mẹ đặt giới hạn</b><small>Số trận, ngày và giờ được chơi</small></span>
+        </div>
+      </div>
+      <div class="feature-copy">
+        <span class="step" aria-hidden="true">VS</span>
+        <h3 id="battle-title">Đấu trường: giải toán cùng bạn, ai đúng nhanh thì Cú Pi ra chiêu</h3>
+        <p>Hai bạn cùng làm một câu toán. Ai trả lời đúng trước thì Cú Pi của mình tấn công; hết máu hoặc hết 20 câu thì phân thắng thua. Cú Pi thuộc 5 hệ Kim, Mộc, Thuỷ, Hoả, Thổ, chọn đúng hệ khắc đối thủ là có lợi thế.</p>
+        <ul class="ticks">
+          <li><span><b>Đấu với bạn hoặc với máy</b>: Cú Pi tìm bạn cùng lớp hoặc chênh tối đa 2 lớp; đấu máy có ba mức Tập sự, Thường, Cao thủ.</span></li>
+          <li><span><b>Chơi cũng là ôn bài</b>: câu hỏi lấy từ ngân hàng đề đúng lớp của con, có cả câu hình và biểu đồ.</span></li>
+          <li><span><b>Học trước, chơi sau</b>: Đấu trường mở khi con học xong 1 bài hoặc làm 1 đề thi thử trong ngày.</span></li>
+          <li><span><b>An toàn cho con</b>: trong trận chỉ có biểu cảm dựng sẵn, không có ô nhắn tin; bố mẹ chọn số trận mỗi ngày, ngày và khung giờ được chơi khi tạo hoặc sửa hồ sơ.</span></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section class="section section-alt" id="phu-huynh" aria-labelledby="parents-title">
   <div class="wrap">
     <header class="section-head reveal">
       <span class="kicker">Dành cho bố mẹ</span>
       <h2 id="parents-title">Yên tâm để con tự học.</h2>
     </header>
+
+    <article class="feature reveal">
+      <div class="feature-media tint-orange">
+        <figure class="phone tilt-l">
+          <img src="img/report.webp" alt="Báo cáo học tập của Minh An lớp 3 trong 7 ngày: Cú Pi nhận xét con học đều 7/7 ngày, điểm mạnh, dạng toán cần cố gắng thêm có nút Xem bài, gợi ý ôn 6 câu sai tới lịch" width="600" height="1299" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="feature-copy">
+        <span class="step" aria-hidden="true">A+</span>
+        <h3>Cú Pi nhận xét con như cô giáo</h3>
+        <p>Ở màn chọn hồ sơ, bấm <b>Nhận xét</b> để xem con học thế nào trong 7 hoặc 30 ngày: điểm mạnh để bố mẹ khen con, dạng toán con cần cố gắng thêm, và gợi ý nên ôn gì tiếp. Bên dưới là số ngày học, số câu đã làm và điểm thi thử.</p>
+        <ul class="ticks">
+          <li><span><b>Khen trước, góp ý sau</b>: lời nhận xét nhẹ nhàng, dạng nào cần ôn có nút <b>Xem bài</b> mở đúng bài giảng.</span></li>
+          <li><span><b>So với tuần trước</b>: con học nhiều ngày hơn hay ít hơn, đề thi thử đạt mức nào.</span></li>
+          <li><span><b>Nhắc Sổ câu sai</b>: còn bao nhiêu câu tới lịch ôn để con ôn lại đúng lúc.</span></li>
+        </ul>
+      </div>
+    </article>
     <div class="trust reveal">
       <div>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2c2.3.2 4.1 2 4.6 4.8"/></svg>
