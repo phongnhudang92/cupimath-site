@@ -668,3 +668,36 @@ figure.phone { margin: 0; }
 .lookup-cta p + p { margin-top: 8px; }
 @keyframes lookup-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .lookup-card { animation: none; } .lookup-nudge::after { transition: none; } }
+
+/* ---------- Mùa sự kiện (Halloween): site.js bỏ hidden trong khoảng ngày ---------- */
+.season-ribbon { background: #2a1f4a; color: #fff; }
+.season-ribbon .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding-block: 8px; }
+.season-ribbon img { width: 44px; height: auto; flex-shrink: 0; }
+.season-ribbon p { margin: 0; flex: 1 1 18em; font-size: var(--text-sm); line-height: 1.45; color: #e6defa; }
+.season-ribbon b { color: #ffb15c; }
+.season-ribbon .btn { --btn-bg: #ff8c2a; --btn-fg: #2a1600; --btn-edge: #b85c10; }
+.season-owl {
+  position: absolute; z-index: 3; left: -2%; top: 4%; width: clamp(92px, 11vw, 140px); height: auto;
+  filter: drop-shadow(0 8px 14px rgba(42, 31, 74, 0.28));
+  animation: season-bob 2.8s ease-in-out infinite alternate;
+}
+@keyframes season-bob { from { transform: translateY(0) rotate(-5deg); } to { transform: translateY(-10px) rotate(3deg); } }
+@media (prefers-reduced-motion: reduce) { .season-owl { animation: none; } }
+.season-bats {
+  position: fixed; left: 0; z-index: 60; pointer-events: none; display: flex; align-items: center; gap: 18px;
+  animation: bats-cross 7.5s linear forwards;
+}
+.season-bats.is-rtl { animation-name: bats-cross-rtl; }
+.season-bats svg { animation: bat-bob 1.3s ease-in-out infinite alternate; }
+.season-bats svg:nth-child(2) { width: 44px; height: 31px; animation-delay: -0.5s; transform: translateY(-24px); }
+.season-bats svg:nth-child(3) { width: 36px; height: 25px; animation-delay: -0.9s; }
+.season-bats .wing { fill: #4a3a7d; transform-origin: 30px 22px; animation: bat-flap 0.13s ease-in-out infinite alternate; }
+.season-bats .body { fill: #5b4694; }
+.season-bats .eye { fill: #fff; }
+.season-bats .pupil { fill: #1c1433; }
+.season-bats .cheek { fill: #ff9db5; opacity: 0.85; }
+.season-bats .smile { fill: none; stroke: #1c1433; stroke-width: 0.9; stroke-linecap: round; }
+@keyframes bats-cross { from { transform: translateX(-200px); } to { transform: translateX(calc(100vw + 40px)); } }
+@keyframes bats-cross-rtl { from { transform: translateX(calc(100vw + 40px)) scaleX(-1); } to { transform: translateX(-200px) scaleX(-1); } }
+@keyframes bat-bob { from { translate: 0 -10px; } to { translate: 0 10px; } }
+@keyframes bat-flap { from { transform: scaleY(1); } to { transform: scaleY(0.45); } }
