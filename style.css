@@ -298,6 +298,15 @@ figure.phone { margin: 0; }
   .feature { grid-template-columns: 1fr 1fr; }
   .feature.is-flipped .feature-media { order: 2; }
 }
+/* mobile: số + tiêu đề → ảnh → mô tả, để ảnh đi liền với mục của nó */
+@media (max-width: 899px) {
+  .feature { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .feature-copy { display: contents; }
+  .feature-copy .step { align-self: flex-start; }
+  .feature-media { order: 1; margin-top: 24px; }
+  .feature-copy > p, .feature-copy > ul { order: 2; }
+  .feature-copy > p { margin-top: 24px; }
+}
 .feature-media { position: relative; display: grid; place-items: center; padding: clamp(24px, 4vw, 48px) 0; }
 .feature-media::before { /* khối màu nền phía sau điện thoại */
   content: ""; position: absolute; inset: 0 6%; border-radius: var(--radius-lg); background: var(--tint, var(--teal-soft));
@@ -318,7 +327,8 @@ figure.phone { margin: 0; }
 .ticks b { font-weight: 700; }
 
 /* ---------- Video bài giảng ---------- */
-.video-frame { margin: 0; position: relative; z-index: 1; width: min(96%, 640px); } /* tràn nhẹ ra ngoài khối màu cho có chiều sâu */
+.media-video::before { inset: 0; } /* khối màu phủ cả cột, video và chú thích nằm gọn bên trong */
+.video-frame { margin: 0; position: relative; z-index: 1; width: calc(100% - 2 * clamp(14px, 4vw, 40px)); max-width: 640px; }
 .video-box {
   position: relative; z-index: 1; border-radius: var(--radius); overflow: hidden; background: var(--phone);
   border: 6px solid var(--phone); box-shadow: var(--shadow-lg); aspect-ratio: 16 / 9;
