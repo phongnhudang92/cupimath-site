@@ -20,6 +20,15 @@
   var calm = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   if (calm && document.querySelector('.season-ribbon:not([hidden])')) batsLater(9000);
 
+  // Video mẫu trên trang chủ: nút phát to giữa khung, ẩn khi video đã chạy (dùng thanh điều khiển của trình duyệt)
+  document.querySelectorAll('.video-box').forEach(function (box) {
+    var v = box.querySelector('video'), btn = box.querySelector('.video-play');
+    if (!v || !btn) return;
+    v.controls = false; // ẩn thanh điều khiển gốc tới khi phát, để nút Phát lớn không bị chồng
+    btn.addEventListener('click', function () { v.play(); });
+    v.addEventListener('play', function () { box.classList.add('is-playing'); v.controls = true; });
+  });
+
   firstTouch();
   track();
 

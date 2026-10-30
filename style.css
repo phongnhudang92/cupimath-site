@@ -317,6 +317,42 @@ figure.phone { margin: 0; }
 }
 .ticks b { font-weight: 700; }
 
+/* ---------- Video bài giảng ---------- */
+.video-feature { display: grid; gap: clamp(2rem, 1.5rem + 2.5vw, 4rem); align-items: center; }
+@media (min-width: 960px) {
+  .video-feature { grid-template-columns: 1.35fr 1fr; align-items: start; }
+  .video-feature .video-frame { position: sticky; top: 120px; } /* cột chữ dài hơn: video đứng yên cạnh chữ khi cuộn */
+}
+.video-frame { margin: 0; position: relative; padding: clamp(14px, 2.4vw, 28px); }
+.video-frame::before { /* khối màu nền sau màn hình, lệch nhẹ cho có chiều sâu */
+  content: ""; position: absolute; inset: 0; border-radius: var(--radius-lg); background: var(--teal-soft); transform: rotate(-1.5deg);
+}
+.video-box {
+  position: relative; z-index: 1; border-radius: var(--radius); overflow: hidden; background: var(--phone);
+  border: 6px solid var(--phone); box-shadow: var(--shadow-lg); aspect-ratio: 16 / 9;
+}
+.video-box video { display: block; width: 100%; height: 100%; object-fit: cover; background: var(--phone); }
+.video-play {
+  position: absolute; left: 50%; top: 50%; width: clamp(64px, 9vw, 92px); aspect-ratio: 1; translate: -50% -50%;
+  border: 0; border-radius: 50%; cursor: pointer; display: grid; place-items: center;
+  background: var(--orange); color: #fff; box-shadow: 0 6px 0 #b85c00, 0 18px 40px -8px rgb(0 0 0 / 0.45);
+  transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+.video-play svg { width: 44%; height: 44%; fill: currentColor; margin-left: 8%; }
+.video-play:hover { transform: scale(1.06); }
+.video-play:active { transform: translateY(4px); box-shadow: 0 2px 0 #b85c00, 0 10px 24px -8px rgb(0 0 0 / 0.45); }
+.video-play:focus-visible { outline: 3px solid var(--paper); outline-offset: 4px; }
+.video-box.is-playing .video-play { display: none; }
+.video-frame figcaption {
+  position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px;
+  margin-top: 14px; font-size: var(--text-sm); color: var(--ink-2);
+}
+.video-frame figcaption b { color: var(--ink); }
+.video-tag { background: var(--orange); color: var(--orange-ink); font-weight: 800; border-radius: 999px; padding: 2px 10px; }
+.video-copy h3 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem); letter-spacing: -0.025em; }
+.video-copy > p { font-size: var(--text-lead); color: var(--ink-2); margin: 14px 0 22px; }
+.video-copy .btn { margin-top: 28px; }
+
 /* ---------- Bento "Thi thử" ---------- */
 .bento { display: grid; gap: 16px; }
 @media (min-width: 900px) { .bento { grid-template-columns: repeat(6, 1fr); grid-auto-rows: minmax(0, auto); gap: 20px; } }
