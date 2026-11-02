@@ -228,6 +228,7 @@ Cú Pi Math là sản phẩm độc lập, không liên kết với ban tổ ch�
 - [Tra cứu điểm thi HKIMO 2026: vòng quốc gia và quốc tế](https://cupimath.com/tra-cuu-diem-thi/hkimo/): Tra cứu điểm thi HKIMO bằng số điện thoại hoặc họ tên và ngày sinh: xem điểm, giải và lịch vòng tiếp theo, lấy trực tiếp từ ban tổ chức.
 - [Tra cứu điểm thi PIMSO: xem điểm và giải](https://cupimath.com/tra-cuu-diem-thi/pimso/): Tra cứu điểm thi PIMSO bằng số điện thoại hoặc họ tên và ngày sinh: xem điểm, giải và lịch vòng tiếp theo, lấy trực tiếp từ ban tổ chức.
 - [Tra cứu điểm thi IMEC: xem điểm và giải](https://cupimath.com/tra-cuu-diem-thi/imec/): Tra cứu điểm thi IMEC bằng số điện thoại hoặc họ tên và ngày sinh: xem điểm, giải và lịch vòng tiếp theo, lấy trực tiếp từ ban tổ chức.
+- [Tra cứu điểm thi ASMO 2026: vòng khu vực và quốc gia](https://cupimath.com/tra-cuu-diem-thi/asmo/): Tra cứu điểm thi ASMO bằng họ tên và ngày sinh: xem điểm, giải và lịch vòng tiếp theo, lấy trực tiếp từ ban tổ chức.
 
 ## Sản phẩm
 
