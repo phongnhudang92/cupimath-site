@@ -235,8 +235,12 @@ Cú Pi Math là sản phẩm độc lập, không liên kết với ban tổ ch�
 - [Trang chủ](https://cupimath.com/): giới thiệu tính năng — lộ trình theo lớp, bài giảng có hình, luyện tập có lời giải, thi thử theo cấu trúc, bảng xếp hạng cùng lớp, sticker.
 - [Học trên web](https://cupimath.com/app/): ứng dụng học (phụ huynh tạo tài khoản, tạo hồ sơ cho con).
 - [Chính sách bảo mật](https://cupimath.com/privacy.html)
-- [Điều khoản sử dụng](https://cupimath.com/dieu-khoan.html): đơn vị vận hành (Hộ kinh doanh Phong Như Đăng), quyền và nghĩa vụ, khiếu nại.
+- [Điều khoản dịch vụ](https://cupimath.com/dieu-khoan.html): đơn vị vận hành (Hộ kinh doanh Phong Như Đăng), quyền và nghĩa vụ.
+- [Chính sách về giá](https://cupimath.com/chinh-sach-gia.html)
 - [Chính sách thanh toán, huỷ và hoàn tiền](https://cupimath.com/chinh-sach-thanh-toan.html)
+- [Điều kiện cung cấp dịch vụ](https://cupimath.com/dieu-kien-cung-cap-dich-vu.html)
+- [Chấm dứt dịch vụ và hoàn tiền](https://cupimath.com/cham-dut-va-hoan-tien.html)
+- [Giải quyết khiếu nại](https://cupimath.com/giai-quyet-khieu-nai.html)
 
 ## Chi tiết
 
