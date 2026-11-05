@@ -79,7 +79,7 @@
    "headline": "Đề thi Kangaroo (IKMC) lớp 9 có đáp án và lời giải (Junior)",
    "description": "Đề thi Kangaroo (IKMC) lớp 9 có đáp án: junior, 30 câu, 75 phút, đúng cấu trúc đề thật. Lời giải chi tiết từng câu, xem miễn phí, làm thử có bấm giờ.",
    "inLanguage": "vi",
-   "dateModified": "2026-11-05",
+   "dateModified": "2026-11-06",
    "datePublished": "2026-10-02",
    "mainEntityOfPage": "https://cupimath.com/de-thi-kangaroo/lop-9/",
    "image": "https://cupimath.com/img/og-thcs.png?v=4",
@@ -141,117 +141,187 @@
     {
      "@type": "Question",
      "name": "Câu 1",
-     "text": "Một buổi biểu diễn bán 51 vé gồm vé người lớn giá 120 nghìn đồng và vé trẻ em giá 70 nghìn đồng, thu được 5920 nghìn đồng. Hỏi đã bán bao nhiêu vé trẻ em? A. 0  B. 4  C. 5  D. 8  E. 14",
+     "text": "Số có hai chữ số ab (b ≠ 0) cộng với số viết ngược ba thì được 132. Tìm số ab lớn nhất. A. 93  B. 94  C. 96  D. 98  E. 120",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 4. Nhận dạng: hai loại có giá trị (điểm, chân, tiền) khác nhau, biết tổng số lượng và tổng giá trị, tìm số lượng từng loại. Ý tưởng: giả sử tất cả cùng một loại, so với tổng thực tế để biết chênh bao nhiêu, mỗi lần đổi một cái sang loại kia thì tổng đổi một lượng cố định. Bước 1: Giả sử cả 51 vé đều là vé trẻ em: tổng là 51 × 70 = 3570 nghìn đồng. Bước 2: Thực tế tổng là 5920, nhiều hơn 5920 − 3570 = 2350 nghìn đồng. Bước 3: Mỗi lần thay một vé trẻ em bằng một vé người lớn thì tổng tăng 120 − 70 = 50 nghìn đồng. Bước 4: Số vé người lớn: 2350 : 50 = 47; số vé trẻ em: 51 − 47 = 4. Bước 5: Kiểm: 47 × 120 + 4 × 70 = 5640 + 280 = 5920. Vậy có 4 vé trẻ em. Mẹo: kiểm lại bằng cách tính tổng giá trị."
+      "text": "Đáp án: A. 93. Nhận dạng: số có hai chữ số cộng số viết ngược. Ý tưởng: ab + ba = (10 × a + b) + (10 × b + a) = 11 × (a + b). Bước 1: 11 × (a + b) = 132, nên a + b = 12. Bước 2: a, b từ 1 đến 9, a + b = 12: các số ab là 39, 48, 57, 66, 75, 84, 93. Vậy số lớn nhất là 93."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 2",
-     "text": "Một hàng có 10 chiếc ghế. 6 bạn học sinh ngồi vào 6 ghế, 4 ghế còn lại để trống. Có bao nhiêu cách ngồi? A. 151197  B. 151199  C. 151200  D. 151201  E. 151203",
+     "text": "Hà đi bộ quãng đường 14 m bằng các bước dài 2 m hoặc 3 m (bước nào cũng đúng một trong hai độ dài). Có bao nhiêu cách đi hết quãng đường (thứ tự các bước khác nhau là khác cách)? A. 11  B. 16  C. 17  D. 18  E. 21",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 151200. Nhận dạng: xếp hàng có vật khác nhau và vật giống nhau. Ý tưởng: chọn chỗ cho các vật giống nhau trước, rồi xếp các vật khác nhau vào chỗ còn lại. Bước 1: Hàng có 10 ghế (6 ghế có người, 4 ghế trống). Bước 2: Chọn 4 ghế để trống trong 10 ghế: (10 × 9 × 8 × 7) : (4 × 3 × 2 × 1) = 210 cách. Bước 3: Xếp 6 bạn vào 10 − 4 = 6 ghế còn lại: 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720 cách (6! đọc là 6 giai thừa). Bước 4: Nhân: 210 × 720 = 151200. Vậy có 151200 cách."
+      "text": "Đáp án: E. 21. Nhận dạng: đếm cách đi 14 m bằng các bước 2 m hoặc 3 m (thứ tự bước khác nhau là khác cách). Ý tưởng: bảng cộng dồn theo lần cuối: số cách tới i bằng tổng số cách tới các chỗ đứng ngay trước lần cuối. Bước 1: Gọi f(k) là số cách đi hết k mét: f(0) = 1, f(1) = 0 (không có bước 1 m). Bước 2: f(k) = f(k − 2) + f(k − 3) (lần cuối là 2 hoặc 3 m). Bước 3: Tính lần lượt: f(2) = f(0) = 1, f(3) = f(0) = 1 (vì f(1) = 0). f(4) = f(2) = 1 (vì f(1) = 0), f(5) = f(3) + f(2) = 1 + 1 = 2. f(6) = f(4) + f(3) = 1 + 1 = 2, f(7) = f(5) + f(4) = 2 + 1 = 3. f(8) = f(6) + f(5) = 2 + 2 = 4, f(9) = f(7) + f(6) = 3 + 2 = 5. f(10) = f(8) + f(7) = 4 + 3 = 7, f(11) = f(9) + f(8) = 5 + 4 = 9. f(12) = f(10) + f(9) = 7 + 5 = 12, f(13) = f(11) + f(10) = 9 + 7 = 16. f(14) = f(12) + f(11) = 12 + 9 = 21. Vậy có 21 cách. Mẹo: f(1) = 0 nên các số hạng f(1) bỏ đi, đừng coi là 1."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 3",
-     "text": "Tính diện tích hình giới hạn bởi trục Ox, trục Oy và đường thẳng x − 2y − 4 = 0. A. 0  B. 2  C. 4  D. 6  E. 8",
+     "text": "Các hình xếp chấm thành tam giác có số chấm là 1, 3, 6, 10, 15, … (hình thứ n có thêm một hàng n chấm so với hình trước). Hình thứ 78 có nhiều hơn hình thứ 77 bao nhiêu chấm? A. 68  B. 75  C. 77  D. 78  E. 79",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 4. Nhận dạng: tam giác có hai cạnh nằm trên trục toạ độ (hoặc đường nằm ngang), cạnh còn lại là đường thẳng. Ý tưởng: tìm giao điểm với hai trục: tam giác vuông tại O có hai cạnh góc vuông là hai đoạn trên trục. Bước 1: Cho y = 0: x = 4; điểm (4; 0). Bước 2: Cho x = 0: −2y = 4, y = −2; điểm (0; −2). Bước 3: Hai cạnh góc vuông dài 4 và 2; diện tích = 4 × 2 : 2 = 4. Vậy diện tích là 4."
+      "text": "Đáp án: D. 78. Nhận dạng: dãy hình xếp chấm thành tam giác, số chấm tăng thêm một hàng ở mỗi hình. Ý tưởng: ghép hai hình giống nhau thành hình chữ nhật n × (n + 1) rồi chia đôi. Bước 1: Hình thứ 78 có thêm một hàng 78 chấm so với hình thứ 77. Bước 2: Kiểm bằng công thức: hình 78 có 78 × 79 : 2 = 3081 chấm, hình 77 có 77 × 78 : 2 = 3003 chấm; 3081 − 3003 = 78. Vậy đáp án là 78. Mẹo: hai số tam giác liền nhau có tổng bằng bình phương, ví dụ 6 + 10 = 4 × 4."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 4",
-     "text": "Trên cùng một cạnh AB, về cùng một phía, người ta dựng bát giác đều, lục giác đều, tam giác đều. Tại đỉnh A: ∠1 là góc giữa cạnh của bát giác đều và cạnh của lục giác đều; ∠2 là góc giữa cạnh của lục giác đều và cạnh của tam giác đều (như hình). Tính ∠1 + ∠2 (độ). A. 45  B. 70  C. 75  D. 76  E. 81",
+     "text": "Số có ba chữ số nào có đúng 5 ước dương? A. 625  B. 626  C. 629  D. 630  E. 1296",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 75. Nhận dạng: các đa giác đều chung cạnh AB, góc tại A giữa cạnh của hai hình. Ý tưởng: cạnh của mỗi hình tạo với AB đúng một góc trong, nên góc giữa hai cạnh là hiệu hai góc trong. Bước 1: Góc trong = 180° − 360° : số cạnh: bát giác đều 135°; lục giác đều 120°; tam giác đều 60°. Bước 2: ∠1 = 135° − 120° = 15°; ∠2 = 120° − 60° = 60°. Bước 3: ∠1 + ∠2 = 15° + 60° = 75°. Vậy ∠1 + ∠2 = 75°."
+      "text": "Đáp án: A. 625. Nhận dạng: số có ba chữ số có đúng 5 ước. Ý tưởng: số ước bằng tích các (số mũ + 1), nên viết 5 thành tích để biết dạng số. Bước 1: 5 = 5, nên số đó có dạng p⁴ (p là số nguyên tố). Bước 2: Thử p: 2⁴ = 16, 3⁴ = 81, 5⁴ = 625, 7⁴ = 2401. Bước 3: Chỉ 625 có ba chữ số. Vậy số đó là 625."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 5",
-     "text": "Con kém bố 23 tuổi. 4 năm nữa, tích tuổi của hai bố con là 624. Hiện nay tuổi con là bao nhiêu? A. 8  B. 12  C. 16  D. 20  E. 35",
+     "text": "Trong ống tiết kiệm có 57 tờ tiền gồm loại 5 nghìn đồng và loại 2 nghìn đồng, tổng cộng 144 nghìn đồng. Hỏi có bao nhiêu tờ tiền loại 5 nghìn đồng? A. 7  B. 8  C. 9  D. 10  E. 11",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 12. Nhận dạng: bài tuổi cho tích hai tuổi, hiệu tuổi không đổi. Ý tưởng: gọi tuổi con ở thời điểm 4 năm nữa là t thì tuổi bố lúc đó là t + 23; lập phương trình bậc hai. Bước 1: Gọi tuổi con 4 năm nữa là t (t > 0), tuổi bố lúc đó là t + 23. Bước 2: t(t + 23) = 624, tức là t² + 23t − 624 = 0. Bước 3: Tìm hai số hơn kém 23 có tích 624: 624 = 16 × 39; (t − 16)(t + 39) = 0, nên t = 16 hoặc t = −39. Bước 4: t > 0 nên t = 16; tuổi con hiện nay là 16 − 4 = 12. Vậy hiện nay tuổi con là 12."
+      "text": "Đáp án: D. 10. Nhận dạng: hai loại có giá trị (điểm, chân, tiền) khác nhau, biết tổng số lượng và tổng giá trị, tìm số lượng từng loại. Ý tưởng: giả sử tất cả cùng một loại, so với tổng thực tế để biết chênh bao nhiêu, mỗi lần đổi một cái sang loại kia thì tổng đổi một lượng cố định. Bước 1: Giả sử cả 57 đồng đều là đồng 2 nghìn: tổng là 57 × 2 = 114 nghìn đồng. Bước 2: Thực tế tổng là 144, nhiều hơn 144 − 114 = 30 nghìn đồng. Bước 3: Mỗi lần thay một đồng 2 nghìn bằng một đồng 5 nghìn thì tổng tăng 5 − 2 = 3 nghìn đồng. Bước 4: Số đồng 5 nghìn: 30 : 3 = 10; số đồng 2 nghìn: 57 − 10 = 47. Bước 5: Kiểm: 10 × 5 + 47 × 2 = 50 + 94 = 144. Vậy có 10 đồng 5 nghìn. Mẹo: kiểm lại bằng cách tính tổng giá trị."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 6",
-     "text": "Gieo một con xúc xắc 6 mặt, được số chấm b. Có bao nhiêu kết quả để phương trình x² + bx + 1 = 0 có nghiệm? A. 1  B. 4  C. 5  D. 9  E. 15",
+     "text": "Tổng của 21 bội của 5 liên tiếp bằng 1470. Tìm số nhỏ nhất trong 21 số đó. A. 15  B. 17  C. 18  D. 19  E. 20",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 5. Nhận dạng: xúc xắc cho hệ số của phương trình bậc hai, xét dấu Δ. Ý tưởng: Δ = b² − 4 × (hệ số tự do) là biệt thức; phương trình có nghiệm khi Δ ≥ 0. Bước 1: Có 6 kết quả: b = 1, 2, …, 6. Bước 2: Δ = b² − 4 ≥ 0, tức b² ≥ 4. Bước 3: Bình phương: 1² = 1, 2² = 4, 3² = 9, 4² = 16, 5² = 25, 6² = 36; thoả mãn: b = 2, 3, 4, 5 hoặc 6, có 5 giá trị. Vậy có 5 kết quả."
+      "text": "Đáp án: E. 20. Nhận dạng: tổng của dãy bội của 5 liên tiếp, tìm một số trong dãy. Ý tưởng: trung bình cộng của dãy cách đều là số ở giữa, từ đó đếm bước sang số cần tìm. Bước 1: Trung bình cộng của dãy: 1470 : 21 = 70. Bước 2: Dãy cách đều có 21 số (lẻ) nên số ở giữa là số thứ 11, bằng trung bình 70. Bước 3: Hai số liền nhau hơn kém 5. Từ số thứ 11 lùi về số thứ 1 (số nhỏ nhất) là 10 bước. Bước 4: Số nhỏ nhất là 70 − 10 × 5 = 20. Vậy số nhỏ nhất là 20. Mẹo: dãy lẻ số hạng thì trung bình chính là số ở giữa."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 7",
-     "text": "Cần ít nhất bao nhiêu học sinh để chắc chắn có 29 bạn sinh cùng một tháng? A. 332  B. 336  C. 337  D. 348  E. 349",
+     "text": "Cho dãy số 3, 10, 21, 36, 55, 78, … Tìm số tiếp theo của dãy. A. 91  B. 101  C. 102  D. 104  E. 105",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 337. Nhận dạng: chắc chắn có 29 bạn sinh cùng một tháng, dùng nguyên lí chuồng bồ câu. Ý tưởng: đếm số chuồng; xấu nhất mỗi chuồng có 29 − 1 = 28, thêm 1 là đủ. Bước 1: Mỗi tháng là một chuồng: có 12 chuồng. Bước 2: Xấu nhất mỗi chuồng 28: 28 × 12 = 336; thêm 1: 336 + 1 = 337. Vậy cần ít nhất 337 học sinh."
+      "text": "Đáp án: E. 105. Nhận dạng: dãy số mà mỗi số tách được thành tích của số thứ tự với một số đều đặn. Ý tưởng: phân tích từng số thành hai thừa số, nhận ra một thừa số là số thứ tự n, thừa số kia tăng đều, viết số thứ n = n × (thừa số kia). Bước 1: Tách các số thành hai thừa số: 2 × 5, 3 × 7, 4 × 9, 5 × 11, … Thừa số thứ nhất là số thứ tự n; thừa số thứ hai 5, 7, 9, 11 tăng đều 2, nên bằng 2 × n + 1 (n = 1: 3 đúng là số thứ nhất). Bước 2: Số thứ 7: 7 × (2 × 7 + 1) = 7 × 15 = 105. Vậy đáp án là 105. Mẹo: hiệu hai số liền nhau tăng đều thì số hạng có dạng bậc hai theo n, thử tách thành tích."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 8",
-     "text": "Số có hai chữ số ab (b ≠ 0) cộng với số viết ngược ba thì được 66. Tìm số ab nhỏ nhất. A. 10  B. 13  C. 15  D. 17  E. 20",
+     "text": "Có bao nhiêu số tự nhiên từ 2051 đến 3634 chia hết cho cả 4 và 6? A. 66  B. 131  C. 132  D. 133  E. 135",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 15. Nhận dạng: số có hai chữ số cộng số viết ngược. Ý tưởng: ab + ba = (10 × a + b) + (10 × b + a) = 11 × (a + b). Bước 1: 11 × (a + b) = 66, nên a + b = 6. Bước 2: a, b từ 1 đến 9, a + b = 6: các số ab là 15, 24, 33, 42, 51. Vậy số nhỏ nhất là 15."
+      "text": "Đáp án: C. 132. Nhận dạng: đếm bội của một số trong một khoảng. Ý tưởng: số chia hết cho cả các số đó là bội của BCNN, tìm bội đầu, bội cuối rồi đếm số cách đều. Bước 1: BCNN(4, 6) = 12 (4 = 2², 6 = 2 × 3, lấy mỗi thừa số với số mũ lớn nhất: 2² × 3). Bước 2: Bội đầu: 2051 : 12 = 170 (dư 11), bội nhỏ nhất là 12 × 171 = 2052. Bước 3: Bội cuối: 3634 : 12 = 302 (dư 10), bội lớn nhất là 12 × 302 = 3624. Bước 4: Số các bội: (3624 − 2052) : 12 + 1 = 132. Vậy có 132 số."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 9",
-     "text": "Sơ đồ có một ô ở giữa và 8 ô ở ngoài, xếp thành 4 đường thẳng cùng đi qua ô giữa; mỗi đường có 3 ô (ô giữa và 2 ô ngoài). Điền các số 8, 9, 10, 11, 12, 13, 14, 15, 16 vào 9 ô, mỗi ô một số, sao cho tổng ba số trên mỗi đường đều bằng nhau. Ô giữa có thể nhận bao nhiêu giá trị khác nhau? A. 1  B. 3  C. 4  D. 8  E. 9",
+     "text": "Tìm chữ số tận cùng của 1998²⁰²². A. 2  B. 3  C. 4  D. 8  E. 9",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 3. Nhận dạng: điền số vào các đường cùng đi qua ô giữa, tổng mỗi đường bằng nhau. Ý tưởng: cộng tổng của 4 đường: ô giữa được tính 4 lần, mỗi ô ngoài tính đúng 1 lần. Bước 1: Gọi c là số ở ô giữa, S là tổng mỗi đường. Tổng các số: 8 + 9 + 10 + 11 + 12 + 13 + 14 + 15 + 16 = 108. Bước 2: Cộng 4 đường: 4 × S = 108 + 3 × c. Hai ô ngoài trên một đường có tổng S − c = (108 − c) : 4, nên (108 − c) chia hết cho 4. Bước 3: Các số c trong đề làm 108 − c chia hết cho 4: 8, 12 hoặc 16. Bước 4: Kiểm tra ghép cặp các số ngoài (ghép số nhỏ nhất với số lớn nhất, …). c = 8: mỗi cặp tổng (108 − 8) : 4 = 25, ghép được (9, 16), (10, 15), (11, 14), (12, 13). c = 12: mỗi cặp tổng (108 − 12) : 4 = 24, ghép được (8, 16), (9, 15), (10, 14), (11, 13). c = 16: mỗi cặp tổng (108 − 16) : 4 = 23, ghép được (8, 15), (9, 14), (10, 13), (11, 12). Vậy ô giữa có 3 giá trị (c = 8, 12 hoặc 16)."
+      "text": "Đáp án: C. 4. Nhận dạng: chữ số tận cùng của một luỹ thừa có số mũ lớn. Ý tưởng: chỉ chữ số tận cùng của cơ số quyết định, và chữ số tận cùng các luỹ thừa lặp lại theo chu kỳ. Bước 1: 1998 tận cùng 8, nên 1998²⁰²² có cùng chữ số tận cùng với 8²⁰²². Bước 2: 8¹ = 8, 8² = 64, 8³ = 512, 8⁴ = 4096: chữ số tận cùng 8, 4, 2, 6 rồi lặp lại (chu kỳ 4). Bước 3: 2022 : 4 = 505 (dư 2), nên lấy số thứ 2 của chu kỳ: 4. Vậy chữ số tận cùng là 4. Mẹo: số mũ chia hết cho độ dài chu kỳ thì lấy số cuối của chu kỳ."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 10",
-     "text": "Hình chóp tứ giác đều S.ABCD có cạnh đáy 8 cm, chiều cao 18 cm. Tính thể tích hình chóp. A. 144  B. 374  C. 384  D. 768  E. 1152",
+     "text": "Tam giác ABC có AB = 33, AC = 56, BC = 65. Biết cos B : cos C = m/n với m/n là phân số tối giản. Tính m + n. A. 89  B. 90  C. 92  D. 93  E. 1848",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 384. Nhận dạng: hình chóp tứ giác đều (đáy là hình vuông, đỉnh S nằm thẳng trên tâm đáy). Ý tưởng: thể tích hình chóp = 1/3 × diện tích đáy × chiều cao. Bước 1: Diện tích đáy = 8 × 8 = 64. Bước 2: V = 1/3 × 64 × 18 = 384 (cm³). Vậy thể tích là 384 cm³."
+      "text": "Đáp án: A. 89. Nhận dạng: ba cạnh là một bộ ba Pytago, hỏi tỉ số hai cos. Ý tưởng: kiểm tra tổng bình phương hai cạnh nhỏ bằng bình phương cạnh lớn để thấy tam giác vuông. Bước 1: Cạnh lớn nhất BC = 65; 33 × 33 + 56 × 56 = 1089 + 3136 = 4225 = 65 × 65, nên tam giác vuông tại A (Pytago đảo). Bước 2: Trong tam giác vuông, cos của góc nhọn = cạnh kề : cạnh huyền: cos B = AB : BC = 33/65, cos C = AC : BC = 56/65. Bước 3: cos B : cos C = 33/56, nên m + n = 33 + 56 = 89. Vậy m + n = 89."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 11",
-     "text": "Một mảnh vườn hình tam giác vuông có cạnh huyền 41 m và diện tích 180 m². Tính chu vi. A. 80  B. 89  C. 90  D. 91  E. 100",
+     "text": "Đa thức x⁴ + mx³ − 14x² + nx + 60 chia hết cho x² − 5x + 6. Tính m − n. A. 10  B. 13  C. 15  D. 18  E. 25",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 90. Nhận dạng: tam giác vuông, biết cạnh huyền cùng diện tích hoặc chu vi, không biết từng cạnh. Ý tưởng: gọi a, b là hai cạnh góc vuông, c là cạnh huyền, dùng (a + b)² = a² + b² + 2ab với a² + b² = c². Bước 1: a × b = 2 × 180 = 360; a² + b² = c² = 41 × 41 = 1681. Bước 2: (a + b)² = 1681 + 2 × 360 = 2401. Bước 3: 49 × 49 = 2401, nên a + b = 49. Bước 4: Chu vi = 49 + 41 = 90 (m). Vậy chu vi là 90 m."
+      "text": "Đáp án: C. 15. Nhận dạng: đa thức chia hết cho một đa thức bậc hai phân tích được thành hai nhân tử bậc nhất. Ý tưởng: chia hết cho (x − r₁)(x − r₂) thì giá trị tại x = r₁ và x = r₂ đều bằng 0: được hệ hai ẩn m, n. Bước 1: x² − 5x + 6 = (x − 2)(x − 3), nên giá trị tại x = 2 và x = 3 bằng 0. Bước 2: Thay x = 2: 2⁴ + m × 2³ − 14 × 2² + n × 2 + 60 = 16 + 8m − 56 + 2n + 60 = 0; tức là 8m + 2n = −20, chia cho 2: 4m + n = −10 (1). Bước 3: Thay x = 3: 3⁴ + m × 3³ − 14 × 3² + n × 3 + 60 = 81 + 27m − 126 + 3n + 60 = 0; tức là 27m + 3n = −15, chia cho 3: 9m + n = −5 (2). Bước 4: Hệ số của n là 1 và 1, đã bằng nhau; trừ hai phương trình: −5m = −5, nên m = (−5) : (−5) = 1; thế vào (1): 4 × 1 + n = −10, nên n = −10 − 4 = −14. Bước 5: m − n = 1 − (−14) = 15. Vậy m − n = 15."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 12",
-     "text": "Hai hình ■ và ★ là hai số nguyên dương, biết ■ − ★ = 4 và ■ × ★ = 21. Tính ■ × ■ + ★ × ★. A. 10  B. 40  C. 57  D. 58  E. 100",
+     "text": "Hai số nguyên tố p, q thoả mãn 3p + 11q = 83. Tìm q. A. 7  B. 9  C. 11  D. 12  E. 77",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: A. 7. Nhận dạng: phương trình bậc nhất với hai ẩn là số nguyên tố, vế phải lẻ. Ý tưởng: xét chẵn lẻ: tổng lẻ nên một trong hai ẩn là số nguyên tố chẵn 2. Bước 1: p, q cùng lẻ thì 3p, 11q cùng lẻ, tổng chẵn; mà 83 lẻ. Vậy p = 2 hoặc q = 2. Bước 2: p = 2: 11q = 83 − 3 × 2 = 77, q = 77 : 11 = 7, là số nguyên tố. Bước 3: q = 2: 3p = 83 − 11 × 2 = 61, mà 61 không chia hết cho 3: loại. Vậy q = 7."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 13",
+     "text": "Hình chóp tứ giác đều S.ABCD có chiều cao 3 cm và thể tích 81 cm³. Tính độ dài cạnh đáy. A. 4  B. 5  C. 6  D. 7  E. 9",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: E. 9. Nhận dạng: hình chóp tứ giác đều (đáy là hình vuông, đỉnh S nằm thẳng trên tâm đáy). Ý tưởng: V = 1/3 × a² × h nên a² = 3V : h. Bước 1: a² = 3 × 81 : 3 = 81. Bước 2: a = √81 = 9 (cm). Vậy cạnh đáy là 9 cm."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 14",
+     "text": "Đổi chỗ các chữ cái của từ GEOMETRY (giữ đủ 8 chữ cái) được bao nhiêu dãy chữ khác nhau, kể cả chính từ GEOMETRY? A. 20160  B. 20161  C. 20162  D. 20163  E. 20170",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: A. 20160. Nhận dạng: xếp hàng các chữ cái có chữ lặp lại. Ý tưởng: coi các chữ đều khác nhau để đếm, rồi chia cho số cách đổi chỗ các chữ giống nhau. Bước 1: Đếm chữ: 8 chữ cái, chữ E lặp 2 lần. Bước 2: Nếu 8 chữ đều khác nhau thì có 8! = 8 × 7 × … × 1 = 40320 cách (n! = n × (n − 1) × … × 1, đọc là n giai thừa). Bước 3: Đổi chỗ các chữ giống nhau không tạo cách mới: chia cho 2! = 2 (chữ E). Bước 4: 40320 : 2 = 20160. Vậy có 20160 cách."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 15",
+     "text": "Ba số A, B, C thoả: A bằng 50% của B, A bằng 160% của C và A + B + C = 29. Tìm số C. A. 0  B. 1  C. 2  D. 4  E. 5",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: E. 5. Nhận dạng: các số liên hệ với nhau bằng phần trăm và biết tổng, tìm một số. Ý tưởng: chọn A làm chuẩn, viết B và C theo A bằng cách đổi phần trăm ra phân số, rồi dùng tổng. Bước 1: Đổi phần trăm ra phân số của A: A = 50/100 × B nên B = A × 100/50 = 2 × A; A = 160/100 × C nên C = 5/8 × A. Bước 2: Tổng: A + B + C = A × (1 + 2 + 5/8) = A × 29/8 = 29. Bước 3: A = 29 : 29/8 = 8. Bước 4: B = 2 × 8 = 16; C = 5/8 × 8 = 5. Kiểm: 8 + 16 + 5 = 29. Vậy số C là 5. Mẹo: p% của B nghĩa là p/100 × B, nên đừng nhầm số nào là chuẩn."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 16",
+     "text": "Số 81ab3191 (a, b là các chữ số) chia hết cho 99. Tính a + b. A. 9  B. 11  C. 12  D. 13  E. 14",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: D. 13. Nhận dạng: điền hai chữ số để số chia hết cho 99. Ý tưởng: 100 chia 99 dư 1, nên một số chia 99 có cùng số dư với tổng các cặp hai chữ số tính từ phải. Bước 1: Tách từ phải thành các cặp hai chữ số: 91, 31, ab, 81. Bước 2: Tổng các cặp: 81 + 31 + 91 + ab = 203 + ab, phải chia hết cho 99. Bước 3: 203 ≤ 203 + ab ≤ 302, nên 203 + ab = 297, ab = 297 − 203 = 94. Vậy a + b = 9 + 4 = 13."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 17",
+     "text": "Dãy số 6, 5, 0, 11, 16, 27, … có 3 số đầu là 6, 5, 0, từ số thứ 4 trở đi mỗi số bằng tổng ba số liền trước. Trong 666 số hạng đầu tiên có bao nhiêu số chẵn? A. 333  B. 335  C. 336  D. 338  E. 343",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: A. 333. Nhận dạng: dãy truy hồi, đếm số chẵn; không cần tính các số, chỉ cần xét tính chẵn lẻ. Ý tưởng: tính chẵn lẻ của mỗi số chỉ phụ thuộc tính chẵn lẻ của 3 số trước, nên lặp lại theo chu kì. Bước 1: Xét lần lượt (C là chẵn, L là lẻ): C, L, C, L, C. Bước 2: 3 số cuối (số thứ 3 tới 5) trùng 3 số đầu, nên lặp với chu kì 2; mỗi chu kì có 1 số chẵn. Bước 3: 666 = 2 × 333: 333 chu kì cho 333 số chẵn. Vậy có 333 số chẵn."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 18",
+     "text": "Máy tính bắt đầu với số 705. Mỗi bước máy làm như sau: Nếu số đang có chia hết cho 3 thì chia cho 3, nếu không thì trừ đi 1. Máy dừng khi hiện số 1. Máy đã làm bao nhiêu bước? A. 8  B. 9  C. 10  D. 11  E. 13",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: D. 11. Nhận dạng: máy rẽ nhánh theo điều kiện chia hết, chạy tới khi hiện số 1, hỏi số bước hay tổng. Ý tưởng: chạy máy từng bước ghi lại dãy số, rồi đếm hoặc cộng. Bước 1: Chạy máy từng bước và ghi các số hiện ra: 705 → 235 → 234 → 78 → 26 → 25. Bước 2: Tiếp từ 25: 25 → 24 → 8 → 7 → 6 → 2 → 1. Bước 3: Dãy có 12 số, từ số đầu tới số 1 là 12 − 1 = 11 bước. Vậy máy đã làm 11 bước. Mẹo: số bước ít hơn số số hạng của dãy một đơn vị."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 19",
+     "text": "Hai hình ■ và ★ là hai số nguyên dương, biết ■ − ★ = 4 và ■ × ★ = 21. Tính ■ × ■ + ★ × ★. A. 10  B. 40  C. 54  D. 58  E. 100",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -260,182 +330,112 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 13",
-     "text": "Tổng các góc trong của một đa giác lồi là 1620°. Đa giác có bao nhiêu đường chéo? A. 34  B. 39  C. 44  D. 49  E. 54",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: C. 44. Nhận dạng: đếm số đường chéo của đa giác lồi. Ý tưởng: đếm đường chéo đi ra từ mỗi đỉnh rồi chia 2, vì mỗi đường chéo có hai đầu. Bước 1: Tổng góc trong là (n − 2) × 180°, với n là số cạnh: n − 2 = 1620 : 180 = 9, n = 9 + 2 = 11. Bước 2: Từ một đỉnh nối được 11 − 3 = 8 đường chéo (bỏ chính nó và hai đỉnh kề). Bước 3: 11 đỉnh cho 11 × 8 = 88 lần đếm; mỗi đường chéo được đếm hai lần. Bước 4: Số đường chéo: 88 : 2 = 44. Vậy có 44 đường chéo."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 14",
-     "text": "Một đội có 9 bạn nam và 7 bạn nữ. Chọn 5 bạn đi thi. Có bao nhiêu cách chọn mà trong đó có nhiều nhất 1 bạn nam? A. 21  B. 336  C. 338  D. 4368  E. 12285",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 336. Nhận dạng: chọn nhóm có nhiều nhất 1 bạn nam. Ý tưởng: tách theo số bạn nam trong nhóm, mỗi trường hợp dùng quy tắc nhân, rồi cộng. Bước 1: Nhóm 5 bạn có nhiều nhất 1 bạn nam: số bạn nam là 0 hoặc 1. Bước 2 (0 bạn nam, 5 bạn nữ): (7 × 6) : (2 × 1) = 21 cách (chọn 5 trong 7 cũng là chọn 2 phần không lấy). Bước 3 (1 bạn nam, 4 bạn nữ): 9 cách chọn bạn nam; (7 × 6 × 5) : (3 × 2 × 1) = 35 cách chọn bạn nữ (chọn 4 trong 7 cũng là chọn 3 phần không lấy); nhân: 9 × 35 = 315. Bước 4: Cộng: 21 + 315 = 336. Vậy có 336 cách."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 15",
-     "text": "Chọn ít nhất bao nhiêu số trong các số 1, 2, …, 22 để chắc chắn có hai số mà số này là bội của số kia? A. 7  B. 10  C. 12  D. 14  E. 17",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: C. 12. Nhận dạng: chắc chắn có hai số mà số này là bội của số kia. Ý tưởng: chia các số thành xích, trong mỗi xích hai số bất kì có số này là bội số kia; mỗi xích là một chuồng. Bước 1: Xích dạng x, 2x, 4x, 8x, … (x là số lẻ), ví dụ 3, 6, 12. Bước 2: Mỗi xích bắt đầu bằng một số lẻ từ 1 tới 21; có 11 số như vậy nên có 11 xích. Bước 3: Chọn 11 + 1 = 12 số thì có hai số cùng xích, tức có cặp bội. Bước 4: Chọn 11 số vẫn có thể không có cặp bội, ví dụ các số từ 12 tới 22 (11 số): gấp đôi số nhỏ nhất là 24 > 22. Vậy cần chọn ít nhất 12 số."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 16",
-     "text": "Tìm giá trị lớn nhất của biểu thức 66/√(x² + 18x + 202) (x là số thực). A. 6  B. 7  C. 12  D. 16  E. 66",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: A. 6. Nhận dạng: phân số có tử là hằng số dương, mẫu chứa căn của một tam thức. Ý tưởng: phân số dương lớn nhất khi mẫu nhỏ nhất; hoàn thành bình phương dưới căn. Bước 1: x² + 18x + 202 = (x + 9)² + 121 = (x + 9)² + 11² (nửa hệ số của x là 18 : 2 = 9, 202 − 81 = 121). Bước 2: (x + 9)² ≥ 0 nên (x + 9)² + 121 ≥ 121, √(x² + 18x + 202) ≥ √121 = 11, dấu bằng khi x = −9. Bước 3: Mẫu nhỏ nhất bằng 11 nên biểu thức lớn nhất bằng 66 : 11 = 6. Vậy giá trị lớn nhất là 6."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 17",
-     "text": "Các chữ cái a, b, c, d, e là chữ số khác 0, mỗi biểu thức dưới đây là một số năm chữ số viết liền. Cho abcde + eabcd + deabc + cdeab + bcdea = 311108. Biết a = 9, b = 7, c = 6, d = 1. Tìm e. A. 4  B. 5  C. 6  D. 7  E. 8",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 5. Nhận dạng: tổng các số hoán vị vòng của một số năm chữ số, tìm tổng chữ số hay một chữ số. Ý tưởng: mỗi chữ số đứng đủ 5 hàng nên tổng bằng 11111 nhân tổng các chữ số. Bước 1: Mỗi chữ số lần lượt đứng ở cả 5 hàng (chục nghìn, nghìn, trăm, chục, đơn vị) đúng một lần trong 5 số. Bước 2: Nên tổng bằng (10000 + 1000 + 100 + 10 + 1) × (a + b + c + d + e) = 11111 × (a + b + c + d + e) = 311108. Bước 3: a + b + c + d + e = 311108 : 11111 = 28. Bước 4: e = 28 − (9 + 7 + 6 + 1) = 28 − 23 = 5. Vậy e bằng 5. Mẹo: tổng các chữ số tối đa là 45, dùng để loại nhanh."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 18",
-     "text": "Cho x > 1 và x + 1/x = 66. Tính √x − 1/√x. A. 7  B. 8  C. 18  D. 64  E. 66",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 8. Nhận dạng: biết x + 1/x, hỏi √x − 1/√x. Ý tưởng: bình phương √x − 1/√x thì ra x + 1/x − 2, rồi lấy căn. Bước 1: (√x − 1/√x)² = x − 2 × √x × 1/√x + 1/x = x + 1/x − 2. Bước 2: (√x − 1/√x)² = 66 − 2 = 64. Bước 3: x > 1 nên √x > 1 > 1/√x, tức là √x − 1/√x > 0, do đó √x − 1/√x = √64 = 8. Vậy √x − 1/√x = 8."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 19",
-     "text": "Có bao nhiêu số nguyên dương không vượt quá 600 chia hết cho 7 mà không chia hết cho 5? A. 17  B. 48  C. 68  D. 69  E. 85",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: C. 68. Nhận dạng: đếm số chia hết cho 7 nhưng không chia hết cho 5. Ý tưởng: lấy số các bội của 7, bớt đi các số chia hết cho cả 7 và 5 (bội của BCNN). Bước 1: Bội của 7: 600 : 7 = 85 (dư 5), có 85 số. Bước 2: BCNN(7, 5) = 7 × 5 = 35 (các số nguyên tố cùng nhau). Bội của 35: 600 : 35 = 17 (dư 5), có 17 số. Bước 3: 85 − 17 = 68. Vậy có 68 số."
-     }
-    },
-    {
-     "@type": "Question",
      "name": "Câu 20",
-     "text": "Dãy chữ cái INTEGERINTEGER… được viết lặp lại mãi. Trong 1999 chữ cái đầu tiên có bao nhiêu chữ E? A. 561  B. 570  C. 571  D. 572  E. 581",
+     "text": "Ngôi sao năm cánh trong hình có 5 đỉnh ngoài ghi sẵn 1, 10, 19, 13, 7 và 5 điểm bên trong p, q, r, s, t. Năm đường thẳng (mỗi đường 4 ô) là: 1 – p – q – 19; 10 – q – r – 13; 19 – r – s – 7; 13 – s – t – 1; 7 – t – p – 10. Điền các số 15, 18, 21, 24, 27 vào p, q, r, s, t (mỗi ô một số) sao cho tổng bốn số trên mỗi đường đều bằng nhau. Tìm số ở ô s. A. 15  B. 18  C. 21  D. 22  E. 24",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 571. Nhận dạng: dãy lặp lại theo chu kỳ, hỏi số lần xuất hiện của một phần tử trong rất nhiều phần tử đầu. Ý tưởng: tìm độ dài chu kỳ, chia số phần tử cho chu kỳ, thương là số chu kỳ đủ, dư là phần thừa ra ở đầu chu kỳ. Bước 1: Một chu kỳ là \"INTEGER\" có 7 chữ cái, trong đó chữ E xuất hiện 2 lần (ở vị trí 4, 6). Bước 2: Chia số chữ cái cho độ dài chu kỳ: 1999 : 7 = 285 dư 4, tức là 285 chu kỳ đủ và 4 chữ cái thừa ra. Bước 3: 285 chu kỳ đủ có 285 × 2 = 570 lần. 4 chữ cái thừa ra là đầu chu kỳ (INTE) có 1 lần. Bước 4: Cộng lại: 570 + 1 = 571. Vậy có 571 chữ E trong 1999 chữ cái đầu. Mẹo: phần dư phải đếm riêng trên đúng các vị trí đầu chu kỳ, không đoán theo trung bình."
+      "text": "Đáp án: C. 21. Nhận dạng: điền số vào ngôi sao năm cánh, tổng mỗi đường bằng nhau. Ý tưởng: mỗi ô nằm trên đúng 2 đường, nên cộng 5 đường được 2 lần tổng mọi số; rồi dùng từng đường để tìm tổng hai ô bên trong. Bước 1: Tổng 5 đỉnh ngoài: 1 + 10 + 19 + 13 + 7 = 50. Tổng 5 số điền: 15 + 18 + 21 + 24 + 27 = 105. Bước 2: Gọi S là tổng mỗi đường: 5 × S = 2 × (50 + 105) = 310, nên S = 310 : 5 = 62. Bước 3: Đường 7 – t – p – 10: t + p = 62 − 7 − 10 = 45. Bước 4: Đường 10 – q – r – 13: q + r = 62 − 10 − 13 = 39. Bước 5: s = (p + q + r + s + t) − (t + p) − (q + r) = 105 − 45 − 39 = 21. Vậy ô s là 21."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 21",
-     "text": "Parabol y = 2x² cắt đường thẳng y = −2x + 4 tại hai điểm A, B. O là gốc toạ độ. Tính diện tích tam giác OAB. A. 2  B. 5  C. 6  D. 7  E. 12",
+     "text": "Biết x, y là các số nguyên và −1000 < x < 1000, −1000 < y < 1000 thoả mãn 11x + 9y = 233. Tìm giá trị lớn nhất của x + 2y. A. 1188  B. 1189  C. 1190  D. 1192  E. 1194",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 6. Nhận dạng: giao của parabol và đường thẳng. Ý tưởng: hoành độ giao điểm là nghiệm của phương trình ax² = mx + n; đường thẳng cắt trục tung tại C(0; n), chia tam giác OAB thành hai tam giác chung đáy OC. Bước 1: 2x² = −2x + 4, tức là 2x² + 2x − 4 = 0. Bước 2: 2x² + 2x − 4 = 2(x − 1)(x + 2) = 0, nên x = 1 hoặc x = −2 (thử lại: 2 × 1² = 2 = −2 × 1 + 4); A(1; 2), B(−2; 8). Bước 3: Đường thẳng cắt trục tung tại C(0; 4), OC = 4. Bước 4: S(OAB) = S(OAC) + S(OBC) = 4 × 1 : 2 + 4 × 2 : 2 = 6. Vậy diện tích tam giác OAB là 6."
+      "text": "Đáp án: C. 1190. Nhận dạng: phương trình bậc nhất hai ẩn nghiệm nguyên, tìm cực trị của một biểu thức bậc nhất. Ý tưởng: rút y theo x, điều kiện y nguyên cho x cách đều nhau; biểu thức cần tìm tăng (hoặc giảm) theo x nên đạt cực trị ở x lớn nhất hoặc nhỏ nhất. Bước 1: y = (233 − 11x)/9; y nguyên khi 233 − 11x chia hết cho 9, tức là x chia 9 dư 4 (thử x = 4: 233 − 44 = 189 = 9 × 21). Bước 2: −1000 < y < 1000 nên −8758 ≤ 11x ≤ 9224, −8758/11 ≤ x ≤ 9224/11; kết hợp −1000 < x < 1000; x = −788, −779, −770, …, 832. Bước 3: x + 2y = (9x + 2(233 − 11x))/9 = (−13x + 466)/9, giảm khi x tăng, nên giá trị lớn nhất đạt khi x nhỏ nhất: x = −788, y = 989. Bước 4: x + 2y = −788 + 2 × 989 = 1190. Vậy giá trị lớn nhất là 1190."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 22",
-     "text": "Tìm số tự nhiên n lớn nhất để 100! chia hết cho 20ⁿ, biết 100! = 1 × 2 × 3 × … × 100. A. 5  B. 24  C. 44  D. 48  E. 72",
+     "text": "Lớp có 39 học sinh. Có 21 bạn học Vẽ, 21 bạn học Nhạc, 15 bạn học Múa; 10 bạn học cả Vẽ và Nhạc, 5 bạn học cả Vẽ và Múa, 10 bạn học cả Nhạc và Múa; 1 bạn học cả ba nhóm. Có bao nhiêu bạn học đúng một nhóm? A. 8  B. 10  C. 11  D. 12  E. 15",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 24. Nhận dạng: số mũ lớn nhất của 20 chia hết một giai thừa. Ý tưởng: phân tích 20 ra thừa số nguyên tố, đếm từng thừa số trong 100! rồi lấy số lần ít nhất. Bước 1: 20 = 2 × 2 × 5. Bước 2: Thừa số 2: 100 : 2 = 50, 100 : 4 = 25, 100 : 8 = 12, 100 : 16 = 6, 100 : 32 = 3, 100 : 64 = 1, cộng 50 + 25 + 12 + 6 + 3 + 1 = 97, đủ cho 97 : 2 = 48 lần. Bước 3: Thừa số 5: 100 : 5 = 20, 100 : 25 = 4, cộng 20 + 4 = 24. Bước 4: Mỗi thừa số 20 cần đủ cả hai loại, nên lấy số nhỏ hơn: 24. Vậy n lớn nhất là 24."
+      "text": "Đáp án: B. 10. Nhận dạng: ba nhóm có phần chung, dùng bao hàm loại trừ (công thức cho ba tập). Ý tưởng: cộng ba nhóm, trừ từng phần chung hai nhóm (bị đếm hai lần), cộng lại phần chung cả ba (bị trừ hết). Bước 1: Học ít nhất một nhóm: 21 + 21 + 15 − 10 − 5 − 10 + 1 = 33. Bước 2: Học đúng hai nhóm: (10 − 1) + (5 − 1) + (10 − 1) = 22. Bước 3: Đúng một nhóm = ít nhất một − đúng hai − cả ba: 33 − 22 − 1 = 10. Vậy có 10 bạn học đúng một nhóm."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 23",
-     "text": "Có bao nhiêu số nguyên dương n sao cho n + 21 và n − 6 đều là số chính phương? A. 1  B. 2  C. 3  D. 4  E. 12",
+     "text": "Cho x > 0 và x = 2 + 32/(4 + 32/(4 + 32/(4 + …))). Tìm x. A. 1  B. 6  C. 7  D. 10  E. 11",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 2. Nhận dạng: hai biểu thức của n cùng là số chính phương. Ý tưởng: trừ hai số chính phương cho nhau để mất n, rồi viết hiệu hai bình phương thành tích. Bước 1: Gọi n + 21 = k², n − 6 = j² (k, j là số tự nhiên). Trừ vế: k² − j² = 21 + 6 = 27. Bước 2: (k − j)(k + j) = 27, với k + j > k − j và hai thừa số cùng chẵn lẻ (tổng là 2k). Bước 3: 1 × 27: k = (1 + 27) : 2 = 14, j = (27 − 1) : 2 = 13, n = 13² + 6 = 175; 3 × 9: k = (3 + 9) : 2 = 6, j = (9 − 3) : 2 = 3, n = 3² + 6 = 15. Vậy có 2 số n (15, 175)."
+      "text": "Đáp án: B. 6. Nhận dạng: phân số liên tục vô hạn, phần mẫu lặp lại. Ý tưởng: thay phần lặp bằng ẩn, quy đồng ra phương trình bậc hai, chỉ lấy nghiệm dương. Bước 1: Số đứng đầu (2) khác số trong mẫu (4), nên đặt y = x − 2 = 32/(4 + 32/(4 + …)); mẫu lặp lại 4 + y, nên y = 32/(4 + y) với y > 0. Bước 2: Nhân chéo: y² + 4y − 32 = 0. Bước 3: Phân tích: 32 = 4 × 8 và 8 − 4 = 4, nên (y − 4)(y + 8) = 0. Bước 4: y > 0 nên y = 4; x = 2 + 4 = 6. Vậy x = 6."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 24",
-     "text": "Số 1A20330971B (A, B là các chữ số) chia hết cho 132. Tính A × B. A. 0  B. 1  C. 2  D. 4  E. 9",
+     "text": "Hai đoàn tàu dài 355 m và 45 m chạy ngược chiều nhau trên hai đường ray song song. Từ lúc đầu tàu gặp nhau đến lúc đuôi tàu rời nhau hoàn toàn mất 10 giây. Tỉ số vận tốc của hai tàu là 3 : 5. Tính vận tốc của tàu chậm hơn (km/h). A. 40  B. 50  C. 52  D. 53  E. 54",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: D. 4. Nhận dạng: điền chữ số để số chia hết cho 132. Ý tưởng: 132 = 4 × 3 × 11, các thừa số nguyên tố cùng nhau, nên số phải chia hết cho từng thừa số. Bước 1: Chia hết cho 4: số tạo bởi hai chữ số cuối chia hết cho 4 (1B là 12, 16), nên B là 2 hoặc 6. Bước 2: Chia hết cho 3: tổng các chữ số 1 + 2 + 0 + 3 + 3 + 0 + 9 + 7 + 1 + A + B = 26 + A + B phải chia hết cho 3. Bước 3: Chia hết cho 11: tổng vị trí lẻ trừ tổng vị trí chẵn (tính từ phải): (B + 7 + 0 + 3 + 2 + 1) − (1 + 9 + 3 + 0 + A) = B − A. Vì −9 ≤ B − A ≤ 9, nên B − A = 0. Bước 4: Ghép: B − A = 0: (0, 0), (1, 1), …, (9, 9), giữ cặp có B là 2 hoặc 6: (2, 2), (6, 6), giữ cặp có 26 + A + B chia hết cho 3: (2, 2). Vậy A × B = 2 × 2 = 4."
+      "text": "Đáp án: E. 54. Nhận dạng: hai đoàn tàu chạy trên hai đường ray song song, vượt nhau hoàn toàn, có chiều dài và vận tốc. Ý tưởng: để vượt nhau hoàn toàn hai tàu phải đi lệch nhau đúng tổng chiều dài; ngược chiều lệch nhau bằng tổng vận tốc, cùng chiều lệch nhau bằng hiệu vận tốc. Bước 1: Để vượt nhau hoàn toàn, hai tàu cùng đi được quãng bằng tổng chiều dài: 355 + 45 = 400 m. Bước 2: Hai tàu ngược chiều nên tổng vận tốc: 400 : 10 = 40 m/s. Đổi sang km/h: 40 × 3,6 = 144 km/h. Bước 3: Chia 144 km/h theo tỉ số 3 : 5: tổng 3 + 5 = 8 phần, một phần 144 : 8 = 18 km/h. Bước 4: Tàu chậm: 3 × 18 = 54 km/h; tàu nhanh: 5 × 18 = 90 km/h. Vậy đáp án là 54. Mẹo: 1 m/s = 3,6 km/h, nên đổi đơn vị trước khi chia."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 25",
-     "text": "Số tự nhiên nhỏ nhất có đúng 24 ước là số nào? A. 355  B. 360  C. 1152  D. 6144  E. 8388608",
+     "text": "Ba số dương a, b, c có ab = 30, bc = 48, ca = 40. Tính a + b + c. A. 19  B. 20  C. 29  D. 118  E. 240",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 360. Nhận dạng: tìm số tự nhiên nhỏ nhất có đúng 24 ước. Ý tưởng: số ước bằng tích các (số mũ + 1), nên viết 24 thành tích, mỗi cách cho một dạng số. Bước 1: Các cách viết 24: 24 = 12 × 2 = 8 × 3 = 6 × 4 = 6 × 2 × 2 = 4 × 3 × 2 = 3 × 2 × 2 × 2. Bước 2: Dạng số tương ứng (p, q, r, s là các số nguyên tố khác nhau): p²³; p¹¹ × q; p⁷ × q²; p⁵ × q³; p⁵ × q × r; p³ × q² × r; p² × q × r × s. Bước 3: Số nhỏ nhất mỗi dạng (số mũ lớn đặt cho số nguyên tố nhỏ): 2²³ = 8388608; 2¹¹ × 3 = 6144; 2⁷ × 3² = 1152; 2⁵ × 3³ = 864; 2⁵ × 3 × 5 = 480; 2³ × 3² × 5 = 360; 2² × 3 × 5 × 7 = 420. Vậy số tự nhiên nhỏ nhất có đúng 24 ước là 360. Mẹo: phải so mọi dạng, dạng một luỹ thừa thường rất lớn."
+      "text": "Đáp án: A. 19. Nhận dạng: biết tích từng cặp của ba số dương. Ý tưởng: nhân ba đẳng thức được (abc)², lấy căn ra abc; chia cho tích của hai số kia ra từng số. Bước 1: Nhân: (abc)² = 30 × 48 × 40 = 57600. Bước 2: a, b, c dương nên abc = √57600 = 240. Bước 3: a = abc : bc = 240 : 48 = 5, b = abc : ca = 240 : 40 = 6, c = abc : ab = 240 : 30 = 8. Bước 4: a + b + c = 5 + 6 + 8 = 19. Vậy a + b + c = 19."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 26",
-     "text": "Năm nay tuổi bố gấp 5 lần tuổi con. 3 năm trước, tích số tuổi của hai người là 252. Hỏi hiện nay con bao nhiêu tuổi? A. 4  B. 9  C. 11  D. 14  E. 19",
+     "text": "Tính diện tích hình giới hạn bởi trục Ox và hai đường thẳng 4x − 7y + 48 = 0, 8x − 9y + 56 = 0. A. 10  B. 15  C. 18  D. 19  E. 20",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 9. Nhận dạng: bài toán tuổi có tích số tuổi ở thời điểm trước, đưa về phương trình bậc hai. Ý tưởng: gọi tuổi con, viết tích hai tuổi trước đây, giải phương trình bậc hai và loại nghiệm không hợp lý. Bước 1: Gọi c là tuổi con hiện nay (c > 3), tuổi bố là 5 × c. 3 năm trước tuổi hai người là 5 × c − 3 và c − 3. Bước 2: (5 × c − 3) × (c − 3) = 252. Khai triển: 5 × c² − 18 × c + 9 = 252, tức 5 × c² − 18 × c − 243 = 0. Bước 3: Biệt thức: 18 × 18 − 4 × 5 × (−243) = 5184, căn bằng 72. Bước 4: c = (18 + 72) : 10 = 9 hoặc c = (18 − 72) : 10 = −27/5. Bước 5: Con phải hơn 3 tuổi (đã có 3 năm trước) nên loại c = −27/5. Do đó c = 9, kiểm: (45 − 3) × (9 − 3) = 252. Vậy hiện nay con 9 tuổi. Mẹo: tuổi trước đây phải dương nên tuổi hiện nay lớn hơn số năm đã lùi."
+      "text": "Đáp án: E. 20. Nhận dạng: tam giác tạo bởi hai đường thẳng và trục Ox. Ý tưởng: hai đỉnh nằm trên Ox (cho y = 0), đỉnh thứ ba là giao điểm hai đường, chiều cao là |tung độ| của giao điểm. Bước 1: Cho y = 0: đường thứ nhất 4x = −48, x = −48 : 4 = −12; đường thứ hai 8x = −56, x = −56 : 8 = −7. Hai đỉnh trên trục: (−12; 0) và (−7; 0). Bước 2: Khử x để tìm tung độ giao điểm: nhân phương trình thứ nhất với 2: 8x − 14y + 96 = 0. Lấy phương trình thứ nhất trừ phương trình thứ hai (sau khi nhân): −5y + 40 = 0, nên −5y = −40, y = −40 : (−5) = 8. Bước 3: Đáy = −7 − (−12) = 5, chiều cao = 8; diện tích = 5 × 8 : 2 = 20. Vậy diện tích là 20."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 27",
-     "text": "Tìm chữ số tận cùng của 7²⁰¹⁹ + 5²⁰²³ + 13⁸⁸. A. 3  B. 5  C. 8  D. 9  E. 13",
+     "text": "Một khối lập phương lớn được sơn kín mặt ngoài rồi cắt thành các khối lập phương nhỏ cạnh 1 cm. Có 8 khối nhỏ không có mặt nào được sơn. Có bao nhiêu khối nhỏ đúng một mặt được sơn? A. 23  B. 24  C. 25  D. 29  E. 40",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: D. 9. Nhận dạng: chữ số tận cùng của tổng các luỹ thừa. Ý tưởng: tìm chữ số tận cùng của từng luỹ thừa theo chu kỳ, rồi cộng các chữ số đó. Bước 1: 7²⁰¹⁹: chu kỳ 7, 9, 3, 1 (dài 4), 2019 chia 4 dư 3 nên lấy số thứ 3: 3. Bước 2: 5²⁰²³ tận cùng 5 (mọi luỹ thừa của 5 đều tận cùng 5). Bước 3: 13⁸⁸ cùng tận cùng với 3⁸⁸, chu kỳ 3, 9, 7, 1 (dài 4), 88 chia hết cho 4 nên lấy số cuối: 1. Bước 4: 3 + 5 + 1 = 9, nên tổng tận cùng 9. Vậy chữ số tận cùng là 9."
+      "text": "Đáp án: B. 24. Nhận dạng: khối lập phương sơn mặt ngoài rồi cắt nhỏ, cho một số đếm, hỏi số đếm khác. Ý tưởng: từ số đếm đã cho tìm cạnh n, rồi đếm khối nhỏ theo vị trí: góc, cạnh, mặt, ruột. Bước 1: Gọi n là số khối nhỏ trên một cạnh của khối lập phương lớn, tổng có n × n × n khối. Bước 2: Các khối không sơn tạo thành khối lập phương cạnh n − 2: (n − 2) × (n − 2) × (n − 2) = 8. Bước 3: 8 = 2 × 2 × 2, nên n − 2 = 2 (căn bậc ba của 8), n = 4. Bước 4: Mỗi mặt có 2 × 2 = 4 khối đúng một mặt sơn, 6 mặt: 6 × 4 = 24. Vậy có 24 khối nhỏ. Mẹo: khối ba mặt ở 8 góc, hai mặt ở 12 cạnh, một mặt ở 6 mặt, không sơn ở ruột."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 28",
-     "text": "Cho 16 điểm cách đều nhau trên một đường tròn (các đỉnh của đa giác đều 16 cạnh). Có bao nhiêu tam giác tù có ba đỉnh là ba trong các điểm này? A. 112  B. 168  C. 336  D. 356  E. 448",
+     "text": "Trong một nhóm 6 người, mỗi người hoặc luôn nói thật hoặc luôn nói dối. Hà nói: “Trong nhóm có đúng 1 kẻ nói dối.” Minh nói: “Trong nhóm có đúng 6 kẻ nói dối.” Dũng nói: “Trong nhóm có đúng 5 kẻ nói dối.” Bình nói: “Trong nhóm có đúng 3 kẻ nói dối.” Bảo nói: “Trong nhóm có đúng 4 kẻ nói dối.” Trang nói: “Trong nhóm có đúng 2 kẻ nói dối.” Hỏi có bao nhiêu người nói thật? A. 0  B. 1  C. 2  D. 3  E. 5",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 336. Nhận dạng: đếm hình có đỉnh là các điểm cách đều trên đường tròn. Ý tưởng: góc nội tiếp chắn nửa đường tròn là góc vuông, chắn cung lớn hơn nửa đường tròn là góc tù. Bước 1: Tam giác tù khi ba đỉnh nằm trong nửa đường tròn (không chứa hai đầu một đường kính). Gọi đỉnh đầu tiên theo chiều kim đồng hồ là P; hai đỉnh kia nằm trong 7 điểm kế tiếp P (chưa tới nửa vòng): 16 × (7 × 6) : (2 × 1) = 16 × 21 = 336. Vậy có 336 tam giác tù."
+      "text": "Đáp án: B. 1. Nhận dạng: mỗi người nói về số kẻ nói dối trong nhóm, hỏi số người nói thật. Ý tưởng: đặt L là số kẻ nói dối, lời nói đúng khi k bằng L, thử từng L được nhắc tới. Bước 1: Gọi L là số kẻ nói dối. Lời “có đúng k kẻ nói dối” chỉ đúng khi k = L, nên số người nói thật bằng số người nói k = L. Bước 2: L = 1: Hà nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 1: mâu thuẫn. Bước 3: L = 2: Trang nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 2: mâu thuẫn. Bước 4: L = 3: Bình nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 3: mâu thuẫn. Bước 5: L = 4: Bảo nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 4: mâu thuẫn. Bước 6: L = 5: Dũng nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, đúng bằng 5: hợp lý. Bước 7: L = 6: Minh nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 6: mâu thuẫn. Bước 8: L là số khác (không ai nhắc tới, kể cả 0): không ai nói thật nên L = 6, mâu thuẫn. Bước 9: Chỉ L = 5 hợp lý, vậy số người nói thật là 6 − 5 = 1. Vậy có 1 người nói thật. Mẹo: những lời giống nhau cùng đúng hoặc cùng sai."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 29",
-     "text": "Mua 100 con gà hết đúng 100 nghìn đồng: gà trống 3 nghìn một con, gà mái 2 nghìn một con, 3 gà con giá 1 nghìn; mỗi loại mua ít nhất một con. Có bao nhiêu cách chia số con ba loại? A. 0  B. 3  C. 4  D. 5  E. 6",
+     "text": "Hai xe cùng đi quãng đường 300 km. Ô tô nhanh hơn xe máy 15 km/h nên đến sớm hơn 1 giờ. Tính vận tốc của ô tô (km/h). A. 60  B. 75  C. 80  D. 85  E. 90",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 4. Nhận dạng: bài toán ba ẩn, hai phương trình (tổng số con và tổng số bó / tiền), nghiệm nguyên dương. Ý tưởng: khử ẩn thứ ba được một phương trình hai ẩn, rồi thử các giá trị nguyên dương. Bước 1: Gọi số gà trống, gà mái, gà con là a, b, c: a + b + c = 100 (1) và 3a + 2b + c/3 = 100 (2). Bước 2: Nhân (2) với 3: 9a + 6b + c = 300; trừ (1): 8a + 5b = 200. Bước 3: b = (200 − 8a)/5; b nguyên khi a chia hết cho 5 (vì 200 = 5 × 40); b ≥ 1 nên 8a ≤ 195, a ≤ 195/8: a = 5, 10, 15, 20. Bước 4: Giữ các bộ có c = 100 − a − b > 0: (a, b, c) = (5, 32, 63), (10, 24, 66), (15, 16, 69), (20, 8, 72). Bước 5: Có 4 cách. Vậy có 4 cách."
+      "text": "Đáp án: B. 75. Nhận dạng: hai vật cùng đi một quãng, vận tốc hơn kém nhau và thời gian hơn kém nhau, hỏi vận tốc. Ý tưởng: gọi vận tốc người chậm là v, lập phương trình thời gian hơn kém, quy đồng được phương trình bậc hai, giải và loại nghiệm âm. Bước 1: Gọi v là vận tốc xe máy (km/h), v > 0; vận tốc ô tô là v + 15. Thời gian: 300 : v và 300 : (v + 15) giờ. Bước 2: Xe máy chậm hơn 1 giờ: 300/v − 300/(v + 15) = 1. Nhân hai vế với v × (v + 15): 300 × (v + 15) − 300 × v = v × (v + 15), tức 4500 = v × v + 15 × v. Bước 3: Chuyển vế: v × v + 15 × v − 4500 = 0. Δ = 15 × 15 + 4 × 4500 = 18225, √Δ = 135. Bước 4: v = (−15 + 135) : 2 = 60, hoặc v = (−15 − 135) : 2 = −75 (âm, loại vì vận tốc dương). Bước 5: Kiểm: 300 : 60 − 300 : 75 = 5 − 4 = 1, đúng. Vậy vận tốc ô tô là 60 + 15 = 75 km/h. Mẹo: nghiệm âm của vận tốc luôn bị loại, và hãy thử lại bằng thời gian."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 30",
-     "text": "Tìm chữ số tận cùng của tích 13²⁰²⁶ × 2029⁹⁹. A. 0  B. 1  C. 7  D. 8  E. 9",
+     "text": "Biết 4 × P = 2 × 4 + 4 × 6 + 6 × 8 + … + 16 × 18. Tìm P. A. 120  B. 240  C. 242  D. 244  E. 960",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 1. Nhận dạng: chữ số tận cùng của tích hai luỹ thừa. Ý tưởng: tìm chữ số tận cùng của từng luỹ thừa theo chu kỳ, rồi nhân hai chữ số đó. Bước 1: 13²⁰²⁶ cùng tận cùng với 3²⁰²⁶: 3¹ = 3, 3² = 9, 3³ = 27, 3⁴ = 81: chữ số tận cùng 3, 9, 7, 1 rồi lặp lại (chu kỳ 4). 2026 : 4 = 506 (dư 2), nên lấy số thứ 2 của chu kỳ: 9. Bước 2: 2029⁹⁹ cùng tận cùng với 9⁹⁹: 9¹ = 9, 9² = 81, 9³ = 729: chữ số tận cùng 9, 1 rồi lặp lại (chu kỳ 2). 99 : 2 = 49 (dư 1), nên lấy số thứ 1 của chu kỳ: 9. Bước 3: 9 × 9 = 81, tận cùng 1. Vậy chữ số tận cùng của tích là 1."
+      "text": "Đáp án: B. 240. Nhận dạng: tổng các tích hai số chẵn liên tiếp. Ý tưởng: 2k × (2k + 2) = 4k(k + 1); tổng k(k + 1) tính bằng triệt tiêu: k(k + 1) = [k(k + 1)(k + 2) − (k − 1)k(k + 1)] : 3. Bước 1: Vế phải = 4 × (1 × 2 + 2 × 3 + … + 8 × 9). Bước 2: 1 × 2 + 2 × 3 + … + 8 × 9 = 8 × 9 × 10 : 3 = 240 (các số hạng giữa triệt tiêu). Bước 3: Vế phải = 4 × 240 = 960, nên 4 × P = 960. Bước 4: P = 960 : 4 = 240. Vậy P = 240."
      }
     }
    ]
@@ -496,7 +496,7 @@
     <span class="kicker">Đề thi Kangaroo (IKMC)</span>
     <h1>Đề thi Kangaroo (IKMC) lớp 9 có đáp án và lời giải (Junior)</h1>
     <p>Đề thi Kangaroo (IKMC) lớp 9 có đáp án: junior, 30 câu, 75 phút, đúng cấu trúc đề thật. Lời giải chi tiết từng câu, xem miễn phí, làm thử có bấm giờ.</p>
-    <div class="page-meta"><span>Cập nhật: 05/11/2026</span><span>Biên soạn: đội ngũ Cú Pi Math</span></div>
+    <div class="page-meta"><span>Cập nhật: 06/11/2026</span><span>Biên soạn: đội ngũ Cú Pi Math</span></div>
   </div>
 </section>
 
@@ -518,251 +518,251 @@
 <ol class="questions" start="1">
 <li class="q" id="cau-1">
   <div class="q-head"><span class="q-n">Câu 1</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Một buổi biểu diễn bán 51 vé gồm vé người lớn giá 120 nghìn đồng và vé trẻ em giá 70 nghìn đồng, thu được 5920 nghìn đồng. Hỏi đã bán bao nhiêu vé trẻ em?</p><p class="q-en" lang="en">A show sold 51 tickets: adult tickets at 120 thousand dong and child tickets at 70 thousand dong, bringing in 5920 thousand dong. How many child tickets were sold?</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 4</li><li><b>C.</b> 5</li><li><b>D.</b> 8</li><li><b>E.</b> 14</li></ol>
+  <p class="q-stem">Số có hai chữ số ab (b ≠ 0) cộng với số viết ngược ba thì được 132. Tìm số ab lớn nhất.</p><p class="q-en" lang="en">A two-digit number ab (b ≠ 0) plus its reverse ba equals 132. Find the largest such ab.</p><ol class="q-opts"><li><b>A.</b> 93</li><li><b>B.</b> 94</li><li><b>C.</b> 96</li><li><b>D.</b> 98</li><li><b>E.</b> 120</li></ol>
   <details><summary>Đáp án và lời giải câu 1</summary>
-    <p><b>Đáp án: B. 4</b></p>
-    <p>Nhận dạng: hai loại có giá trị (điểm, chân, tiền) khác nhau, biết tổng số lượng và tổng giá trị, tìm số lượng từng loại.<br>Ý tưởng: giả sử tất cả cùng một loại, so với tổng thực tế để biết chênh bao nhiêu, mỗi lần đổi một cái sang loại kia thì tổng đổi một lượng cố định.<br>Bước 1: Giả sử cả 51 vé đều là vé trẻ em: tổng là 51 × 70 = 3570 nghìn đồng.<br>Bước 2: Thực tế tổng là 5920, nhiều hơn 5920 − 3570 = 2350 nghìn đồng.<br>Bước 3: Mỗi lần thay một vé trẻ em bằng một vé người lớn thì tổng tăng 120 − 70 = 50 nghìn đồng.<br>Bước 4: Số vé người lớn: 2350 : 50 = 47;<br>số vé trẻ em: 51 − 47 = 4.<br>Bước 5: Kiểm: 47 × 120 + 4 × 70 = 5640 + 280 = 5920.<br>Vậy có 4 vé trẻ em.<br>Mẹo: kiểm lại bằng cách tính tổng giá trị.</p>
+    <p><b>Đáp án: A. 93</b></p>
+    <p>Nhận dạng: số có hai chữ số cộng số viết ngược.<br>Ý tưởng: ab + ba = (10 × a + b) + (10 × b + a) = 11 × (a + b).<br>Bước 1: 11 × (a + b) = 132, nên a + b = 12.<br>Bước 2: a, b từ 1 đến 9, a + b = 12: các số ab là 39, 48, 57, 66, 75, 84, 93.<br>Vậy số lớn nhất là 93.</p>
   </details>
 </li>
 <li class="q" id="cau-2">
   <div class="q-head"><span class="q-n">Câu 2</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Một hàng có 10 chiếc ghế. 6 bạn học sinh ngồi vào 6 ghế, 4 ghế còn lại để trống. Có bao nhiêu cách ngồi?</p><p class="q-en" lang="en">A row has 10 chairs. 6 students sit on 6 of them and 4 chairs are left empty. How many seatings are possible?</p><ol class="q-opts"><li><b>A.</b> 151197</li><li><b>B.</b> 151199</li><li><b>C.</b> 151200</li><li><b>D.</b> 151201</li><li><b>E.</b> 151203</li></ol>
+  <p class="q-stem">Hà đi bộ quãng đường 14 m bằng các bước dài 2 m hoặc 3 m (bước nào cũng đúng một trong hai độ dài). Có bao nhiêu cách đi hết quãng đường (thứ tự các bước khác nhau là khác cách)?</p><p class="q-en" lang="en">Ha walks 14 m using steps of length 2 m or 3 m. In how many ways can Ha cover the distance exactly (a different order of steps counts as a different way)?</p><ol class="q-opts"><li><b>A.</b> 11</li><li><b>B.</b> 16</li><li><b>C.</b> 17</li><li><b>D.</b> 18</li><li><b>E.</b> 21</li></ol>
   <details><summary>Đáp án và lời giải câu 2</summary>
-    <p><b>Đáp án: C. 151200</b></p>
-    <p>Nhận dạng: xếp hàng có vật khác nhau và vật giống nhau.<br>Ý tưởng: chọn chỗ cho các vật giống nhau trước, rồi xếp các vật khác nhau vào chỗ còn lại.<br>Bước 1: Hàng có 10 ghế (6 ghế có người, 4 ghế trống).<br>Bước 2: Chọn 4 ghế để trống trong 10 ghế: (10 × 9 × 8 × 7) : (4 × 3 × 2 × 1) = 210 cách.<br>Bước 3: Xếp 6 bạn vào 10 − 4 = 6 ghế còn lại: 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720 cách (6! đọc là 6 giai thừa).<br>Bước 4: Nhân: 210 × 720 = 151200.<br>Vậy có 151200 cách.</p>
+    <p><b>Đáp án: E. 21</b></p>
+    <p>Nhận dạng: đếm cách đi 14 m bằng các bước 2 m hoặc 3 m (thứ tự bước khác nhau là khác cách).<br>Ý tưởng: bảng cộng dồn theo lần cuối: số cách tới i bằng tổng số cách tới các chỗ đứng ngay trước lần cuối.<br>Bước 1: Gọi f(k) là số cách đi hết k mét: f(0) = 1, f(1) = 0 (không có bước 1 m).<br>Bước 2: f(k) = f(k − 2) + f(k − 3) (lần cuối là 2 hoặc 3 m).<br>Bước 3: Tính lần lượt: f(2) = f(0) = 1, f(3) = f(0) = 1 (vì f(1) = 0).<br>f(4) = f(2) = 1 (vì f(1) = 0), f(5) = f(3) + f(2) = 1 + 1 = 2.<br>f(6) = f(4) + f(3) = 1 + 1 = 2, f(7) = f(5) + f(4) = 2 + 1 = 3.<br>f(8) = f(6) + f(5) = 2 + 2 = 4, f(9) = f(7) + f(6) = 3 + 2 = 5.<br>f(10) = f(8) + f(7) = 4 + 3 = 7, f(11) = f(9) + f(8) = 5 + 4 = 9.<br>f(12) = f(10) + f(9) = 7 + 5 = 12, f(13) = f(11) + f(10) = 9 + 7 = 16.<br>f(14) = f(12) + f(11) = 12 + 9 = 21.<br>Vậy có 21 cách.<br>Mẹo: f(1) = 0 nên các số hạng f(1) bỏ đi, đừng coi là 1.</p>
   </details>
 </li>
 <li class="q" id="cau-3">
   <div class="q-head"><span class="q-n">Câu 3</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Tính diện tích hình giới hạn bởi trục Ox, trục Oy và đường thẳng x − 2y − 4 = 0.</p><p class="q-en" lang="en">Find the area of the region bounded by the x-axis, the y-axis and the line x − 2y − 4 = 0.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 3"><svg width="300" height="168" viewBox="0 0 300 168" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="40" y1="46.7" x2="260" y2="46.7" stroke="#9ca3af" stroke-width="1.4"/><line x1="76.7" y1="156.7" x2="76.7" y2="10" stroke="#9ca3af" stroke-width="1.4"/><text x="258" y="60.7" font-size="11" text-anchor="end" stroke="none" fill="#9ca3af">x</text><text x="70.7" y="20" font-size="11" text-anchor="end" stroke="none" fill="#9ca3af">y</text><text x="70.7" y="59.7" font-size="11" text-anchor="middle" stroke="none" fill="#9ca3af">O</text><polygon points="76.7,46.7 223.3,46.7 76.7,120" stroke="#f97316" stroke-width="2" fill="#f97316" fill-opacity="0.12"/><line x1="260" y1="28.3" x2="40" y2="138.3" stroke="#2563eb" stroke-width="1.8"/></svg></div><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 2</li><li><b>C.</b> 4</li><li><b>D.</b> 6</li><li><b>E.</b> 8</li></ol>
+  <p class="q-stem">Các hình xếp chấm thành tam giác có số chấm là 1, 3, 6, 10, 15, … (hình thứ n có thêm một hàng n chấm so với hình trước). Hình thứ 78 có nhiều hơn hình thứ 77 bao nhiêu chấm?</p><p class="q-en" lang="en">Dots are arranged in triangles with 1, 3, 6, 10, 15, … dots (figure n has a new row of n dots added to the previous figure). How many more dots does figure 78 have than figure 77?</p><ol class="q-opts"><li><b>A.</b> 68</li><li><b>B.</b> 75</li><li><b>C.</b> 77</li><li><b>D.</b> 78</li><li><b>E.</b> 79</li></ol>
   <details><summary>Đáp án và lời giải câu 3</summary>
-    <p><b>Đáp án: C. 4</b></p>
-    <p>Nhận dạng: tam giác có hai cạnh nằm trên trục toạ độ (hoặc đường nằm ngang), cạnh còn lại là đường thẳng.<br>Ý tưởng: tìm giao điểm với hai trục: tam giác vuông tại O có hai cạnh góc vuông là hai đoạn trên trục.<br>Bước 1: Cho y = 0: x = 4;<br>điểm (4; 0).<br>Bước 2: Cho x = 0: −2y = 4, y = −2;<br>điểm (0; −2).<br>Bước 3: Hai cạnh góc vuông dài 4 và 2;<br>diện tích = 4 × 2 : 2 = 4.<br>Vậy diện tích là 4.</p>
+    <p><b>Đáp án: D. 78</b></p>
+    <p>Nhận dạng: dãy hình xếp chấm thành tam giác, số chấm tăng thêm một hàng ở mỗi hình.<br>Ý tưởng: ghép hai hình giống nhau thành hình chữ nhật n × (n + 1) rồi chia đôi.<br>Bước 1: Hình thứ 78 có thêm một hàng 78 chấm so với hình thứ 77.<br>Bước 2: Kiểm bằng công thức: hình 78 có 78 × 79 : 2 = 3081 chấm, hình 77 có 77 × 78 : 2 = 3003 chấm;<br>3081 − 3003 = 78.<br>Vậy đáp án là 78.<br>Mẹo: hai số tam giác liền nhau có tổng bằng bình phương, ví dụ 6 + 10 = 4 × 4.</p>
   </details>
 </li>
 <li class="q" id="cau-4">
   <div class="q-head"><span class="q-n">Câu 4</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Trên cùng một cạnh AB, về cùng một phía, người ta dựng bát giác đều, lục giác đều, tam giác đều. Tại đỉnh A: ∠1 là góc giữa cạnh của bát giác đều và cạnh của lục giác đều; ∠2 là góc giữa cạnh của lục giác đều và cạnh của tam giác đều (như hình). Tính ∠1 + ∠2 (độ).</p><p class="q-en" lang="en">On the same segment AB and on the same side of it, a regular octagon, a regular hexagon, an equilateral triangle are drawn. At vertex A: ∠1 is between the sides of the octagon and the hexagon; ∠2 is between the sides of the hexagon and the triangle (see the figure). Find ∠1 + ∠2 in degrees.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 4"><svg width="300" height="219" viewBox="0 0 300 219" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="186.2,191 113.8,191 62.5,139.7 62.5,67.3 113.8,16 186.2,16 237.5,67.3 237.5,139.7" stroke="#2563eb" stroke-width="1.8" fill="#2563eb" fill-opacity="0.04"/><polygon points="186.2,191 113.8,191 77.5,128.2 113.8,65.4 186.2,65.4 222.5,128.2" stroke="#7c3aed" stroke-width="1.8" fill="#7c3aed" fill-opacity="0.04"/><polygon points="186.2,191 113.8,191 150,128.2" stroke="#0891b2" stroke-width="1.8" fill="#0891b2" fill-opacity="0.04"/><path d="M102.2,170.9 A23.2,23.2 0 0 0 97.4,174.6" stroke="#f97316" stroke-width="1.6" fill="none"/><text x="95.2" y="170.8" font-size="11" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">1</text><path d="M134.1,155.8 A40.6,40.6 0 0 0 93.5,155.8" stroke="#f97316" stroke-width="1.6" fill="none"/><text x="113.8" y="147.2" font-size="11" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">2</text><text x="105.8" y="203" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="194.2" y="203" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text></svg></div><ol class="q-opts"><li><b>A.</b> 45</li><li><b>B.</b> 70</li><li><b>C.</b> 75</li><li><b>D.</b> 76</li><li><b>E.</b> 81</li></ol>
+  <p class="q-stem">Số có ba chữ số nào có đúng 5 ước dương?</p><p class="q-en" lang="en">Which three-digit number has exactly 5 positive divisors?</p><ol class="q-opts"><li><b>A.</b> 625</li><li><b>B.</b> 626</li><li><b>C.</b> 629</li><li><b>D.</b> 630</li><li><b>E.</b> 1296</li></ol>
   <details><summary>Đáp án và lời giải câu 4</summary>
-    <p><b>Đáp án: C. 75</b></p>
-    <p>Nhận dạng: các đa giác đều chung cạnh AB, góc tại A giữa cạnh của hai hình.<br>Ý tưởng: cạnh của mỗi hình tạo với AB đúng một góc trong, nên góc giữa hai cạnh là hiệu hai góc trong.<br>Bước 1: Góc trong = 180° − 360° : số cạnh: bát giác đều 135°;<br>lục giác đều 120°;<br>tam giác đều 60°.<br>Bước 2: ∠1 = 135° − 120° = 15°;<br>∠2 = 120° − 60° = 60°.<br>Bước 3: ∠1 + ∠2 = 15° + 60° = 75°.<br>Vậy ∠1 + ∠2 = 75°.</p>
+    <p><b>Đáp án: A. 625</b></p>
+    <p>Nhận dạng: số có ba chữ số có đúng 5 ước.<br>Ý tưởng: số ước bằng tích các (số mũ + 1), nên viết 5 thành tích để biết dạng số.<br>Bước 1: 5 = 5, nên số đó có dạng p⁴ (p là số nguyên tố).<br>Bước 2: Thử p: 2⁴ = 16, 3⁴ = 81, 5⁴ = 625, 7⁴ = 2401.<br>Bước 3: Chỉ 625 có ba chữ số.<br>Vậy số đó là 625.</p>
   </details>
 </li>
 <li class="q" id="cau-5">
   <div class="q-head"><span class="q-n">Câu 5</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Con kém bố 23 tuổi. 4 năm nữa, tích tuổi của hai bố con là 624. Hiện nay tuổi con là bao nhiêu?</p><p class="q-en" lang="en">A child is 23 years younger than the father. In 4 years, the product of their ages is 624. How old is the child now?</p><ol class="q-opts"><li><b>A.</b> 8</li><li><b>B.</b> 12</li><li><b>C.</b> 16</li><li><b>D.</b> 20</li><li><b>E.</b> 35</li></ol>
+  <p class="q-stem">Trong ống tiết kiệm có 57 tờ tiền gồm loại 5 nghìn đồng và loại 2 nghìn đồng, tổng cộng 144 nghìn đồng. Hỏi có bao nhiêu tờ tiền loại 5 nghìn đồng?</p><p class="q-en" lang="en">A piggy bank holds 57 banknotes of 5 thousand dong and 2 thousand dong, 144 thousand dong in total. How many banknotes are worth 5 thousand dong?</p><ol class="q-opts"><li><b>A.</b> 7</li><li><b>B.</b> 8</li><li><b>C.</b> 9</li><li><b>D.</b> 10</li><li><b>E.</b> 11</li></ol>
   <details><summary>Đáp án và lời giải câu 5</summary>
-    <p><b>Đáp án: B. 12</b></p>
-    <p>Nhận dạng: bài tuổi cho tích hai tuổi, hiệu tuổi không đổi.<br>Ý tưởng: gọi tuổi con ở thời điểm 4 năm nữa là t thì tuổi bố lúc đó là t + 23;<br>lập phương trình bậc hai.<br>Bước 1: Gọi tuổi con 4 năm nữa là t (t &gt; 0), tuổi bố lúc đó là t + 23.<br>Bước 2: t(t + 23) = 624, tức là t² + 23t − 624 = 0.<br>Bước 3: Tìm hai số hơn kém 23 có tích 624: 624 = 16 × 39;<br>(t − 16)(t + 39) = 0, nên t = 16 hoặc t = −39.<br>Bước 4: t &gt; 0 nên t = 16;<br>tuổi con hiện nay là 16 − 4 = 12.<br>Vậy hiện nay tuổi con là 12.</p>
+    <p><b>Đáp án: D. 10</b></p>
+    <p>Nhận dạng: hai loại có giá trị (điểm, chân, tiền) khác nhau, biết tổng số lượng và tổng giá trị, tìm số lượng từng loại.<br>Ý tưởng: giả sử tất cả cùng một loại, so với tổng thực tế để biết chênh bao nhiêu, mỗi lần đổi một cái sang loại kia thì tổng đổi một lượng cố định.<br>Bước 1: Giả sử cả 57 đồng đều là đồng 2 nghìn: tổng là 57 × 2 = 114 nghìn đồng.<br>Bước 2: Thực tế tổng là 144, nhiều hơn 144 − 114 = 30 nghìn đồng.<br>Bước 3: Mỗi lần thay một đồng 2 nghìn bằng một đồng 5 nghìn thì tổng tăng 5 − 2 = 3 nghìn đồng.<br>Bước 4: Số đồng 5 nghìn: 30 : 3 = 10;<br>số đồng 2 nghìn: 57 − 10 = 47.<br>Bước 5: Kiểm: 10 × 5 + 47 × 2 = 50 + 94 = 144.<br>Vậy có 10 đồng 5 nghìn.<br>Mẹo: kiểm lại bằng cách tính tổng giá trị.</p>
   </details>
 </li>
 <li class="q" id="cau-6">
   <div class="q-head"><span class="q-n">Câu 6</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Gieo một con xúc xắc 6 mặt, được số chấm b. Có bao nhiêu kết quả để phương trình x² + bx + 1 = 0 có nghiệm?</p><p class="q-en" lang="en">Roll a six-sided die and let b be the number shown. How many outcomes are there in which the equation x² + bx + 1 = 0 has a real root?</p><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 4</li><li><b>C.</b> 5</li><li><b>D.</b> 9</li><li><b>E.</b> 15</li></ol>
+  <p class="q-stem">Tổng của 21 bội của 5 liên tiếp bằng 1470. Tìm số nhỏ nhất trong 21 số đó.</p><p class="q-en" lang="en">The sum of 21 consecutive multiples of 5 is 1470. Find the smallest of these 21 numbers.</p><ol class="q-opts"><li><b>A.</b> 15</li><li><b>B.</b> 17</li><li><b>C.</b> 18</li><li><b>D.</b> 19</li><li><b>E.</b> 20</li></ol>
   <details><summary>Đáp án và lời giải câu 6</summary>
-    <p><b>Đáp án: C. 5</b></p>
-    <p>Nhận dạng: xúc xắc cho hệ số của phương trình bậc hai, xét dấu Δ.<br>Ý tưởng: Δ = b² − 4 × (hệ số tự do) là biệt thức;<br>phương trình có nghiệm khi Δ ≥ 0.<br>Bước 1: Có 6 kết quả: b = 1, 2, …, 6.<br>Bước 2: Δ = b² − 4 ≥ 0, tức b² ≥ 4.<br>Bước 3: Bình phương: 1² = 1, 2² = 4, 3² = 9, 4² = 16, 5² = 25, 6² = 36;<br>thoả mãn: b = 2, 3, 4, 5 hoặc 6, có 5 giá trị.<br>Vậy có 5 kết quả.</p>
+    <p><b>Đáp án: E. 20</b></p>
+    <p>Nhận dạng: tổng của dãy bội của 5 liên tiếp, tìm một số trong dãy.<br>Ý tưởng: trung bình cộng của dãy cách đều là số ở giữa, từ đó đếm bước sang số cần tìm.<br>Bước 1: Trung bình cộng của dãy: 1470 : 21 = 70.<br>Bước 2: Dãy cách đều có 21 số (lẻ) nên số ở giữa là số thứ 11, bằng trung bình 70.<br>Bước 3: Hai số liền nhau hơn kém 5.<br>Từ số thứ 11 lùi về số thứ 1 (số nhỏ nhất) là 10 bước.<br>Bước 4: Số nhỏ nhất là 70 − 10 × 5 = 20.<br>Vậy số nhỏ nhất là 20.<br>Mẹo: dãy lẻ số hạng thì trung bình chính là số ở giữa.</p>
   </details>
 </li>
 <li class="q" id="cau-7">
   <div class="q-head"><span class="q-n">Câu 7</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Cần ít nhất bao nhiêu học sinh để chắc chắn có 29 bạn sinh cùng một tháng?</p><p class="q-en" lang="en">What is the least number of students needed to be sure that 29 of them were born in the same month?</p><ol class="q-opts"><li><b>A.</b> 332</li><li><b>B.</b> 336</li><li><b>C.</b> 337</li><li><b>D.</b> 348</li><li><b>E.</b> 349</li></ol>
+  <p class="q-stem">Cho dãy số 3, 10, 21, 36, 55, 78, … Tìm số tiếp theo của dãy.</p><p class="q-en" lang="en">Here is a sequence: 3, 10, 21, 36, 55, 78, … Find the next term.</p><ol class="q-opts"><li><b>A.</b> 91</li><li><b>B.</b> 101</li><li><b>C.</b> 102</li><li><b>D.</b> 104</li><li><b>E.</b> 105</li></ol>
   <details><summary>Đáp án và lời giải câu 7</summary>
-    <p><b>Đáp án: C. 337</b></p>
-    <p>Nhận dạng: chắc chắn có 29 bạn sinh cùng một tháng, dùng nguyên lí chuồng bồ câu.<br>Ý tưởng: đếm số chuồng;<br>xấu nhất mỗi chuồng có 29 − 1 = 28, thêm 1 là đủ.<br>Bước 1: Mỗi tháng là một chuồng: có 12 chuồng.<br>Bước 2: Xấu nhất mỗi chuồng 28: 28 × 12 = 336;<br>thêm 1: 336 + 1 = 337.<br>Vậy cần ít nhất 337 học sinh.</p>
+    <p><b>Đáp án: E. 105</b></p>
+    <p>Nhận dạng: dãy số mà mỗi số tách được thành tích của số thứ tự với một số đều đặn.<br>Ý tưởng: phân tích từng số thành hai thừa số, nhận ra một thừa số là số thứ tự n, thừa số kia tăng đều, viết số thứ n = n × (thừa số kia).<br>Bước 1: Tách các số thành hai thừa số: 2 × 5, 3 × 7, 4 × 9, 5 × 11, … Thừa số thứ nhất là số thứ tự n;<br>thừa số thứ hai 5, 7, 9, 11 tăng đều 2, nên bằng 2 × n + 1 (n = 1: 3 đúng là số thứ nhất).<br>Bước 2: Số thứ 7: 7 × (2 × 7 + 1) = 7 × 15 = 105.<br>Vậy đáp án là 105.<br>Mẹo: hiệu hai số liền nhau tăng đều thì số hạng có dạng bậc hai theo n, thử tách thành tích.</p>
   </details>
 </li>
 <li class="q" id="cau-8">
   <div class="q-head"><span class="q-n">Câu 8</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Số có hai chữ số ab (b ≠ 0) cộng với số viết ngược ba thì được 66. Tìm số ab nhỏ nhất.</p><p class="q-en" lang="en">A two-digit number ab (b ≠ 0) plus its reverse ba equals 66. Find the smallest such ab.</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 13</li><li><b>C.</b> 15</li><li><b>D.</b> 17</li><li><b>E.</b> 20</li></ol>
+  <p class="q-stem">Có bao nhiêu số tự nhiên từ 2051 đến 3634 chia hết cho cả 4 và 6?</p><p class="q-en" lang="en">How many whole numbers from 2051 to 3634 are divisible by both 4 and 6?</p><ol class="q-opts"><li><b>A.</b> 66</li><li><b>B.</b> 131</li><li><b>C.</b> 132</li><li><b>D.</b> 133</li><li><b>E.</b> 135</li></ol>
   <details><summary>Đáp án và lời giải câu 8</summary>
-    <p><b>Đáp án: C. 15</b></p>
-    <p>Nhận dạng: số có hai chữ số cộng số viết ngược.<br>Ý tưởng: ab + ba = (10 × a + b) + (10 × b + a) = 11 × (a + b).<br>Bước 1: 11 × (a + b) = 66, nên a + b = 6.<br>Bước 2: a, b từ 1 đến 9, a + b = 6: các số ab là 15, 24, 33, 42, 51.<br>Vậy số nhỏ nhất là 15.</p>
+    <p><b>Đáp án: C. 132</b></p>
+    <p>Nhận dạng: đếm bội của một số trong một khoảng.<br>Ý tưởng: số chia hết cho cả các số đó là bội của BCNN, tìm bội đầu, bội cuối rồi đếm số cách đều.<br>Bước 1: BCNN(4, 6) = 12 (4 = 2², 6 = 2 × 3, lấy mỗi thừa số với số mũ lớn nhất: 2² × 3).<br>Bước 2: Bội đầu: 2051 : 12 = 170 (dư 11), bội nhỏ nhất là 12 × 171 = 2052.<br>Bước 3: Bội cuối: 3634 : 12 = 302 (dư 10), bội lớn nhất là 12 × 302 = 3624.<br>Bước 4: Số các bội: (3624 − 2052) : 12 + 1 = 132.<br>Vậy có 132 số.</p>
   </details>
 </li>
 <li class="q" id="cau-9">
   <div class="q-head"><span class="q-n">Câu 9</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Sơ đồ có một ô ở giữa và 8 ô ở ngoài, xếp thành 4 đường thẳng cùng đi qua ô giữa; mỗi đường có 3 ô (ô giữa và 2 ô ngoài). Điền các số 8, 9, 10, 11, 12, 13, 14, 15, 16 vào 9 ô, mỗi ô một số, sao cho tổng ba số trên mỗi đường đều bằng nhau. Ô giữa có thể nhận bao nhiêu giá trị khác nhau?</p><p class="q-en" lang="en">A diagram has one centre cell and 8 outer cells forming 4 straight lines through the centre; each line has 3 cells (the centre and 2 outer cells). The numbers 8, 9, 10, 11, 12, 13, 14, 15, 16 are placed in the 9 cells, one per cell, so that the three numbers on every line have the same sum. How many different values can the centre cell take?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 9"><svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="150" y1="30" x2="150" y2="170" stroke="#9ca3af" stroke-width="1.6"/><line x1="199.5" y1="50.5" x2="100.5" y2="149.5" stroke="#9ca3af" stroke-width="1.6"/><line x1="220" y1="100" x2="80" y2="100" stroke="#9ca3af" stroke-width="1.6"/><line x1="199.5" y1="149.5" x2="100.5" y2="50.5" stroke="#9ca3af" stroke-width="1.6"/><circle cx="150" cy="30" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="150" y="35" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="199.5" cy="50.5" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="199.5" y="55.5" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="220" cy="100" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="220" y="105" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="199.5" cy="149.5" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="199.5" y="154.5" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="150" cy="170" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="150" y="175" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="100.5" cy="149.5" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="100.5" y="154.5" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="80" cy="100" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="80" y="105" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="100.5" cy="50.5" r="13" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="100.5" y="55.5" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold"></text><circle cx="150" cy="100" r="15" stroke="#f97316" stroke-width="2.2" fill="#ffffff" fill-opacity="1"/><text x="150" y="105" font-size="13" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">?</text></svg></div><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 3</li><li><b>C.</b> 4</li><li><b>D.</b> 8</li><li><b>E.</b> 9</li></ol>
+  <p class="q-stem">Tìm chữ số tận cùng của 1998²⁰²².</p><p class="q-en" lang="en">Find the last digit of 1998²⁰²².</p><ol class="q-opts"><li><b>A.</b> 2</li><li><b>B.</b> 3</li><li><b>C.</b> 4</li><li><b>D.</b> 8</li><li><b>E.</b> 9</li></ol>
   <details><summary>Đáp án và lời giải câu 9</summary>
-    <p><b>Đáp án: B. 3</b></p>
-    <p>Nhận dạng: điền số vào các đường cùng đi qua ô giữa, tổng mỗi đường bằng nhau.<br>Ý tưởng: cộng tổng của 4 đường: ô giữa được tính 4 lần, mỗi ô ngoài tính đúng 1 lần.<br>Bước 1: Gọi c là số ở ô giữa, S là tổng mỗi đường.<br>Tổng các số: 8 + 9 + 10 + 11 + 12 + 13 + 14 + 15 + 16 = 108.<br>Bước 2: Cộng 4 đường: 4 × S = 108 + 3 × c.<br>Hai ô ngoài trên một đường có tổng S − c = (108 − c) : 4, nên (108 − c) chia hết cho 4.<br>Bước 3: Các số c trong đề làm 108 − c chia hết cho 4: 8, 12 hoặc 16.<br>Bước 4: Kiểm tra ghép cặp các số ngoài (ghép số nhỏ nhất với số lớn nhất, …).<br>c = 8: mỗi cặp tổng (108 − 8) : 4 = 25, ghép được (9, 16), (10, 15), (11, 14), (12, 13).<br>c = 12: mỗi cặp tổng (108 − 12) : 4 = 24, ghép được (8, 16), (9, 15), (10, 14), (11, 13).<br>c = 16: mỗi cặp tổng (108 − 16) : 4 = 23, ghép được (8, 15), (9, 14), (10, 13), (11, 12).<br>Vậy ô giữa có 3 giá trị (c = 8, 12 hoặc 16).</p>
+    <p><b>Đáp án: C. 4</b></p>
+    <p>Nhận dạng: chữ số tận cùng của một luỹ thừa có số mũ lớn.<br>Ý tưởng: chỉ chữ số tận cùng của cơ số quyết định, và chữ số tận cùng các luỹ thừa lặp lại theo chu kỳ.<br>Bước 1: 1998 tận cùng 8, nên 1998²⁰²² có cùng chữ số tận cùng với 8²⁰²².<br>Bước 2: 8¹ = 8, 8² = 64, 8³ = 512, 8⁴ = 4096: chữ số tận cùng 8, 4, 2, 6 rồi lặp lại (chu kỳ 4).<br>Bước 3: 2022 : 4 = 505 (dư 2), nên lấy số thứ 2 của chu kỳ: 4.<br>Vậy chữ số tận cùng là 4.<br>Mẹo: số mũ chia hết cho độ dài chu kỳ thì lấy số cuối của chu kỳ.</p>
   </details>
 </li>
 <li class="q" id="cau-10">
   <div class="q-head"><span class="q-n">Câu 10</span><span class="q-pts">3 điểm · sai trừ 0,75</span></div>
-  <p class="q-stem">Hình chóp tứ giác đều S.ABCD có cạnh đáy 8 cm, chiều cao 18 cm. Tính thể tích hình chóp.</p><p class="q-en" lang="en">Regular square pyramid S.ABCD has base edge 8 cm and height 18 cm. Find its volume.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 10"><svg width="300" height="179" viewBox="0 0 300 179" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="74.4,151 182.4,151 225.6,107.8 117.6,107.8" stroke="#2563eb" stroke-width="0.1" fill="#2563eb" fill-opacity="0.06"/><line x1="74.4" y1="151" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="182.4" y1="151" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="225.6" y1="107.8" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="117.6" y1="107.8" x2="74.4" y2="151" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="74.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="150" y2="129.4" stroke="#f97316" stroke-width="1.6" stroke-dasharray="4 3"/><circle cx="150" cy="129.4" r="2.2" stroke="currentColor" stroke-width="1" fill="currentColor"/><text x="150" y="11" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">S</text><text x="66.4" y="163" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="188.4" y="165" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="234.6" y="111.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="108.6" y="107.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="142" y="141.4" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">O</text><text x="128.4" y="169" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">8</text><text x="179.7" y="47" font-size="11" text-anchor="start" stroke="none" fill="#2563eb" font-weight="bold">SO = 18</text></svg></div><ol class="q-opts"><li><b>A.</b> 144</li><li><b>B.</b> 374</li><li><b>C.</b> 384</li><li><b>D.</b> 768</li><li><b>E.</b> 1152</li></ol>
+  <p class="q-stem">Tam giác ABC có AB = 33, AC = 56, BC = 65. Biết cos B : cos C = m/n với m/n là phân số tối giản. Tính m + n.</p><p class="q-en" lang="en">Triangle ABC has AB = 33, AC = 56, BC = 65. Given cos B : cos C = m/n in lowest terms, find m + n.</p><ol class="q-opts"><li><b>A.</b> 89</li><li><b>B.</b> 90</li><li><b>C.</b> 92</li><li><b>D.</b> 93</li><li><b>E.</b> 1848</li></ol>
   <details><summary>Đáp án và lời giải câu 10</summary>
-    <p><b>Đáp án: C. 384</b></p>
-    <p>Nhận dạng: hình chóp tứ giác đều (đáy là hình vuông, đỉnh S nằm thẳng trên tâm đáy).<br>Ý tưởng: thể tích hình chóp = 1/3 × diện tích đáy × chiều cao.<br>Bước 1: Diện tích đáy = 8 × 8 = 64.<br>Bước 2: V = 1/3 × 64 × 18 = 384 (cm³).<br>Vậy thể tích là 384 cm³.</p>
+    <p><b>Đáp án: A. 89</b></p>
+    <p>Nhận dạng: ba cạnh là một bộ ba Pytago, hỏi tỉ số hai cos.<br>Ý tưởng: kiểm tra tổng bình phương hai cạnh nhỏ bằng bình phương cạnh lớn để thấy tam giác vuông.<br>Bước 1: Cạnh lớn nhất BC = 65;<br>33 × 33 + 56 × 56 = 1089 + 3136 = 4225 = 65 × 65, nên tam giác vuông tại A (Pytago đảo).<br>Bước 2: Trong tam giác vuông, cos của góc nhọn = cạnh kề : cạnh huyền: cos B = AB : BC = 33/65, cos C = AC : BC = 56/65.<br>Bước 3: cos B : cos C = 33/56, nên m + n = 33 + 56 = 89.<br>Vậy m + n = 89.</p>
   </details>
 </li>
 </ol><h2>Phần 2: Câu 4 điểm <small>(10 câu × 4 điểm)</small></h2>
 <ol class="questions" start="11">
 <li class="q" id="cau-11">
   <div class="q-head"><span class="q-n">Câu 11</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Một mảnh vườn hình tam giác vuông có cạnh huyền 41 m và diện tích 180 m². Tính chu vi.</p><p class="q-en" lang="en">A right-triangular garden has hypotenuse 41 m and area 180 m². Find its perimeter.</p><ol class="q-opts"><li><b>A.</b> 80</li><li><b>B.</b> 89</li><li><b>C.</b> 90</li><li><b>D.</b> 91</li><li><b>E.</b> 100</li></ol>
+  <p class="q-stem">Đa thức x⁴ + mx³ − 14x² + nx + 60 chia hết cho x² − 5x + 6. Tính m − n.</p><p class="q-en" lang="en">The polynomial x⁴ + mx³ − 14x² + nx + 60 is divisible by x² − 5x + 6. Find m − n.</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 13</li><li><b>C.</b> 15</li><li><b>D.</b> 18</li><li><b>E.</b> 25</li></ol>
   <details><summary>Đáp án và lời giải câu 11</summary>
-    <p><b>Đáp án: C. 90</b></p>
-    <p>Nhận dạng: tam giác vuông, biết cạnh huyền cùng diện tích hoặc chu vi, không biết từng cạnh.<br>Ý tưởng: gọi a, b là hai cạnh góc vuông, c là cạnh huyền, dùng (a + b)² = a² + b² + 2ab với a² + b² = c².<br>Bước 1: a × b = 2 × 180 = 360;<br>a² + b² = c² = 41 × 41 = 1681.<br>Bước 2: (a + b)² = 1681 + 2 × 360 = 2401.<br>Bước 3: 49 × 49 = 2401, nên a + b = 49.<br>Bước 4: Chu vi = 49 + 41 = 90 (m).<br>Vậy chu vi là 90 m.</p>
+    <p><b>Đáp án: C. 15</b></p>
+    <p>Nhận dạng: đa thức chia hết cho một đa thức bậc hai phân tích được thành hai nhân tử bậc nhất.<br>Ý tưởng: chia hết cho (x − r₁)(x − r₂) thì giá trị tại x = r₁ và x = r₂ đều bằng 0: được hệ hai ẩn m, n.<br>Bước 1: x² − 5x + 6 = (x − 2)(x − 3), nên giá trị tại x = 2 và x = 3 bằng 0.<br>Bước 2: Thay x = 2: 2⁴ + m × 2³ − 14 × 2² + n × 2 + 60 = 16 + 8m − 56 + 2n + 60 = 0;<br>tức là 8m + 2n = −20, chia cho 2: 4m + n = −10 (1).<br>Bước 3: Thay x = 3: 3⁴ + m × 3³ − 14 × 3² + n × 3 + 60 = 81 + 27m − 126 + 3n + 60 = 0;<br>tức là 27m + 3n = −15, chia cho 3: 9m + n = −5 (2).<br>Bước 4: Hệ số của n là 1 và 1, đã bằng nhau;<br>trừ hai phương trình: −5m = −5, nên m = (−5) : (−5) = 1;<br>thế vào (1): 4 × 1 + n = −10, nên n = −10 − 4 = −14.<br>Bước 5: m − n = 1 − (−14) = 15.<br>Vậy m − n = 15.</p>
   </details>
 </li>
 <li class="q" id="cau-12">
   <div class="q-head"><span class="q-n">Câu 12</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Hai hình ■ và ★ là hai số nguyên dương, biết ■ − ★ = 4 và ■ × ★ = 21. Tính ■ × ■ + ★ × ★.</p><p class="q-en" lang="en">The shapes ■ and ★ stand for two positive integers with ■ − ★ = 4 and ■ × ★ = 21. Find ■ × ■ + ★ × ★.</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 40</li><li><b>C.</b> 57</li><li><b>D.</b> 58</li><li><b>E.</b> 100</li></ol>
+  <p class="q-stem">Hai số nguyên tố p, q thoả mãn 3p + 11q = 83. Tìm q.</p><p class="q-en" lang="en">Primes p and q satisfy 3p + 11q = 83. Find q.</p><ol class="q-opts"><li><b>A.</b> 7</li><li><b>B.</b> 9</li><li><b>C.</b> 11</li><li><b>D.</b> 12</li><li><b>E.</b> 77</li></ol>
   <details><summary>Đáp án và lời giải câu 12</summary>
-    <p><b>Đáp án: D. 58</b></p>
-    <p>Nhận dạng: hai số cho bằng hình, biết hiệu (hoặc tổng) và tích, tính một biểu thức khác của hai số.<br>Ý tưởng: không cần tìm riêng từng số: dùng hằng đẳng thức nối bình phương tổng, bình phương hiệu và tích.<br>Bước 1: Dùng A × A + B × B = (A − B) × (A − B) + 2 × A × B với A = ■, B = ★.<br>Bước 2: ■ × ■ + ★ × ★ = 4 × 4 + 2 × 21 = 16 + 42 = 58.<br>Bước 3: Kiểm: ■ = 7, ★ = 3 thoả 7 − 3 = 4, 7 × 3 = 21, và 7 × 7 + 3 × 3 = 49 + 9 = 58.<br>Vậy đáp án là 58.</p>
+    <p><b>Đáp án: A. 7</b></p>
+    <p>Nhận dạng: phương trình bậc nhất với hai ẩn là số nguyên tố, vế phải lẻ.<br>Ý tưởng: xét chẵn lẻ: tổng lẻ nên một trong hai ẩn là số nguyên tố chẵn 2.<br>Bước 1: p, q cùng lẻ thì 3p, 11q cùng lẻ, tổng chẵn;<br>mà 83 lẻ.<br>Vậy p = 2 hoặc q = 2.<br>Bước 2: p = 2: 11q = 83 − 3 × 2 = 77, q = 77 : 11 = 7, là số nguyên tố.<br>Bước 3: q = 2: 3p = 83 − 11 × 2 = 61, mà 61 không chia hết cho 3: loại.<br>Vậy q = 7.</p>
   </details>
 </li>
 <li class="q" id="cau-13">
   <div class="q-head"><span class="q-n">Câu 13</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Tổng các góc trong của một đa giác lồi là 1620°. Đa giác có bao nhiêu đường chéo?</p><p class="q-en" lang="en">The interior angles of a convex polygon add up to 1620°. How many diagonals does it have?</p><ol class="q-opts"><li><b>A.</b> 34</li><li><b>B.</b> 39</li><li><b>C.</b> 44</li><li><b>D.</b> 49</li><li><b>E.</b> 54</li></ol>
+  <p class="q-stem">Hình chóp tứ giác đều S.ABCD có chiều cao 3 cm và thể tích 81 cm³. Tính độ dài cạnh đáy.</p><p class="q-en" lang="en">Regular square pyramid S.ABCD has height 3 cm and volume 81 cm³. Find the base edge.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 13"><svg width="300" height="179" viewBox="0 0 300 179" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="74.4,151 182.4,151 225.6,107.8 117.6,107.8" stroke="#2563eb" stroke-width="0.1" fill="#2563eb" fill-opacity="0.06"/><line x1="74.4" y1="151" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="182.4" y1="151" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="225.6" y1="107.8" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="117.6" y1="107.8" x2="74.4" y2="151" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="74.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="150" y2="129.4" stroke="#f97316" stroke-width="1.6" stroke-dasharray="4 3"/><circle cx="150" cy="129.4" r="2.2" stroke="currentColor" stroke-width="1" fill="currentColor"/><text x="150" y="11" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">S</text><text x="66.4" y="163" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="188.4" y="165" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="234.6" y="111.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="108.6" y="107.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="142" y="141.4" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">O</text><text x="128.4" y="169" font-size="11" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">?</text><text x="179.7" y="47" font-size="11" text-anchor="start" stroke="none" fill="#2563eb" font-weight="bold">SO = 3</text></svg></div><ol class="q-opts"><li><b>A.</b> 4</li><li><b>B.</b> 5</li><li><b>C.</b> 6</li><li><b>D.</b> 7</li><li><b>E.</b> 9</li></ol>
   <details><summary>Đáp án và lời giải câu 13</summary>
-    <p><b>Đáp án: C. 44</b></p>
-    <p>Nhận dạng: đếm số đường chéo của đa giác lồi.<br>Ý tưởng: đếm đường chéo đi ra từ mỗi đỉnh rồi chia 2, vì mỗi đường chéo có hai đầu.<br>Bước 1: Tổng góc trong là (n − 2) × 180°, với n là số cạnh: n − 2 = 1620 : 180 = 9, n = 9 + 2 = 11.<br>Bước 2: Từ một đỉnh nối được 11 − 3 = 8 đường chéo (bỏ chính nó và hai đỉnh kề).<br>Bước 3: 11 đỉnh cho 11 × 8 = 88 lần đếm;<br>mỗi đường chéo được đếm hai lần.<br>Bước 4: Số đường chéo: 88 : 2 = 44.<br>Vậy có 44 đường chéo.</p>
+    <p><b>Đáp án: E. 9</b></p>
+    <p>Nhận dạng: hình chóp tứ giác đều (đáy là hình vuông, đỉnh S nằm thẳng trên tâm đáy).<br>Ý tưởng: V = 1/3 × a² × h nên a² = 3V : h.<br>Bước 1: a² = 3 × 81 : 3 = 81.<br>Bước 2: a = √81 = 9 (cm).<br>Vậy cạnh đáy là 9 cm.</p>
   </details>
 </li>
 <li class="q" id="cau-14">
   <div class="q-head"><span class="q-n">Câu 14</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Một đội có 9 bạn nam và 7 bạn nữ. Chọn 5 bạn đi thi. Có bao nhiêu cách chọn mà trong đó có nhiều nhất 1 bạn nam?</p><p class="q-en" lang="en">A team has 9 boys and 7 girls. 5 students are chosen for a contest. In how many ways can the selection contain at most 1 boy?</p><ol class="q-opts"><li><b>A.</b> 21</li><li><b>B.</b> 336</li><li><b>C.</b> 338</li><li><b>D.</b> 4368</li><li><b>E.</b> 12285</li></ol>
+  <p class="q-stem">Đổi chỗ các chữ cái của từ GEOMETRY (giữ đủ 8 chữ cái) được bao nhiêu dãy chữ khác nhau, kể cả chính từ GEOMETRY?</p><p class="q-en" lang="en">How many different arrangements of the letters of the word GEOMETRY are there (all 8 letters used, the word itself included)?</p><ol class="q-opts"><li><b>A.</b> 20160</li><li><b>B.</b> 20161</li><li><b>C.</b> 20162</li><li><b>D.</b> 20163</li><li><b>E.</b> 20170</li></ol>
   <details><summary>Đáp án và lời giải câu 14</summary>
-    <p><b>Đáp án: B. 336</b></p>
-    <p>Nhận dạng: chọn nhóm có nhiều nhất 1 bạn nam.<br>Ý tưởng: tách theo số bạn nam trong nhóm, mỗi trường hợp dùng quy tắc nhân, rồi cộng.<br>Bước 1: Nhóm 5 bạn có nhiều nhất 1 bạn nam: số bạn nam là 0 hoặc 1.<br>Bước 2 (0 bạn nam, 5 bạn nữ): (7 × 6) : (2 × 1) = 21 cách (chọn 5 trong 7 cũng là chọn 2 phần không lấy).<br>Bước 3 (1 bạn nam, 4 bạn nữ): 9 cách chọn bạn nam;<br>(7 × 6 × 5) : (3 × 2 × 1) = 35 cách chọn bạn nữ (chọn 4 trong 7 cũng là chọn 3 phần không lấy);<br>nhân: 9 × 35 = 315.<br>Bước 4: Cộng: 21 + 315 = 336.<br>Vậy có 336 cách.</p>
+    <p><b>Đáp án: A. 20160</b></p>
+    <p>Nhận dạng: xếp hàng các chữ cái có chữ lặp lại.<br>Ý tưởng: coi các chữ đều khác nhau để đếm, rồi chia cho số cách đổi chỗ các chữ giống nhau.<br>Bước 1: Đếm chữ: 8 chữ cái, chữ E lặp 2 lần.<br>Bước 2: Nếu 8 chữ đều khác nhau thì có 8! = 8 × 7 × … × 1 = 40320 cách (n! = n × (n − 1) × … × 1, đọc là n giai thừa).<br>Bước 3: Đổi chỗ các chữ giống nhau không tạo cách mới: chia cho 2! = 2 (chữ E).<br>Bước 4: 40320 : 2 = 20160.<br>Vậy có 20160 cách.</p>
   </details>
 </li>
 <li class="q" id="cau-15">
   <div class="q-head"><span class="q-n">Câu 15</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Chọn ít nhất bao nhiêu số trong các số 1, 2, …, 22 để chắc chắn có hai số mà số này là bội của số kia?</p><p class="q-en" lang="en">What is the least number of numbers chosen from 1, 2, …, 22 to be sure that one of two chosen numbers is a multiple of the other?</p><ol class="q-opts"><li><b>A.</b> 7</li><li><b>B.</b> 10</li><li><b>C.</b> 12</li><li><b>D.</b> 14</li><li><b>E.</b> 17</li></ol>
+  <p class="q-stem">Ba số A, B, C thoả: A bằng 50% của B, A bằng 160% của C và A + B + C = 29. Tìm số C.</p><p class="q-en" lang="en">Three numbers A, B, C satisfy: A is 50% of B, A is 160% of C and A + B + C = 29. Find C.</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 1</li><li><b>C.</b> 2</li><li><b>D.</b> 4</li><li><b>E.</b> 5</li></ol>
   <details><summary>Đáp án và lời giải câu 15</summary>
-    <p><b>Đáp án: C. 12</b></p>
-    <p>Nhận dạng: chắc chắn có hai số mà số này là bội của số kia.<br>Ý tưởng: chia các số thành xích, trong mỗi xích hai số bất kì có số này là bội số kia;<br>mỗi xích là một chuồng.<br>Bước 1: Xích dạng x, 2x, 4x, 8x, … (x là số lẻ), ví dụ 3, 6, 12.<br>Bước 2: Mỗi xích bắt đầu bằng một số lẻ từ 1 tới 21;<br>có 11 số như vậy nên có 11 xích.<br>Bước 3: Chọn 11 + 1 = 12 số thì có hai số cùng xích, tức có cặp bội.<br>Bước 4: Chọn 11 số vẫn có thể không có cặp bội, ví dụ các số từ 12 tới 22 (11 số): gấp đôi số nhỏ nhất là 24 &gt; 22.<br>Vậy cần chọn ít nhất 12 số.</p>
+    <p><b>Đáp án: E. 5</b></p>
+    <p>Nhận dạng: các số liên hệ với nhau bằng phần trăm và biết tổng, tìm một số.<br>Ý tưởng: chọn A làm chuẩn, viết B và C theo A bằng cách đổi phần trăm ra phân số, rồi dùng tổng.<br>Bước 1: Đổi phần trăm ra phân số của A: A = 50/100 × B nên B = A × 100/50 = 2 × A;<br>A = 160/100 × C nên C = 5/8 × A.<br>Bước 2: Tổng: A + B + C = A × (1 + 2 + 5/8) = A × 29/8 = 29.<br>Bước 3: A = 29 : 29/8 = 8.<br>Bước 4: B = 2 × 8 = 16;<br>C = 5/8 × 8 = 5.<br>Kiểm: 8 + 16 + 5 = 29.<br>Vậy số C là 5.<br>Mẹo: p% của B nghĩa là p/100 × B, nên đừng nhầm số nào là chuẩn.</p>
   </details>
 </li>
 <li class="q" id="cau-16">
   <div class="q-head"><span class="q-n">Câu 16</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Tìm giá trị lớn nhất của biểu thức 66/√(x² + 18x + 202) (x là số thực).</p><p class="q-en" lang="en">For real x, find the maximum value of 66/√(x² + 18x + 202).</p><ol class="q-opts"><li><b>A.</b> 6</li><li><b>B.</b> 7</li><li><b>C.</b> 12</li><li><b>D.</b> 16</li><li><b>E.</b> 66</li></ol>
+  <p class="q-stem">Số 81ab3191 (a, b là các chữ số) chia hết cho 99. Tính a + b.</p><p class="q-en" lang="en">The number 81ab3191 (a and b are digits) is divisible by 99. Find a + b.</p><ol class="q-opts"><li><b>A.</b> 9</li><li><b>B.</b> 11</li><li><b>C.</b> 12</li><li><b>D.</b> 13</li><li><b>E.</b> 14</li></ol>
   <details><summary>Đáp án và lời giải câu 16</summary>
-    <p><b>Đáp án: A. 6</b></p>
-    <p>Nhận dạng: phân số có tử là hằng số dương, mẫu chứa căn của một tam thức.<br>Ý tưởng: phân số dương lớn nhất khi mẫu nhỏ nhất;<br>hoàn thành bình phương dưới căn.<br>Bước 1: x² + 18x + 202 = (x + 9)² + 121 = (x + 9)² + 11² (nửa hệ số của x là 18 : 2 = 9, 202 − 81 = 121).<br>Bước 2: (x + 9)² ≥ 0 nên (x + 9)² + 121 ≥ 121, √(x² + 18x + 202) ≥ √121 = 11, dấu bằng khi x = −9.<br>Bước 3: Mẫu nhỏ nhất bằng 11 nên biểu thức lớn nhất bằng 66 : 11 = 6.<br>Vậy giá trị lớn nhất là 6.</p>
+    <p><b>Đáp án: D. 13</b></p>
+    <p>Nhận dạng: điền hai chữ số để số chia hết cho 99.<br>Ý tưởng: 100 chia 99 dư 1, nên một số chia 99 có cùng số dư với tổng các cặp hai chữ số tính từ phải.<br>Bước 1: Tách từ phải thành các cặp hai chữ số: 91, 31, ab, 81.<br>Bước 2: Tổng các cặp: 81 + 31 + 91 + ab = 203 + ab, phải chia hết cho 99.<br>Bước 3: 203 ≤ 203 + ab ≤ 302, nên 203 + ab = 297, ab = 297 − 203 = 94.<br>Vậy a + b = 9 + 4 = 13.</p>
   </details>
 </li>
 <li class="q" id="cau-17">
   <div class="q-head"><span class="q-n">Câu 17</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Các chữ cái a, b, c, d, e là chữ số khác 0, mỗi biểu thức dưới đây là một số năm chữ số viết liền. Cho abcde + eabcd + deabc + cdeab + bcdea = 311108. Biết a = 9, b = 7, c = 6, d = 1. Tìm e.</p><p class="q-en" lang="en">The letters a, b, c, d, e are non-zero digits and each expression below is a five-digit number written by its digits. Given abcde + eabcd + deabc + cdeab + bcdea = 311108. Given a = 9, b = 7, c = 6, d = 1. Find e.</p><ol class="q-opts"><li><b>A.</b> 4</li><li><b>B.</b> 5</li><li><b>C.</b> 6</li><li><b>D.</b> 7</li><li><b>E.</b> 8</li></ol>
+  <p class="q-stem">Dãy số 6, 5, 0, 11, 16, 27, … có 3 số đầu là 6, 5, 0, từ số thứ 4 trở đi mỗi số bằng tổng ba số liền trước. Trong 666 số hạng đầu tiên có bao nhiêu số chẵn?</p><p class="q-en" lang="en">The sequence 6, 5, 0, 11, 16, 27, … starts with 6, 5, 0, and from term 4 on each term is the sum of the three previous terms. How many even numbers are among the first 666 terms?</p><ol class="q-opts"><li><b>A.</b> 333</li><li><b>B.</b> 335</li><li><b>C.</b> 336</li><li><b>D.</b> 338</li><li><b>E.</b> 343</li></ol>
   <details><summary>Đáp án và lời giải câu 17</summary>
-    <p><b>Đáp án: B. 5</b></p>
-    <p>Nhận dạng: tổng các số hoán vị vòng của một số năm chữ số, tìm tổng chữ số hay một chữ số.<br>Ý tưởng: mỗi chữ số đứng đủ 5 hàng nên tổng bằng 11111 nhân tổng các chữ số.<br>Bước 1: Mỗi chữ số lần lượt đứng ở cả 5 hàng (chục nghìn, nghìn, trăm, chục, đơn vị) đúng một lần trong 5 số.<br>Bước 2: Nên tổng bằng (10000 + 1000 + 100 + 10 + 1) × (a + b + c + d + e) = 11111 × (a + b + c + d + e) = 311108.<br>Bước 3: a + b + c + d + e = 311108 : 11111 = 28.<br>Bước 4: e = 28 − (9 + 7 + 6 + 1) = 28 − 23 = 5.<br>Vậy e bằng 5.<br>Mẹo: tổng các chữ số tối đa là 45, dùng để loại nhanh.</p>
+    <p><b>Đáp án: A. 333</b></p>
+    <p>Nhận dạng: dãy truy hồi, đếm số chẵn;<br>không cần tính các số, chỉ cần xét tính chẵn lẻ.<br>Ý tưởng: tính chẵn lẻ của mỗi số chỉ phụ thuộc tính chẵn lẻ của 3 số trước, nên lặp lại theo chu kì.<br>Bước 1: Xét lần lượt (C là chẵn, L là lẻ): C, L, C, L, C.<br>Bước 2: 3 số cuối (số thứ 3 tới 5) trùng 3 số đầu, nên lặp với chu kì 2;<br>mỗi chu kì có 1 số chẵn.<br>Bước 3: 666 = 2 × 333: 333 chu kì cho 333 số chẵn.<br>Vậy có 333 số chẵn.</p>
   </details>
 </li>
 <li class="q" id="cau-18">
   <div class="q-head"><span class="q-n">Câu 18</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Cho x &gt; 1 và x + 1/x = 66. Tính √x − 1/√x.</p><p class="q-en" lang="en">Given x &gt; 1 and x + 1/x = 66, find √x − 1/√x.</p><ol class="q-opts"><li><b>A.</b> 7</li><li><b>B.</b> 8</li><li><b>C.</b> 18</li><li><b>D.</b> 64</li><li><b>E.</b> 66</li></ol>
+  <p class="q-stem">Máy tính bắt đầu với số 705. Mỗi bước máy làm như sau: Nếu số đang có chia hết cho 3 thì chia cho 3, nếu không thì trừ đi 1. Máy dừng khi hiện số 1. Máy đã làm bao nhiêu bước?</p><p class="q-en" lang="en">A machine starts with the number 705. At each step it does the following: If the current number is divisible by 3, divide it by 3; otherwise subtract 1. It stops when it shows 1. How many steps did it make?</p><ol class="q-opts"><li><b>A.</b> 8</li><li><b>B.</b> 9</li><li><b>C.</b> 10</li><li><b>D.</b> 11</li><li><b>E.</b> 13</li></ol>
   <details><summary>Đáp án và lời giải câu 18</summary>
-    <p><b>Đáp án: B. 8</b></p>
-    <p>Nhận dạng: biết x + 1/x, hỏi √x − 1/√x.<br>Ý tưởng: bình phương √x − 1/√x thì ra x + 1/x − 2, rồi lấy căn.<br>Bước 1: (√x − 1/√x)² = x − 2 × √x × 1/√x + 1/x = x + 1/x − 2.<br>Bước 2: (√x − 1/√x)² = 66 − 2 = 64.<br>Bước 3: x &gt; 1 nên √x &gt; 1 &gt; 1/√x, tức là √x − 1/√x &gt; 0, do đó √x − 1/√x = √64 = 8.<br>Vậy √x − 1/√x = 8.</p>
+    <p><b>Đáp án: D. 11</b></p>
+    <p>Nhận dạng: máy rẽ nhánh theo điều kiện chia hết, chạy tới khi hiện số 1, hỏi số bước hay tổng.<br>Ý tưởng: chạy máy từng bước ghi lại dãy số, rồi đếm hoặc cộng.<br>Bước 1: Chạy máy từng bước và ghi các số hiện ra: 705 → 235 → 234 → 78 → 26 → 25.<br>Bước 2: Tiếp từ 25: 25 → 24 → 8 → 7 → 6 → 2 → 1.<br>Bước 3: Dãy có 12 số, từ số đầu tới số 1 là 12 − 1 = 11 bước.<br>Vậy máy đã làm 11 bước.<br>Mẹo: số bước ít hơn số số hạng của dãy một đơn vị.</p>
   </details>
 </li>
 <li class="q" id="cau-19">
   <div class="q-head"><span class="q-n">Câu 19</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Có bao nhiêu số nguyên dương không vượt quá 600 chia hết cho 7 mà không chia hết cho 5?</p><p class="q-en" lang="en">How many integers from 1 to 600 are divisible by 7 but not by 5?</p><ol class="q-opts"><li><b>A.</b> 17</li><li><b>B.</b> 48</li><li><b>C.</b> 68</li><li><b>D.</b> 69</li><li><b>E.</b> 85</li></ol>
+  <p class="q-stem">Hai hình ■ và ★ là hai số nguyên dương, biết ■ − ★ = 4 và ■ × ★ = 21. Tính ■ × ■ + ★ × ★.</p><p class="q-en" lang="en">The shapes ■ and ★ stand for two positive integers with ■ − ★ = 4 and ■ × ★ = 21. Find ■ × ■ + ★ × ★.</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 40</li><li><b>C.</b> 54</li><li><b>D.</b> 58</li><li><b>E.</b> 100</li></ol>
   <details><summary>Đáp án và lời giải câu 19</summary>
-    <p><b>Đáp án: C. 68</b></p>
-    <p>Nhận dạng: đếm số chia hết cho 7 nhưng không chia hết cho 5.<br>Ý tưởng: lấy số các bội của 7, bớt đi các số chia hết cho cả 7 và 5 (bội của BCNN).<br>Bước 1: Bội của 7: 600 : 7 = 85 (dư 5), có 85 số.<br>Bước 2: BCNN(7, 5) = 7 × 5 = 35 (các số nguyên tố cùng nhau).<br>Bội của 35: 600 : 35 = 17 (dư 5), có 17 số.<br>Bước 3: 85 − 17 = 68.<br>Vậy có 68 số.</p>
+    <p><b>Đáp án: D. 58</b></p>
+    <p>Nhận dạng: hai số cho bằng hình, biết hiệu (hoặc tổng) và tích, tính một biểu thức khác của hai số.<br>Ý tưởng: không cần tìm riêng từng số: dùng hằng đẳng thức nối bình phương tổng, bình phương hiệu và tích.<br>Bước 1: Dùng A × A + B × B = (A − B) × (A − B) + 2 × A × B với A = ■, B = ★.<br>Bước 2: ■ × ■ + ★ × ★ = 4 × 4 + 2 × 21 = 16 + 42 = 58.<br>Bước 3: Kiểm: ■ = 7, ★ = 3 thoả 7 − 3 = 4, 7 × 3 = 21, và 7 × 7 + 3 × 3 = 49 + 9 = 58.<br>Vậy đáp án là 58.</p>
   </details>
 </li>
 <li class="q" id="cau-20">
   <div class="q-head"><span class="q-n">Câu 20</span><span class="q-pts">4 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Dãy chữ cái INTEGERINTEGER… được viết lặp lại mãi. Trong 1999 chữ cái đầu tiên có bao nhiêu chữ E?</p><p class="q-en" lang="en">The word INTEGER is written over and over: INTEGERINTEGER…. How many times does the letter E appear among the first 1999 letters?</p><ol class="q-opts"><li><b>A.</b> 561</li><li><b>B.</b> 570</li><li><b>C.</b> 571</li><li><b>D.</b> 572</li><li><b>E.</b> 581</li></ol>
+  <p class="q-stem">Ngôi sao năm cánh trong hình có 5 đỉnh ngoài ghi sẵn 1, 10, 19, 13, 7 và 5 điểm bên trong p, q, r, s, t. Năm đường thẳng (mỗi đường 4 ô) là: 1 – p – q – 19; 10 – q – r – 13; 19 – r – s – 7; 13 – s – t – 1; 7 – t – p – 10. Điền các số 15, 18, 21, 24, 27 vào p, q, r, s, t (mỗi ô một số) sao cho tổng bốn số trên mỗi đường đều bằng nhau. Tìm số ở ô s.</p><p class="q-en" lang="en">The five-pointed star in the picture has its 5 outer points labelled 1, 10, 19, 13, 7 and 5 inner points p, q, r, s, t. The five lines (4 cells each) are: 1 – p – q – 19; 10 – q – r – 13; 19 – r – s – 7; 13 – s – t – 1; 7 – t – p – 10. The numbers 15, 18, 21, 24, 27 are placed in p, q, r, s, t (one each) so that every line has the same sum. Find the number in cell s.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 20"><svg width="300" height="218" viewBox="0 0 300 218" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="150" y1="26" x2="199.4" y2="178" stroke="#9ca3af" stroke-width="1.6"/><line x1="229.9" y1="84" x2="100.6" y2="178" stroke="#9ca3af" stroke-width="1.6"/><line x1="199.4" y1="178" x2="70.1" y2="84" stroke="#9ca3af" stroke-width="1.6"/><line x1="100.6" y1="178" x2="150" y2="26" stroke="#9ca3af" stroke-width="1.6"/><line x1="70.1" y1="84" x2="229.9" y2="84" stroke="#9ca3af" stroke-width="1.6"/><circle cx="150" cy="26" r="12" stroke="#2563eb" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="150" y="30" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">1</text><circle cx="229.9" cy="84" r="12" stroke="#2563eb" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="229.9" y="88" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">10</text><circle cx="199.4" cy="178" r="12" stroke="#2563eb" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="199.4" y="182" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">19</text><circle cx="100.6" cy="178" r="12" stroke="#2563eb" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="100.6" y="182" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">13</text><circle cx="70.1" cy="84" r="12" stroke="#2563eb" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="70.1" y="88" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">7</text><circle cx="168.9" cy="84" r="12" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="168.9" y="88" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">p</text><circle cx="180.5" cy="119.9" r="12" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="180.5" y="123.9" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">q</text><circle cx="150" cy="142.1" r="12" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="150" y="146.1" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">r</text><circle cx="119.5" cy="119.9" r="12" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="119.5" y="123.9" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">s</text><circle cx="131.1" cy="84" r="12" stroke="currentColor" stroke-width="1.8" fill="#ffffff" fill-opacity="1"/><text x="131.1" y="88" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">t</text></svg></div><ol class="q-opts"><li><b>A.</b> 15</li><li><b>B.</b> 18</li><li><b>C.</b> 21</li><li><b>D.</b> 22</li><li><b>E.</b> 24</li></ol>
   <details><summary>Đáp án và lời giải câu 20</summary>
-    <p><b>Đáp án: C. 571</b></p>
-    <p>Nhận dạng: dãy lặp lại theo chu kỳ, hỏi số lần xuất hiện của một phần tử trong rất nhiều phần tử đầu.<br>Ý tưởng: tìm độ dài chu kỳ, chia số phần tử cho chu kỳ, thương là số chu kỳ đủ, dư là phần thừa ra ở đầu chu kỳ.<br>Bước 1: Một chu kỳ là &quot;INTEGER&quot; có 7 chữ cái, trong đó chữ E xuất hiện 2 lần (ở vị trí 4, 6).<br>Bước 2: Chia số chữ cái cho độ dài chu kỳ: 1999 : 7 = 285 dư 4, tức là 285 chu kỳ đủ và 4 chữ cái thừa ra.<br>Bước 3: 285 chu kỳ đủ có 285 × 2 = 570 lần.<br>4 chữ cái thừa ra là đầu chu kỳ (INTE) có 1 lần.<br>Bước 4: Cộng lại: 570 + 1 = 571.<br>Vậy có 571 chữ E trong 1999 chữ cái đầu.<br>Mẹo: phần dư phải đếm riêng trên đúng các vị trí đầu chu kỳ, không đoán theo trung bình.</p>
+    <p><b>Đáp án: C. 21</b></p>
+    <p>Nhận dạng: điền số vào ngôi sao năm cánh, tổng mỗi đường bằng nhau.<br>Ý tưởng: mỗi ô nằm trên đúng 2 đường, nên cộng 5 đường được 2 lần tổng mọi số;<br>rồi dùng từng đường để tìm tổng hai ô bên trong.<br>Bước 1: Tổng 5 đỉnh ngoài: 1 + 10 + 19 + 13 + 7 = 50.<br>Tổng 5 số điền: 15 + 18 + 21 + 24 + 27 = 105.<br>Bước 2: Gọi S là tổng mỗi đường: 5 × S = 2 × (50 + 105) = 310, nên S = 310 : 5 = 62.<br>Bước 3: Đường 7 – t – p – 10: t + p = 62 − 7 − 10 = 45.<br>Bước 4: Đường 10 – q – r – 13: q + r = 62 − 10 − 13 = 39.<br>Bước 5: s = (p + q + r + s + t) − (t + p) − (q + r) = 105 − 45 − 39 = 21.<br>Vậy ô s là 21.</p>
   </details>
 </li>
 </ol><h2>Phần 3: Câu 5 điểm <small>(10 câu × 5 điểm)</small></h2>
 <ol class="questions" start="21">
 <li class="q" id="cau-21">
   <div class="q-head"><span class="q-n">Câu 21</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Parabol y = 2x² cắt đường thẳng y = −2x + 4 tại hai điểm A, B. O là gốc toạ độ. Tính diện tích tam giác OAB.</p><p class="q-en" lang="en">The parabola y = 2x² meets the line y = −2x + 4 at A and B. O is the origin. Find the area of triangle OAB.</p><ol class="q-opts"><li><b>A.</b> 2</li><li><b>B.</b> 5</li><li><b>C.</b> 6</li><li><b>D.</b> 7</li><li><b>E.</b> 12</li></ol>
+  <p class="q-stem">Biết x, y là các số nguyên và −1000 &lt; x &lt; 1000, −1000 &lt; y &lt; 1000 thoả mãn 11x + 9y = 233. Tìm giá trị lớn nhất của x + 2y.</p><p class="q-en" lang="en">Given x, y are integers with −1000 &lt; x &lt; 1000 and −1000 &lt; y &lt; 1000 with 11x + 9y = 233, find the greatest value of x + 2y.</p><ol class="q-opts"><li><b>A.</b> 1188</li><li><b>B.</b> 1189</li><li><b>C.</b> 1190</li><li><b>D.</b> 1192</li><li><b>E.</b> 1194</li></ol>
   <details><summary>Đáp án và lời giải câu 21</summary>
-    <p><b>Đáp án: C. 6</b></p>
-    <p>Nhận dạng: giao của parabol và đường thẳng.<br>Ý tưởng: hoành độ giao điểm là nghiệm của phương trình ax² = mx + n;<br>đường thẳng cắt trục tung tại C(0; n), chia tam giác OAB thành hai tam giác chung đáy OC.<br>Bước 1: 2x² = −2x + 4, tức là 2x² + 2x − 4 = 0.<br>Bước 2: 2x² + 2x − 4 = 2(x − 1)(x + 2) = 0, nên x = 1 hoặc x = −2 (thử lại: 2 × 1² = 2 = −2 × 1 + 4);<br>A(1; 2), B(−2; 8).<br>Bước 3: Đường thẳng cắt trục tung tại C(0; 4), OC = 4.<br>Bước 4: S(OAB) = S(OAC) + S(OBC) = 4 × 1 : 2 + 4 × 2 : 2 = 6.<br>Vậy diện tích tam giác OAB là 6.</p>
+    <p><b>Đáp án: C. 1190</b></p>
+    <p>Nhận dạng: phương trình bậc nhất hai ẩn nghiệm nguyên, tìm cực trị của một biểu thức bậc nhất.<br>Ý tưởng: rút y theo x, điều kiện y nguyên cho x cách đều nhau;<br>biểu thức cần tìm tăng (hoặc giảm) theo x nên đạt cực trị ở x lớn nhất hoặc nhỏ nhất.<br>Bước 1: y = (233 − 11x)/9;<br>y nguyên khi 233 − 11x chia hết cho 9, tức là x chia 9 dư 4 (thử x = 4: 233 − 44 = 189 = 9 × 21).<br>Bước 2: −1000 &lt; y &lt; 1000 nên −8758 ≤ 11x ≤ 9224, −8758/11 ≤ x ≤ 9224/11;<br>kết hợp −1000 &lt; x &lt; 1000;<br>x = −788, −779, −770, …, 832.<br>Bước 3: x + 2y = (9x + 2(233 − 11x))/9 = (−13x + 466)/9, giảm khi x tăng, nên giá trị lớn nhất đạt khi x nhỏ nhất: x = −788, y = 989.<br>Bước 4: x + 2y = −788 + 2 × 989 = 1190.<br>Vậy giá trị lớn nhất là 1190.</p>
   </details>
 </li>
 <li class="q" id="cau-22">
   <div class="q-head"><span class="q-n">Câu 22</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Tìm số tự nhiên n lớn nhất để 100! chia hết cho 20ⁿ, biết 100! = 1 × 2 × 3 × … × 100.</p><p class="q-en" lang="en">Find the largest natural number n such that 100! = 1 × 2 × … × 100 is divisible by 20ⁿ.</p><ol class="q-opts"><li><b>A.</b> 5</li><li><b>B.</b> 24</li><li><b>C.</b> 44</li><li><b>D.</b> 48</li><li><b>E.</b> 72</li></ol>
+  <p class="q-stem">Lớp có 39 học sinh. Có 21 bạn học Vẽ, 21 bạn học Nhạc, 15 bạn học Múa; 10 bạn học cả Vẽ và Nhạc, 5 bạn học cả Vẽ và Múa, 10 bạn học cả Nhạc và Múa; 1 bạn học cả ba nhóm. Có bao nhiêu bạn học đúng một nhóm?</p><p class="q-en" lang="en">A class has 39 students. 21 take Art, 21 take Music, 15 take Dance; 10 take both Art and Music, 5 take both Art and Dance, 10 take both Music and Dance; 1 take all three. How many students take exactly one of them?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 22"><svg width="300" height="248" viewBox="0 0 300 248" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="10" width="272" height="214" rx="8" stroke="#9ca3af" stroke-width="1.2" fill="none"/><circle cx="118" cy="92" r="56" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.06"/><circle cx="182" cy="92" r="56" stroke="#7c3aed" stroke-width="2" fill="#7c3aed" fill-opacity="0.06"/><circle cx="150" cy="146" r="56" stroke="#16a34a" stroke-width="2" fill="#16a34a" fill-opacity="0.06"/><text x="56" y="36" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">Vẽ</text><text x="244" y="36" font-size="12" text-anchor="middle" stroke="none" fill="#7c3aed" font-weight="bold">Nhạc</text><text x="150" y="216" font-size="12" text-anchor="middle" stroke="none" fill="#16a34a" font-weight="bold">Múa</text></svg></div><ol class="q-opts"><li><b>A.</b> 8</li><li><b>B.</b> 10</li><li><b>C.</b> 11</li><li><b>D.</b> 12</li><li><b>E.</b> 15</li></ol>
   <details><summary>Đáp án và lời giải câu 22</summary>
-    <p><b>Đáp án: B. 24</b></p>
-    <p>Nhận dạng: số mũ lớn nhất của 20 chia hết một giai thừa.<br>Ý tưởng: phân tích 20 ra thừa số nguyên tố, đếm từng thừa số trong 100! rồi lấy số lần ít nhất.<br>Bước 1: 20 = 2 × 2 × 5.<br>Bước 2: Thừa số 2: 100 : 2 = 50, 100 : 4 = 25, 100 : 8 = 12, 100 : 16 = 6, 100 : 32 = 3, 100 : 64 = 1, cộng 50 + 25 + 12 + 6 + 3 + 1 = 97, đủ cho 97 : 2 = 48 lần.<br>Bước 3: Thừa số 5: 100 : 5 = 20, 100 : 25 = 4, cộng 20 + 4 = 24.<br>Bước 4: Mỗi thừa số 20 cần đủ cả hai loại, nên lấy số nhỏ hơn: 24.<br>Vậy n lớn nhất là 24.</p>
+    <p><b>Đáp án: B. 10</b></p>
+    <p>Nhận dạng: ba nhóm có phần chung, dùng bao hàm loại trừ (công thức cho ba tập).<br>Ý tưởng: cộng ba nhóm, trừ từng phần chung hai nhóm (bị đếm hai lần), cộng lại phần chung cả ba (bị trừ hết).<br>Bước 1: Học ít nhất một nhóm: 21 + 21 + 15 − 10 − 5 − 10 + 1 = 33.<br>Bước 2: Học đúng hai nhóm: (10 − 1) + (5 − 1) + (10 − 1) = 22.<br>Bước 3: Đúng một nhóm = ít nhất một − đúng hai − cả ba: 33 − 22 − 1 = 10.<br>Vậy có 10 bạn học đúng một nhóm.</p>
   </details>
 </li>
 <li class="q" id="cau-23">
   <div class="q-head"><span class="q-n">Câu 23</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Có bao nhiêu số nguyên dương n sao cho n + 21 và n − 6 đều là số chính phương?</p><p class="q-en" lang="en">How many positive integers n such that n + 21 and n − 6 are both perfect squares are there?</p><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 2</li><li><b>C.</b> 3</li><li><b>D.</b> 4</li><li><b>E.</b> 12</li></ol>
+  <p class="q-stem">Cho x &gt; 0 và x = 2 + 32/(4 + 32/(4 + 32/(4 + …))). Tìm x.</p><p class="q-en" lang="en">Given x &gt; 0 and x = 2 + 32/(4 + 32/(4 + 32/(4 + …))), find x.</p><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 6</li><li><b>C.</b> 7</li><li><b>D.</b> 10</li><li><b>E.</b> 11</li></ol>
   <details><summary>Đáp án và lời giải câu 23</summary>
-    <p><b>Đáp án: B. 2</b></p>
-    <p>Nhận dạng: hai biểu thức của n cùng là số chính phương.<br>Ý tưởng: trừ hai số chính phương cho nhau để mất n, rồi viết hiệu hai bình phương thành tích.<br>Bước 1: Gọi n + 21 = k², n − 6 = j² (k, j là số tự nhiên).<br>Trừ vế: k² − j² = 21 + 6 = 27.<br>Bước 2: (k − j)(k + j) = 27, với k + j &gt; k − j và hai thừa số cùng chẵn lẻ (tổng là 2k).<br>Bước 3: 1 × 27: k = (1 + 27) : 2 = 14, j = (27 − 1) : 2 = 13, n = 13² + 6 = 175;<br>3 × 9: k = (3 + 9) : 2 = 6, j = (9 − 3) : 2 = 3, n = 3² + 6 = 15.<br>Vậy có 2 số n (15, 175).</p>
+    <p><b>Đáp án: B. 6</b></p>
+    <p>Nhận dạng: phân số liên tục vô hạn, phần mẫu lặp lại.<br>Ý tưởng: thay phần lặp bằng ẩn, quy đồng ra phương trình bậc hai, chỉ lấy nghiệm dương.<br>Bước 1: Số đứng đầu (2) khác số trong mẫu (4), nên đặt y = x − 2 = 32/(4 + 32/(4 + …));<br>mẫu lặp lại 4 + y, nên y = 32/(4 + y) với y &gt; 0.<br>Bước 2: Nhân chéo: y² + 4y − 32 = 0.<br>Bước 3: Phân tích: 32 = 4 × 8 và 8 − 4 = 4, nên (y − 4)(y + 8) = 0.<br>Bước 4: y &gt; 0 nên y = 4;<br>x = 2 + 4 = 6.<br>Vậy x = 6.</p>
   </details>
 </li>
 <li class="q" id="cau-24">
   <div class="q-head"><span class="q-n">Câu 24</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Số 1A20330971B (A, B là các chữ số) chia hết cho 132. Tính A × B.</p><p class="q-en" lang="en">The number 1A20330971B (A and B are digits) is divisible by 132. Find A × B.</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 1</li><li><b>C.</b> 2</li><li><b>D.</b> 4</li><li><b>E.</b> 9</li></ol>
+  <p class="q-stem">Hai đoàn tàu dài 355 m và 45 m chạy ngược chiều nhau trên hai đường ray song song. Từ lúc đầu tàu gặp nhau đến lúc đuôi tàu rời nhau hoàn toàn mất 10 giây. Tỉ số vận tốc của hai tàu là 3 : 5. Tính vận tốc của tàu chậm hơn (km/h).</p><p class="q-en" lang="en">Two trains 355 m and 45 m long run in opposite directions on parallel tracks. From the moment the fronts meet until the ends have completely passed each other takes 10 seconds. The ratio of their speeds is 3 : 5. Find the speed of the slower train (km/h).</p><ol class="q-opts"><li><b>A.</b> 40</li><li><b>B.</b> 50</li><li><b>C.</b> 52</li><li><b>D.</b> 53</li><li><b>E.</b> 54</li></ol>
   <details><summary>Đáp án và lời giải câu 24</summary>
-    <p><b>Đáp án: D. 4</b></p>
-    <p>Nhận dạng: điền chữ số để số chia hết cho 132.<br>Ý tưởng: 132 = 4 × 3 × 11, các thừa số nguyên tố cùng nhau, nên số phải chia hết cho từng thừa số.<br>Bước 1: Chia hết cho 4: số tạo bởi hai chữ số cuối chia hết cho 4 (1B là 12, 16), nên B là 2 hoặc 6.<br>Bước 2: Chia hết cho 3: tổng các chữ số 1 + 2 + 0 + 3 + 3 + 0 + 9 + 7 + 1 + A + B = 26 + A + B phải chia hết cho 3.<br>Bước 3: Chia hết cho 11: tổng vị trí lẻ trừ tổng vị trí chẵn (tính từ phải): (B + 7 + 0 + 3 + 2 + 1) − (1 + 9 + 3 + 0 + A) = B − A.<br>Vì −9 ≤ B − A ≤ 9, nên B − A = 0.<br>Bước 4: Ghép: B − A = 0: (0, 0), (1, 1), …, (9, 9), giữ cặp có B là 2 hoặc 6: (2, 2), (6, 6), giữ cặp có 26 + A + B chia hết cho 3: (2, 2).<br>Vậy A × B = 2 × 2 = 4.</p>
+    <p><b>Đáp án: E. 54</b></p>
+    <p>Nhận dạng: hai đoàn tàu chạy trên hai đường ray song song, vượt nhau hoàn toàn, có chiều dài và vận tốc.<br>Ý tưởng: để vượt nhau hoàn toàn hai tàu phải đi lệch nhau đúng tổng chiều dài;<br>ngược chiều lệch nhau bằng tổng vận tốc, cùng chiều lệch nhau bằng hiệu vận tốc.<br>Bước 1: Để vượt nhau hoàn toàn, hai tàu cùng đi được quãng bằng tổng chiều dài: 355 + 45 = 400 m.<br>Bước 2: Hai tàu ngược chiều nên tổng vận tốc: 400 : 10 = 40 m/s.<br>Đổi sang km/h: 40 × 3,6 = 144 km/h.<br>Bước 3: Chia 144 km/h theo tỉ số 3 : 5: tổng 3 + 5 = 8 phần, một phần 144 : 8 = 18 km/h.<br>Bước 4: Tàu chậm: 3 × 18 = 54 km/h;<br>tàu nhanh: 5 × 18 = 90 km/h.<br>Vậy đáp án là 54.<br>Mẹo: 1 m/s = 3,6 km/h, nên đổi đơn vị trước khi chia.</p>
   </details>
 </li>
 <li class="q" id="cau-25">
   <div class="q-head"><span class="q-n">Câu 25</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Số tự nhiên nhỏ nhất có đúng 24 ước là số nào?</p><p class="q-en" lang="en">Find the smallest positive integer with exactly 24 positive divisors.</p><ol class="q-opts"><li><b>A.</b> 355</li><li><b>B.</b> 360</li><li><b>C.</b> 1152</li><li><b>D.</b> 6144</li><li><b>E.</b> 8388608</li></ol>
+  <p class="q-stem">Ba số dương a, b, c có ab = 30, bc = 48, ca = 40. Tính a + b + c.</p><p class="q-en" lang="en">Positive numbers a, b, c satisfy ab = 30, bc = 48, ca = 40. Find a + b + c.</p><ol class="q-opts"><li><b>A.</b> 19</li><li><b>B.</b> 20</li><li><b>C.</b> 29</li><li><b>D.</b> 118</li><li><b>E.</b> 240</li></ol>
   <details><summary>Đáp án và lời giải câu 25</summary>
-    <p><b>Đáp án: B. 360</b></p>
-    <p>Nhận dạng: tìm số tự nhiên nhỏ nhất có đúng 24 ước.<br>Ý tưởng: số ước bằng tích các (số mũ + 1), nên viết 24 thành tích, mỗi cách cho một dạng số.<br>Bước 1: Các cách viết 24: 24 = 12 × 2 = 8 × 3 = 6 × 4 = 6 × 2 × 2 = 4 × 3 × 2 = 3 × 2 × 2 × 2.<br>Bước 2: Dạng số tương ứng (p, q, r, s là các số nguyên tố khác nhau): p²³;<br>p¹¹ × q;<br>p⁷ × q²;<br>p⁵ × q³;<br>p⁵ × q × r;<br>p³ × q² × r;<br>p² × q × r × s.<br>Bước 3: Số nhỏ nhất mỗi dạng (số mũ lớn đặt cho số nguyên tố nhỏ): 2²³ = 8388608;<br>2¹¹ × 3 = 6144;<br>2⁷ × 3² = 1152;<br>2⁵ × 3³ = 864;<br>2⁵ × 3 × 5 = 480;<br>2³ × 3² × 5 = 360;<br>2² × 3 × 5 × 7 = 420.<br>Vậy số tự nhiên nhỏ nhất có đúng 24 ước là 360.<br>Mẹo: phải so mọi dạng, dạng một luỹ thừa thường rất lớn.</p>
+    <p><b>Đáp án: A. 19</b></p>
+    <p>Nhận dạng: biết tích từng cặp của ba số dương.<br>Ý tưởng: nhân ba đẳng thức được (abc)², lấy căn ra abc;<br>chia cho tích của hai số kia ra từng số.<br>Bước 1: Nhân: (abc)² = 30 × 48 × 40 = 57600.<br>Bước 2: a, b, c dương nên abc = √57600 = 240.<br>Bước 3: a = abc : bc = 240 : 48 = 5, b = abc : ca = 240 : 40 = 6, c = abc : ab = 240 : 30 = 8.<br>Bước 4: a + b + c = 5 + 6 + 8 = 19.<br>Vậy a + b + c = 19.</p>
   </details>
 </li>
 <li class="q" id="cau-26">
   <div class="q-head"><span class="q-n">Câu 26</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Năm nay tuổi bố gấp 5 lần tuổi con. 3 năm trước, tích số tuổi của hai người là 252. Hỏi hiện nay con bao nhiêu tuổi?</p><p class="q-en" lang="en">This year the father&#x27;s age is 5 times the child&#x27;s age. 3 years ago the product of their ages was 252. How old is the child now?</p><ol class="q-opts"><li><b>A.</b> 4</li><li><b>B.</b> 9</li><li><b>C.</b> 11</li><li><b>D.</b> 14</li><li><b>E.</b> 19</li></ol>
+  <p class="q-stem">Tính diện tích hình giới hạn bởi trục Ox và hai đường thẳng 4x − 7y + 48 = 0, 8x − 9y + 56 = 0.</p><p class="q-en" lang="en">Find the area of the region bounded by the x-axis and the lines 4x − 7y + 48 = 0 and 8x − 9y + 56 = 0.</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 15</li><li><b>C.</b> 18</li><li><b>D.</b> 19</li><li><b>E.</b> 20</li></ol>
   <details><summary>Đáp án và lời giải câu 26</summary>
-    <p><b>Đáp án: B. 9</b></p>
-    <p>Nhận dạng: bài toán tuổi có tích số tuổi ở thời điểm trước, đưa về phương trình bậc hai.<br>Ý tưởng: gọi tuổi con, viết tích hai tuổi trước đây, giải phương trình bậc hai và loại nghiệm không hợp lý.<br>Bước 1: Gọi c là tuổi con hiện nay (c &gt; 3), tuổi bố là 5 × c.<br>3 năm trước tuổi hai người là 5 × c − 3 và c − 3.<br>Bước 2: (5 × c − 3) × (c − 3) = 252.<br>Khai triển: 5 × c² − 18 × c + 9 = 252, tức 5 × c² − 18 × c − 243 = 0.<br>Bước 3: Biệt thức: 18 × 18 − 4 × 5 × (−243) = 5184, căn bằng 72.<br>Bước 4: c = (18 + 72) : 10 = 9 hoặc c = (18 − 72) : 10 = −27/5.<br>Bước 5: Con phải hơn 3 tuổi (đã có 3 năm trước) nên loại c = −27/5.<br>Do đó c = 9, kiểm: (45 − 3) × (9 − 3) = 252.<br>Vậy hiện nay con 9 tuổi.<br>Mẹo: tuổi trước đây phải dương nên tuổi hiện nay lớn hơn số năm đã lùi.</p>
+    <p><b>Đáp án: E. 20</b></p>
+    <p>Nhận dạng: tam giác tạo bởi hai đường thẳng và trục Ox.<br>Ý tưởng: hai đỉnh nằm trên Ox (cho y = 0), đỉnh thứ ba là giao điểm hai đường, chiều cao là |tung độ| của giao điểm.<br>Bước 1: Cho y = 0: đường thứ nhất 4x = −48, x = −48 : 4 = −12;<br>đường thứ hai 8x = −56, x = −56 : 8 = −7.<br>Hai đỉnh trên trục: (−12; 0) và (−7; 0).<br>Bước 2: Khử x để tìm tung độ giao điểm: nhân phương trình thứ nhất với 2: 8x − 14y + 96 = 0.<br>Lấy phương trình thứ nhất trừ phương trình thứ hai (sau khi nhân): −5y + 40 = 0, nên −5y = −40, y = −40 : (−5) = 8.<br>Bước 3: Đáy = −7 − (−12) = 5, chiều cao = 8;<br>diện tích = 5 × 8 : 2 = 20.<br>Vậy diện tích là 20.</p>
   </details>
 </li>
 <li class="q" id="cau-27">
   <div class="q-head"><span class="q-n">Câu 27</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Tìm chữ số tận cùng của 7²⁰¹⁹ + 5²⁰²³ + 13⁸⁸.</p><p class="q-en" lang="en">Find the last digit of 7²⁰¹⁹ + 5²⁰²³ + 13⁸⁸.</p><ol class="q-opts"><li><b>A.</b> 3</li><li><b>B.</b> 5</li><li><b>C.</b> 8</li><li><b>D.</b> 9</li><li><b>E.</b> 13</li></ol>
+  <p class="q-stem">Một khối lập phương lớn được sơn kín mặt ngoài rồi cắt thành các khối lập phương nhỏ cạnh 1 cm. Có 8 khối nhỏ không có mặt nào được sơn. Có bao nhiêu khối nhỏ đúng một mặt được sơn?</p><p class="q-en" lang="en">A large cube is painted on all outside faces and then cut into small cubes of side 1 cm. There are 8 small cubes with no painted face. How many small cubes have exactly one painted face?</p><ol class="q-opts"><li><b>A.</b> 23</li><li><b>B.</b> 24</li><li><b>C.</b> 25</li><li><b>D.</b> 29</li><li><b>E.</b> 40</li></ol>
   <details><summary>Đáp án và lời giải câu 27</summary>
-    <p><b>Đáp án: D. 9</b></p>
-    <p>Nhận dạng: chữ số tận cùng của tổng các luỹ thừa.<br>Ý tưởng: tìm chữ số tận cùng của từng luỹ thừa theo chu kỳ, rồi cộng các chữ số đó.<br>Bước 1: 7²⁰¹⁹: chu kỳ 7, 9, 3, 1 (dài 4), 2019 chia 4 dư 3 nên lấy số thứ 3: 3.<br>Bước 2: 5²⁰²³ tận cùng 5 (mọi luỹ thừa của 5 đều tận cùng 5).<br>Bước 3: 13⁸⁸ cùng tận cùng với 3⁸⁸, chu kỳ 3, 9, 7, 1 (dài 4), 88 chia hết cho 4 nên lấy số cuối: 1.<br>Bước 4: 3 + 5 + 1 = 9, nên tổng tận cùng 9.<br>Vậy chữ số tận cùng là 9.</p>
+    <p><b>Đáp án: B. 24</b></p>
+    <p>Nhận dạng: khối lập phương sơn mặt ngoài rồi cắt nhỏ, cho một số đếm, hỏi số đếm khác.<br>Ý tưởng: từ số đếm đã cho tìm cạnh n, rồi đếm khối nhỏ theo vị trí: góc, cạnh, mặt, ruột.<br>Bước 1: Gọi n là số khối nhỏ trên một cạnh của khối lập phương lớn, tổng có n × n × n khối.<br>Bước 2: Các khối không sơn tạo thành khối lập phương cạnh n − 2: (n − 2) × (n − 2) × (n − 2) = 8.<br>Bước 3: 8 = 2 × 2 × 2, nên n − 2 = 2 (căn bậc ba của 8), n = 4.<br>Bước 4: Mỗi mặt có 2 × 2 = 4 khối đúng một mặt sơn, 6 mặt: 6 × 4 = 24.<br>Vậy có 24 khối nhỏ.<br>Mẹo: khối ba mặt ở 8 góc, hai mặt ở 12 cạnh, một mặt ở 6 mặt, không sơn ở ruột.</p>
   </details>
 </li>
 <li class="q" id="cau-28">
   <div class="q-head"><span class="q-n">Câu 28</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Cho 16 điểm cách đều nhau trên một đường tròn (các đỉnh của đa giác đều 16 cạnh). Có bao nhiêu tam giác tù có ba đỉnh là ba trong các điểm này?</p><p class="q-en" lang="en">16 points are equally spaced on a circle (the vertices of a regular 16-gon). How many obtuse triangles have their three vertices among these points?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 28"><svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="150" cy="88" r="60" stroke="#9ca3af" stroke-width="1.5" fill="none"/><circle cx="150" cy="88" r="2.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="150" cy="28" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="173" cy="32.6" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="192.4" cy="45.6" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="205.4" cy="65" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="210" cy="88" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="205.4" cy="111" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="192.4" cy="130.4" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="173" cy="143.4" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="150" cy="148" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="127" cy="143.4" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="107.6" cy="130.4" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="94.6" cy="111" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="90" cy="88" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="94.6" cy="65" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="107.6" cy="45.6" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="127" cy="32.6" r="3.5" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/></svg></div><ol class="q-opts"><li><b>A.</b> 112</li><li><b>B.</b> 168</li><li><b>C.</b> 336</li><li><b>D.</b> 356</li><li><b>E.</b> 448</li></ol>
+  <p class="q-stem">Trong một nhóm 6 người, mỗi người hoặc luôn nói thật hoặc luôn nói dối. Hà nói: “Trong nhóm có đúng 1 kẻ nói dối.” Minh nói: “Trong nhóm có đúng 6 kẻ nói dối.” Dũng nói: “Trong nhóm có đúng 5 kẻ nói dối.” Bình nói: “Trong nhóm có đúng 3 kẻ nói dối.” Bảo nói: “Trong nhóm có đúng 4 kẻ nói dối.” Trang nói: “Trong nhóm có đúng 2 kẻ nói dối.” Hỏi có bao nhiêu người nói thật?</p><p class="q-en" lang="en">In a group of 6 people each person always tells the truth or always lies. Ha says: “There is exactly 1 liar in the group.” Minh says: “There are exactly 6 liars in the group.” Dung says: “There are exactly 5 liars in the group.” Binh says: “There are exactly 3 liars in the group.” Bao says: “There are exactly 4 liars in the group.” Trang says: “There are exactly 2 liars in the group.” How many of them tell the truth?</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 1</li><li><b>C.</b> 2</li><li><b>D.</b> 3</li><li><b>E.</b> 5</li></ol>
   <details><summary>Đáp án và lời giải câu 28</summary>
-    <p><b>Đáp án: C. 336</b></p>
-    <p>Nhận dạng: đếm hình có đỉnh là các điểm cách đều trên đường tròn.<br>Ý tưởng: góc nội tiếp chắn nửa đường tròn là góc vuông, chắn cung lớn hơn nửa đường tròn là góc tù.<br>Bước 1: Tam giác tù khi ba đỉnh nằm trong nửa đường tròn (không chứa hai đầu một đường kính).<br>Gọi đỉnh đầu tiên theo chiều kim đồng hồ là P;<br>hai đỉnh kia nằm trong 7 điểm kế tiếp P (chưa tới nửa vòng): 16 × (7 × 6) : (2 × 1) = 16 × 21 = 336.<br>Vậy có 336 tam giác tù.</p>
+    <p><b>Đáp án: B. 1</b></p>
+    <p>Nhận dạng: mỗi người nói về số kẻ nói dối trong nhóm, hỏi số người nói thật.<br>Ý tưởng: đặt L là số kẻ nói dối, lời nói đúng khi k bằng L, thử từng L được nhắc tới.<br>Bước 1: Gọi L là số kẻ nói dối.<br>Lời “có đúng k kẻ nói dối” chỉ đúng khi k = L, nên số người nói thật bằng số người nói k = L.<br>Bước 2: L = 1: Hà nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 1: mâu thuẫn.<br>Bước 3: L = 2: Trang nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 2: mâu thuẫn.<br>Bước 4: L = 3: Bình nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 3: mâu thuẫn.<br>Bước 5: L = 4: Bảo nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 4: mâu thuẫn.<br>Bước 6: L = 5: Dũng nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, đúng bằng 5: hợp lý.<br>Bước 7: L = 6: Minh nói thật (1 người), nên số kẻ nói dối là 6 − 1 = 5, khác 6: mâu thuẫn.<br>Bước 8: L là số khác (không ai nhắc tới, kể cả 0): không ai nói thật nên L = 6, mâu thuẫn.<br>Bước 9: Chỉ L = 5 hợp lý, vậy số người nói thật là 6 − 5 = 1.<br>Vậy có 1 người nói thật.<br>Mẹo: những lời giống nhau cùng đúng hoặc cùng sai.</p>
   </details>
 </li>
 <li class="q" id="cau-29">
   <div class="q-head"><span class="q-n">Câu 29</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Mua 100 con gà hết đúng 100 nghìn đồng: gà trống 3 nghìn một con, gà mái 2 nghìn một con, 3 gà con giá 1 nghìn; mỗi loại mua ít nhất một con. Có bao nhiêu cách chia số con ba loại?</p><p class="q-en" lang="en">100 chickens are bought for exactly 100 thousand dong: a rooster costs 3, a hen costs 2, and 3 chicks cost 1; at least one of each kind is bought. How many possible distributions of the three kinds are there?</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 3</li><li><b>C.</b> 4</li><li><b>D.</b> 5</li><li><b>E.</b> 6</li></ol>
+  <p class="q-stem">Hai xe cùng đi quãng đường 300 km. Ô tô nhanh hơn xe máy 15 km/h nên đến sớm hơn 1 giờ. Tính vận tốc của ô tô (km/h).</p><p class="q-en" lang="en">Two vehicles travel the same 300 km. A car is 15 km/h faster than a motorbike and arrives 1 hour earlier. Find the speed of the car (km/h).</p><ol class="q-opts"><li><b>A.</b> 60</li><li><b>B.</b> 75</li><li><b>C.</b> 80</li><li><b>D.</b> 85</li><li><b>E.</b> 90</li></ol>
   <details><summary>Đáp án và lời giải câu 29</summary>
-    <p><b>Đáp án: C. 4</b></p>
-    <p>Nhận dạng: bài toán ba ẩn, hai phương trình (tổng số con và tổng số bó / tiền), nghiệm nguyên dương.<br>Ý tưởng: khử ẩn thứ ba được một phương trình hai ẩn, rồi thử các giá trị nguyên dương.<br>Bước 1: Gọi số gà trống, gà mái, gà con là a, b, c: a + b + c = 100 (1) và 3a + 2b + c/3 = 100 (2).<br>Bước 2: Nhân (2) với 3: 9a + 6b + c = 300;<br>trừ (1): 8a + 5b = 200.<br>Bước 3: b = (200 − 8a)/5;<br>b nguyên khi a chia hết cho 5 (vì 200 = 5 × 40);<br>b ≥ 1 nên 8a ≤ 195, a ≤ 195/8: a = 5, 10, 15, 20.<br>Bước 4: Giữ các bộ có c = 100 − a − b &gt; 0: (a, b, c) = (5, 32, 63), (10, 24, 66), (15, 16, 69), (20, 8, 72).<br>Bước 5: Có 4 cách.<br>Vậy có 4 cách.</p>
+    <p><b>Đáp án: B. 75</b></p>
+    <p>Nhận dạng: hai vật cùng đi một quãng, vận tốc hơn kém nhau và thời gian hơn kém nhau, hỏi vận tốc.<br>Ý tưởng: gọi vận tốc người chậm là v, lập phương trình thời gian hơn kém, quy đồng được phương trình bậc hai, giải và loại nghiệm âm.<br>Bước 1: Gọi v là vận tốc xe máy (km/h), v &gt; 0;<br>vận tốc ô tô là v + 15.<br>Thời gian: 300 : v và 300 : (v + 15) giờ.<br>Bước 2: Xe máy chậm hơn 1 giờ: 300/v − 300/(v + 15) = 1.<br>Nhân hai vế với v × (v + 15): 300 × (v + 15) − 300 × v = v × (v + 15), tức 4500 = v × v + 15 × v.<br>Bước 3: Chuyển vế: v × v + 15 × v − 4500 = 0.<br>Δ = 15 × 15 + 4 × 4500 = 18225, √Δ = 135.<br>Bước 4: v = (−15 + 135) : 2 = 60, hoặc v = (−15 − 135) : 2 = −75 (âm, loại vì vận tốc dương).<br>Bước 5: Kiểm: 300 : 60 − 300 : 75 = 5 − 4 = 1, đúng.<br>Vậy vận tốc ô tô là 60 + 15 = 75 km/h.<br>Mẹo: nghiệm âm của vận tốc luôn bị loại, và hãy thử lại bằng thời gian.</p>
   </details>
 </li>
 <li class="q" id="cau-30">
   <div class="q-head"><span class="q-n">Câu 30</span><span class="q-pts">5 điểm · sai trừ 1,25</span></div>
-  <p class="q-stem">Tìm chữ số tận cùng của tích 13²⁰²⁶ × 2029⁹⁹.</p><p class="q-en" lang="en">Find the last digit of the product 13²⁰²⁶ × 2029⁹⁹.</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 1</li><li><b>C.</b> 7</li><li><b>D.</b> 8</li><li><b>E.</b> 9</li></ol>
+  <p class="q-stem">Biết 4 × P = 2 × 4 + 4 × 6 + 6 × 8 + … + 16 × 18. Tìm P.</p><p class="q-en" lang="en">Given 4 × P = 2 × 4 + 4 × 6 + 6 × 8 + … + 16 × 18, find P.</p><ol class="q-opts"><li><b>A.</b> 120</li><li><b>B.</b> 240</li><li><b>C.</b> 242</li><li><b>D.</b> 244</li><li><b>E.</b> 960</li></ol>
   <details><summary>Đáp án và lời giải câu 30</summary>
-    <p><b>Đáp án: B. 1</b></p>
-    <p>Nhận dạng: chữ số tận cùng của tích hai luỹ thừa.<br>Ý tưởng: tìm chữ số tận cùng của từng luỹ thừa theo chu kỳ, rồi nhân hai chữ số đó.<br>Bước 1: 13²⁰²⁶ cùng tận cùng với 3²⁰²⁶: 3¹ = 3, 3² = 9, 3³ = 27, 3⁴ = 81: chữ số tận cùng 3, 9, 7, 1 rồi lặp lại (chu kỳ 4).<br>2026 : 4 = 506 (dư 2), nên lấy số thứ 2 của chu kỳ: 9.<br>Bước 2: 2029⁹⁹ cùng tận cùng với 9⁹⁹: 9¹ = 9, 9² = 81, 9³ = 729: chữ số tận cùng 9, 1 rồi lặp lại (chu kỳ 2).<br>99 : 2 = 49 (dư 1), nên lấy số thứ 1 của chu kỳ: 9.<br>Bước 3: 9 × 9 = 81, tận cùng 1.<br>Vậy chữ số tận cùng của tích là 1.</p>
+    <p><b>Đáp án: B. 240</b></p>
+    <p>Nhận dạng: tổng các tích hai số chẵn liên tiếp.<br>Ý tưởng: 2k × (2k + 2) = 4k(k + 1);<br>tổng k(k + 1) tính bằng triệt tiêu: k(k + 1) = [k(k + 1)(k + 2) − (k − 1)k(k + 1)] : 3.<br>Bước 1: Vế phải = 4 × (1 × 2 + 2 × 3 + … + 8 × 9).<br>Bước 2: 1 × 2 + 2 × 3 + … + 8 × 9 = 8 × 9 × 10 : 3 = 240 (các số hạng giữa triệt tiêu).<br>Bước 3: Vế phải = 4 × 240 = 960, nên 4 × P = 960.<br>Bước 4: P = 960 : 4 = 240.<br>Vậy P = 240.</p>
   </details>
 </li>
 </ol>
 <h2 id="dap-an">Đáp án đề thi Kangaroo (IKMC) lớp 9</h2>
-<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>B. 4</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>C. 151200</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>C. 4</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>C. 75</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>B. 12</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>C. 5</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>C. 337</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>C. 15</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>B. 3</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>C. 384</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>C. 90</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>D. 58</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>C. 44</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>B. 336</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>C. 12</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>A. 6</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>B. 5</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>B. 8</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>C. 68</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>C. 571</td></tr><tr><td><a href="#cau-21">Câu 21</a></td><td>C. 6</td></tr><tr><td><a href="#cau-22">Câu 22</a></td><td>B. 24</td></tr><tr><td><a href="#cau-23">Câu 23</a></td><td>B. 2</td></tr><tr><td><a href="#cau-24">Câu 24</a></td><td>D. 4</td></tr><tr><td><a href="#cau-25">Câu 25</a></td><td>B. 360</td></tr><tr><td><a href="#cau-26">Câu 26</a></td><td>B. 9</td></tr><tr><td><a href="#cau-27">Câu 27</a></td><td>D. 9</td></tr><tr><td><a href="#cau-28">Câu 28</a></td><td>C. 336</td></tr><tr><td><a href="#cau-29">Câu 29</a></td><td>C. 4</td></tr><tr><td><a href="#cau-30">Câu 30</a></td><td>B. 1</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>A. 93</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>E. 21</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>D. 78</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>A. 625</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>D. 10</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>E. 20</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>E. 105</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>C. 132</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>C. 4</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>A. 89</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>C. 15</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>A. 7</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>E. 9</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>A. 20160</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>E. 5</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>D. 13</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>A. 333</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>D. 11</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>D. 58</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>C. 21</td></tr><tr><td><a href="#cau-21">Câu 21</a></td><td>C. 1190</td></tr><tr><td><a href="#cau-22">Câu 22</a></td><td>B. 10</td></tr><tr><td><a href="#cau-23">Câu 23</a></td><td>B. 6</td></tr><tr><td><a href="#cau-24">Câu 24</a></td><td>E. 54</td></tr><tr><td><a href="#cau-25">Câu 25</a></td><td>A. 19</td></tr><tr><td><a href="#cau-26">Câu 26</a></td><td>E. 20</td></tr><tr><td><a href="#cau-27">Câu 27</a></td><td>B. 24</td></tr><tr><td><a href="#cau-28">Câu 28</a></td><td>B. 1</td></tr><tr><td><a href="#cau-29">Câu 29</a></td><td>B. 75</td></tr><tr><td><a href="#cau-30">Câu 30</a></td><td>B. 240</td></tr></tbody></table></div>
 <h2>Đề thi khác</h2>
 <p><b>Cùng cuộc thi Kangaroo (IKMC), lớp khác:</b> <a href="/de-thi-kangaroo/lop-1/">Lớp 1</a> · <a href="/de-thi-kangaroo/lop-2/">Lớp 2</a> · <a href="/de-thi-kangaroo/lop-3/">Lớp 3</a> · <a href="/de-thi-kangaroo/lop-4/">Lớp 4</a> · <a href="/de-thi-kangaroo/lop-5/">Lớp 5</a> · <a href="/de-thi-kangaroo/lop-6/">Lớp 6</a> · <a href="/de-thi-kangaroo/lop-7/">Lớp 7</a> · <a href="/de-thi-kangaroo/lop-8/">Lớp 8</a></p>
 <p><b>Đề cùng lớp 9 của cuộc thi khác:</b> <a href="/de-thi-timo/lop-9/">TIMO</a> · <a href="/de-thi-hkimo/lop-9/">HKIMO</a> · <a href="/de-thi-fmo/lop-9/">FMO</a> · <a href="/de-thi-big-bay-bei/lop-9/">Big Bay Bei (BBB)</a> · <a href="/de-thi-asmo/lop-9/">ASMO</a> · <a href="/de-thi-aimo/lop-9/">AIMO</a> · <a href="/de-thi-seamo/lop-9/">SEAMO</a> · <a href="/de-thi-viamc/lop-9/">VIAMC</a> · <a href="/de-thi-imec/lop-9/">IMEC</a> · <a href="/de-thi-pimso/lop-9/">PIMSO</a> · <a href="/de-thi-crest/lop-9/">CREST (CMO)</a> · <a href="/de-thi-sil/lop-9/">SiL MSC (Toán)</a> · <a href="/de-thi-sasmo/lop-9/">SASMO</a> · <a href="/de-thi-amo/lop-9/">AMO</a> · <a href="/de-thi-itmc/lop-9/">ITMC</a></p>
