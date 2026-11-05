@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com https://txazogklicpkjovpvjjb.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<title>Huỷ nhận email — Cú Pi Math</title>
+<meta name="description" content="Huỷ nhận email nhắc nhở và báo cáo từ Cú Pi Math.">
+<meta name="theme-color" content="#fbf8f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10132a" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css?v=13">
+<script src="site.js" defer></script>
+<script src="site-config.js" defer></script>
+<script src="huy-nhan-email.js" defer></script>
+<!-- Cloudflare Web Analytics (không cookie) -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9c95a7cb9b64460fb7d4b5045077dded"}'></script>
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua, tới nội dung chính</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Cú Pi Math — trang chủ"><img src="img/owl.webp" alt="Chú cú Cú Pi, linh vật Cú Pi Math" width="38" height="38"><span>Cú Pi Math</span></a>
+    <nav class="site-nav" aria-label="Điều hướng chính">
+      <a href="index.html#tinh-nang">Tính năng</a>
+      <a href="index.html#thi-thu">Thi thử</a>
+      <a href="index.html#ho-tro">Hỗ trợ</a>
+      <a href="privacy.html">Bảo mật</a>
+      <a href="delete-account.html">Xoá tài khoản</a>
+    </nav>
+    <a class="btn btn-sm header-cta" href="app/">Học trên web</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="center-page grid-paper">
+  <div class="wrap">
+    <img src="img/owl.webp" alt="Chú cú Cú Pi, linh vật Cú Pi Math" width="360" height="360">
+    <h1>Huỷ nhận email</h1>
+    <p id="unsub-msg">Bố mẹ sẽ không nhận email nhắc nhở và báo cáo học tập hằng tuần từ Cú Pi Math nữa. Tài khoản và tiến độ học của bé vẫn giữ nguyên.</p>
+    <div class="hero-actions">
+      <button class="btn" id="unsub-btn" type="button">Huỷ nhận email</button>
+      <a class="btn btn-ghost" href="app/">Quay lại học</a>
+    </div>
+    <p class="fineprint">Đổi ý? Bố mẹ nhắn cho Cú Pi qua hello@cupimath.com nhé.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./"><img src="img/owl.webp" alt="Chú cú Cú Pi, linh vật Cú Pi Math" width="38" height="38" loading="lazy"><span>Cú Pi Math</span></a>
+      <p>Luyện toán tư duy và thi thử Toán quốc tế cho bé mầm non, học sinh tiểu học và THCS lớp 6–9.</p>
+      <a class="social-link" href="https://www.facebook.com/people/CuPi-Math/61594921771624/" target="_blank" rel="noopener me"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg><span>Fanpage Cú Pi Math</span></a>
+    </div>
+    <div>
+      <h2>Sản phẩm</h2>
+      <ul>
+        <li><a href="app/">Học trên web</a></li>
+        <li><a href="index.html#tinh-nang">Tính năng</a></li>
+        <li><a href="index.html#thi-thu">Thi thử</a></li>
+        <li><a href="index.html#hoi-dap">Hỏi đáp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tìm hiểu</h2>
+      <ul>
+        <li><a href="/toan-tu-duy/">Toán tư duy</a></li>
+        <li><a href="/toan-mam-non/">Toán mầm non</a></li>
+        <li><a href="/toan-tieu-hoc/">Toán tiểu học lớp 1–5</a></li>
+        <li><a href="/toan-thcs/">Toán THCS lớp 6–9</a></li>
+        <li><a href="/toan-quoc-te/">Toán quốc tế</a></li>
+        <li><a href="/thi-timo/">Thi TIMO</a></li>
+        <li><a href="/thi-asmo/">Thi ASMO</a></li>
+        <li><a href="/thi-ikmc/">Thi IKMC</a></li>
+        <li><a href="/de-thi/">Đề thi có đáp án</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Thông tin</h2>
+      <ul>
+        <li><a href="index.html#ho-tro">Hỗ trợ</a></li>
+        <li><a href="delete-account.html">Xoá tài khoản</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Chính sách</h2>
+      <ul>
+        <li><a href="dieu-khoan.html">Điều khoản dịch vụ</a></li>
+        <li><a href="privacy.html">Chính sách bảo mật</a></li>
+        <li><a href="chinh-sach-gia.html">Chính sách về giá</a></li>
+        <li><a href="chinh-sach-thanh-toan.html">Chính sách thanh toán</a></li>
+        <li><a href="dieu-kien-cung-cap-dich-vu.html">Điều kiện cung cấp dịch vụ</a></li>
+        <li><a href="cham-dut-va-hoan-tien.html">Chấm dứt dịch vụ và hoàn tiền</a></li>
+        <li><a href="giai-quyet-khieu-nai.html">Giải quyết khiếu nại</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <p class="legal-org"><b>Hộ kinh doanh Phong Như Đăng</b> · Mã số HKD/MST: 001192033534, cấp lần đầu 15/09/2025 tại Phòng KT, HT&amp;ĐT phường Bạch Mai, Hà Nội · Địa chỉ: Số 255 phố Lạc Nghiệp, phường Bạch Mai, Hà Nội · ĐT: <a href="tel:+84344301016">0344 301 016</a> · Email: <a href="mailto:hello@cupimath.com">hello@cupimath.com</a></p>
+      <span>© 2026 Cú Pi Math</span>
+      <span>Không liên kết với ban tổ chức TIMO, HKIMO, FMO, Kangaroo, ASMO, SEAMO, SASMO, AMO, IMAS, Big Bay Bei, ITMC, AIMO, VIAMC, IMEC, PIMSO, JMMC, ELMO, CREST, SiL.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -161,6 +161,9 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .btn:hover svg { transform: translateX(3px); }
 .btn-sm { min-height: 40px; padding: 8px 16px; font-size: 0.925rem; border-radius: 12px; box-shadow: 0 3px 0 var(--btn-edge); }
 .btn-ghost { --btn-bg: var(--surface); --btn-fg: var(--ink); --btn-edge: var(--line); border: 1.5px solid var(--line); }
+button.btn:not(.btn-ghost) { border: 0; cursor: pointer; }
+.btn[hidden] { display: none; }
+.btn:disabled { opacity: 0.6; cursor: progress; transform: none; }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; padding: clamp(2.5rem, 2rem + 4vw, 6rem) 0 clamp(3rem, 2rem + 5vw, 7rem); overflow: hidden; }
