@@ -226,10 +226,15 @@
   // "84 / 100" hoặc "84" → { value: '84', max: '100' }; dạng lạ thì giữ nguyên chữ.
   function splitScore(raw) {
     var m = String(raw).match(/^\s*(\d+(?:[.,]\d+)?)\s*(?:\/\s*(\d+))?\s*$/);
-    return m ? { value: m[1], max: m[2] || '100', num: Number(m[1].replace(',', '.')) } : { value: raw, max: '', num: NaN };
+    if (!m) return { value: raw, max: '', num: NaN };
+    var num = Number(m[1].replace(',', '.'));
+    // không ghi thang: mặc định /100, trừ điểm lớn hơn 100 (thang khác, như HKIMO vòng quốc tế) thì để nguyên
+    return { value: m[1], max: m[2] || (num <= 100 ? '100' : ''), num: num };
   }
 
   function notPassed(c) { return !!c.award && NOT_PASSED.test(c.award); }
+  // đã có kết quả: có điểm, hoặc có giải (SEAMO chỉ công bố thành tích, không công bố điểm)
+  function hasResult(c) { return !!(c.score || c.award); }
 
   function cheer(c) {
     var who = callName(c.name);
@@ -245,7 +250,7 @@
   function nudge(c) {
     var who = callName(c.name);
     var text = notPassed(c) ? 'Cùng Cú Pi ôn lại cho ' + who + ' để lần sau tốt hơn'
-      : c.score ? (isTimo() ? 'Luyện đề vòng quốc gia cho ' : 'Luyện đề vòng tiếp theo cho ') + who
+      : hasResult(c) ? (isTimo() ? 'Luyện đề vòng quốc gia cho ' : 'Luyện đề vòng tiếp theo cho ') + who
       : 'Cho ' + who + ' luyện đề trong lúc chờ điểm';
     var a = el('a', 'lookup-nudge', text);
     a.href = '/app/';
@@ -259,7 +264,7 @@
   }
 
   function card(c) {
-    var art = el('article', 'lookup-card' + (c.score ? ' has-score' : ''));
+    var art = el('article', 'lookup-card' + (hasResult(c) ? ' has-score' : ''));
     var head = el('header', 'lookup-card-head');
     head.append(el('h3', null, c.name));
     if (c.sbd) head.append(el('span', 'lookup-sbd', 'SBD ' + c.sbd));   // SEAMO có thể không trả số báo danh
@@ -267,20 +272,22 @@
     if (c.score) {
       var s = splitScore(c.score);
       score.append(el('b', null, s.value), el('small', null, s.max ? '/' + s.max + ' điểm' : 'điểm'));
-    } else {
+    } else if (!c.award) {
       score.append(el('span', 'pill pill-warn', 'Chưa có điểm'));
     }
     if (c.award) score.append(el('span', 'pill lookup-award', c.award));
     var dl = el('dl', 'lookup-info');
     row(dl, 'Khối', c.grade);
     row(dl, 'Trường', c.school);
-    row(dl, 'Vòng thi', c.round);
+    row(dl, isRice() ? 'Môn thi' : 'Vòng thi', c.round);
     row(dl, 'Tỉnh thành', c.province);
     art.append(head, score, el('p', 'lookup-cheer', cheer(c)), dl, nudge(c));
     return art;
   }
 
   function isTimo() { return /^timo-/.test(exam.key); }
+  // SEAMO, ASMO (nền tảng RICE): ô "vòng" là môn thi
+  function isRice() { return /^(seamo|asmo)-/.test(exam.key); }
 
   function invite(hasScore) {
     var box = el('aside', 'cta-box lookup-cta');
@@ -303,8 +310,11 @@
   }
 
   function showFound(list) {
-    var hasScore = list.some(function (c) { return !!c.score; });
-    var title = el('h2', 'lookup-result-title', list.length > 1 ? 'Tìm thấy ' + list.length + ' thí sinh' : 'Kết quả của con');
+    var hasScore = list.some(hasResult);
+    // cùng 1 SBD nhiều thẻ = 1 bé thi nhiều môn (ASMO), không phải nhiều thí sinh
+    var oneKid = list.length > 1 && list.every(function (c) { return c.sbd && c.sbd === list[0].sbd && c.name === list[0].name; });
+    var title = el('h2', 'lookup-result-title', oneKid ? 'Kết quả của con · ' + list.length + ' môn'
+      : list.length > 1 ? 'Tìm thấy ' + list.length + ' thí sinh' : 'Kết quả của con');
     var cards = el('div', 'lookup-cards');
     list.forEach(function (c) { cards.append(card(c)); });
     out.replaceChildren(title, cards, invite(hasScore));
