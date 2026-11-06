@@ -263,6 +263,18 @@
     dl.append(el('dt', null, label), el('dd', null, value));
   }
 
+  // SEAMO / ASMO: nút tải giấy chứng nhận như trang gốc (server chỉ gửi link Google Drive)
+  function certButton(c) {
+    if (!c.cert || !/^https:\/\/(drive|docs)\.google\.com\//.test(c.cert)) return null;
+    var a = el('a', 'btn btn-sm btn-ghost', 'Tải giấy chứng nhận');
+    a.href = c.cert;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.style.justifySelf = 'start';
+    a.setAttribute('data-track', 'tra-cuu-chung-nhan');
+    return a;
+  }
+
   function card(c) {
     var art = el('article', 'lookup-card' + (hasResult(c) ? ' has-score' : ''));
     var head = el('header', 'lookup-card-head');
@@ -276,12 +288,15 @@
       score.append(el('span', 'pill pill-warn', 'Chưa có điểm'));
     }
     if (c.award) score.append(el('span', 'pill lookup-award', c.award));
+    var cert = certButton(c);
     var dl = el('dl', 'lookup-info');
     row(dl, 'Khối', c.grade);
     row(dl, 'Trường', c.school);
     row(dl, isRice() ? 'Môn thi' : 'Vòng thi', c.round);
     row(dl, 'Tỉnh thành', c.province);
-    art.append(head, score, el('p', 'lookup-cheer', cheer(c)), dl, nudge(c));
+    art.append(head, score, el('p', 'lookup-cheer', cheer(c)));
+    if (cert) art.append(cert);
+    art.append(dl, nudge(c));
     return art;
   }
 
