@@ -141,56 +141,16 @@
     {
      "@type": "Question",
      "name": "Câu 1",
-     "text": "Quãng đường rơi tự do của một vật là s = 5t² (s tính bằng mét, t tính bằng giây). Trong giây thứ 7 (từ t = 6 đến t = 7), vật đi được bao nhiêu mét?",
+     "text": "Giá một quyển sách bị giảm 10% rồi lại giảm 10% (tính trên giá sau lần giảm đầu). Tổng cộng giá đã giảm bao nhiêu phần trăm so với ban đầu?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 65. Nhận dạng: chuyển động theo công thức s = 5t² (s mét, t giây), quãng đường tỉ lệ với bình phương thời gian. Ý tưởng: quãng đường đi được sau t giây là s(t) = 5t²; quãng trong một khoảng thời gian là hiệu hai giá trị. Bước 1: s(7) = 5 × 7² = 245. Bước 2: s(6) = 5 × 6² = 180. Bước 3: Trong giây thứ 7: 245 − 180 = 65. Vậy vật đi được 65 m."
+      "text": "Đáp án: 19. Nhận dạng: giá tăng rồi giảm theo phần trăm liên tiếp, hỏi kết quả sau hai lần đổi. Ý tưởng: hai lần giảm liên tiếp không cộng phần trăm mà nhân hệ số (1 − x/100) hai lần. Bước 1: Gọi giá ban đầu là 100. Sau lần giảm đầu: 100 × (1 − 10/100) = 90. Bước 2: Sau lần giảm thứ hai: 90 × (1 − 10/100) = 90 × 0,9 = 81. Bước 3: Giá còn 81% giá ban đầu, nên giảm 100 − 81 = 19%. Vậy đáp án là 19. Mẹo: phần trăm sau tính trên giá đã đổi, nên tăng x% rồi giảm x% không về giá cũ."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 2",
-     "text": "Số có ba chữ số abc trừ đi số viết ngược cba (c ≠ 0) thì được 495. Tìm số abc lớn nhất.",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 994. Nhận dạng: số có ba chữ số trừ số viết ngược. Ý tưởng: abc − cba = (100 × a + 10 × b + c) − (100 × c + 10 × b + a) = 99 × (a − c), chữ số b mất đi. Bước 1: 99 × (a − c) = 495, nên a − c = 5. Bước 2: c từ 1 đến 4, a = c + 5: có 4 cặp (a, c), b tuỳ ý từ 0 đến 9. Bước 3: Lớn nhất khi a = 9, c = 4, b = 9. Vậy số lớn nhất là 994."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 3",
-     "text": "Phúc đi bộ quãng đường 16 m bằng các bước dài 2 m hoặc 3 m (bước nào cũng đúng một trong hai độ dài). Có bao nhiêu cách đi hết quãng đường (thứ tự các bước khác nhau là khác cách)?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 37. Nhận dạng: đếm cách đi 16 m bằng các bước 2 m hoặc 3 m (thứ tự bước khác nhau là khác cách). Ý tưởng: bảng cộng dồn theo lần cuối: số cách tới i bằng tổng số cách tới các chỗ đứng ngay trước lần cuối. Bước 1: Gọi f(k) là số cách đi hết k mét: f(0) = 1, f(1) = 0 (không có bước 1 m). Bước 2: f(k) = f(k − 2) + f(k − 3) (lần cuối là 2 hoặc 3 m). Bước 3: Tính lần lượt: f(2) = f(0) = 1, f(3) = f(0) = 1 (vì f(1) = 0). f(4) = f(2) = 1 (vì f(1) = 0), f(5) = f(3) + f(2) = 1 + 1 = 2. f(6) = f(4) + f(3) = 1 + 1 = 2, f(7) = f(5) + f(4) = 2 + 1 = 3. f(8) = f(6) + f(5) = 2 + 2 = 4, f(9) = f(7) + f(6) = 3 + 2 = 5. f(10) = f(8) + f(7) = 4 + 3 = 7, f(11) = f(9) + f(8) = 5 + 4 = 9. f(12) = f(10) + f(9) = 7 + 5 = 12, f(13) = f(11) + f(10) = 9 + 7 = 16. f(14) = f(12) + f(11) = 12 + 9 = 21, f(15) = f(13) + f(12) = 16 + 12 = 28. f(16) = f(14) + f(13) = 21 + 16 = 37. Vậy có 37 cách. Mẹo: f(1) = 0 nên các số hạng f(1) bỏ đi, đừng coi là 1."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 4",
-     "text": "Các số a, b, c, d thoả mãn hệ: 4a + b + c + d = 39; a + 4b + c + d = 45; a + b + 4c + d = 39; a + b + c + 4d = 45. Tìm c.",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 5. Nhận dạng: mỗi phương trình có một ẩn mang hệ số 4, các ẩn còn lại hệ số 1. Ý tưởng: cộng tất cả để ra tổng S của các ẩn; mỗi phương trình là S cộng thêm phần dư của một ẩn. Bước 1: Mỗi ẩn có tổng hệ số 4 + 1 + 1 + 1 = 7; cộng vế: 7(a + b + c + d) = 39 + 45 + 39 + 45 = 168, nên S = a + b + c + d = 168 : 7 = 24. Bước 2: Phương trình có 4c là S + 3c = 39. Bước 3: 3c = 39 − 24 = 15, nên c = 15 : 3 = 5. Vậy c = 5."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 5",
-     "text": "Tứ giác ABCD nội tiếp đường tròn có ∠A − ∠C = 90°. Tính ∠A (độ).",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 135. Nhận dạng: tứ giác nội tiếp đường tròn (bốn đỉnh nằm trên đường tròn). Ý tưởng: tứ giác nội tiếp có tổng hai góc đối bằng 180°: ∠A + ∠C = 180°, ∠B + ∠D = 180°. Bước 1: ∠A + ∠C = 180° và ∠A − ∠C = 90°. Bước 2: Cộng hai đẳng thức: 2∠A = 270°, ∠A = 135°; ∠C = 180° − 135° = 45°. Vậy ∠A = 135°."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 6",
      "text": "Hình chóp tứ giác đều S.ABCD có cạnh đáy 5 cm, chiều cao 18 cm. Tính thể tích hình chóp.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -200,12 +160,52 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 7",
-     "text": "Giá một quyển sách bị giảm 10% rồi lại giảm 10% (tính trên giá sau lần giảm đầu). Tổng cộng giá đã giảm bao nhiêu phần trăm so với ban đầu?",
+     "name": "Câu 3",
+     "text": "Số có ba chữ số abc trừ đi số viết ngược cba (c ≠ 0) thì được 495. Tìm số abc lớn nhất.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 19. Nhận dạng: giá tăng rồi giảm theo phần trăm liên tiếp, hỏi kết quả sau hai lần đổi. Ý tưởng: hai lần giảm liên tiếp không cộng phần trăm mà nhân hệ số (1 − x/100) hai lần. Bước 1: Gọi giá ban đầu là 100. Sau lần giảm đầu: 100 × (1 − 10/100) = 90. Bước 2: Sau lần giảm thứ hai: 90 × (1 − 10/100) = 90 × 0,9 = 81. Bước 3: Giá còn 81% giá ban đầu, nên giảm 100 − 81 = 19%. Vậy đáp án là 19. Mẹo: phần trăm sau tính trên giá đã đổi, nên tăng x% rồi giảm x% không về giá cũ."
+      "text": "Đáp án: 994. Nhận dạng: số có ba chữ số trừ số viết ngược. Ý tưởng: abc − cba = (100 × a + 10 × b + c) − (100 × c + 10 × b + a) = 99 × (a − c), chữ số b mất đi. Bước 1: 99 × (a − c) = 495, nên a − c = 5. Bước 2: c từ 1 đến 4, a = c + 5: có 4 cặp (a, c), b tuỳ ý từ 0 đến 9. Bước 3: Lớn nhất khi a = 9, c = 4, b = 9. Vậy số lớn nhất là 994."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 4",
+     "text": "Tứ giác ABCD nội tiếp đường tròn có ∠A − ∠C = 90°. Tính ∠A (độ).",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 135. Nhận dạng: tứ giác nội tiếp đường tròn (bốn đỉnh nằm trên đường tròn). Ý tưởng: tứ giác nội tiếp có tổng hai góc đối bằng 180°: ∠A + ∠C = 180°, ∠B + ∠D = 180°. Bước 1: ∠A + ∠C = 180° và ∠A − ∠C = 90°. Bước 2: Cộng hai đẳng thức: 2∠A = 270°, ∠A = 135°; ∠C = 180° − 135° = 45°. Vậy ∠A = 135°."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 5",
+     "text": "Phúc đi bộ quãng đường 16 m bằng các bước dài 2 m hoặc 3 m (bước nào cũng đúng một trong hai độ dài). Có bao nhiêu cách đi hết quãng đường (thứ tự các bước khác nhau là khác cách)?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 37. Nhận dạng: đếm cách đi 16 m bằng các bước 2 m hoặc 3 m (thứ tự bước khác nhau là khác cách). Ý tưởng: bảng cộng dồn theo lần cuối: số cách tới i bằng tổng số cách tới các chỗ đứng ngay trước lần cuối. Bước 1: Gọi f(k) là số cách đi hết k mét: f(0) = 1, f(1) = 0 (không có bước 1 m). Bước 2: f(k) = f(k − 2) + f(k − 3) (lần cuối là 2 hoặc 3 m). Bước 3: Tính lần lượt: f(2) = f(0) = 1, f(3) = f(0) = 1 (vì f(1) = 0). f(4) = f(2) = 1 (vì f(1) = 0), f(5) = f(3) + f(2) = 1 + 1 = 2. f(6) = f(4) + f(3) = 1 + 1 = 2, f(7) = f(5) + f(4) = 2 + 1 = 3. f(8) = f(6) + f(5) = 2 + 2 = 4, f(9) = f(7) + f(6) = 3 + 2 = 5. f(10) = f(8) + f(7) = 4 + 3 = 7, f(11) = f(9) + f(8) = 5 + 4 = 9. f(12) = f(10) + f(9) = 7 + 5 = 12, f(13) = f(11) + f(10) = 9 + 7 = 16. f(14) = f(12) + f(11) = 12 + 9 = 21, f(15) = f(13) + f(12) = 16 + 12 = 28. f(16) = f(14) + f(13) = 21 + 16 = 37. Vậy có 37 cách. Mẹo: f(1) = 0 nên các số hạng f(1) bỏ đi, đừng coi là 1."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 6",
+     "text": "Các số a, b, c, d thoả mãn hệ: 4a + b + c + d = 39; a + 4b + c + d = 45; a + b + 4c + d = 39; a + b + c + 4d = 45. Tìm c.",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 5. Nhận dạng: mỗi phương trình có một ẩn mang hệ số 4, các ẩn còn lại hệ số 1. Ý tưởng: cộng tất cả để ra tổng S của các ẩn; mỗi phương trình là S cộng thêm phần dư của một ẩn. Bước 1: Mỗi ẩn có tổng hệ số 4 + 1 + 1 + 1 = 7; cộng vế: 7(a + b + c + d) = 39 + 45 + 39 + 45 = 168, nên S = a + b + c + d = 168 : 7 = 24. Bước 2: Phương trình có 4c là S + 3c = 39. Bước 3: 3c = 39 − 24 = 15, nên c = 15 : 3 = 5. Vậy c = 5."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 7",
+     "text": "Quãng đường rơi tự do của một vật là s = 5t² (s tính bằng mét, t tính bằng giây). Trong giây thứ 7 (từ t = 6 đến t = 7), vật đi được bao nhiêu mét?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 65. Nhận dạng: chuyển động theo công thức s = 5t² (s mét, t giây), quãng đường tỉ lệ với bình phương thời gian. Ý tưởng: quãng đường đi được sau t giây là s(t) = 5t²; quãng trong một khoảng thời gian là hiệu hai giá trị. Bước 1: s(7) = 5 × 7² = 245. Bước 2: s(6) = 5 × 6² = 180. Bước 3: Trong giây thứ 7: 245 − 180 = 65. Vậy vật đi được 65 m."
      }
     },
     {
@@ -221,36 +221,6 @@
     {
      "@type": "Question",
      "name": "Câu 9",
-     "text": "Có bao nhiêu cách viết số 501 thành tổng của ít nhất hai số tự nhiên khác 0 liên tiếp?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 3. Nhận dạng: đếm số cách viết một số thành tổng nhiều số tự nhiên liên tiếp. Ý tưởng: viết tổng thành tích k × (2 × a + k − 1) = 2 × S, hai thừa số khác tính chẵn lẻ nên mỗi ước lẻ cho một cách. Bước 1: Gọi a là số đầu, k là số số hạng (k ≥ 2): k × (2 × a + k − 1) : 2 = 501, nên k × (2 × a + k − 1) = 2 × 501 = 1002. Bước 2: Hai thừa số k và 2 × a + k − 1 hơn kém nhau 2 × a − 1, là số lẻ: một thừa số lẻ, một chẵn. Thừa số lẻ là ước lẻ của 501. Bước 3: Các ước lẻ của 501: 1, 3, 167, 501 (4 ước). Mỗi ước lẻ cho đúng một cặp thừa số, ước kia là 1002 : ước (chẵn). Bước 4: Ước 1 cho k = 1 (chỉ một số), loại. Còn 4 − 1 = 3 cách: 166 + … + 168; 81 + … + 86; 250 + 251. Vậy có 3 cách. Mẹo: số cách bằng số ước lẻ trừ 1 (bỏ cách chỉ một số)."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 10",
-     "text": "Hai vòi nước cùng chảy vào một bể cạn thì sau 16 giờ đầy bể. Nếu chảy riêng, vòi A làm đầy bể nhanh hơn vòi B 24 giờ. Hỏi vòi A chảy một mình thì sau bao nhiêu giờ đầy bể?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 24. Nhận dạng: bài làm chung – làm riêng, hai thời gian hơn kém nhau. Ý tưởng: mỗi giờ làm được 1/(thời gian) bể; cộng phần của hai bên bằng 1/16, ra phương trình bậc hai. Bước 1: Gọi thời gian vòi A làm một mình là x giờ (x > 0), vòi B là x + 24 giờ. Bước 2: Mỗi giờ: 1/x + 1/(x + 24) = 1/16. Bước 3: Nhân hai vế với 16x(x + 24): 16(x + 24) + 16x = x(x + 24), tức là 32x + 384 = x² + 24x, hay x² − 8x − 384 = 0. Bước 4: (x − 24)(x + 16) = 0, nên x = 24 hoặc x = −16; x > 0 nên x = 24. Kiểm tra: 1/24 + 1/48 = 1/16. Vậy vòi A làm một mình mất 24 giờ."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 11",
-     "text": "Các hình xếp chấm thành tam giác có số chấm là 1, 3, 6, 10, 15, … Hình thứ 29 và hình thứ 30 ghép lại có tất cả bao nhiêu chấm?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 900. Nhận dạng: dãy hình xếp chấm thành tam giác, hỏi tổng hai hình liền nhau. Ý tưởng: hai tam giác liền nhau ghép lại thành hình vuông, nên tổng bằng bình phương của số thứ tự hình lớn hơn. Bước 1: Hai hình liền nhau ghép thành hình vuông: 3 + 6 = 9 = 3 × 3, 6 + 10 = 16 = 4 × 4. Bước 2: Hình thứ 29 và thứ 30 ghép thành hình vuông 30 × 30: 30 × 30 = 900. Bước 3: Kiểm: 435 + 465 = 900. Vậy đáp án là 900."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 12",
      "text": "Tìm số nhỏ nhất không nhỏ hơn 7000 có đúng 4 ước dương.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -260,27 +230,7 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 13",
-     "text": "Ba chữ số khác nhau, khác 0 lập được 6 số có ba chữ số khác nhau (mỗi số dùng cả ba chữ số). Tổng của 6 số đó là 2664. Tính tổng ba chữ số.",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 12. Nhận dạng: tổng mọi số lập từ ba chữ số khác nhau, tìm tổng chữ số hay chữ số còn lại. Ý tưởng: mỗi chữ số đứng mỗi hàng đúng 2 lần nên tổng bằng 222 nhân tổng ba chữ số. Bước 1: Gọi ba chữ số là x, y, z. Mỗi chữ số đứng ở hàng trăm 2 lần, hàng chục 2 lần, hàng đơn vị 2 lần trong 6 số. Bước 2: Nên tổng bằng 2 × (100 + 10 + 1) × (x + y + z) = 222 × (x + y + z) = 2664. Bước 3: x + y + z = 2664 : 222 = 12. Vậy tổng ba chữ số là 12. Mẹo: ba chữ số khác nhau, khác 0 có tổng từ 6 đến 24."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 14",
-     "text": "Có bao nhiêu số có bốn chữ số mà chia cho 14 và 15 lần lượt dư 7 và 8?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 43. Nhận dạng: số chia cho nhiều số có số dư cùng kém số chia. Ý tưởng: gọi N là số cần tìm, thì N + 7 là bội chung, tức là bội của BCNN. Bước 1: Mỗi số dư kém số chia 7 đơn vị (14 − 7 = 7, 15 − 8 = 7), nên N + 7 chia hết cho cả 14 và 15. Bước 2: BCNN(14, 15) = 14 × 15 = 210 (các số nguyên tố cùng nhau), nên N = 210 × t − 7 (t là số tự nhiên). Bước 3: N ≥ 1000 nên 210 × t ≥ 1000 + 7 = 1007; 1007 : 210 = 4 (dư 167), t nhỏ nhất là 5 (N = 210 × 5 − 7 = 1043). N ≤ 9999 nên 210 × t ≤ 9999 + 7 = 10006; 10006 : 210 = 47 (dư 136), t lớn nhất là 47 (N = 210 × 47 − 7 = 9863). Bước 4: Số giá trị của t: 47 − 5 + 1 = 43. Vậy có 43 số."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 15",
+     "name": "Câu 10",
      "text": "Trong các số 1, 2, 3, …, 70, có bao nhiêu số có ƯCLN với 14 bằng 1?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -290,7 +240,27 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 16",
+     "name": "Câu 11",
+     "text": "Có bao nhiêu cách viết số 501 thành tổng của ít nhất hai số tự nhiên khác 0 liên tiếp?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 3. Nhận dạng: đếm số cách viết một số thành tổng nhiều số tự nhiên liên tiếp. Ý tưởng: viết tổng thành tích k × (2 × a + k − 1) = 2 × S, hai thừa số khác tính chẵn lẻ nên mỗi ước lẻ cho một cách. Bước 1: Gọi a là số đầu, k là số số hạng (k ≥ 2): k × (2 × a + k − 1) : 2 = 501, nên k × (2 × a + k − 1) = 2 × 501 = 1002. Bước 2: Hai thừa số k và 2 × a + k − 1 hơn kém nhau 2 × a − 1, là số lẻ: một thừa số lẻ, một chẵn. Thừa số lẻ là ước lẻ của 501. Bước 3: Các ước lẻ của 501: 1, 3, 167, 501 (4 ước). Mỗi ước lẻ cho đúng một cặp thừa số, ước kia là 1002 : ước (chẵn). Bước 4: Ước 1 cho k = 1 (chỉ một số), loại. Còn 4 − 1 = 3 cách: 166 + … + 168; 81 + … + 86; 250 + 251. Vậy có 3 cách. Mẹo: số cách bằng số ước lẻ trừ 1 (bỏ cách chỉ một số)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 12",
+     "text": "Ba chữ số khác nhau, khác 0 lập được 6 số có ba chữ số khác nhau (mỗi số dùng cả ba chữ số). Tổng của 6 số đó là 2664. Tính tổng ba chữ số.",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 12. Nhận dạng: tổng mọi số lập từ ba chữ số khác nhau, tìm tổng chữ số hay chữ số còn lại. Ý tưởng: mỗi chữ số đứng mỗi hàng đúng 2 lần nên tổng bằng 222 nhân tổng ba chữ số. Bước 1: Gọi ba chữ số là x, y, z. Mỗi chữ số đứng ở hàng trăm 2 lần, hàng chục 2 lần, hàng đơn vị 2 lần trong 6 số. Bước 2: Nên tổng bằng 2 × (100 + 10 + 1) × (x + y + z) = 222 × (x + y + z) = 2664. Bước 3: x + y + z = 2664 : 222 = 12. Vậy tổng ba chữ số là 12. Mẹo: ba chữ số khác nhau, khác 0 có tổng từ 6 đến 24."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 13",
      "text": "Dãy Fibonacci 1, 1, 2, 3, 5, 8, 13, … (mỗi số từ số thứ ba bằng tổng hai số liền trước). Trong 4000 số hạng đầu tiên có bao nhiêu số chia hết cho 8?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -300,17 +270,37 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 17",
-     "text": "Tính tổng tất cả các số nguyên dương n để n² + 4n + 37 là số chính phương.",
+     "name": "Câu 14",
+     "text": "Các hình xếp chấm thành tam giác có số chấm là 1, 3, 6, 10, 15, … Hình thứ 29 và hình thứ 30 ghép lại có tất cả bao nhiêu chấm?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 16. Nhận dạng: biểu thức bậc hai của n là số chính phương. Ý tưởng: gom thành bình phương rồi viết hiệu hai bình phương thành tích hai thừa số. Bước 1: Gọi k² là số chính phương đó (k nguyên dương). (n + 2)² = n² + 4n + 4, nên n² + 4n + 37 = (n + 2)² + 33. Bước 2: k² − (n + 2)² = 33, nên (k − n − 2)(k + n + 2) = 33. Thừa số thứ hai lớn hơn và hai thừa số cùng chẵn lẻ (tổng là 2k). Bước 3: Xét các cách viết 33: 1 × 33: n + 2 = (33 − 1) : 2 = 16, n = 14, k = (1 + 33) : 2 = 17; 3 × 11: n + 2 = (11 − 3) : 2 = 4, n = 2, k = (3 + 11) : 2 = 7. Vậy tổng các giá trị của n là 14 + 2 = 16."
+      "text": "Đáp án: 900. Nhận dạng: dãy hình xếp chấm thành tam giác, hỏi tổng hai hình liền nhau. Ý tưởng: hai tam giác liền nhau ghép lại thành hình vuông, nên tổng bằng bình phương của số thứ tự hình lớn hơn. Bước 1: Hai hình liền nhau ghép thành hình vuông: 3 + 6 = 9 = 3 × 3, 6 + 10 = 16 = 4 × 4. Bước 2: Hình thứ 29 và thứ 30 ghép thành hình vuông 30 × 30: 30 × 30 = 900. Bước 3: Kiểm: 435 + 465 = 900. Vậy đáp án là 900."
      }
     },
     {
      "@type": "Question",
-     "name": "Câu 18",
+     "name": "Câu 15",
+     "text": "Có bao nhiêu số có bốn chữ số mà chia cho 14 và 15 lần lượt dư 7 và 8?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 43. Nhận dạng: số chia cho nhiều số có số dư cùng kém số chia. Ý tưởng: gọi N là số cần tìm, thì N + 7 là bội chung, tức là bội của BCNN. Bước 1: Mỗi số dư kém số chia 7 đơn vị (14 − 7 = 7, 15 − 8 = 7), nên N + 7 chia hết cho cả 14 và 15. Bước 2: BCNN(14, 15) = 14 × 15 = 210 (các số nguyên tố cùng nhau), nên N = 210 × t − 7 (t là số tự nhiên). Bước 3: N ≥ 1000 nên 210 × t ≥ 1000 + 7 = 1007; 1007 : 210 = 4 (dư 167), t nhỏ nhất là 5 (N = 210 × 5 − 7 = 1043). N ≤ 9999 nên 210 × t ≤ 9999 + 7 = 10006; 10006 : 210 = 47 (dư 136), t lớn nhất là 47 (N = 210 × 47 − 7 = 9863). Bước 4: Số giá trị của t: 47 − 5 + 1 = 43. Vậy có 43 số."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 16",
+     "text": "Hai vòi nước cùng chảy vào một bể cạn thì sau 16 giờ đầy bể. Nếu chảy riêng, vòi A làm đầy bể nhanh hơn vòi B 24 giờ. Hỏi vòi A chảy một mình thì sau bao nhiêu giờ đầy bể?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 24. Nhận dạng: bài làm chung – làm riêng, hai thời gian hơn kém nhau. Ý tưởng: mỗi giờ làm được 1/(thời gian) bể; cộng phần của hai bên bằng 1/16, ra phương trình bậc hai. Bước 1: Gọi thời gian vòi A làm một mình là x giờ (x > 0), vòi B là x + 24 giờ. Bước 2: Mỗi giờ: 1/x + 1/(x + 24) = 1/16. Bước 3: Nhân hai vế với 16x(x + 24): 16(x + 24) + 16x = x(x + 24), tức là 32x + 384 = x² + 24x, hay x² − 8x − 384 = 0. Bước 4: (x − 24)(x + 16) = 0, nên x = 24 hoặc x = −16; x > 0 nên x = 24. Kiểm tra: 1/24 + 1/48 = 1/16. Vậy vòi A làm một mình mất 24 giờ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 17",
      "text": "Tính A = ∛(16 + 8√5) + ∛(16 − 8√5).",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -320,22 +310,32 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 19",
-     "text": "Trong phép cộng CDG + GCG = GDCF, mỗi chữ cái là một chữ số, hai chữ cái khác nhau là hai chữ số khác nhau, chữ cái đầu mỗi số khác 0. Chữ cái G bằng chữ số nào?",
+     "name": "Câu 18",
+     "text": "Tính tổng tất cả các số nguyên dương n để n² + 4n + 37 là số chính phương.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 1. Nhận dạng: phép cộng chữ, mỗi chữ cái là một chữ số khác nhau, tìm chữ số hoặc số. Ý tưởng: xét từng cột từ phải sang trái cùng số nhớ, chữ nào đã biết thì thay vào, chữ nào chỉ còn một khả năng thì chốt. Bước 1: Tổng hai số 3 chữ số nhỏ hơn 2000, nên chữ đầu G của tổng chỉ là số nhớ: G = 1. Bước 2: Cột thứ 1 từ phải: 1 + 1 = F + 10 × nhớ, nên F = 2, không nhớ sang cột sau (vì tổng cột này chỉ là 2, chưa tới 10). Bước 3: Cột thứ 2 từ phải: D + C = C + 10 × nhớ (các chữ số khác nhau, khác các chữ đã biết), nên D = 0, không nhớ sang cột sau (vì vế trái lớn nhất là 0 + 9 = 9, chưa tới 10). Bước 4: Cột thứ 3 từ phải: C + 1 = 10, nên C = 9. Bước 5: Kiểm lại: 901 + 191 = 1092. Vậy chữ cái G bằng 1. Mẹo: chữ đầu của tổng dài hơn hai số hạng chỉ có thể là 1."
+      "text": "Đáp án: 16. Nhận dạng: biểu thức bậc hai của n là số chính phương. Ý tưởng: gom thành bình phương rồi viết hiệu hai bình phương thành tích hai thừa số. Bước 1: Gọi k² là số chính phương đó (k nguyên dương). (n + 2)² = n² + 4n + 4, nên n² + 4n + 37 = (n + 2)² + 33. Bước 2: k² − (n + 2)² = 33, nên (k − n − 2)(k + n + 2) = 33. Thừa số thứ hai lớn hơn và hai thừa số cùng chẵn lẻ (tổng là 2k). Bước 3: Xét các cách viết 33: 1 × 33: n + 2 = (33 − 1) : 2 = 16, n = 14, k = (1 + 33) : 2 = 17; 3 × 11: n + 2 = (11 − 3) : 2 = 4, n = 2, k = (3 + 11) : 2 = 7. Vậy tổng các giá trị của n là 14 + 2 = 16."
      }
     },
     {
      "@type": "Question",
-     "name": "Câu 20",
+     "name": "Câu 19",
      "text": "Máy tính bắt đầu với số 625. Mỗi bước máy làm như sau: Nếu số đang có là số chính phương thì thay bằng căn bậc hai của nó, nếu không thì cộng thêm 1. Sau 246 bước, máy hiện số nào?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "Đáp án: 2. Nhận dạng: máy làm một thao tác theo điều kiện ở mỗi bước, hỏi số sau rất nhiều bước. Ý tưởng: tính vài bước đầu để thấy chu kỳ, rồi dùng số dư khi chia số bước cho độ dài chu kỳ. Bước 1: Tính từng bước (bước 0 là số 625): 625 → 25 → 5 → 6 → 7 → 8 → 9 → 3 → 4 → 2 → 3. Bước 2: Số 3 xuất hiện lại sau 3 bước, nên từ bước 7 trở đi dãy lặp chu kỳ 3 số: 3, 4, 2 (bước 7 cho 3). Bước 3: Số bước tính từ chu kỳ: 246 − 7 = 239. Chia cho 3: 239 = 3 × 79 + 2, dư 2. Bước 4: Dư 2 nghĩa là sau 7 bước, đi thêm 79 chu kỳ trọn rồi 2 bước nữa, được số thứ 3 của chu kỳ: 2. Vậy sau 246 bước máy hiện số 2. Mẹo: số bước trừ đi số bước trước khi vào chu kỳ rồi mới chia."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 20",
+     "text": "Trong phép cộng CDG + GCG = GDCF, mỗi chữ cái là một chữ số, hai chữ cái khác nhau là hai chữ số khác nhau, chữ cái đầu mỗi số khác 0. Chữ cái G bằng chữ số nào?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 1. Nhận dạng: phép cộng chữ, mỗi chữ cái là một chữ số khác nhau, tìm chữ số hoặc số. Ý tưởng: xét từng cột từ phải sang trái cùng số nhớ, chữ nào đã biết thì thay vào, chữ nào chỉ còn một khả năng thì chốt. Bước 1: Tổng hai số 3 chữ số nhỏ hơn 2000, nên chữ đầu G của tổng chỉ là số nhớ: G = 1. Bước 2: Cột thứ 1 từ phải: 1 + 1 = F + 10 × nhớ, nên F = 2, không nhớ sang cột sau (vì tổng cột này chỉ là 2, chưa tới 10). Bước 3: Cột thứ 2 từ phải: D + C = C + 10 × nhớ (các chữ số khác nhau, khác các chữ đã biết), nên D = 0, không nhớ sang cột sau (vì vế trái lớn nhất là 0 + 9 = 9, chưa tới 10). Bước 4: Cột thứ 3 từ phải: C + 1 = 10, nên C = 9. Bước 5: Kiểm lại: 901 + 191 = 1092. Vậy chữ cái G bằng 1. Mẹo: chữ đầu của tổng dài hơn hai số hạng chỉ có thể là 1."
      }
     }
    ]
@@ -418,58 +418,58 @@
 <ol class="questions" start="1">
 <li class="q" id="cau-1">
   <div class="q-head"><span class="q-n">Câu 1</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Quãng đường rơi tự do của một vật là s = 5t² (s tính bằng mét, t tính bằng giây). Trong giây thứ 7 (từ t = 6 đến t = 7), vật đi được bao nhiêu mét?</p><p class="q-en" lang="en">A falling object covers s = 5t² metres in t seconds. How many metres does it cover during second number 7 (from t = 6 to t = 7)?</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Giá một quyển sách bị giảm 10% rồi lại giảm 10% (tính trên giá sau lần giảm đầu). Tổng cộng giá đã giảm bao nhiêu phần trăm so với ban đầu?</p><p class="q-en" lang="en">The price of a book is lowered by 10% and then by another 10% (of the price after the first cut). By what percentage has the price fallen in total?</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 1</summary>
-    <p><b>Đáp án: 65</b></p>
-    <p>Nhận dạng: chuyển động theo công thức s = 5t² (s mét, t giây), quãng đường tỉ lệ với bình phương thời gian.<br>Ý tưởng: quãng đường đi được sau t giây là s(t) = 5t²;<br>quãng trong một khoảng thời gian là hiệu hai giá trị.<br>Bước 1: s(7) = 5 × 7² = 245.<br>Bước 2: s(6) = 5 × 6² = 180.<br>Bước 3: Trong giây thứ 7: 245 − 180 = 65.<br>Vậy vật đi được 65 m.</p>
+    <p><b>Đáp án: 19</b></p>
+    <p>Nhận dạng: giá tăng rồi giảm theo phần trăm liên tiếp, hỏi kết quả sau hai lần đổi.<br>Ý tưởng: hai lần giảm liên tiếp không cộng phần trăm mà nhân hệ số (1 − x/100) hai lần.<br>Bước 1: Gọi giá ban đầu là 100.<br>Sau lần giảm đầu: 100 × (1 − 10/100) = 90.<br>Bước 2: Sau lần giảm thứ hai: 90 × (1 − 10/100) = 90 × 0,9 = 81.<br>Bước 3: Giá còn 81% giá ban đầu, nên giảm 100 − 81 = 19%.<br>Vậy đáp án là 19.<br>Mẹo: phần trăm sau tính trên giá đã đổi, nên tăng x% rồi giảm x% không về giá cũ.</p>
   </details>
 </li>
 <li class="q" id="cau-2">
   <div class="q-head"><span class="q-n">Câu 2</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Số có ba chữ số abc trừ đi số viết ngược cba (c ≠ 0) thì được 495. Tìm số abc lớn nhất.</p><p class="q-en" lang="en">A three-digit number abc minus its reverse cba (c ≠ 0) equals 495. Find the largest such abc.</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Hình chóp tứ giác đều S.ABCD có cạnh đáy 5 cm, chiều cao 18 cm. Tính thể tích hình chóp.</p><p class="q-en" lang="en">Regular square pyramid S.ABCD has base edge 5 cm and height 18 cm. Find its volume.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 2"><svg width="300" height="179" viewBox="0 0 300 179" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="74.4,151 182.4,151 225.6,107.8 117.6,107.8" stroke="#2563eb" stroke-width="0.1" fill="#2563eb" fill-opacity="0.06"/><line x1="74.4" y1="151" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="182.4" y1="151" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="225.6" y1="107.8" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="117.6" y1="107.8" x2="74.4" y2="151" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="74.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="150" y2="129.4" stroke="#f97316" stroke-width="1.6" stroke-dasharray="4 3"/><circle cx="150" cy="129.4" r="2.2" stroke="currentColor" stroke-width="1" fill="currentColor"/><text x="150" y="11" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">S</text><text x="66.4" y="163" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="188.4" y="165" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="234.6" y="111.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="108.6" y="107.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="142" y="141.4" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">O</text><text x="128.4" y="169" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">5</text><text x="179.7" y="47" font-size="11" text-anchor="start" stroke="none" fill="#2563eb" font-weight="bold">SO = 18</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 2</summary>
-    <p><b>Đáp án: 994</b></p>
-    <p>Nhận dạng: số có ba chữ số trừ số viết ngược.<br>Ý tưởng: abc − cba = (100 × a + 10 × b + c) − (100 × c + 10 × b + a) = 99 × (a − c), chữ số b mất đi.<br>Bước 1: 99 × (a − c) = 495, nên a − c = 5.<br>Bước 2: c từ 1 đến 4, a = c + 5: có 4 cặp (a, c), b tuỳ ý từ 0 đến 9.<br>Bước 3: Lớn nhất khi a = 9, c = 4, b = 9.<br>Vậy số lớn nhất là 994.</p>
-  </details>
-</li>
-<li class="q" id="cau-3">
-  <div class="q-head"><span class="q-n">Câu 3</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Phúc đi bộ quãng đường 16 m bằng các bước dài 2 m hoặc 3 m (bước nào cũng đúng một trong hai độ dài). Có bao nhiêu cách đi hết quãng đường (thứ tự các bước khác nhau là khác cách)?</p><p class="q-en" lang="en">Phuc walks 16 m using steps of length 2 m or 3 m. In how many ways can Phuc cover the distance exactly (a different order of steps counts as a different way)?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 3</summary>
-    <p><b>Đáp án: 37</b></p>
-    <p>Nhận dạng: đếm cách đi 16 m bằng các bước 2 m hoặc 3 m (thứ tự bước khác nhau là khác cách).<br>Ý tưởng: bảng cộng dồn theo lần cuối: số cách tới i bằng tổng số cách tới các chỗ đứng ngay trước lần cuối.<br>Bước 1: Gọi f(k) là số cách đi hết k mét: f(0) = 1, f(1) = 0 (không có bước 1 m).<br>Bước 2: f(k) = f(k − 2) + f(k − 3) (lần cuối là 2 hoặc 3 m).<br>Bước 3: Tính lần lượt: f(2) = f(0) = 1, f(3) = f(0) = 1 (vì f(1) = 0).<br>f(4) = f(2) = 1 (vì f(1) = 0), f(5) = f(3) + f(2) = 1 + 1 = 2.<br>f(6) = f(4) + f(3) = 1 + 1 = 2, f(7) = f(5) + f(4) = 2 + 1 = 3.<br>f(8) = f(6) + f(5) = 2 + 2 = 4, f(9) = f(7) + f(6) = 3 + 2 = 5.<br>f(10) = f(8) + f(7) = 4 + 3 = 7, f(11) = f(9) + f(8) = 5 + 4 = 9.<br>f(12) = f(10) + f(9) = 7 + 5 = 12, f(13) = f(11) + f(10) = 9 + 7 = 16.<br>f(14) = f(12) + f(11) = 12 + 9 = 21, f(15) = f(13) + f(12) = 16 + 12 = 28.<br>f(16) = f(14) + f(13) = 21 + 16 = 37.<br>Vậy có 37 cách.<br>Mẹo: f(1) = 0 nên các số hạng f(1) bỏ đi, đừng coi là 1.</p>
-  </details>
-</li>
-<li class="q" id="cau-4">
-  <div class="q-head"><span class="q-n">Câu 4</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Các số a, b, c, d thoả mãn hệ: 4a + b + c + d = 39; a + 4b + c + d = 45; a + b + 4c + d = 39; a + b + c + 4d = 45. Tìm c.</p><p class="q-en" lang="en">The numbers a, b, c, d satisfy the system: 4a + b + c + d = 39; a + 4b + c + d = 45; a + b + 4c + d = 39; a + b + c + 4d = 45. Find c.</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 4</summary>
-    <p><b>Đáp án: 5</b></p>
-    <p>Nhận dạng: mỗi phương trình có một ẩn mang hệ số 4, các ẩn còn lại hệ số 1.<br>Ý tưởng: cộng tất cả để ra tổng S của các ẩn;<br>mỗi phương trình là S cộng thêm phần dư của một ẩn.<br>Bước 1: Mỗi ẩn có tổng hệ số 4 + 1 + 1 + 1 = 7;<br>cộng vế: 7(a + b + c + d) = 39 + 45 + 39 + 45 = 168, nên S = a + b + c + d = 168 : 7 = 24.<br>Bước 2: Phương trình có 4c là S + 3c = 39.<br>Bước 3: 3c = 39 − 24 = 15, nên c = 15 : 3 = 5.<br>Vậy c = 5.</p>
-  </details>
-</li>
-<li class="q" id="cau-5">
-  <div class="q-head"><span class="q-n">Câu 5</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Tứ giác ABCD nội tiếp đường tròn có ∠A − ∠C = 90°. Tính ∠A (độ).</p><p class="q-en" lang="en">Cyclic quadrilateral ABCD has ∠A − ∠C = 90°. Find ∠A (degrees).</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 5"><svg width="300" height="184" viewBox="0 0 300 184" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="150" cy="86" r="56" stroke="#2563eb" stroke-width="2" fill="none"/><line x1="130.8" y1="33.4" x2="173.7" y2="35.2" stroke="#2563eb" stroke-width="1.8"/><line x1="173.7" y1="35.2" x2="150" y2="142" stroke="#2563eb" stroke-width="1.8"/><line x1="150" y1="142" x2="99.2" y2="62.3" stroke="#2563eb" stroke-width="1.8"/><line x1="99.2" y1="62.3" x2="130.8" y2="33.4" stroke="#2563eb" stroke-width="1.8"/><text x="126.4" y="25.2" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="179.2" y="27.5" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="150" y="159" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="87.5" y="60.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 5</summary>
-    <p><b>Đáp án: 135</b></p>
-    <p>Nhận dạng: tứ giác nội tiếp đường tròn (bốn đỉnh nằm trên đường tròn).<br>Ý tưởng: tứ giác nội tiếp có tổng hai góc đối bằng 180°: ∠A + ∠C = 180°, ∠B + ∠D = 180°.<br>Bước 1: ∠A + ∠C = 180° và ∠A − ∠C = 90°.<br>Bước 2: Cộng hai đẳng thức: 2∠A = 270°, ∠A = 135°;<br>∠C = 180° − 135° = 45°.<br>Vậy ∠A = 135°.</p>
-  </details>
-</li>
-<li class="q" id="cau-6">
-  <div class="q-head"><span class="q-n">Câu 6</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Hình chóp tứ giác đều S.ABCD có cạnh đáy 5 cm, chiều cao 18 cm. Tính thể tích hình chóp.</p><p class="q-en" lang="en">Regular square pyramid S.ABCD has base edge 5 cm and height 18 cm. Find its volume.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 6"><svg width="300" height="179" viewBox="0 0 300 179" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="74.4,151 182.4,151 225.6,107.8 117.6,107.8" stroke="#2563eb" stroke-width="0.1" fill="#2563eb" fill-opacity="0.06"/><line x1="74.4" y1="151" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="182.4" y1="151" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="225.6" y1="107.8" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="117.6" y1="107.8" x2="74.4" y2="151" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="74.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="182.4" y2="151" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="225.6" y2="107.8" stroke="#2563eb" stroke-width="2"/><line x1="150" y1="16" x2="117.6" y2="107.8" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="150" y1="16" x2="150" y2="129.4" stroke="#f97316" stroke-width="1.6" stroke-dasharray="4 3"/><circle cx="150" cy="129.4" r="2.2" stroke="currentColor" stroke-width="1" fill="currentColor"/><text x="150" y="11" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">S</text><text x="66.4" y="163" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="188.4" y="165" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="234.6" y="111.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="108.6" y="107.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="142" y="141.4" font-size="11" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">O</text><text x="128.4" y="169" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">5</text><text x="179.7" y="47" font-size="11" text-anchor="start" stroke="none" fill="#2563eb" font-weight="bold">SO = 18</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 6</summary>
     <p><b>Đáp án: 150</b></p>
     <p>Nhận dạng: hình chóp tứ giác đều (đáy là hình vuông, đỉnh S nằm thẳng trên tâm đáy).<br>Ý tưởng: thể tích hình chóp = 1/3 × diện tích đáy × chiều cao.<br>Bước 1: Diện tích đáy = 5 × 5 = 25.<br>Bước 2: V = 1/3 × 25 × 18 = 150 (cm³).<br>Vậy thể tích là 150 cm³.</p>
   </details>
 </li>
+<li class="q" id="cau-3">
+  <div class="q-head"><span class="q-n">Câu 3</span><span class="q-pts">4 điểm</span></div>
+  <p class="q-stem">Số có ba chữ số abc trừ đi số viết ngược cba (c ≠ 0) thì được 495. Tìm số abc lớn nhất.</p><p class="q-en" lang="en">A three-digit number abc minus its reverse cba (c ≠ 0) equals 495. Find the largest such abc.</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 3</summary>
+    <p><b>Đáp án: 994</b></p>
+    <p>Nhận dạng: số có ba chữ số trừ số viết ngược.<br>Ý tưởng: abc − cba = (100 × a + 10 × b + c) − (100 × c + 10 × b + a) = 99 × (a − c), chữ số b mất đi.<br>Bước 1: 99 × (a − c) = 495, nên a − c = 5.<br>Bước 2: c từ 1 đến 4, a = c + 5: có 4 cặp (a, c), b tuỳ ý từ 0 đến 9.<br>Bước 3: Lớn nhất khi a = 9, c = 4, b = 9.<br>Vậy số lớn nhất là 994.</p>
+  </details>
+</li>
+<li class="q" id="cau-4">
+  <div class="q-head"><span class="q-n">Câu 4</span><span class="q-pts">4 điểm</span></div>
+  <p class="q-stem">Tứ giác ABCD nội tiếp đường tròn có ∠A − ∠C = 90°. Tính ∠A (độ).</p><p class="q-en" lang="en">Cyclic quadrilateral ABCD has ∠A − ∠C = 90°. Find ∠A (degrees).</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 4"><svg width="300" height="184" viewBox="0 0 300 184" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="150" cy="86" r="56" stroke="#2563eb" stroke-width="2" fill="none"/><line x1="130.8" y1="33.4" x2="173.7" y2="35.2" stroke="#2563eb" stroke-width="1.8"/><line x1="173.7" y1="35.2" x2="150" y2="142" stroke="#2563eb" stroke-width="1.8"/><line x1="150" y1="142" x2="99.2" y2="62.3" stroke="#2563eb" stroke-width="1.8"/><line x1="99.2" y1="62.3" x2="130.8" y2="33.4" stroke="#2563eb" stroke-width="1.8"/><text x="126.4" y="25.2" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="179.2" y="27.5" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="150" y="159" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="87.5" y="60.8" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 4</summary>
+    <p><b>Đáp án: 135</b></p>
+    <p>Nhận dạng: tứ giác nội tiếp đường tròn (bốn đỉnh nằm trên đường tròn).<br>Ý tưởng: tứ giác nội tiếp có tổng hai góc đối bằng 180°: ∠A + ∠C = 180°, ∠B + ∠D = 180°.<br>Bước 1: ∠A + ∠C = 180° và ∠A − ∠C = 90°.<br>Bước 2: Cộng hai đẳng thức: 2∠A = 270°, ∠A = 135°;<br>∠C = 180° − 135° = 45°.<br>Vậy ∠A = 135°.</p>
+  </details>
+</li>
+<li class="q" id="cau-5">
+  <div class="q-head"><span class="q-n">Câu 5</span><span class="q-pts">4 điểm</span></div>
+  <p class="q-stem">Phúc đi bộ quãng đường 16 m bằng các bước dài 2 m hoặc 3 m (bước nào cũng đúng một trong hai độ dài). Có bao nhiêu cách đi hết quãng đường (thứ tự các bước khác nhau là khác cách)?</p><p class="q-en" lang="en">Phuc walks 16 m using steps of length 2 m or 3 m. In how many ways can Phuc cover the distance exactly (a different order of steps counts as a different way)?</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 5</summary>
+    <p><b>Đáp án: 37</b></p>
+    <p>Nhận dạng: đếm cách đi 16 m bằng các bước 2 m hoặc 3 m (thứ tự bước khác nhau là khác cách).<br>Ý tưởng: bảng cộng dồn theo lần cuối: số cách tới i bằng tổng số cách tới các chỗ đứng ngay trước lần cuối.<br>Bước 1: Gọi f(k) là số cách đi hết k mét: f(0) = 1, f(1) = 0 (không có bước 1 m).<br>Bước 2: f(k) = f(k − 2) + f(k − 3) (lần cuối là 2 hoặc 3 m).<br>Bước 3: Tính lần lượt: f(2) = f(0) = 1, f(3) = f(0) = 1 (vì f(1) = 0).<br>f(4) = f(2) = 1 (vì f(1) = 0), f(5) = f(3) + f(2) = 1 + 1 = 2.<br>f(6) = f(4) + f(3) = 1 + 1 = 2, f(7) = f(5) + f(4) = 2 + 1 = 3.<br>f(8) = f(6) + f(5) = 2 + 2 = 4, f(9) = f(7) + f(6) = 3 + 2 = 5.<br>f(10) = f(8) + f(7) = 4 + 3 = 7, f(11) = f(9) + f(8) = 5 + 4 = 9.<br>f(12) = f(10) + f(9) = 7 + 5 = 12, f(13) = f(11) + f(10) = 9 + 7 = 16.<br>f(14) = f(12) + f(11) = 12 + 9 = 21, f(15) = f(13) + f(12) = 16 + 12 = 28.<br>f(16) = f(14) + f(13) = 21 + 16 = 37.<br>Vậy có 37 cách.<br>Mẹo: f(1) = 0 nên các số hạng f(1) bỏ đi, đừng coi là 1.</p>
+  </details>
+</li>
+<li class="q" id="cau-6">
+  <div class="q-head"><span class="q-n">Câu 6</span><span class="q-pts">4 điểm</span></div>
+  <p class="q-stem">Các số a, b, c, d thoả mãn hệ: 4a + b + c + d = 39; a + 4b + c + d = 45; a + b + 4c + d = 39; a + b + c + 4d = 45. Tìm c.</p><p class="q-en" lang="en">The numbers a, b, c, d satisfy the system: 4a + b + c + d = 39; a + 4b + c + d = 45; a + b + 4c + d = 39; a + b + c + 4d = 45. Find c.</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 6</summary>
+    <p><b>Đáp án: 5</b></p>
+    <p>Nhận dạng: mỗi phương trình có một ẩn mang hệ số 4, các ẩn còn lại hệ số 1.<br>Ý tưởng: cộng tất cả để ra tổng S của các ẩn;<br>mỗi phương trình là S cộng thêm phần dư của một ẩn.<br>Bước 1: Mỗi ẩn có tổng hệ số 4 + 1 + 1 + 1 = 7;<br>cộng vế: 7(a + b + c + d) = 39 + 45 + 39 + 45 = 168, nên S = a + b + c + d = 168 : 7 = 24.<br>Bước 2: Phương trình có 4c là S + 3c = 39.<br>Bước 3: 3c = 39 − 24 = 15, nên c = 15 : 3 = 5.<br>Vậy c = 5.</p>
+  </details>
+</li>
 <li class="q" id="cau-7">
   <div class="q-head"><span class="q-n">Câu 7</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Giá một quyển sách bị giảm 10% rồi lại giảm 10% (tính trên giá sau lần giảm đầu). Tổng cộng giá đã giảm bao nhiêu phần trăm so với ban đầu?</p><p class="q-en" lang="en">The price of a book is lowered by 10% and then by another 10% (of the price after the first cut). By what percentage has the price fallen in total?</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Quãng đường rơi tự do của một vật là s = 5t² (s tính bằng mét, t tính bằng giây). Trong giây thứ 7 (từ t = 6 đến t = 7), vật đi được bao nhiêu mét?</p><p class="q-en" lang="en">A falling object covers s = 5t² metres in t seconds. How many metres does it cover during second number 7 (from t = 6 to t = 7)?</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 7</summary>
-    <p><b>Đáp án: 19</b></p>
-    <p>Nhận dạng: giá tăng rồi giảm theo phần trăm liên tiếp, hỏi kết quả sau hai lần đổi.<br>Ý tưởng: hai lần giảm liên tiếp không cộng phần trăm mà nhân hệ số (1 − x/100) hai lần.<br>Bước 1: Gọi giá ban đầu là 100.<br>Sau lần giảm đầu: 100 × (1 − 10/100) = 90.<br>Bước 2: Sau lần giảm thứ hai: 90 × (1 − 10/100) = 90 × 0,9 = 81.<br>Bước 3: Giá còn 81% giá ban đầu, nên giảm 100 − 81 = 19%.<br>Vậy đáp án là 19.<br>Mẹo: phần trăm sau tính trên giá đã đổi, nên tăng x% rồi giảm x% không về giá cũ.</p>
+    <p><b>Đáp án: 65</b></p>
+    <p>Nhận dạng: chuyển động theo công thức s = 5t² (s mét, t giây), quãng đường tỉ lệ với bình phương thời gian.<br>Ý tưởng: quãng đường đi được sau t giây là s(t) = 5t²;<br>quãng trong một khoảng thời gian là hiệu hai giá trị.<br>Bước 1: s(7) = 5 × 7² = 245.<br>Bước 2: s(6) = 5 × 6² = 180.<br>Bước 3: Trong giây thứ 7: 245 − 180 = 65.<br>Vậy vật đi được 65 m.</p>
   </details>
 </li>
 <li class="q" id="cau-8">
@@ -484,105 +484,105 @@
 <ol class="questions" start="9">
 <li class="q" id="cau-9">
   <div class="q-head"><span class="q-n">Câu 9</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-stem">Có bao nhiêu cách viết số 501 thành tổng của ít nhất hai số tự nhiên khác 0 liên tiếp?</p><p class="q-en" lang="en">In how many ways can 501 be written as a sum of at least two consecutive positive integers?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 9</summary>
-    <p><b>Đáp án: 3</b></p>
-    <p>Nhận dạng: đếm số cách viết một số thành tổng nhiều số tự nhiên liên tiếp.<br>Ý tưởng: viết tổng thành tích k × (2 × a + k − 1) = 2 × S, hai thừa số khác tính chẵn lẻ nên mỗi ước lẻ cho một cách.<br>Bước 1: Gọi a là số đầu, k là số số hạng (k ≥ 2): k × (2 × a + k − 1) : 2 = 501, nên k × (2 × a + k − 1) = 2 × 501 = 1002.<br>Bước 2: Hai thừa số k và 2 × a + k − 1 hơn kém nhau 2 × a − 1, là số lẻ: một thừa số lẻ, một chẵn.<br>Thừa số lẻ là ước lẻ của 501.<br>Bước 3: Các ước lẻ của 501: 1, 3, 167, 501 (4 ước).<br>Mỗi ước lẻ cho đúng một cặp thừa số, ước kia là 1002 : ước (chẵn).<br>Bước 4: Ước 1 cho k = 1 (chỉ một số), loại.<br>Còn 4 − 1 = 3 cách: 166 + … + 168;<br>81 + … + 86;<br>250 + 251.<br>Vậy có 3 cách.<br>Mẹo: số cách bằng số ước lẻ trừ 1 (bỏ cách chỉ một số).</p>
-  </details>
-</li>
-<li class="q" id="cau-10">
-  <div class="q-head"><span class="q-n">Câu 10</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-stem">Hai vòi nước cùng chảy vào một bể cạn thì sau 16 giờ đầy bể. Nếu chảy riêng, vòi A làm đầy bể nhanh hơn vòi B 24 giờ. Hỏi vòi A chảy một mình thì sau bao nhiêu giờ đầy bể?</p><p class="q-en" lang="en">Two taps together fill an empty tank in 16 hours. Alone, tap A fills it 24 hours faster than tap B. How many hours does tap A alone take?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 10</summary>
-    <p><b>Đáp án: 24</b></p>
-    <p>Nhận dạng: bài làm chung – làm riêng, hai thời gian hơn kém nhau.<br>Ý tưởng: mỗi giờ làm được 1/(thời gian) bể;<br>cộng phần của hai bên bằng 1/16, ra phương trình bậc hai.<br>Bước 1: Gọi thời gian vòi A làm một mình là x giờ (x &gt; 0), vòi B là x + 24 giờ.<br>Bước 2: Mỗi giờ: 1/x + 1/(x + 24) = 1/16.<br>Bước 3: Nhân hai vế với 16x(x + 24): 16(x + 24) + 16x = x(x + 24), tức là 32x + 384 = x² + 24x, hay x² − 8x − 384 = 0.<br>Bước 4: (x − 24)(x + 16) = 0, nên x = 24 hoặc x = −16;<br>x &gt; 0 nên x = 24.<br>Kiểm tra: 1/24 + 1/48 = 1/16.<br>Vậy vòi A làm một mình mất 24 giờ.</p>
-  </details>
-</li>
-<li class="q" id="cau-11">
-  <div class="q-head"><span class="q-n">Câu 11</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-stem">Các hình xếp chấm thành tam giác có số chấm là 1, 3, 6, 10, 15, … Hình thứ 29 và hình thứ 30 ghép lại có tất cả bao nhiêu chấm?</p><p class="q-en" lang="en">Triangles of dots have 1, 3, 6, 10, 15, … dots. Figures 29 and 30 together have how many dots?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 11</summary>
-    <p><b>Đáp án: 900</b></p>
-    <p>Nhận dạng: dãy hình xếp chấm thành tam giác, hỏi tổng hai hình liền nhau.<br>Ý tưởng: hai tam giác liền nhau ghép lại thành hình vuông, nên tổng bằng bình phương của số thứ tự hình lớn hơn.<br>Bước 1: Hai hình liền nhau ghép thành hình vuông: 3 + 6 = 9 = 3 × 3, 6 + 10 = 16 = 4 × 4.<br>Bước 2: Hình thứ 29 và thứ 30 ghép thành hình vuông 30 × 30: 30 × 30 = 900.<br>Bước 3: Kiểm: 435 + 465 = 900.<br>Vậy đáp án là 900.</p>
-  </details>
-</li>
-<li class="q" id="cau-12">
-  <div class="q-head"><span class="q-n">Câu 12</span><span class="q-pts">5 điểm</span></div>
   <p class="q-stem">Tìm số nhỏ nhất không nhỏ hơn 7000 có đúng 4 ước dương.</p><p class="q-en" lang="en">Find the smallest number not less than 7000 with exactly 4 positive divisors.</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 12</summary>
+  <details><summary>Đáp án và lời giải câu 9</summary>
     <p><b>Đáp án: 7003</b></p>
     <p>Nhận dạng: tìm số có đúng 4 ước gần một mốc.<br>Ý tưởng: số ước bằng tích các (số mũ + 1), mà 4 = 4 = 2 × 2 nên số đó có dạng p³ hoặc p × q.<br>Bước 1: Dạng số có đúng 4 ước: p³ hoặc p × q (p, q là các số nguyên tố khác nhau).<br>Bước 2: Bắt đầu từ 7000 đi lên.<br>7000 = 2³ × 5³ × 7 (32 ước);<br>7001 là số nguyên tố (2 ước);<br>7002 = 2 × 3² × 389 (12 ước).<br>Bước 3: 7003 = 47 × 149, dạng p × q, có đúng 4 ước.<br>Vậy số cần tìm là 7003.</p>
   </details>
 </li>
-<li class="q" id="cau-13">
-  <div class="q-head"><span class="q-n">Câu 13</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-stem">Ba chữ số khác nhau, khác 0 lập được 6 số có ba chữ số khác nhau (mỗi số dùng cả ba chữ số). Tổng của 6 số đó là 2664. Tính tổng ba chữ số.</p><p class="q-en" lang="en">Three different non-zero digits form 6 different three-digit numbers (each uses all three digits). The sum of these 6 numbers is 2664. Find the sum of the three digits.</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 13</summary>
-    <p><b>Đáp án: 12</b></p>
-    <p>Nhận dạng: tổng mọi số lập từ ba chữ số khác nhau, tìm tổng chữ số hay chữ số còn lại.<br>Ý tưởng: mỗi chữ số đứng mỗi hàng đúng 2 lần nên tổng bằng 222 nhân tổng ba chữ số.<br>Bước 1: Gọi ba chữ số là x, y, z.<br>Mỗi chữ số đứng ở hàng trăm 2 lần, hàng chục 2 lần, hàng đơn vị 2 lần trong 6 số.<br>Bước 2: Nên tổng bằng 2 × (100 + 10 + 1) × (x + y + z) = 222 × (x + y + z) = 2664.<br>Bước 3: x + y + z = 2664 : 222 = 12.<br>Vậy tổng ba chữ số là 12.<br>Mẹo: ba chữ số khác nhau, khác 0 có tổng từ 6 đến 24.</p>
-  </details>
-</li>
-<li class="q" id="cau-14">
-  <div class="q-head"><span class="q-n">Câu 14</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-stem">Có bao nhiêu số có bốn chữ số mà chia cho 14 và 15 lần lượt dư 7 và 8?</p><p class="q-en" lang="en">How many four-digit numbers N have the property: N leaves remainders 7 and 8 when divided by 14 and 15 respectively?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 14</summary>
-    <p><b>Đáp án: 43</b></p>
-    <p>Nhận dạng: số chia cho nhiều số có số dư cùng kém số chia.<br>Ý tưởng: gọi N là số cần tìm, thì N + 7 là bội chung, tức là bội của BCNN.<br>Bước 1: Mỗi số dư kém số chia 7 đơn vị (14 − 7 = 7, 15 − 8 = 7), nên N + 7 chia hết cho cả 14 và 15.<br>Bước 2: BCNN(14, 15) = 14 × 15 = 210 (các số nguyên tố cùng nhau), nên N = 210 × t − 7 (t là số tự nhiên).<br>Bước 3: N ≥ 1000 nên 210 × t ≥ 1000 + 7 = 1007;<br>1007 : 210 = 4 (dư 167), t nhỏ nhất là 5 (N = 210 × 5 − 7 = 1043).<br>N ≤ 9999 nên 210 × t ≤ 9999 + 7 = 10006;<br>10006 : 210 = 47 (dư 136), t lớn nhất là 47 (N = 210 × 47 − 7 = 9863).<br>Bước 4: Số giá trị của t: 47 − 5 + 1 = 43.<br>Vậy có 43 số.</p>
-  </details>
-</li>
-<li class="q" id="cau-15">
-  <div class="q-head"><span class="q-n">Câu 15</span><span class="q-pts">5 điểm</span></div>
+<li class="q" id="cau-10">
+  <div class="q-head"><span class="q-n">Câu 10</span><span class="q-pts">5 điểm</span></div>
   <p class="q-stem">Trong các số 1, 2, 3, …, 70, có bao nhiêu số có ƯCLN với 14 bằng 1?</p><p class="q-en" lang="en">How many integers from 1 to 70 are coprime to 14?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 15</summary>
+  <details><summary>Đáp án và lời giải câu 10</summary>
     <p><b>Đáp án: 30</b></p>
     <p>Nhận dạng: đếm số nguyên tố cùng nhau với 14 trong một đoạn dài.<br>Ý tưởng: a và a + 14 có cùng ƯCLN với 14, nên mỗi nhóm 14 số liên tiếp có số lượng như nhau.<br>Bước 1: 14 = 2 × 7: số nguyên tố cùng nhau với 14 là số không chia hết cho 2 hoặc 7.<br>Bước 2: Từ 1 đến 14 có 6 số: 1, 3, 5, 9, 11, 13.<br>Bước 3: 70 = 14 × 5, có 5 nhóm: 6 × 5 = 30.<br>Vậy có 30 số.</p>
   </details>
 </li>
-<li class="q" id="cau-16">
-  <div class="q-head"><span class="q-n">Câu 16</span><span class="q-pts">5 điểm</span></div>
+<li class="q" id="cau-11">
+  <div class="q-head"><span class="q-n">Câu 11</span><span class="q-pts">5 điểm</span></div>
+  <p class="q-stem">Có bao nhiêu cách viết số 501 thành tổng của ít nhất hai số tự nhiên khác 0 liên tiếp?</p><p class="q-en" lang="en">In how many ways can 501 be written as a sum of at least two consecutive positive integers?</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 11</summary>
+    <p><b>Đáp án: 3</b></p>
+    <p>Nhận dạng: đếm số cách viết một số thành tổng nhiều số tự nhiên liên tiếp.<br>Ý tưởng: viết tổng thành tích k × (2 × a + k − 1) = 2 × S, hai thừa số khác tính chẵn lẻ nên mỗi ước lẻ cho một cách.<br>Bước 1: Gọi a là số đầu, k là số số hạng (k ≥ 2): k × (2 × a + k − 1) : 2 = 501, nên k × (2 × a + k − 1) = 2 × 501 = 1002.<br>Bước 2: Hai thừa số k và 2 × a + k − 1 hơn kém nhau 2 × a − 1, là số lẻ: một thừa số lẻ, một chẵn.<br>Thừa số lẻ là ước lẻ của 501.<br>Bước 3: Các ước lẻ của 501: 1, 3, 167, 501 (4 ước).<br>Mỗi ước lẻ cho đúng một cặp thừa số, ước kia là 1002 : ước (chẵn).<br>Bước 4: Ước 1 cho k = 1 (chỉ một số), loại.<br>Còn 4 − 1 = 3 cách: 166 + … + 168;<br>81 + … + 86;<br>250 + 251.<br>Vậy có 3 cách.<br>Mẹo: số cách bằng số ước lẻ trừ 1 (bỏ cách chỉ một số).</p>
+  </details>
+</li>
+<li class="q" id="cau-12">
+  <div class="q-head"><span class="q-n">Câu 12</span><span class="q-pts">5 điểm</span></div>
+  <p class="q-stem">Ba chữ số khác nhau, khác 0 lập được 6 số có ba chữ số khác nhau (mỗi số dùng cả ba chữ số). Tổng của 6 số đó là 2664. Tính tổng ba chữ số.</p><p class="q-en" lang="en">Three different non-zero digits form 6 different three-digit numbers (each uses all three digits). The sum of these 6 numbers is 2664. Find the sum of the three digits.</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 12</summary>
+    <p><b>Đáp án: 12</b></p>
+    <p>Nhận dạng: tổng mọi số lập từ ba chữ số khác nhau, tìm tổng chữ số hay chữ số còn lại.<br>Ý tưởng: mỗi chữ số đứng mỗi hàng đúng 2 lần nên tổng bằng 222 nhân tổng ba chữ số.<br>Bước 1: Gọi ba chữ số là x, y, z.<br>Mỗi chữ số đứng ở hàng trăm 2 lần, hàng chục 2 lần, hàng đơn vị 2 lần trong 6 số.<br>Bước 2: Nên tổng bằng 2 × (100 + 10 + 1) × (x + y + z) = 222 × (x + y + z) = 2664.<br>Bước 3: x + y + z = 2664 : 222 = 12.<br>Vậy tổng ba chữ số là 12.<br>Mẹo: ba chữ số khác nhau, khác 0 có tổng từ 6 đến 24.</p>
+  </details>
+</li>
+<li class="q" id="cau-13">
+  <div class="q-head"><span class="q-n">Câu 13</span><span class="q-pts">5 điểm</span></div>
   <p class="q-stem">Dãy Fibonacci 1, 1, 2, 3, 5, 8, 13, … (mỗi số từ số thứ ba bằng tổng hai số liền trước). Trong 4000 số hạng đầu tiên có bao nhiêu số chia hết cho 8?</p><p class="q-en" lang="en">The Fibonacci sequence 1, 1, 2, 3, 5, 8, 13, … (each term from the 3rd is the sum of the two terms before it). How many of the first 4000 terms are divisible by 8?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 16</summary>
+  <details><summary>Đáp án và lời giải câu 13</summary>
     <p><b>Đáp án: 666</b></p>
     <p>Nhận dạng: dãy Fibonacci, hỏi số số hạng chia hết cho 8 trong rất nhiều số hạng đầu.<br>Ý tưởng: chỉ xét số dư khi chia cho số đó, số dư lặp theo chu kỳ, tìm vị trí số dư 0 đầu tiên rồi đếm các bội của vị trí đó.<br>Bước 1: Chỉ xét số dư khi chia cho 8: 1, 1, 2, 3, 5, 0, 5, 5, 2, 7, 1, 0.<br>Bước 2: Hai số dư liền nhau 1, 1 xuất hiện lại sau 12 số, nên số dư lặp theo chu kỳ 12.<br>Bước 3: Trong một chu kỳ, số dư 0 (chia hết cho 8) ở vị trí 6, 12, đúng là các bội của 6.<br>Bước 4: Số hạng thứ n chia hết cho 8 khi n chia hết cho 6;<br>số bội của 6 không vượt quá 4000 là 4000 : 6 = 666 dư 4, lấy phần nguyên 666.<br>Vậy có 666 số chia hết cho 8.<br>Mẹo: số dư 0 đầu tiên ở vị trí 6, các số dư 0 sau đó cứ cách 6 vị trí.</p>
+  </details>
+</li>
+<li class="q" id="cau-14">
+  <div class="q-head"><span class="q-n">Câu 14</span><span class="q-pts">5 điểm</span></div>
+  <p class="q-stem">Các hình xếp chấm thành tam giác có số chấm là 1, 3, 6, 10, 15, … Hình thứ 29 và hình thứ 30 ghép lại có tất cả bao nhiêu chấm?</p><p class="q-en" lang="en">Triangles of dots have 1, 3, 6, 10, 15, … dots. Figures 29 and 30 together have how many dots?</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 14</summary>
+    <p><b>Đáp án: 900</b></p>
+    <p>Nhận dạng: dãy hình xếp chấm thành tam giác, hỏi tổng hai hình liền nhau.<br>Ý tưởng: hai tam giác liền nhau ghép lại thành hình vuông, nên tổng bằng bình phương của số thứ tự hình lớn hơn.<br>Bước 1: Hai hình liền nhau ghép thành hình vuông: 3 + 6 = 9 = 3 × 3, 6 + 10 = 16 = 4 × 4.<br>Bước 2: Hình thứ 29 và thứ 30 ghép thành hình vuông 30 × 30: 30 × 30 = 900.<br>Bước 3: Kiểm: 435 + 465 = 900.<br>Vậy đáp án là 900.</p>
+  </details>
+</li>
+<li class="q" id="cau-15">
+  <div class="q-head"><span class="q-n">Câu 15</span><span class="q-pts">5 điểm</span></div>
+  <p class="q-stem">Có bao nhiêu số có bốn chữ số mà chia cho 14 và 15 lần lượt dư 7 và 8?</p><p class="q-en" lang="en">How many four-digit numbers N have the property: N leaves remainders 7 and 8 when divided by 14 and 15 respectively?</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 15</summary>
+    <p><b>Đáp án: 43</b></p>
+    <p>Nhận dạng: số chia cho nhiều số có số dư cùng kém số chia.<br>Ý tưởng: gọi N là số cần tìm, thì N + 7 là bội chung, tức là bội của BCNN.<br>Bước 1: Mỗi số dư kém số chia 7 đơn vị (14 − 7 = 7, 15 − 8 = 7), nên N + 7 chia hết cho cả 14 và 15.<br>Bước 2: BCNN(14, 15) = 14 × 15 = 210 (các số nguyên tố cùng nhau), nên N = 210 × t − 7 (t là số tự nhiên).<br>Bước 3: N ≥ 1000 nên 210 × t ≥ 1000 + 7 = 1007;<br>1007 : 210 = 4 (dư 167), t nhỏ nhất là 5 (N = 210 × 5 − 7 = 1043).<br>N ≤ 9999 nên 210 × t ≤ 9999 + 7 = 10006;<br>10006 : 210 = 47 (dư 136), t lớn nhất là 47 (N = 210 × 47 − 7 = 9863).<br>Bước 4: Số giá trị của t: 47 − 5 + 1 = 43.<br>Vậy có 43 số.</p>
+  </details>
+</li>
+<li class="q" id="cau-16">
+  <div class="q-head"><span class="q-n">Câu 16</span><span class="q-pts">5 điểm</span></div>
+  <p class="q-stem">Hai vòi nước cùng chảy vào một bể cạn thì sau 16 giờ đầy bể. Nếu chảy riêng, vòi A làm đầy bể nhanh hơn vòi B 24 giờ. Hỏi vòi A chảy một mình thì sau bao nhiêu giờ đầy bể?</p><p class="q-en" lang="en">Two taps together fill an empty tank in 16 hours. Alone, tap A fills it 24 hours faster than tap B. How many hours does tap A alone take?</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 16</summary>
+    <p><b>Đáp án: 24</b></p>
+    <p>Nhận dạng: bài làm chung – làm riêng, hai thời gian hơn kém nhau.<br>Ý tưởng: mỗi giờ làm được 1/(thời gian) bể;<br>cộng phần của hai bên bằng 1/16, ra phương trình bậc hai.<br>Bước 1: Gọi thời gian vòi A làm một mình là x giờ (x &gt; 0), vòi B là x + 24 giờ.<br>Bước 2: Mỗi giờ: 1/x + 1/(x + 24) = 1/16.<br>Bước 3: Nhân hai vế với 16x(x + 24): 16(x + 24) + 16x = x(x + 24), tức là 32x + 384 = x² + 24x, hay x² − 8x − 384 = 0.<br>Bước 4: (x − 24)(x + 16) = 0, nên x = 24 hoặc x = −16;<br>x &gt; 0 nên x = 24.<br>Kiểm tra: 1/24 + 1/48 = 1/16.<br>Vậy vòi A làm một mình mất 24 giờ.</p>
   </details>
 </li>
 </ol><h2>Phần 3: Phần C <small>(4 câu × 7 điểm)</small></h2>
 <ol class="questions" start="17">
 <li class="q" id="cau-17">
   <div class="q-head"><span class="q-n">Câu 17</span><span class="q-pts">7 điểm</span></div>
-  <p class="q-stem">Tính tổng tất cả các số nguyên dương n để n² + 4n + 37 là số chính phương.</p><p class="q-en" lang="en">Find the sum of all positive integers n for which n² + 4n + 37 is a perfect square.</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 17</summary>
-    <p><b>Đáp án: 16</b></p>
-    <p>Nhận dạng: biểu thức bậc hai của n là số chính phương.<br>Ý tưởng: gom thành bình phương rồi viết hiệu hai bình phương thành tích hai thừa số.<br>Bước 1: Gọi k² là số chính phương đó (k nguyên dương).<br>(n + 2)² = n² + 4n + 4, nên n² + 4n + 37 = (n + 2)² + 33.<br>Bước 2: k² − (n + 2)² = 33, nên (k − n − 2)(k + n + 2) = 33.<br>Thừa số thứ hai lớn hơn và hai thừa số cùng chẵn lẻ (tổng là 2k).<br>Bước 3: Xét các cách viết 33: 1 × 33: n + 2 = (33 − 1) : 2 = 16, n = 14, k = (1 + 33) : 2 = 17;<br>3 × 11: n + 2 = (11 − 3) : 2 = 4, n = 2, k = (3 + 11) : 2 = 7.<br>Vậy tổng các giá trị của n là 14 + 2 = 16.</p>
-  </details>
-</li>
-<li class="q" id="cau-18">
-  <div class="q-head"><span class="q-n">Câu 18</span><span class="q-pts">7 điểm</span></div>
   <p class="q-stem">Tính A = ∛(16 + 8√5) + ∛(16 − 8√5).</p><p class="q-en" lang="en">Evaluate A = ∛(16 + 8√5) + ∛(16 − 8√5).</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 18</summary>
+  <details><summary>Đáp án và lời giải câu 17</summary>
     <p><b>Đáp án: 2</b></p>
     <p>Nhận dạng: tổng hai căn bậc ba liên hợp ∛(a + √b) + ∛(a − √b).<br>Ý tưởng: lập phương hai vế bằng (u + v)³ = u³ + v³ + 3uv(u + v);<br>tích uv tính được vì (a + √b)(a − √b) = a² − b.<br>Bước 1: Tích hai căn: ∛((16 + 8√5)(16 − 8√5)) = ∛(16² − (8√5)²) = ∛(256 − 320) = ∛(−64) = −4.<br>Bước 2: Lập phương: A³ = (16 + 8√5) + (16 − 8√5) + 3 × (−4) × A = 32 − 12A.<br>Bước 3: A³ + 12A − 32 = 0;<br>thử lần lượt A = 1, 2: A = 2 thoả vì 2³ + 12 × 2 − 32 = 8 + 24 − 32 = 0.<br>Phân tích: (A − 2)(A² + 2A + 16) = 0;<br>A² + 2A + 16 có Δ = 2² − 4 × 16 = −60 &lt; 0 nên luôn dương.<br>Vậy A = 2.</p>
   </details>
 </li>
-<li class="q" id="cau-19">
-  <div class="q-head"><span class="q-n">Câu 19</span><span class="q-pts">7 điểm</span></div>
-  <p class="q-stem">Trong phép cộng CDG + GCG = GDCF, mỗi chữ cái là một chữ số, hai chữ cái khác nhau là hai chữ số khác nhau, chữ cái đầu mỗi số khác 0. Chữ cái G bằng chữ số nào?</p><p class="q-en" lang="en">In the addition CDG + GCG = GDCF, each letter is a digit, different letters are different digits, and the first letter of each number is not 0. Which digit does the letter G stand for?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 19</summary>
-    <p><b>Đáp án: 1</b></p>
-    <p>Nhận dạng: phép cộng chữ, mỗi chữ cái là một chữ số khác nhau, tìm chữ số hoặc số.<br>Ý tưởng: xét từng cột từ phải sang trái cùng số nhớ, chữ nào đã biết thì thay vào, chữ nào chỉ còn một khả năng thì chốt.<br>Bước 1: Tổng hai số 3 chữ số nhỏ hơn 2000, nên chữ đầu G của tổng chỉ là số nhớ: G = 1.<br>Bước 2: Cột thứ 1 từ phải: 1 + 1 = F + 10 × nhớ, nên F = 2, không nhớ sang cột sau (vì tổng cột này chỉ là 2, chưa tới 10).<br>Bước 3: Cột thứ 2 từ phải: D + C = C + 10 × nhớ (các chữ số khác nhau, khác các chữ đã biết), nên D = 0, không nhớ sang cột sau (vì vế trái lớn nhất là 0 + 9 = 9, chưa tới 10).<br>Bước 4: Cột thứ 3 từ phải: C + 1 = 10, nên C = 9.<br>Bước 5: Kiểm lại: 901 + 191 = 1092.<br>Vậy chữ cái G bằng 1.<br>Mẹo: chữ đầu của tổng dài hơn hai số hạng chỉ có thể là 1.</p>
+<li class="q" id="cau-18">
+  <div class="q-head"><span class="q-n">Câu 18</span><span class="q-pts">7 điểm</span></div>
+  <p class="q-stem">Tính tổng tất cả các số nguyên dương n để n² + 4n + 37 là số chính phương.</p><p class="q-en" lang="en">Find the sum of all positive integers n for which n² + 4n + 37 is a perfect square.</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 18</summary>
+    <p><b>Đáp án: 16</b></p>
+    <p>Nhận dạng: biểu thức bậc hai của n là số chính phương.<br>Ý tưởng: gom thành bình phương rồi viết hiệu hai bình phương thành tích hai thừa số.<br>Bước 1: Gọi k² là số chính phương đó (k nguyên dương).<br>(n + 2)² = n² + 4n + 4, nên n² + 4n + 37 = (n + 2)² + 33.<br>Bước 2: k² − (n + 2)² = 33, nên (k − n − 2)(k + n + 2) = 33.<br>Thừa số thứ hai lớn hơn và hai thừa số cùng chẵn lẻ (tổng là 2k).<br>Bước 3: Xét các cách viết 33: 1 × 33: n + 2 = (33 − 1) : 2 = 16, n = 14, k = (1 + 33) : 2 = 17;<br>3 × 11: n + 2 = (11 − 3) : 2 = 4, n = 2, k = (3 + 11) : 2 = 7.<br>Vậy tổng các giá trị của n là 14 + 2 = 16.</p>
   </details>
 </li>
-<li class="q" id="cau-20">
-  <div class="q-head"><span class="q-n">Câu 20</span><span class="q-pts">7 điểm</span></div>
+<li class="q" id="cau-19">
+  <div class="q-head"><span class="q-n">Câu 19</span><span class="q-pts">7 điểm</span></div>
   <p class="q-stem">Máy tính bắt đầu với số 625. Mỗi bước máy làm như sau: Nếu số đang có là số chính phương thì thay bằng căn bậc hai của nó, nếu không thì cộng thêm 1. Sau 246 bước, máy hiện số nào?</p><p class="q-en" lang="en">A machine starts with the number 625. At each step it does the following: If the current number is a perfect square, replace it by its square root; otherwise add 1. After 246 steps, which number does it show?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 20</summary>
+  <details><summary>Đáp án và lời giải câu 19</summary>
     <p><b>Đáp án: 2</b></p>
     <p>Nhận dạng: máy làm một thao tác theo điều kiện ở mỗi bước, hỏi số sau rất nhiều bước.<br>Ý tưởng: tính vài bước đầu để thấy chu kỳ, rồi dùng số dư khi chia số bước cho độ dài chu kỳ.<br>Bước 1: Tính từng bước (bước 0 là số 625): 625 → 25 → 5 → 6 → 7 → 8 → 9 → 3 → 4 → 2 → 3.<br>Bước 2: Số 3 xuất hiện lại sau 3 bước, nên từ bước 7 trở đi dãy lặp chu kỳ 3 số: 3, 4, 2 (bước 7 cho 3).<br>Bước 3: Số bước tính từ chu kỳ: 246 − 7 = 239.<br>Chia cho 3: 239 = 3 × 79 + 2, dư 2.<br>Bước 4: Dư 2 nghĩa là sau 7 bước, đi thêm 79 chu kỳ trọn rồi 2 bước nữa, được số thứ 3 của chu kỳ: 2.<br>Vậy sau 246 bước máy hiện số 2.<br>Mẹo: số bước trừ đi số bước trước khi vào chu kỳ rồi mới chia.</p>
   </details>
 </li>
+<li class="q" id="cau-20">
+  <div class="q-head"><span class="q-n">Câu 20</span><span class="q-pts">7 điểm</span></div>
+  <p class="q-stem">Trong phép cộng CDG + GCG = GDCF, mỗi chữ cái là một chữ số, hai chữ cái khác nhau là hai chữ số khác nhau, chữ cái đầu mỗi số khác 0. Chữ cái G bằng chữ số nào?</p><p class="q-en" lang="en">In the addition CDG + GCG = GDCF, each letter is a digit, different letters are different digits, and the first letter of each number is not 0. Which digit does the letter G stand for?</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 20</summary>
+    <p><b>Đáp án: 1</b></p>
+    <p>Nhận dạng: phép cộng chữ, mỗi chữ cái là một chữ số khác nhau, tìm chữ số hoặc số.<br>Ý tưởng: xét từng cột từ phải sang trái cùng số nhớ, chữ nào đã biết thì thay vào, chữ nào chỉ còn một khả năng thì chốt.<br>Bước 1: Tổng hai số 3 chữ số nhỏ hơn 2000, nên chữ đầu G của tổng chỉ là số nhớ: G = 1.<br>Bước 2: Cột thứ 1 từ phải: 1 + 1 = F + 10 × nhớ, nên F = 2, không nhớ sang cột sau (vì tổng cột này chỉ là 2, chưa tới 10).<br>Bước 3: Cột thứ 2 từ phải: D + C = C + 10 × nhớ (các chữ số khác nhau, khác các chữ đã biết), nên D = 0, không nhớ sang cột sau (vì vế trái lớn nhất là 0 + 9 = 9, chưa tới 10).<br>Bước 4: Cột thứ 3 từ phải: C + 1 = 10, nên C = 9.<br>Bước 5: Kiểm lại: 901 + 191 = 1092.<br>Vậy chữ cái G bằng 1.<br>Mẹo: chữ đầu của tổng dài hơn hai số hạng chỉ có thể là 1.</p>
+  </details>
+</li>
 </ol>
 <h2 id="dap-an">Đáp án đề thi AIMO lớp 9</h2>
-<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>65</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>994</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>37</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>5</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>135</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>150</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>19</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>910</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>3</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>24</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>900</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>7003</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>12</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>43</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>30</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>666</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>16</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>2</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>1</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>2</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>19</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>150</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>994</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>135</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>37</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>5</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>65</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>910</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>7003</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>30</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>3</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>12</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>666</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>900</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>43</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>24</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>2</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>16</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>2</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>1</td></tr></tbody></table></div>
 <h2>Đề thi khác</h2>
 <p><b>Cùng cuộc thi AIMO, lớp khác:</b> <a href="/de-thi-aimo/lop-2/">Lớp 2</a> · <a href="/de-thi-aimo/lop-3/">Lớp 3</a> · <a href="/de-thi-aimo/lop-4/">Lớp 4</a> · <a href="/de-thi-aimo/lop-5/">Lớp 5</a> · <a href="/de-thi-aimo/lop-6/">Lớp 6</a> · <a href="/de-thi-aimo/lop-7/">Lớp 7</a> · <a href="/de-thi-aimo/lop-8/">Lớp 8</a></p>
 <p><b>Đề cùng lớp 9 của cuộc thi khác:</b> <a href="/de-thi-timo/lop-9/">TIMO</a> · <a href="/de-thi-hkimo/lop-9/">HKIMO</a> · <a href="/de-thi-fmo/lop-9/">FMO</a> · <a href="/de-thi-big-bay-bei/lop-9/">Big Bay Bei (BBB)</a> · <a href="/de-thi-asmo/lop-9/">ASMO</a> · <a href="/de-thi-kangaroo/lop-9/">Kangaroo (IKMC)</a> · <a href="/de-thi-seamo/lop-9/">SEAMO</a> · <a href="/de-thi-viamc/lop-9/">VIAMC</a> · <a href="/de-thi-imec/lop-9/">IMEC</a> · <a href="/de-thi-pimso/lop-9/">PIMSO</a> · <a href="/de-thi-crest/lop-9/">CREST (CMO)</a> · <a href="/de-thi-sil/lop-9/">SiL MSC (Toán)</a> · <a href="/de-thi-sasmo/lop-9/">SASMO</a> · <a href="/de-thi-amo/lop-9/">AMO</a> · <a href="/de-thi-itmc/lop-9/">ITMC</a></p>

@@ -141,77 +141,17 @@
     {
      "@type": "Question",
      "name": "Câu 1",
-     "text": "Trên một hàng 8 ô, ô thứ nhất đặt 5 hạt thóc, mỗi ô sau đặt gấp 2 lần ô trước. Cả hàng có bao nhiêu hạt thóc? A. 80  B. 640  C. 1275  D. 1277  E. 1915",
+     "text": "Xếp các khối lập phương thành chóp 3 tầng: tầng dưới cùng 3 × 3 khối, mỗi tầng trên là hình vuông nhỏ hơn một khối mỗi chiều, tầng trên cùng 1 khối. Cần bao nhiêu khối? A. 4  B. 13  C. 14  D. 18  E. 27",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 1275. Nhận dạng: tổng mà mỗi số gấp 2 lần số đứng trước. Ý tưởng: nhân tổng với 2 rồi trừ tổng ban đầu, các số ở giữa mất đi. Bước 1: Gọi S là tổng số hạt mỗi ô: S = 5 + 10 + 20 + … + 640 (8 số, số cuối 5 × 2⁷ = 640). Bước 2: Nhân với 2: 2 × S = 10 + 20 + … + 640 + 1280 (mỗi số dời sang phải một chỗ). Bước 3: Trừ hai dòng, các số giống nhau mất đi: 2 × S − S = 1280 − 5, tức là S = 1275 hạt. Vậy có 1275 hạt."
+      "text": "Đáp án: C. 14. Nhận dạng: đếm khối chóp bậc thang. Ý tưởng: cộng số khối từng tầng; tầng là hình vuông nên số khối là số chính phương. Bước 1: Các tầng: 3 × 3 + 2 × 2 + 1 × 1. Bước 2: Cộng: 9 + 4 + 1 = 14. Vậy cần 14 khối."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 2",
-     "text": "Tìm số nhỏ nhất có 4 chữ số mà chia 5 dư 4, chia 6 dư 5, chia 7 dư 6. A. 1048  B. 1049  C. 1050  D. 1051  E. 1259",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 1049. Nhận dạng: chia cho nhiều số, số dư khác nhau nhưng đều kém số chia cùng một đơn vị. Ý tưởng: gọi N là số cần tìm; thêm 1 vào N thì chia hết cho mọi số chia. Bước 1: Mỗi số dư kém số chia 1 đơn vị (5 − 4 = 1, 6 − 5 = 1, 7 − 6 = 1), nên N + 1 chia hết cho 5, 6, 7. Bước 2: BCNN(5, 6, 7) = 5 × 6 × 7 = 210 (các số đôi một không có ước chung lớn hơn 1). Vậy N + 1 là bội của 210. Bước 3: N nhỏ nhất có 4 chữ số nên N + 1 ≥ 1000 + 1 = 1001; 1001 : 210 = 4 (dư 161), lấy bội tiếp theo: 210 × 5 = 1050. Bước 4: N = 1050 − 1 = 1049. Vậy số cần tìm là 1049. Mẹo: số dư bằng số chia trừ 1 (hay trừ 2) thì cộng thêm 1 (hay 2) vào số cần tìm."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 3",
-     "text": "Cho a, b, c là ba chữ số khác 0 và khác nhau. Biết ab + bc + ca = 165, trong đó ab, bc, ca là các số có hai chữ số. Tính a + b + c. A. 10  B. 14  C. 15  D. 16  E. 55",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: C. 15. Nhận dạng: phép cộng các số viết bằng chữ, chữ số xoay vòng. Ý tưởng: tách mỗi số theo hàng chục, hàng đơn vị rồi gom từng chữ. Bước 1 (tách hàng): ab = 10 × a + b; bc = 10 × b + c; ca = 10 × c + a. Bước 2 (cộng): ab + bc + ca = 11 × a + 11 × b + 11 × c = 11 × (a + b + c). Bước 3: 11 × (a + b + c) = 165, nên a + b + c = 165 : 11 = 15. Vậy a + b + c = 15."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 4",
-     "text": "Dùng các chữ số 1, 2, 4, 6, 8, 9, mỗi chữ số dùng nhiều nhất một lần, lập số có 5 chữ số sao cho không có hai chữ số chẵn nào đứng cạnh nhau. Có bao nhiêu số như vậy? A. 43  B. 48  C. 54  D. 96  E. 672",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 48. Nhận dạng: lập số có các chữ số chẵn không đứng cạnh nhau. Ý tưởng: chia theo số chữ số chẵn được dùng; mỗi trường hợp chọn chỗ cho chữ số chẵn trước, rồi xếp chữ số chẵn và chữ số lẻ. Bước 1 (số chữ số chẵn): có 4 chữ số chẵn (2, 4, 6, 8), 2 chữ số lẻ; 5 chỗ và chẵn không cạnh nhau nên nhiều nhất 3 chữ số chẵn; chữ số lẻ chỉ có 2 nên ít nhất 5 − 2 = 3 chữ số chẵn: dùng 3 chữ số chẵn. Bước 2 (3 chẵn, 2 lẻ): chỗ của 3 chữ số chẵn: (1, 3, 5): 1 cách; xếp chữ số chẵn: 4 × 3 × 2 = 24 cách; xếp chữ số lẻ: 2 × 1 = 2 cách; 1 × 24 × 2 = 48 số. Vậy có 48 số."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 5",
-     "text": "Xếp các khối lập phương thành chóp 3 tầng: tầng dưới cùng 3 × 3 khối, mỗi tầng trên là hình vuông nhỏ hơn một khối mỗi chiều, tầng trên cùng 1 khối. Cần bao nhiêu khối? A. 13  B. 14  C. 17  D. 18  E. 27",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 14. Nhận dạng: đếm khối chóp bậc thang. Ý tưởng: cộng số khối từng tầng; tầng là hình vuông nên số khối là số chính phương. Bước 1: Các tầng: 3 × 3 + 2 × 2 + 1 × 1. Bước 2: Cộng: 9 + 4 + 1 = 14. Vậy cần 14 khối."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 6",
-     "text": "Phương trình a² − 20a + 99 = 0 có hai nghiệm. Tìm nghiệm lớn hơn. A. 6  B. 7  C. 8  D. 11  E. 21",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: D. 11. Nhận dạng: phương trình a² + pa + q = 0. Ý tưởng: phân tích vế trái thành tích (a + m)(a + n), tích bằng 0 thì một thừa số bằng 0. Bước 1: Hai số có tích 99, tổng −20: −1 và −99 (tổng −100), −3 và −33 (tổng −36), −9 và −11 (tổng −20). Bước 2: a² − 20a + 99 = (a − 9)(a − 11) = 0. Bước 3: a − 9 = 0 hoặc a − 11 = 0, nên a = 9 hoặc a = 11. Bước 4: Nghiệm lớn hơn là 11. Vậy kết quả là 11."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 7",
-     "text": "Cho a > 0 và a + 1/a = 8. Tính a² + 1/a². A. 16  B. 62  C. 64  D. 65  E. 66",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 62. Nhận dạng: biết a + 1/a, hỏi a² + 1/a² (1/a là 1 chia a). Ý tưởng: bình phương hai vế, (a + 1/a)² = a² + 2 × a × 1/a + 1/a² = a² + 2 + 1/a² vì a × 1/a = 1. Bước 1: Bình phương hai vế: (a + 1/a)² = 8² = 64. Bước 2: a² + 2 + 1/a² = 64, nên a² + 1/a² = 64 − 2 = 62. Vậy a² + 1/a² = 62."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 8",
-     "text": "Viết liền các số tự nhiên từ 1 đến 361 thành một số rất dài: 123456789101112…361. Số đó có bao nhiêu chữ số 0? A. 56  B. 62  C. 63  D. 65  E. 66",
+     "text": "Viết liền các số tự nhiên từ 1 đến 361 thành một số rất dài: 123456789101112…361. Số đó có bao nhiêu chữ số 0? A. 61  B. 63  C. 64  D. 65  E. 66",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -220,68 +160,108 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 9",
-     "text": "Hình chữ nhật ABCD có diện tích 48 cm², điểm E nằm trên cạnh AD. Lần lượt lấy F là trung điểm của CE, G là trung điểm của BF, H là trung điểm của CG. Tính diện tích tam giác BCH. A. 2  B. 3  C. 4  D. 6  E. 8",
+     "name": "Câu 3",
+     "text": "Cho a > 0 và a + 1/a = 8. Tính a² + 1/a². A. 16  B. 58  C. 62  D. 64  E. 66",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 3. Nhận dạng: lấy trung điểm nhiều lần, các tam giác chung cạnh BC. Ý tưởng: trung điểm chia một tam giác thành hai tam giác bằng diện tích (cùng chiều cao, đáy bằng nhau). Bước 1: Tam giác BCE có đáy BC và chiều cao bằng chiều rộng AB, nên bằng nửa hình chữ nhật. Bước 2: tam giác BCF = nửa tam giác BCE (vì F là trung điểm CE); tam giác BCG = nửa tam giác BCF (vì G là trung điểm BF); tam giác BCH = nửa tam giác BCG (vì H là trung điểm CG). Bước 3: Tam giác BCE = 48 : 2 = 24 cm², rồi mỗi lần chia đôi: 24 → 12 → 6 → 3. Vậy diện tích tam giác BCH là 3 cm²."
+      "text": "Đáp án: C. 62. Nhận dạng: biết a + 1/a, hỏi a² + 1/a² (1/a là 1 chia a). Ý tưởng: bình phương hai vế, (a + 1/a)² = a² + 2 × a × 1/a + 1/a² = a² + 2 + 1/a² vì a × 1/a = 1. Bước 1: Bình phương hai vế: (a + 1/a)² = 8² = 64. Bước 2: a² + 2 + 1/a² = 64, nên a² + 1/a² = 64 − 2 = 62. Vậy a² + 1/a² = 62."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 4",
+     "text": "Trên một hàng 8 ô, ô thứ nhất đặt 5 hạt thóc, mỗi ô sau đặt gấp 2 lần ô trước. Cả hàng có bao nhiêu hạt thóc? A. 80  B. 640  C. 1275  D. 1280  E. 1915",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: C. 1275. Nhận dạng: tổng mà mỗi số gấp 2 lần số đứng trước. Ý tưởng: nhân tổng với 2 rồi trừ tổng ban đầu, các số ở giữa mất đi. Bước 1: Gọi S là tổng số hạt mỗi ô: S = 5 + 10 + 20 + … + 640 (8 số, số cuối 5 × 2⁷ = 640). Bước 2: Nhân với 2: 2 × S = 10 + 20 + … + 640 + 1280 (mỗi số dời sang phải một chỗ). Bước 3: Trừ hai dòng, các số giống nhau mất đi: 2 × S − S = 1280 − 5, tức là S = 1275 hạt. Vậy có 1275 hạt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 5",
+     "text": "Cho a, b, c là ba chữ số khác 0 và khác nhau. Biết ab + bc + ca = 165, trong đó ab, bc, ca là các số có hai chữ số. Tính a + b + c. A. 5  B. 14  C. 15  D. 16  E. 55",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: C. 15. Nhận dạng: phép cộng các số viết bằng chữ, chữ số xoay vòng. Ý tưởng: tách mỗi số theo hàng chục, hàng đơn vị rồi gom từng chữ. Bước 1 (tách hàng): ab = 10 × a + b; bc = 10 × b + c; ca = 10 × c + a. Bước 2 (cộng): ab + bc + ca = 11 × a + 11 × b + 11 × c = 11 × (a + b + c). Bước 3: 11 × (a + b + c) = 165, nên a + b + c = 165 : 11 = 15. Vậy a + b + c = 15."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 6",
+     "text": "Với mọi số a, b: a ⊕ b = −2 × a − 3 × b − 8. Tìm số m biết 3 ⊕ m = −38. A. 3  B. 7  C. 8  D. 12  E. 13",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: C. 8. Nhận dạng: phép toán mới, biết kết quả, tìm số chưa biết. Ý tưởng: thay vào định nghĩa để được phương trình bậc nhất ẩn m, rồi giải. Bước 1: Thay a, b đúng vị trí: −2 × 3 − 3 × m − 8 = −38. Bước 2: Phần đã biết: −2 × 3 − 8 = −14, nên −3m − 14 = −38. Bước 3: Chuyển vế: −3m = −38 + 14 = −24; m = −24 : (−3) = 8. Vậy m = 8."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 7",
+     "text": "Một sợi dây thép uốn vừa đủ thành đường tròn bán kính 63 cm. Cắt sợi dây đó ra để uốn thành 5 hình vuông bằng nhau có cạnh là số tự nhiên (cm) (lấy π = 22/7). Cạnh hình vuông lớn nhất là bao nhiêu xăng-ti-mét? A. 15  B. 18  C. 19  D. 22  E. 23",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: C. 19. Nhận dạng: dây uốn hình tròn rồi uốn lại thành hình vuông. Ý tưởng: độ dài dây không đổi, bằng chu vi hình tròn. Bước 1: Gọi r là bán kính, C là chu vi: C = 2 × π × r = 2 × 22/7 × 63 = 396 cm (độ dài dây). Bước 2: 5 hình vuông có tổng cộng 5 × 4 = 20 cạnh, mỗi cạnh nhiều nhất 396 : 20 = 19,8 cm. Bước 3: Cạnh là số tự nhiên nên cạnh lớn nhất là 19 cm. Vậy cạnh lớn nhất là 19 cm. Mẹo: cạnh không làm tròn lên, vì dây không đủ dài."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 8",
+     "text": "Đa giác đều có 16 cạnh có bao nhiêu đường chéo? A. 104  B. 106  C. 112  D. 120  E. 208",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: A. 104. Nhận dạng: đếm đường chéo của đa giác. Ý tưởng: đếm đường chéo đi ra từ mỗi đỉnh, rồi chia 2 vì mỗi đường chéo được đếm ở cả hai đầu. Bước 1 (từ một đỉnh): nối với 16 − 1 = 15 đỉnh khác, bỏ 2 đỉnh kề (nối thành cạnh): 15 − 2 = 13 đường chéo. Bước 2 (mọi đỉnh): 16 × 13 = 208. Bước 3 (mỗi đường chéo đếm hai lần): 208 : 2 = 104. Vậy có 104 đường chéo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 9",
+     "text": "Xếp 3 bạn nữ và 3 bạn nam (khác nhau) thành một hàng ngang sao cho 3 bạn nam đứng cạnh nhau. Có bao nhiêu cách xếp? A. 134  B. 139  C. 141  D. 142  E. 144",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: E. 144. Nhận dạng: xếp hàng có nhóm đứng cạnh nhau. Ý tưởng: buộc nhóm thành một khối, xếp các khối, rồi đổi chỗ bên trong khối. Bước 1 (buộc khối): coi 3 bạn nam là 1 khối: còn 3 + 1 = 4 khối. Bước 2 (xếp các khối): 4 × 3 × 2 × 1 = 24 cách. Bước 3 (trong khối): 3 bạn nam đổi chỗ cho nhau: 3 × 2 × 1 = 6 cách. Bước 4 (nhân): 24 × 6 = 144. Vậy có 144 cách."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 10",
-     "text": "Sơn giá 45 nghìn đồng một lít (mua được cả phần lẻ của lít). Cứ 2 lít sơn thì sơn được 13 m² tường. Với 500 nghìn đồng mua sơn, sơn được nhiều nhất bao nhiêu mét vuông tường (lấy số nguyên)? A. 62  B. 70  C. 72  D. 73  E. 75",
+     "text": "Sơn giá 45 nghìn đồng một lít (mua được cả phần lẻ của lít). Cứ 2 lít sơn thì sơn được 13 m² tường. Với 500 nghìn đồng mua sơn, sơn được nhiều nhất bao nhiêu mét vuông tường (lấy số nguyên)? A. 67  B. 72  C. 74  D. 77  E. 82",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 72. Nhận dạng: đổi qua nhiều bước (tiền → lượng mua → sản phẩm), hỏi nhiều nhất. Ý tưởng: tính lượng mua được, đổi ra sản phẩm, chỉ lấy phần nguyên. Bước 1 (lượng mua): 500 : 45 không chia hết nên để nguyên phép chia (không làm tròn): mua được 500 : 45 lít sơn. Bước 2 (đổi ra sản phẩm): 2 lít sơn 13 m², nên số m² là (500 : 45) : 2 × 13 = 500 × 13 : (45 × 2) = 6500 : 90. Bước 3: 6500 : 90 = 72 (dư 20). Bước 4: chỉ tính phần nguyên nên nhiều nhất là 72 m². Vậy được nhiều nhất 72 m². Mẹo: không làm tròn lên, vì phần dư chưa đủ cho thêm 1 m²."
+      "text": "Đáp án: B. 72. Nhận dạng: đổi qua nhiều bước (tiền → lượng mua → sản phẩm), hỏi nhiều nhất. Ý tưởng: tính lượng mua được, đổi ra sản phẩm, chỉ lấy phần nguyên. Bước 1 (lượng mua): 500 : 45 không chia hết nên để nguyên phép chia (không làm tròn): mua được 500 : 45 lít sơn. Bước 2 (đổi ra sản phẩm): 2 lít sơn 13 m², nên số m² là (500 : 45) : 2 × 13 = 500 × 13 : (45 × 2) = 6500 : 90. Bước 3: 6500 : 90 = 72 (dư 20). Bước 4: chỉ tính phần nguyên nên nhiều nhất là 72 m². Vậy được nhiều nhất 72 m². Mẹo: không làm tròn lên, vì phần dư chưa đủ cho thêm 1 m²."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 11",
-     "text": "Đa giác đều có 16 cạnh có bao nhiêu đường chéo? A. 103  B. 104  C. 112  D. 120  E. 208",
+     "text": "Một giỏ có tất cả 41 cái gồm tem, thẻ và nhãn dán. Bà đổi 6 tem lấy 2 thẻ, rồi đổi 1 thẻ lấy 3 nhãn dán. Sau hai lần đổi, số tem, số thẻ và số nhãn dán bằng nhau. Lúc đầu có bao nhiêu nhãn dán? A. 10  B. 11  C. 14  D. 15  E. 20",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 104. Nhận dạng: đếm đường chéo của đa giác. Ý tưởng: đếm đường chéo đi ra từ mỗi đỉnh, rồi chia 2 vì mỗi đường chéo được đếm ở cả hai đầu. Bước 1 (từ một đỉnh): nối với 16 − 1 = 15 đỉnh khác, bỏ 2 đỉnh kề (nối thành cạnh): 15 − 2 = 13 đường chéo. Bước 2 (mọi đỉnh): 16 × 13 = 208. Bước 3 (mỗi đường chéo đếm hai lần): 208 : 2 = 104. Vậy có 104 đường chéo."
+      "text": "Đáp án: A. 10. Nhận dạng: đổi vật qua nhiều lần rồi ba loại bằng nhau, hỏi số ban đầu. Ý tưởng: tính tổng sau các lần đổi, chia ba để biết số mỗi loại lúc cuối, rồi lùi ngược từng lần đổi. Bước 1 (tổng sau đổi): lần 1 đổi 6 lấy 2 nên tổng thay đổi 2 − 6; lần 2 đổi 1 lấy 3 nên thay đổi 3 − 1; tổng mới = 41 + (2 − 6) + (3 − 1) = 39. Bước 2 (mỗi loại lúc cuối): 39 : 3 = 13. Bước 3 (tem): lúc đầu nhiều hơn lúc cuối 6: 13 + 6 = 19. Bước 4 (thẻ): lúc cuối = lúc đầu + 2 − 1, nên lúc đầu = 13 − 2 + 1 = 12. Bước 5 (nhãn dán): lúc cuối = lúc đầu + 3, nên lúc đầu = 13 − 3 = 10. Vậy lúc đầu có 10 nhãn dán."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 12",
-     "text": "Tìm giá trị lớn nhất của B = −a² − 4a − 2. A. 1  B. 2  C. 3  D. 6  E. 12",
+     "text": "Hình chữ nhật ABCD có diện tích 48 cm², điểm E nằm trên cạnh AD. Lần lượt lấy F là trung điểm của CE, G là trung điểm của BF, H là trung điểm của CG. Tính diện tích tam giác BCH. A. 3  B. 4  C. 5  D. 6  E. 8",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 2. Nhận dạng: biểu thức bậc hai, hệ số của a² âm, hỏi giá trị lớn nhất. Ý tưởng: viết thành số − (bình phương), bình phương ≥ 0 nên lớn nhất khi bình phương bằng 0. Bước 1: Đặt −1 chung ở hai hạng tử đầu: B = −(a² + 4a) − 2. Bước 2: a² + 4a = (a + 2)² − 4, nên B = −(a + 2)² + 4 − 2 = 2 − (a + 2)². Bước 3: (a + 2)² ≥ 0 nên B ≤ 2, dấu bằng khi a = −2. Vậy giá trị lớn nhất của B là 2."
+      "text": "Đáp án: A. 3. Nhận dạng: lấy trung điểm nhiều lần, các tam giác chung cạnh BC. Ý tưởng: trung điểm chia một tam giác thành hai tam giác bằng diện tích (cùng chiều cao, đáy bằng nhau). Bước 1: Tam giác BCE có đáy BC và chiều cao bằng chiều rộng AB, nên bằng nửa hình chữ nhật. Bước 2: tam giác BCF = nửa tam giác BCE (vì F là trung điểm CE); tam giác BCG = nửa tam giác BCF (vì G là trung điểm BF); tam giác BCH = nửa tam giác BCG (vì H là trung điểm CG). Bước 3: Tam giác BCE = 48 : 2 = 24 cm², rồi mỗi lần chia đôi: 24 → 12 → 6 → 3. Vậy diện tích tam giác BCH là 3 cm²."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 13",
-     "text": "Xếp 3 bạn nữ và 3 bạn nam (khác nhau) thành một hàng ngang sao cho 3 bạn nam đứng cạnh nhau. Có bao nhiêu cách xếp? A. 134  B. 139  C. 140  D. 144  E. 147",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: D. 144. Nhận dạng: xếp hàng có nhóm đứng cạnh nhau. Ý tưởng: buộc nhóm thành một khối, xếp các khối, rồi đổi chỗ bên trong khối. Bước 1 (buộc khối): coi 3 bạn nam là 1 khối: còn 3 + 1 = 4 khối. Bước 2 (xếp các khối): 4 × 3 × 2 × 1 = 24 cách. Bước 3 (trong khối): 3 bạn nam đổi chỗ cho nhau: 3 × 2 × 1 = 6 cách. Bước 4 (nhân): 24 × 6 = 144. Vậy có 144 cách."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 14",
-     "text": "Tổng của 8 số chẵn liên tiếp là 136. Tìm số nhỏ nhất trong 8 số đó. A. 0  B. 6  C. 8  D. 9  E. 10",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: E. 10. Nhận dạng: dãy cách đều (hai số liền nhau hơn kém nhau một lượng không đổi). Ý tưởng: 8 số cách đều 2, trung bình cộng nằm ở chính giữa dãy. Bước 1: Trung bình cộng: 136 : 8 = 17 (nằm giữa hai số chính giữa). Bước 2: Từ chính giữa tới số nhỏ nhất có (8 − 1) : 2 = 3,5 khoảng cách, mỗi khoảng 2: 3,5 × 2 = 7. Bước 3: Số nhỏ nhất: 17 − 7 = 10. Thử lại: 10 + 12 + … + 24 = 136. Vậy số nhỏ nhất là 10."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 15",
-     "text": "Tam giác ABC có diện tích 80 cm². Điểm D nằm trên AB, E nằm trên AC sao cho DE song song với BC và AD : DB = 3 : 1. Tính diện tích tam giác ADE. A. 35  B. 44  C. 45  D. 60  E. 720",
+     "text": "Tam giác ABC có diện tích 80 cm². Điểm D nằm trên AB, E nằm trên AC sao cho DE song song với BC và AD : DB = 3 : 1. Tính diện tích tam giác ADE. A. 35  B. 41  C. 45  D. 60  E. 720",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -290,37 +270,47 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 16",
-     "text": "Một sợi dây thép uốn vừa đủ thành đường tròn bán kính 63 cm. Cắt sợi dây đó ra để uốn thành 5 hình vuông bằng nhau có cạnh là số tự nhiên (cm) (lấy π = 22/7). Cạnh hình vuông lớn nhất là bao nhiêu xăng-ti-mét?",
+     "name": "Câu 14",
+     "text": "Tìm giá trị lớn nhất của B = −a² − 4a − 2. A. 1  B. 2  C. 3  D. 6  E. 7",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 19. Nhận dạng: dây uốn hình tròn rồi uốn lại thành hình vuông. Ý tưởng: độ dài dây không đổi, bằng chu vi hình tròn. Bước 1: Gọi r là bán kính, C là chu vi: C = 2 × π × r = 2 × 22/7 × 63 = 396 cm (độ dài dây). Bước 2: 5 hình vuông có tổng cộng 5 × 4 = 20 cạnh, mỗi cạnh nhiều nhất 396 : 20 = 19,8 cm. Bước 3: Cạnh là số tự nhiên nên cạnh lớn nhất là 19 cm. Vậy cạnh lớn nhất là 19 cm. Mẹo: cạnh không làm tròn lên, vì dây không đủ dài."
+      "text": "Đáp án: B. 2. Nhận dạng: biểu thức bậc hai, hệ số của a² âm, hỏi giá trị lớn nhất. Ý tưởng: viết thành số − (bình phương), bình phương ≥ 0 nên lớn nhất khi bình phương bằng 0. Bước 1: Đặt −1 chung ở hai hạng tử đầu: B = −(a² + 4a) − 2. Bước 2: a² + 4a = (a + 2)² − 4, nên B = −(a + 2)² + 4 − 2 = 2 − (a + 2)². Bước 3: (a + 2)² ≥ 0 nên B ≤ 2, dấu bằng khi a = −2. Vậy giá trị lớn nhất của B là 2."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 15",
+     "text": "Lập các số có ba chữ số khác nhau từ các chữ số 0, 1, 2, …, 9. Có bao nhiêu số chẵn nhỏ hơn 405? A. 103  B. 108  C. 109  D. 110  E. 113",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: E. 113. Nhận dạng: đếm số có ba chữ số khác nhau theo điều kiện chẵn lẻ và nhỏ hơn một số. Ý tưởng: xét chữ số trăm nhỏ hơn 4, rồi trăm bằng 4 thì xét tiếp chữ số chục. Bước 1: Trăm từ 1 đến 3: chọn đơn vị chẵn khác chữ số trăm (trăm 2: 4 cách chọn đơn vị; trăm 1, 3: 5 cách chọn đơn vị), chục còn 8 cách: (5 + 4 + 5) × 8 = 112. Bước 2: Trăm 4: chục 0 đã nhỏ nhất, không có chục nhỏ hơn. Bước 3: Trăm 4, chục 0, đơn vị nhỏ hơn 5: 2, có 1 số. Bước 4: Cộng: 112 + 0 + 1 = 113. Vậy có 113 số."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 16",
+     "text": "Tìm số nhỏ nhất có 4 chữ số mà chia 5 dư 4, chia 6 dư 5, chia 7 dư 6.",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 1049. Nhận dạng: chia cho nhiều số, số dư khác nhau nhưng đều kém số chia cùng một đơn vị. Ý tưởng: gọi N là số cần tìm; thêm 1 vào N thì chia hết cho mọi số chia. Bước 1: Mỗi số dư kém số chia 1 đơn vị (5 − 4 = 1, 6 − 5 = 1, 7 − 6 = 1), nên N + 1 chia hết cho 5, 6, 7. Bước 2: BCNN(5, 6, 7) = 5 × 6 × 7 = 210 (các số đôi một không có ước chung lớn hơn 1). Vậy N + 1 là bội của 210. Bước 3: N nhỏ nhất có 4 chữ số nên N + 1 ≥ 1000 + 1 = 1001; 1001 : 210 = 4 (dư 161), lấy bội tiếp theo: 210 × 5 = 1050. Bước 4: N = 1050 − 1 = 1049. Vậy số cần tìm là 1049. Mẹo: số dư bằng số chia trừ 1 (hay trừ 2) thì cộng thêm 1 (hay 2) vào số cần tìm."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 17",
-     "text": "Với mọi số a, b: a ⊕ b = −2 × a − 3 × b − 8. Tìm số m biết 3 ⊕ m = −38.",
+     "text": "Tổng của 8 số chẵn liên tiếp là 136. Tìm số nhỏ nhất trong 8 số đó.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 8. Nhận dạng: phép toán mới, biết kết quả, tìm số chưa biết. Ý tưởng: thay vào định nghĩa để được phương trình bậc nhất ẩn m, rồi giải. Bước 1: Thay a, b đúng vị trí: −2 × 3 − 3 × m − 8 = −38. Bước 2: Phần đã biết: −2 × 3 − 8 = −14, nên −3m − 14 = −38. Bước 3: Chuyển vế: −3m = −38 + 14 = −24; m = −24 : (−3) = 8. Vậy m = 8."
+      "text": "Đáp án: 10. Nhận dạng: dãy cách đều (hai số liền nhau hơn kém nhau một lượng không đổi). Ý tưởng: 8 số cách đều 2, trung bình cộng nằm ở chính giữa dãy. Bước 1: Trung bình cộng: 136 : 8 = 17 (nằm giữa hai số chính giữa). Bước 2: Từ chính giữa tới số nhỏ nhất có (8 − 1) : 2 = 3,5 khoảng cách, mỗi khoảng 2: 3,5 × 2 = 7. Bước 3: Số nhỏ nhất: 17 − 7 = 10. Thử lại: 10 + 12 + … + 24 = 136. Vậy số nhỏ nhất là 10."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 18",
-     "text": "Lập các số có ba chữ số khác nhau từ các chữ số 0, 1, 2, …, 9. Có bao nhiêu số chẵn nhỏ hơn 405?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 113. Nhận dạng: đếm số có ba chữ số khác nhau theo điều kiện chẵn lẻ và nhỏ hơn một số. Ý tưởng: xét chữ số trăm nhỏ hơn 4, rồi trăm bằng 4 thì xét tiếp chữ số chục. Bước 1: Trăm từ 1 đến 3: chọn đơn vị chẵn khác chữ số trăm (trăm 2: 4 cách chọn đơn vị; trăm 1, 3: 5 cách chọn đơn vị), chục còn 8 cách: (5 + 4 + 5) × 8 = 112. Bước 2: Trăm 4: chục 0 đã nhỏ nhất, không có chục nhỏ hơn. Bước 3: Trăm 4, chục 0, đơn vị nhỏ hơn 5: 2, có 1 số. Bước 4: Cộng: 112 + 0 + 1 = 113. Vậy có 113 số."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 19",
      "text": "Trong hộp có 36 viên kẹo vị chanh, 19 viên kẹo vị nho, 41 viên kẹo vị dâu. Phải lấy ra ít nhất bao nhiêu viên kẹo để chắc chắn có đủ cả các vị?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -330,47 +320,17 @@
     },
     {
      "@type": "Question",
+     "name": "Câu 19",
+     "text": "Mỗi hình ☆, □, ◇ là một số nguyên dương. Biết 3☆ + □ = 47, ☆ + □ = 17 và ☆ + 2□ + ◇ = 27. Tính 2☆ + ◇ − □.",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 36. Nhận dạng: ba hình; hai dòng chỉ có hai hình, dòng thứ ba có thêm hình còn lại. Ý tưởng: giải hai hình trước từ hai dòng đầu, rồi thế vào dòng ba tìm hình cuối. Bước 1 (chuẩn bị): hai dòng đã gọn, giữ nguyên. Bước 2 (khử một hình): lấy dòng 1 trừ dòng 2 (□ mất đi): 3☆ − ☆ = 47 − 17, tức 2☆ = 30, nên ☆ = 15. Bước 3 (hình □): thay ☆ = 15 vào dòng 1 ban đầu: □ = 47 − 3 × 15 = 2. Bước 4 (hình ◇): từ dòng ba, ◇ = 27 − 1 × 15 − 2 × 2 = 8. Bước 5 (kết quả): 2☆ + ◇ − □ = 2 × 15 + 8 − 2 = 36. Vậy 2☆ + ◇ − □ = 36."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "Câu 20",
-     "text": "Một giỏ có tất cả 41 cái gồm tem, thẻ và nhãn dán. Bà đổi 6 tem lấy 2 thẻ, rồi đổi 1 thẻ lấy 3 nhãn dán. Sau hai lần đổi, số tem, số thẻ và số nhãn dán bằng nhau. Lúc đầu có bao nhiêu nhãn dán?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 10. Nhận dạng: đổi vật qua nhiều lần rồi ba loại bằng nhau, hỏi số ban đầu. Ý tưởng: tính tổng sau các lần đổi, chia ba để biết số mỗi loại lúc cuối, rồi lùi ngược từng lần đổi. Bước 1 (tổng sau đổi): lần 1 đổi 6 lấy 2 nên tổng thay đổi 2 − 6; lần 2 đổi 1 lấy 3 nên thay đổi 3 − 1; tổng mới = 41 + (2 − 6) + (3 − 1) = 39. Bước 2 (mỗi loại lúc cuối): 39 : 3 = 13. Bước 3 (tem): lúc đầu nhiều hơn lúc cuối 6: 13 + 6 = 19. Bước 4 (thẻ): lúc cuối = lúc đầu + 2 − 1, nên lúc đầu = 13 − 2 + 1 = 12. Bước 5 (nhãn dán): lúc cuối = lúc đầu + 3, nên lúc đầu = 13 − 3 = 10. Vậy lúc đầu có 10 nhãn dán."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 21",
-     "text": "Nam, Minh và Long chạy tiếp sức, mỗi bạn chạy một chặng dài bằng nhau. Tốc độ của 3 bạn theo thứ tự Nam, Minh, Long tỉ lệ với 2 : 3 : 4. Nếu Long chạy một mình cả quãng đường thì thời gian ít hơn thời gian tiếp sức 4 phút. Thời gian chạy tiếp sức là bao nhiêu phút?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 13. Nhận dạng: chạy tiếp sức, các chặng bằng nhau, biết tỉ lệ tốc độ và chênh lệch với một mình người nhanh nhất. Ý tưởng: cùng quãng đường thì thời gian tỉ lệ nghịch với tốc độ; đặt thời gian theo một đơn vị chung rồi dùng chênh lệch để tìm đơn vị. Bước 1 (thời gian mỗi chặng): tốc độ tỉ lệ 2 : 3 : 4 nên thời gian mỗi chặng tỉ lệ nghịch; lấy 12 (bội chung nhỏ nhất của 2, 3, 4) làm đơn vị, mỗi chặng mất 12 : 2 = 6, 12 : 3 = 4, 12 : 4 = 3 phần. Bước 2 (hai thời gian): tiếp sức mất 6 + 4 + 3 = 13 phần; Long chạy một mình cả 3 chặng mất 3 × 3 = 9 phần. Bước 3 (chênh lệch): 13 − 9 = 4 phần ứng với 4 phút, nên 1 phần là 4 : 4 = 1 phút. Bước 4 (kết quả): tiếp sức mất 13 × 1 = 13 phút. Vậy thời gian chạy tiếp sức là 13 phút."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 22",
-     "text": "Ghép 12 khối lập phương giống nhau thành một hình hộp chữ nhật đặc. Diện tích toàn phần nhỏ nhất có thể là 1152 cm². Diện tích toàn phần lớn nhất có thể là bao nhiêu?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 1800. Nhận dạng: hộp ghép từ N khối giống nhau, cạnh khối chưa biết. Ý tưởng: đếm diện tích theo số mặt vuông nhỏ (mỗi mặt có diện tích S), rồi tìm S từ dữ kiện. Bước 1: Nhỏ nhất: hộp 2 × 2 × 3 có 32 mặt nhỏ; lớn nhất: 1 × 1 × 12 có 4 × 12 + 2 = 50 mặt nhỏ. Bước 2: Gọi S là diện tích một mặt nhỏ: 32 × S = 1152, nên S = 36 cm². Bước 3: Lớn nhất: 50 × 36 = 1800 cm². Vậy diện tích lớn nhất là 1800 cm²."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 23",
-     "text": "Số A được viết bằng cách lặp lại khối 8a3 đúng 15 lần: A = 8a38a3…8a3 (a là một chữ số). Tìm a để A chia hết cho 11.",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 0. Nhận dạng: số lặp lại một khối chữ số, chia hết cho 11. Ý tưởng: dấu hiệu chia hết cho 11 là cộng, trừ xen kẽ các chữ số; xem các khối bù trừ nhau thế nào. Bước 1: Đặt dấu + và − xen kẽ từ phải sang (hàng đơn vị mang dấu +). A chia hết cho 11 khi tổng có dấu đó chia hết cho 11. Bước 2: Khối có 3 chữ số (số lẻ chữ số) nên hai khối liền nhau mang dấu ngược nhau: khối cuối + − +, khối kề trước − + −. Mỗi cặp khối liền nhau bù trừ hết. Bước 3: 15 khối = 7 cặp và 1 khối thừa (khối đầu, dấu + − +): còn 8 − a + 3 = 11 − a. Bước 4: 11 − a chia hết cho 11 với a là chữ số: a = 0. Vậy a = 0."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 24",
      "text": "Hình khai triển của một hình hộp chữ nhật (như hình) có hàng ngang dài 32 cm, đoạn đứng từ mép trên mặt nắp tới mép dưới hàng ngang dài 20 cm và cả hình cao 29 cm. Tính thể tích hình hộp.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -380,12 +340,52 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 25",
-     "text": "Mỗi hình ☆, □, ◇ là một số nguyên dương. Biết 3☆ + □ = 47, ☆ + □ = 17 và ☆ + 2□ + ◇ = 27. Tính 2☆ + ◇ − □.",
+     "name": "Câu 21",
+     "text": "Phương trình a² − 20a + 99 = 0 có hai nghiệm. Tìm nghiệm lớn hơn.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 36. Nhận dạng: ba hình; hai dòng chỉ có hai hình, dòng thứ ba có thêm hình còn lại. Ý tưởng: giải hai hình trước từ hai dòng đầu, rồi thế vào dòng ba tìm hình cuối. Bước 1 (chuẩn bị): hai dòng đã gọn, giữ nguyên. Bước 2 (khử một hình): lấy dòng 1 trừ dòng 2 (□ mất đi): 3☆ − ☆ = 47 − 17, tức 2☆ = 30, nên ☆ = 15. Bước 3 (hình □): thay ☆ = 15 vào dòng 1 ban đầu: □ = 47 − 3 × 15 = 2. Bước 4 (hình ◇): từ dòng ba, ◇ = 27 − 1 × 15 − 2 × 2 = 8. Bước 5 (kết quả): 2☆ + ◇ − □ = 2 × 15 + 8 − 2 = 36. Vậy 2☆ + ◇ − □ = 36."
+      "text": "Đáp án: 11. Nhận dạng: phương trình a² + pa + q = 0. Ý tưởng: phân tích vế trái thành tích (a + m)(a + n), tích bằng 0 thì một thừa số bằng 0. Bước 1: Hai số có tích 99, tổng −20: −1 và −99 (tổng −100), −3 và −33 (tổng −36), −9 và −11 (tổng −20). Bước 2: a² − 20a + 99 = (a − 9)(a − 11) = 0. Bước 3: a − 9 = 0 hoặc a − 11 = 0, nên a = 9 hoặc a = 11. Bước 4: Nghiệm lớn hơn là 11. Vậy kết quả là 11."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 22",
+     "text": "Dùng các chữ số 1, 2, 4, 6, 8, 9, mỗi chữ số dùng nhiều nhất một lần, lập số có 5 chữ số sao cho không có hai chữ số chẵn nào đứng cạnh nhau. Có bao nhiêu số như vậy?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 48. Nhận dạng: lập số có các chữ số chẵn không đứng cạnh nhau. Ý tưởng: chia theo số chữ số chẵn được dùng; mỗi trường hợp chọn chỗ cho chữ số chẵn trước, rồi xếp chữ số chẵn và chữ số lẻ. Bước 1 (số chữ số chẵn): có 4 chữ số chẵn (2, 4, 6, 8), 2 chữ số lẻ; 5 chỗ và chẵn không cạnh nhau nên nhiều nhất 3 chữ số chẵn; chữ số lẻ chỉ có 2 nên ít nhất 5 − 2 = 3 chữ số chẵn: dùng 3 chữ số chẵn. Bước 2 (3 chẵn, 2 lẻ): chỗ của 3 chữ số chẵn: (1, 3, 5): 1 cách; xếp chữ số chẵn: 4 × 3 × 2 = 24 cách; xếp chữ số lẻ: 2 × 1 = 2 cách; 1 × 24 × 2 = 48 số. Vậy có 48 số."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 23",
+     "text": "Ghép 12 khối lập phương giống nhau thành một hình hộp chữ nhật đặc. Diện tích toàn phần nhỏ nhất có thể là 1152 cm². Diện tích toàn phần lớn nhất có thể là bao nhiêu?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 1800. Nhận dạng: hộp ghép từ N khối giống nhau, cạnh khối chưa biết. Ý tưởng: đếm diện tích theo số mặt vuông nhỏ (mỗi mặt có diện tích S), rồi tìm S từ dữ kiện. Bước 1: Nhỏ nhất: hộp 2 × 2 × 3 có 32 mặt nhỏ; lớn nhất: 1 × 1 × 12 có 4 × 12 + 2 = 50 mặt nhỏ. Bước 2: Gọi S là diện tích một mặt nhỏ: 32 × S = 1152, nên S = 36 cm². Bước 3: Lớn nhất: 50 × 36 = 1800 cm². Vậy diện tích lớn nhất là 1800 cm²."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 24",
+     "text": "Nam, Minh và Long chạy tiếp sức, mỗi bạn chạy một chặng dài bằng nhau. Tốc độ của 3 bạn theo thứ tự Nam, Minh, Long tỉ lệ với 2 : 3 : 4. Nếu Long chạy một mình cả quãng đường thì thời gian ít hơn thời gian tiếp sức 4 phút. Thời gian chạy tiếp sức là bao nhiêu phút?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 13. Nhận dạng: chạy tiếp sức, các chặng bằng nhau, biết tỉ lệ tốc độ và chênh lệch với một mình người nhanh nhất. Ý tưởng: cùng quãng đường thì thời gian tỉ lệ nghịch với tốc độ; đặt thời gian theo một đơn vị chung rồi dùng chênh lệch để tìm đơn vị. Bước 1 (thời gian mỗi chặng): tốc độ tỉ lệ 2 : 3 : 4 nên thời gian mỗi chặng tỉ lệ nghịch; lấy 12 (bội chung nhỏ nhất của 2, 3, 4) làm đơn vị, mỗi chặng mất 12 : 2 = 6, 12 : 3 = 4, 12 : 4 = 3 phần. Bước 2 (hai thời gian): tiếp sức mất 6 + 4 + 3 = 13 phần; Long chạy một mình cả 3 chặng mất 3 × 3 = 9 phần. Bước 3 (chênh lệch): 13 − 9 = 4 phần ứng với 4 phút, nên 1 phần là 4 : 4 = 1 phút. Bước 4 (kết quả): tiếp sức mất 13 × 1 = 13 phút. Vậy thời gian chạy tiếp sức là 13 phút."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 25",
+     "text": "Số A được viết bằng cách lặp lại khối 8a3 đúng 15 lần: A = 8a38a3…8a3 (a là một chữ số). Tìm a để A chia hết cho 11.",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 0. Nhận dạng: số lặp lại một khối chữ số, chia hết cho 11. Ý tưởng: dấu hiệu chia hết cho 11 là cộng, trừ xen kẽ các chữ số; xem các khối bù trừ nhau thế nào. Bước 1: Đặt dấu + và − xen kẽ từ phải sang (hàng đơn vị mang dấu +). A chia hết cho 11 khi tổng có dấu đó chia hết cho 11. Bước 2: Khối có 3 chữ số (số lẻ chữ số) nên hai khối liền nhau mang dấu ngược nhau: khối cuối + − +, khối kề trước − + −. Mỗi cặp khối liền nhau bù trừ hết. Bước 3: 15 khối = 7 cặp và 1 khối thừa (khối đầu, dấu + − +): còn 8 − a + 3 = 11 − a. Bước 4: 11 − a chia hết cho 11 với a là chữ số: a = 0. Vậy a = 0."
      }
     }
    ]
@@ -468,211 +468,211 @@
 <ol class="questions" start="1">
 <li class="q" id="cau-1">
   <div class="q-head"><span class="q-n">Câu 1</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">In a row of 8 squares, the first square has 5 grains of rice and each next square has 2 times as many as the one before. How many grains are there in the row?</p><p class="q-stem">Trên một hàng 8 ô, ô thứ nhất đặt 5 hạt thóc, mỗi ô sau đặt gấp 2 lần ô trước. Cả hàng có bao nhiêu hạt thóc?</p><ol class="q-opts"><li><b>A.</b> 80</li><li><b>B.</b> 640</li><li><b>C.</b> 1275</li><li><b>D.</b> 1277</li><li><b>E.</b> 1915</li></ol>
+  <p class="q-en" lang="en">Cubes form a 3-level pyramid: the bottom level is 3 × 3, each level above is one smaller each way, the top is 1 cube. How many cubes are needed?</p><p class="q-stem">Xếp các khối lập phương thành chóp 3 tầng: tầng dưới cùng 3 × 3 khối, mỗi tầng trên là hình vuông nhỏ hơn một khối mỗi chiều, tầng trên cùng 1 khối. Cần bao nhiêu khối?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 1"><svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="112.5,75 131.2,85.8 112.5,96.7 93.7,85.8" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="93.7,107.5 112.5,118.3 112.5,96.7 93.7,85.8" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="187.5,75 206.3,85.8 187.5,96.7 168.8,85.8" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="206.3,107.5 187.5,118.3 187.5,96.7 206.3,85.8" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,42.5 150,53.3 131.2,64.2 112.5,53.3" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="112.5,75 131.2,85.8 131.2,64.2 112.5,53.3" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="168.8,42.5 187.5,53.3 168.8,64.2 150,53.3" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="187.5,75 168.8,85.8 168.8,64.2 187.5,53.3" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="150,10 168.8,20.8 150,31.7 131.2,20.8" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="168.8,42.5 150,53.3 150,31.7 168.8,20.8" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,42.5 150,53.3 150,31.7 131.2,20.8" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="131.2,85.8 150,96.7 131.2,107.5 112.5,96.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="112.5,118.3 131.2,129.2 131.2,107.5 112.5,96.7" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="168.8,85.8 187.5,96.7 168.8,107.5 150,96.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="187.5,118.3 168.8,129.2 168.8,107.5 187.5,96.7" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="150,53.3 168.8,64.2 150,75 131.2,64.2" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="168.8,85.8 150,96.7 150,75 168.8,64.2" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,85.8 150,96.7 150,75 131.2,64.2" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="150,96.7 168.8,107.5 150,118.3 131.2,107.5" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="168.8,129.2 150,140 150,118.3 168.8,107.5" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,129.2 150,140 150,118.3 131.2,107.5" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/></svg></div><ol class="q-opts"><li><b>A.</b> 4</li><li><b>B.</b> 13</li><li><b>C.</b> 14</li><li><b>D.</b> 18</li><li><b>E.</b> 27</li></ol>
   <details><summary>Đáp án và lời giải câu 1</summary>
-    <p><b>Đáp án: C. 1275</b></p>
-    <p>Nhận dạng: tổng mà mỗi số gấp 2 lần số đứng trước.<br>Ý tưởng: nhân tổng với 2 rồi trừ tổng ban đầu, các số ở giữa mất đi.<br>Bước 1: Gọi S là tổng số hạt mỗi ô: S = 5 + 10 + 20 + … + 640 (8 số, số cuối 5 × 2⁷ = 640).<br>Bước 2: Nhân với 2: 2 × S = 10 + 20 + … + 640 + 1280 (mỗi số dời sang phải một chỗ).<br>Bước 3: Trừ hai dòng, các số giống nhau mất đi: 2 × S − S = 1280 − 5, tức là S = 1275 hạt.<br>Vậy có 1275 hạt.</p>
+    <p><b>Đáp án: C. 14</b></p>
+    <p>Nhận dạng: đếm khối chóp bậc thang.<br>Ý tưởng: cộng số khối từng tầng;<br>tầng là hình vuông nên số khối là số chính phương.<br>Bước 1: Các tầng: 3 × 3 + 2 × 2 + 1 × 1.<br>Bước 2: Cộng: 9 + 4 + 1 = 14.<br>Vậy cần 14 khối.</p>
   </details>
 </li>
 <li class="q" id="cau-2">
   <div class="q-head"><span class="q-n">Câu 2</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Find the smallest 4-digit number that leaves remainders 4, 5, 6 when divided by 5, 6, 7 respectively.</p><p class="q-stem">Tìm số nhỏ nhất có 4 chữ số mà chia 5 dư 4, chia 6 dư 5, chia 7 dư 6.</p><ol class="q-opts"><li><b>A.</b> 1048</li><li><b>B.</b> 1049</li><li><b>C.</b> 1050</li><li><b>D.</b> 1051</li><li><b>E.</b> 1259</li></ol>
+  <p class="q-en" lang="en">The whole numbers from 1 to 361 are written one after another: 123456789101112…361. How many zeros does it contain?</p><p class="q-stem">Viết liền các số tự nhiên từ 1 đến 361 thành một số rất dài: 123456789101112…361. Số đó có bao nhiêu chữ số 0?</p><ol class="q-opts"><li><b>A.</b> 61</li><li><b>B.</b> 63</li><li><b>C.</b> 64</li><li><b>D.</b> 65</li><li><b>E.</b> 66</li></ol>
   <details><summary>Đáp án và lời giải câu 2</summary>
-    <p><b>Đáp án: B. 1049</b></p>
-    <p>Nhận dạng: chia cho nhiều số, số dư khác nhau nhưng đều kém số chia cùng một đơn vị.<br>Ý tưởng: gọi N là số cần tìm;<br>thêm 1 vào N thì chia hết cho mọi số chia.<br>Bước 1: Mỗi số dư kém số chia 1 đơn vị (5 − 4 = 1, 6 − 5 = 1, 7 − 6 = 1), nên N + 1 chia hết cho 5, 6, 7.<br>Bước 2: BCNN(5, 6, 7) = 5 × 6 × 7 = 210 (các số đôi một không có ước chung lớn hơn 1).<br>Vậy N + 1 là bội của 210.<br>Bước 3: N nhỏ nhất có 4 chữ số nên N + 1 ≥ 1000 + 1 = 1001;<br>1001 : 210 = 4 (dư 161), lấy bội tiếp theo: 210 × 5 = 1050.<br>Bước 4: N = 1050 − 1 = 1049.<br>Vậy số cần tìm là 1049.<br>Mẹo: số dư bằng số chia trừ 1 (hay trừ 2) thì cộng thêm 1 (hay 2) vào số cần tìm.</p>
-  </details>
-</li>
-<li class="q" id="cau-3">
-  <div class="q-head"><span class="q-n">Câu 3</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">a, b, c are three different non-zero digits and ab + bc + ca = 165, where ab, bc, ca are two-digit numbers. Find a + b + c.</p><p class="q-stem">Cho a, b, c là ba chữ số khác 0 và khác nhau. Biết ab + bc + ca = 165, trong đó ab, bc, ca là các số có hai chữ số. Tính a + b + c.</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 14</li><li><b>C.</b> 15</li><li><b>D.</b> 16</li><li><b>E.</b> 55</li></ol>
-  <details><summary>Đáp án và lời giải câu 3</summary>
-    <p><b>Đáp án: C. 15</b></p>
-    <p>Nhận dạng: phép cộng các số viết bằng chữ, chữ số xoay vòng.<br>Ý tưởng: tách mỗi số theo hàng chục, hàng đơn vị rồi gom từng chữ.<br>Bước 1 (tách hàng): ab = 10 × a + b;<br>bc = 10 × b + c;<br>ca = 10 × c + a.<br>Bước 2 (cộng): ab + bc + ca = 11 × a + 11 × b + 11 × c = 11 × (a + b + c).<br>Bước 3: 11 × (a + b + c) = 165, nên a + b + c = 165 : 11 = 15.<br>Vậy a + b + c = 15.</p>
-  </details>
-</li>
-<li class="q" id="cau-4">
-  <div class="q-head"><span class="q-n">Câu 4</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Using the digits 1, 2, 4, 6, 8, 9, each at most once, 5-digit numbers are formed so that no two even digits are next to each other. How many such numbers are there?</p><p class="q-stem">Dùng các chữ số 1, 2, 4, 6, 8, 9, mỗi chữ số dùng nhiều nhất một lần, lập số có 5 chữ số sao cho không có hai chữ số chẵn nào đứng cạnh nhau. Có bao nhiêu số như vậy?</p><ol class="q-opts"><li><b>A.</b> 43</li><li><b>B.</b> 48</li><li><b>C.</b> 54</li><li><b>D.</b> 96</li><li><b>E.</b> 672</li></ol>
-  <details><summary>Đáp án và lời giải câu 4</summary>
-    <p><b>Đáp án: B. 48</b></p>
-    <p>Nhận dạng: lập số có các chữ số chẵn không đứng cạnh nhau.<br>Ý tưởng: chia theo số chữ số chẵn được dùng;<br>mỗi trường hợp chọn chỗ cho chữ số chẵn trước, rồi xếp chữ số chẵn và chữ số lẻ.<br>Bước 1 (số chữ số chẵn): có 4 chữ số chẵn (2, 4, 6, 8), 2 chữ số lẻ;<br>5 chỗ và chẵn không cạnh nhau nên nhiều nhất 3 chữ số chẵn;<br>chữ số lẻ chỉ có 2 nên ít nhất 5 − 2 = 3 chữ số chẵn: dùng 3 chữ số chẵn.<br>Bước 2 (3 chẵn, 2 lẻ): chỗ của 3 chữ số chẵn: (1, 3, 5): 1 cách;<br>xếp chữ số chẵn: 4 × 3 × 2 = 24 cách;<br>xếp chữ số lẻ: 2 × 1 = 2 cách;<br>1 × 24 × 2 = 48 số.<br>Vậy có 48 số.</p>
-  </details>
-</li>
-<li class="q" id="cau-5">
-  <div class="q-head"><span class="q-n">Câu 5</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Cubes form a 3-level pyramid: the bottom level is 3 × 3, each level above is one smaller each way, the top is 1 cube. How many cubes are needed?</p><p class="q-stem">Xếp các khối lập phương thành chóp 3 tầng: tầng dưới cùng 3 × 3 khối, mỗi tầng trên là hình vuông nhỏ hơn một khối mỗi chiều, tầng trên cùng 1 khối. Cần bao nhiêu khối?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 5"><svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="112.5,75 131.2,85.8 112.5,96.7 93.7,85.8" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="93.7,107.5 112.5,118.3 112.5,96.7 93.7,85.8" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="187.5,75 206.3,85.8 187.5,96.7 168.8,85.8" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="206.3,107.5 187.5,118.3 187.5,96.7 206.3,85.8" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,42.5 150,53.3 131.2,64.2 112.5,53.3" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="112.5,75 131.2,85.8 131.2,64.2 112.5,53.3" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="168.8,42.5 187.5,53.3 168.8,64.2 150,53.3" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="187.5,75 168.8,85.8 168.8,64.2 187.5,53.3" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="150,10 168.8,20.8 150,31.7 131.2,20.8" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="168.8,42.5 150,53.3 150,31.7 168.8,20.8" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,42.5 150,53.3 150,31.7 131.2,20.8" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="131.2,85.8 150,96.7 131.2,107.5 112.5,96.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="112.5,118.3 131.2,129.2 131.2,107.5 112.5,96.7" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="168.8,85.8 187.5,96.7 168.8,107.5 150,96.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="187.5,118.3 168.8,129.2 168.8,107.5 187.5,96.7" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="150,53.3 168.8,64.2 150,75 131.2,64.2" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="168.8,85.8 150,96.7 150,75 168.8,64.2" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,85.8 150,96.7 150,75 131.2,64.2" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="150,96.7 168.8,107.5 150,118.3 131.2,107.5" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="168.8,129.2 150,140 150,118.3 168.8,107.5" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="131.2,129.2 150,140 150,118.3 131.2,107.5" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/></svg></div><ol class="q-opts"><li><b>A.</b> 13</li><li><b>B.</b> 14</li><li><b>C.</b> 17</li><li><b>D.</b> 18</li><li><b>E.</b> 27</li></ol>
-  <details><summary>Đáp án và lời giải câu 5</summary>
-    <p><b>Đáp án: B. 14</b></p>
-    <p>Nhận dạng: đếm khối chóp bậc thang.<br>Ý tưởng: cộng số khối từng tầng;<br>tầng là hình vuông nên số khối là số chính phương.<br>Bước 1: Các tầng: 3 × 3 + 2 × 2 + 1 × 1.<br>Bước 2: Cộng: 9 + 4 + 1 = 14.<br>Vậy cần 14 khối.</p>
-  </details>
-</li>
-<li class="q" id="cau-6">
-  <div class="q-head"><span class="q-n">Câu 6</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">The equation a² − 20a + 99 = 0 has two solutions. Find the larger solution.</p><p class="q-stem">Phương trình a² − 20a + 99 = 0 có hai nghiệm. Tìm nghiệm lớn hơn.</p><ol class="q-opts"><li><b>A.</b> 6</li><li><b>B.</b> 7</li><li><b>C.</b> 8</li><li><b>D.</b> 11</li><li><b>E.</b> 21</li></ol>
-  <details><summary>Đáp án và lời giải câu 6</summary>
-    <p><b>Đáp án: D. 11</b></p>
-    <p>Nhận dạng: phương trình a² + pa + q = 0.<br>Ý tưởng: phân tích vế trái thành tích (a + m)(a + n), tích bằng 0 thì một thừa số bằng 0.<br>Bước 1: Hai số có tích 99, tổng −20: −1 và −99 (tổng −100), −3 và −33 (tổng −36), −9 và −11 (tổng −20).<br>Bước 2: a² − 20a + 99 = (a − 9)(a − 11) = 0.<br>Bước 3: a − 9 = 0 hoặc a − 11 = 0, nên a = 9 hoặc a = 11.<br>Bước 4: Nghiệm lớn hơn là 11.<br>Vậy kết quả là 11.</p>
-  </details>
-</li>
-<li class="q" id="cau-7">
-  <div class="q-head"><span class="q-n">Câu 7</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Given a &gt; 0 and a + 1/a = 8, find a² + 1/a².</p><p class="q-stem">Cho a &gt; 0 và a + 1/a = 8. Tính a² + 1/a².</p><ol class="q-opts"><li><b>A.</b> 16</li><li><b>B.</b> 62</li><li><b>C.</b> 64</li><li><b>D.</b> 65</li><li><b>E.</b> 66</li></ol>
-  <details><summary>Đáp án và lời giải câu 7</summary>
-    <p><b>Đáp án: B. 62</b></p>
-    <p>Nhận dạng: biết a + 1/a, hỏi a² + 1/a² (1/a là 1 chia a).<br>Ý tưởng: bình phương hai vế, (a + 1/a)² = a² + 2 × a × 1/a + 1/a² = a² + 2 + 1/a² vì a × 1/a = 1.<br>Bước 1: Bình phương hai vế: (a + 1/a)² = 8² = 64.<br>Bước 2: a² + 2 + 1/a² = 64, nên a² + 1/a² = 64 − 2 = 62.<br>Vậy a² + 1/a² = 62.</p>
-  </details>
-</li>
-<li class="q" id="cau-8">
-  <div class="q-head"><span class="q-n">Câu 8</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">The whole numbers from 1 to 361 are written one after another: 123456789101112…361. How many zeros does it contain?</p><p class="q-stem">Viết liền các số tự nhiên từ 1 đến 361 thành một số rất dài: 123456789101112…361. Số đó có bao nhiêu chữ số 0?</p><ol class="q-opts"><li><b>A.</b> 56</li><li><b>B.</b> 62</li><li><b>C.</b> 63</li><li><b>D.</b> 65</li><li><b>E.</b> 66</li></ol>
-  <details><summary>Đáp án và lời giải câu 8</summary>
     <p><b>Đáp án: E. 66</b></p>
     <p>Nhận dạng: đếm chữ số 0 khi viết một dãy số liên tiếp.<br>Ý tưởng: đếm chữ số 0 ở từng hàng;<br>số không bắt đầu bằng chữ số 0, nên hàng cao nhất của mỗi số không có 0.<br>Bước 1: Hàng đơn vị: các số tròn chục 10, 20, …, 360: 361 : 10 = 36 (dư 1), có 36 số.<br>Bước 2: Hàng chục: chữ số 0 ở hàng chục có ở các số 100–109, 200–209, …, mỗi khối 100 số (từ 100) có 10 số;<br>2 khối đủ: 2 × 10 = 20;<br>khối từ 300: các số 300 đến 309, có 10 số.<br>Cộng: 30.<br>Bước 3: Cộng các hàng: 36 + 30 = 66.<br>Vậy có 66 chữ số 0.<br>Mẹo: lỗi hay sai là đếm cả chữ số 0 ở hàng chục của các số 1 đến 9 (như viết 01, 02), các số đó không có 0.</p>
   </details>
 </li>
+<li class="q" id="cau-3">
+  <div class="q-head"><span class="q-n">Câu 3</span><span class="q-pts">3 điểm</span></div>
+  <p class="q-en" lang="en">Given a &gt; 0 and a + 1/a = 8, find a² + 1/a².</p><p class="q-stem">Cho a &gt; 0 và a + 1/a = 8. Tính a² + 1/a².</p><ol class="q-opts"><li><b>A.</b> 16</li><li><b>B.</b> 58</li><li><b>C.</b> 62</li><li><b>D.</b> 64</li><li><b>E.</b> 66</li></ol>
+  <details><summary>Đáp án và lời giải câu 3</summary>
+    <p><b>Đáp án: C. 62</b></p>
+    <p>Nhận dạng: biết a + 1/a, hỏi a² + 1/a² (1/a là 1 chia a).<br>Ý tưởng: bình phương hai vế, (a + 1/a)² = a² + 2 × a × 1/a + 1/a² = a² + 2 + 1/a² vì a × 1/a = 1.<br>Bước 1: Bình phương hai vế: (a + 1/a)² = 8² = 64.<br>Bước 2: a² + 2 + 1/a² = 64, nên a² + 1/a² = 64 − 2 = 62.<br>Vậy a² + 1/a² = 62.</p>
+  </details>
+</li>
+<li class="q" id="cau-4">
+  <div class="q-head"><span class="q-n">Câu 4</span><span class="q-pts">3 điểm</span></div>
+  <p class="q-en" lang="en">In a row of 8 squares, the first square has 5 grains of rice and each next square has 2 times as many as the one before. How many grains are there in the row?</p><p class="q-stem">Trên một hàng 8 ô, ô thứ nhất đặt 5 hạt thóc, mỗi ô sau đặt gấp 2 lần ô trước. Cả hàng có bao nhiêu hạt thóc?</p><ol class="q-opts"><li><b>A.</b> 80</li><li><b>B.</b> 640</li><li><b>C.</b> 1275</li><li><b>D.</b> 1280</li><li><b>E.</b> 1915</li></ol>
+  <details><summary>Đáp án và lời giải câu 4</summary>
+    <p><b>Đáp án: C. 1275</b></p>
+    <p>Nhận dạng: tổng mà mỗi số gấp 2 lần số đứng trước.<br>Ý tưởng: nhân tổng với 2 rồi trừ tổng ban đầu, các số ở giữa mất đi.<br>Bước 1: Gọi S là tổng số hạt mỗi ô: S = 5 + 10 + 20 + … + 640 (8 số, số cuối 5 × 2⁷ = 640).<br>Bước 2: Nhân với 2: 2 × S = 10 + 20 + … + 640 + 1280 (mỗi số dời sang phải một chỗ).<br>Bước 3: Trừ hai dòng, các số giống nhau mất đi: 2 × S − S = 1280 − 5, tức là S = 1275 hạt.<br>Vậy có 1275 hạt.</p>
+  </details>
+</li>
+<li class="q" id="cau-5">
+  <div class="q-head"><span class="q-n">Câu 5</span><span class="q-pts">3 điểm</span></div>
+  <p class="q-en" lang="en">a, b, c are three different non-zero digits and ab + bc + ca = 165, where ab, bc, ca are two-digit numbers. Find a + b + c.</p><p class="q-stem">Cho a, b, c là ba chữ số khác 0 và khác nhau. Biết ab + bc + ca = 165, trong đó ab, bc, ca là các số có hai chữ số. Tính a + b + c.</p><ol class="q-opts"><li><b>A.</b> 5</li><li><b>B.</b> 14</li><li><b>C.</b> 15</li><li><b>D.</b> 16</li><li><b>E.</b> 55</li></ol>
+  <details><summary>Đáp án và lời giải câu 5</summary>
+    <p><b>Đáp án: C. 15</b></p>
+    <p>Nhận dạng: phép cộng các số viết bằng chữ, chữ số xoay vòng.<br>Ý tưởng: tách mỗi số theo hàng chục, hàng đơn vị rồi gom từng chữ.<br>Bước 1 (tách hàng): ab = 10 × a + b;<br>bc = 10 × b + c;<br>ca = 10 × c + a.<br>Bước 2 (cộng): ab + bc + ca = 11 × a + 11 × b + 11 × c = 11 × (a + b + c).<br>Bước 3: 11 × (a + b + c) = 165, nên a + b + c = 165 : 11 = 15.<br>Vậy a + b + c = 15.</p>
+  </details>
+</li>
+<li class="q" id="cau-6">
+  <div class="q-head"><span class="q-n">Câu 6</span><span class="q-pts">3 điểm</span></div>
+  <p class="q-en" lang="en">For all numbers a, b: a ⊕ b = −2 × a − 3 × b − 8. Find m if 3 ⊕ m = −38.</p><p class="q-stem">Với mọi số a, b: a ⊕ b = −2 × a − 3 × b − 8. Tìm số m biết 3 ⊕ m = −38.</p><ol class="q-opts"><li><b>A.</b> 3</li><li><b>B.</b> 7</li><li><b>C.</b> 8</li><li><b>D.</b> 12</li><li><b>E.</b> 13</li></ol>
+  <details><summary>Đáp án và lời giải câu 6</summary>
+    <p><b>Đáp án: C. 8</b></p>
+    <p>Nhận dạng: phép toán mới, biết kết quả, tìm số chưa biết.<br>Ý tưởng: thay vào định nghĩa để được phương trình bậc nhất ẩn m, rồi giải.<br>Bước 1: Thay a, b đúng vị trí: −2 × 3 − 3 × m − 8 = −38.<br>Bước 2: Phần đã biết: −2 × 3 − 8 = −14, nên −3m − 14 = −38.<br>Bước 3: Chuyển vế: −3m = −38 + 14 = −24;<br>m = −24 : (−3) = 8.<br>Vậy m = 8.</p>
+  </details>
+</li>
+<li class="q" id="cau-7">
+  <div class="q-head"><span class="q-n">Câu 7</span><span class="q-pts">3 điểm</span></div>
+  <p class="q-en" lang="en">A wire is bent exactly into a circle of radius 63 cm. It is cut and bent into 5 equal squares whose sides are whole numbers of cm (take π = 22/7). What is the largest possible side in cm?</p><p class="q-stem">Một sợi dây thép uốn vừa đủ thành đường tròn bán kính 63 cm. Cắt sợi dây đó ra để uốn thành 5 hình vuông bằng nhau có cạnh là số tự nhiên (cm) (lấy π = 22/7). Cạnh hình vuông lớn nhất là bao nhiêu xăng-ti-mét?</p><ol class="q-opts"><li><b>A.</b> 15</li><li><b>B.</b> 18</li><li><b>C.</b> 19</li><li><b>D.</b> 22</li><li><b>E.</b> 23</li></ol>
+  <details><summary>Đáp án và lời giải câu 7</summary>
+    <p><b>Đáp án: C. 19</b></p>
+    <p>Nhận dạng: dây uốn hình tròn rồi uốn lại thành hình vuông.<br>Ý tưởng: độ dài dây không đổi, bằng chu vi hình tròn.<br>Bước 1: Gọi r là bán kính, C là chu vi: C = 2 × π × r = 2 × 22/7 × 63 = 396 cm (độ dài dây).<br>Bước 2: 5 hình vuông có tổng cộng 5 × 4 = 20 cạnh, mỗi cạnh nhiều nhất 396 : 20 = 19,8 cm.<br>Bước 3: Cạnh là số tự nhiên nên cạnh lớn nhất là 19 cm.<br>Vậy cạnh lớn nhất là 19 cm.<br>Mẹo: cạnh không làm tròn lên, vì dây không đủ dài.</p>
+  </details>
+</li>
+<li class="q" id="cau-8">
+  <div class="q-head"><span class="q-n">Câu 8</span><span class="q-pts">3 điểm</span></div>
+  <p class="q-en" lang="en">How many diagonals does a regular polygon with 16 sides have?</p><p class="q-stem">Đa giác đều có 16 cạnh có bao nhiêu đường chéo?</p><ol class="q-opts"><li><b>A.</b> 104</li><li><b>B.</b> 106</li><li><b>C.</b> 112</li><li><b>D.</b> 120</li><li><b>E.</b> 208</li></ol>
+  <details><summary>Đáp án và lời giải câu 8</summary>
+    <p><b>Đáp án: A. 104</b></p>
+    <p>Nhận dạng: đếm đường chéo của đa giác.<br>Ý tưởng: đếm đường chéo đi ra từ mỗi đỉnh, rồi chia 2 vì mỗi đường chéo được đếm ở cả hai đầu.<br>Bước 1 (từ một đỉnh): nối với 16 − 1 = 15 đỉnh khác, bỏ 2 đỉnh kề (nối thành cạnh): 15 − 2 = 13 đường chéo.<br>Bước 2 (mọi đỉnh): 16 × 13 = 208.<br>Bước 3 (mỗi đường chéo đếm hai lần): 208 : 2 = 104.<br>Vậy có 104 đường chéo.</p>
+  </details>
+</li>
 <li class="q" id="cau-9">
   <div class="q-head"><span class="q-n">Câu 9</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Rectangle ABCD has area 48 cm² and E is a point on side AD. Take in turn: F is the midpoint of CE, G is the midpoint of BF, H is the midpoint of CG. Find the area of triangle BCH in cm².</p><p class="q-stem">Hình chữ nhật ABCD có diện tích 48 cm², điểm E nằm trên cạnh AD. Lần lượt lấy F là trung điểm của CE, G là trung điểm của BF, H là trung điểm của CG. Tính diện tích tam giác BCH.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 9"><svg width="300" height="182" viewBox="0 0 300 182" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="35,16 35,154 265,154 265,16" stroke="#2563eb" stroke-width="2" fill="none"/><polygon points="35,154 265,154 115.5,16" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.08"/><text x="27" y="14" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="27" y="164" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="273" y="164" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="273" y="14" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="115.5" y="10" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">E</text><line x1="35" y1="154" x2="190.2" y2="85" stroke="#2563eb" stroke-width="1.4"/><text x="190.2" y="81" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">F</text><line x1="265" y1="154" x2="112.6" y2="119.5" stroke="#2563eb" stroke-width="1.4"/><text x="112.6" y="115.5" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">G</text><line x1="35" y1="154" x2="188.8" y2="136.8" stroke="#2563eb" stroke-width="1.4"/><text x="188.8" y="132.8" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">H</text><polygon points="35,154 265,154 188.8,136.8" stroke="#f97316" stroke-width="2" fill="#f97316" fill-opacity="0.35"/></svg></div><ol class="q-opts"><li><b>A.</b> 2</li><li><b>B.</b> 3</li><li><b>C.</b> 4</li><li><b>D.</b> 6</li><li><b>E.</b> 8</li></ol>
+  <p class="q-en" lang="en">3 girls and 3 boys (all different) are arranged in a row so that the 3 boys are next to each other. How many ways are there?</p><p class="q-stem">Xếp 3 bạn nữ và 3 bạn nam (khác nhau) thành một hàng ngang sao cho 3 bạn nam đứng cạnh nhau. Có bao nhiêu cách xếp?</p><ol class="q-opts"><li><b>A.</b> 134</li><li><b>B.</b> 139</li><li><b>C.</b> 141</li><li><b>D.</b> 142</li><li><b>E.</b> 144</li></ol>
   <details><summary>Đáp án và lời giải câu 9</summary>
-    <p><b>Đáp án: B. 3</b></p>
-    <p>Nhận dạng: lấy trung điểm nhiều lần, các tam giác chung cạnh BC.<br>Ý tưởng: trung điểm chia một tam giác thành hai tam giác bằng diện tích (cùng chiều cao, đáy bằng nhau).<br>Bước 1: Tam giác BCE có đáy BC và chiều cao bằng chiều rộng AB, nên bằng nửa hình chữ nhật.<br>Bước 2: tam giác BCF = nửa tam giác BCE (vì F là trung điểm CE);<br>tam giác BCG = nửa tam giác BCF (vì G là trung điểm BF);<br>tam giác BCH = nửa tam giác BCG (vì H là trung điểm CG).<br>Bước 3: Tam giác BCE = 48 : 2 = 24 cm², rồi mỗi lần chia đôi: 24 → 12 → 6 → 3.<br>Vậy diện tích tam giác BCH là 3 cm².</p>
+    <p><b>Đáp án: E. 144</b></p>
+    <p>Nhận dạng: xếp hàng có nhóm đứng cạnh nhau.<br>Ý tưởng: buộc nhóm thành một khối, xếp các khối, rồi đổi chỗ bên trong khối.<br>Bước 1 (buộc khối): coi 3 bạn nam là 1 khối: còn 3 + 1 = 4 khối.<br>Bước 2 (xếp các khối): 4 × 3 × 2 × 1 = 24 cách.<br>Bước 3 (trong khối): 3 bạn nam đổi chỗ cho nhau: 3 × 2 × 1 = 6 cách.<br>Bước 4 (nhân): 24 × 6 = 144.<br>Vậy có 144 cách.</p>
   </details>
 </li>
 <li class="q" id="cau-10">
   <div class="q-head"><span class="q-n">Câu 10</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Paint costs 45 thousand dong per litre (any amount can be bought). Every 2 litres cover 13 m² of wall. With 500 thousand dong for paint, at most how many whole square metres can be painted?</p><p class="q-stem">Sơn giá 45 nghìn đồng một lít (mua được cả phần lẻ của lít). Cứ 2 lít sơn thì sơn được 13 m² tường. Với 500 nghìn đồng mua sơn, sơn được nhiều nhất bao nhiêu mét vuông tường (lấy số nguyên)?</p><ol class="q-opts"><li><b>A.</b> 62</li><li><b>B.</b> 70</li><li><b>C.</b> 72</li><li><b>D.</b> 73</li><li><b>E.</b> 75</li></ol>
+  <p class="q-en" lang="en">Paint costs 45 thousand dong per litre (any amount can be bought). Every 2 litres cover 13 m² of wall. With 500 thousand dong for paint, at most how many whole square metres can be painted?</p><p class="q-stem">Sơn giá 45 nghìn đồng một lít (mua được cả phần lẻ của lít). Cứ 2 lít sơn thì sơn được 13 m² tường. Với 500 nghìn đồng mua sơn, sơn được nhiều nhất bao nhiêu mét vuông tường (lấy số nguyên)?</p><ol class="q-opts"><li><b>A.</b> 67</li><li><b>B.</b> 72</li><li><b>C.</b> 74</li><li><b>D.</b> 77</li><li><b>E.</b> 82</li></ol>
   <details><summary>Đáp án và lời giải câu 10</summary>
-    <p><b>Đáp án: C. 72</b></p>
+    <p><b>Đáp án: B. 72</b></p>
     <p>Nhận dạng: đổi qua nhiều bước (tiền → lượng mua → sản phẩm), hỏi nhiều nhất.<br>Ý tưởng: tính lượng mua được, đổi ra sản phẩm, chỉ lấy phần nguyên.<br>Bước 1 (lượng mua): 500 : 45 không chia hết nên để nguyên phép chia (không làm tròn): mua được 500 : 45 lít sơn.<br>Bước 2 (đổi ra sản phẩm): 2 lít sơn 13 m², nên số m² là (500 : 45) : 2 × 13 = 500 × 13 : (45 × 2) = 6500 : 90.<br>Bước 3: 6500 : 90 = 72 (dư 20).<br>Bước 4: chỉ tính phần nguyên nên nhiều nhất là 72 m².<br>Vậy được nhiều nhất 72 m².<br>Mẹo: không làm tròn lên, vì phần dư chưa đủ cho thêm 1 m².</p>
   </details>
 </li>
 <li class="q" id="cau-11">
   <div class="q-head"><span class="q-n">Câu 11</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">How many diagonals does a regular polygon with 16 sides have?</p><p class="q-stem">Đa giác đều có 16 cạnh có bao nhiêu đường chéo?</p><ol class="q-opts"><li><b>A.</b> 103</li><li><b>B.</b> 104</li><li><b>C.</b> 112</li><li><b>D.</b> 120</li><li><b>E.</b> 208</li></ol>
+  <p class="q-en" lang="en">A basket holds 41 items in all: stamps, cards and stickers. Grandma swaps 6 stamps for 2 cards, then swaps 1 card for 3 stickers. After the two swaps the numbers of stamps, cards and stickers are equal. How many stickers were there at the start?</p><p class="q-stem">Một giỏ có tất cả 41 cái gồm tem, thẻ và nhãn dán. Bà đổi 6 tem lấy 2 thẻ, rồi đổi 1 thẻ lấy 3 nhãn dán. Sau hai lần đổi, số tem, số thẻ và số nhãn dán bằng nhau. Lúc đầu có bao nhiêu nhãn dán?</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 11</li><li><b>C.</b> 14</li><li><b>D.</b> 15</li><li><b>E.</b> 20</li></ol>
   <details><summary>Đáp án và lời giải câu 11</summary>
-    <p><b>Đáp án: B. 104</b></p>
-    <p>Nhận dạng: đếm đường chéo của đa giác.<br>Ý tưởng: đếm đường chéo đi ra từ mỗi đỉnh, rồi chia 2 vì mỗi đường chéo được đếm ở cả hai đầu.<br>Bước 1 (từ một đỉnh): nối với 16 − 1 = 15 đỉnh khác, bỏ 2 đỉnh kề (nối thành cạnh): 15 − 2 = 13 đường chéo.<br>Bước 2 (mọi đỉnh): 16 × 13 = 208.<br>Bước 3 (mỗi đường chéo đếm hai lần): 208 : 2 = 104.<br>Vậy có 104 đường chéo.</p>
+    <p><b>Đáp án: A. 10</b></p>
+    <p>Nhận dạng: đổi vật qua nhiều lần rồi ba loại bằng nhau, hỏi số ban đầu.<br>Ý tưởng: tính tổng sau các lần đổi, chia ba để biết số mỗi loại lúc cuối, rồi lùi ngược từng lần đổi.<br>Bước 1 (tổng sau đổi): lần 1 đổi 6 lấy 2 nên tổng thay đổi 2 − 6;<br>lần 2 đổi 1 lấy 3 nên thay đổi 3 − 1;<br>tổng mới = 41 + (2 − 6) + (3 − 1) = 39.<br>Bước 2 (mỗi loại lúc cuối): 39 : 3 = 13.<br>Bước 3 (tem): lúc đầu nhiều hơn lúc cuối 6: 13 + 6 = 19.<br>Bước 4 (thẻ): lúc cuối = lúc đầu + 2 − 1, nên lúc đầu = 13 − 2 + 1 = 12.<br>Bước 5 (nhãn dán): lúc cuối = lúc đầu + 3, nên lúc đầu = 13 − 3 = 10.<br>Vậy lúc đầu có 10 nhãn dán.</p>
   </details>
 </li>
 <li class="q" id="cau-12">
   <div class="q-head"><span class="q-n">Câu 12</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Find the maximum value of B = −a² − 4a − 2.</p><p class="q-stem">Tìm giá trị lớn nhất của B = −a² − 4a − 2.</p><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 2</li><li><b>C.</b> 3</li><li><b>D.</b> 6</li><li><b>E.</b> 12</li></ol>
+  <p class="q-en" lang="en">Rectangle ABCD has area 48 cm² and E is a point on side AD. Take in turn: F is the midpoint of CE, G is the midpoint of BF, H is the midpoint of CG. Find the area of triangle BCH in cm².</p><p class="q-stem">Hình chữ nhật ABCD có diện tích 48 cm², điểm E nằm trên cạnh AD. Lần lượt lấy F là trung điểm của CE, G là trung điểm của BF, H là trung điểm của CG. Tính diện tích tam giác BCH.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 12"><svg width="300" height="182" viewBox="0 0 300 182" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="35,16 35,154 265,154 265,16" stroke="#2563eb" stroke-width="2" fill="none"/><polygon points="35,154 265,154 115.5,16" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.08"/><text x="27" y="14" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="27" y="164" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="273" y="164" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="273" y="14" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="115.5" y="10" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">E</text><line x1="35" y1="154" x2="190.2" y2="85" stroke="#2563eb" stroke-width="1.4"/><text x="190.2" y="81" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">F</text><line x1="265" y1="154" x2="112.6" y2="119.5" stroke="#2563eb" stroke-width="1.4"/><text x="112.6" y="115.5" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">G</text><line x1="35" y1="154" x2="188.8" y2="136.8" stroke="#2563eb" stroke-width="1.4"/><text x="188.8" y="132.8" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">H</text><polygon points="35,154 265,154 188.8,136.8" stroke="#f97316" stroke-width="2" fill="#f97316" fill-opacity="0.35"/></svg></div><ol class="q-opts"><li><b>A.</b> 3</li><li><b>B.</b> 4</li><li><b>C.</b> 5</li><li><b>D.</b> 6</li><li><b>E.</b> 8</li></ol>
   <details><summary>Đáp án và lời giải câu 12</summary>
-    <p><b>Đáp án: B. 2</b></p>
-    <p>Nhận dạng: biểu thức bậc hai, hệ số của a² âm, hỏi giá trị lớn nhất.<br>Ý tưởng: viết thành số − (bình phương), bình phương ≥ 0 nên lớn nhất khi bình phương bằng 0.<br>Bước 1: Đặt −1 chung ở hai hạng tử đầu: B = −(a² + 4a) − 2.<br>Bước 2: a² + 4a = (a + 2)² − 4, nên B = −(a + 2)² + 4 − 2 = 2 − (a + 2)².<br>Bước 3: (a + 2)² ≥ 0 nên B ≤ 2, dấu bằng khi a = −2.<br>Vậy giá trị lớn nhất của B là 2.</p>
+    <p><b>Đáp án: A. 3</b></p>
+    <p>Nhận dạng: lấy trung điểm nhiều lần, các tam giác chung cạnh BC.<br>Ý tưởng: trung điểm chia một tam giác thành hai tam giác bằng diện tích (cùng chiều cao, đáy bằng nhau).<br>Bước 1: Tam giác BCE có đáy BC và chiều cao bằng chiều rộng AB, nên bằng nửa hình chữ nhật.<br>Bước 2: tam giác BCF = nửa tam giác BCE (vì F là trung điểm CE);<br>tam giác BCG = nửa tam giác BCF (vì G là trung điểm BF);<br>tam giác BCH = nửa tam giác BCG (vì H là trung điểm CG).<br>Bước 3: Tam giác BCE = 48 : 2 = 24 cm², rồi mỗi lần chia đôi: 24 → 12 → 6 → 3.<br>Vậy diện tích tam giác BCH là 3 cm².</p>
   </details>
 </li>
 <li class="q" id="cau-13">
   <div class="q-head"><span class="q-n">Câu 13</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">3 girls and 3 boys (all different) are arranged in a row so that the 3 boys are next to each other. How many ways are there?</p><p class="q-stem">Xếp 3 bạn nữ và 3 bạn nam (khác nhau) thành một hàng ngang sao cho 3 bạn nam đứng cạnh nhau. Có bao nhiêu cách xếp?</p><ol class="q-opts"><li><b>A.</b> 134</li><li><b>B.</b> 139</li><li><b>C.</b> 140</li><li><b>D.</b> 144</li><li><b>E.</b> 147</li></ol>
+  <p class="q-en" lang="en">Triangle ABC has area 80 cm². D is on AB and E on AC with DE parallel to BC and AD : DB = 3 : 1. Find the area of triangle ADE in cm².</p><p class="q-stem">Tam giác ABC có diện tích 80 cm². Điểm D nằm trên AB, E nằm trên AC sao cho DE song song với BC và AD : DB = 3 : 1. Tính diện tích tam giác ADE.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 13"><svg width="300" height="174" viewBox="0 0 300 174" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="117.5,16 83.4,113.5 200.4,113.5" stroke="#f97316" stroke-width="1" fill="#f97316" fill-opacity="0.3"/><polygon points="117.5,16 72,146 228,146" stroke="#2563eb" stroke-width="2.2" fill="none"/><line x1="83.4" y1="113.5" x2="200.4" y2="113.5" stroke="#f97316" stroke-width="2"/><text x="117.5" y="10" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="64" y="156" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="236" y="156" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="74.4" y="117.5" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="209.4" y="117.5" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">E</text><text x="92.4" y="68.8" font-size="10" text-anchor="end" stroke="none" fill="#2563eb" font-weight="bold">3 phần</text><text x="69.7" y="133.8" font-size="10" text-anchor="end" stroke="none" fill="#2563eb" font-weight="bold">1 phần</text><text x="150" y="166" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">diện tích ABC = 80 cm²</text></svg></div><ol class="q-opts"><li><b>A.</b> 35</li><li><b>B.</b> 41</li><li><b>C.</b> 45</li><li><b>D.</b> 60</li><li><b>E.</b> 720</li></ol>
   <details><summary>Đáp án và lời giải câu 13</summary>
-    <p><b>Đáp án: D. 144</b></p>
-    <p>Nhận dạng: xếp hàng có nhóm đứng cạnh nhau.<br>Ý tưởng: buộc nhóm thành một khối, xếp các khối, rồi đổi chỗ bên trong khối.<br>Bước 1 (buộc khối): coi 3 bạn nam là 1 khối: còn 3 + 1 = 4 khối.<br>Bước 2 (xếp các khối): 4 × 3 × 2 × 1 = 24 cách.<br>Bước 3 (trong khối): 3 bạn nam đổi chỗ cho nhau: 3 × 2 × 1 = 6 cách.<br>Bước 4 (nhân): 24 × 6 = 144.<br>Vậy có 144 cách.</p>
+    <p><b>Đáp án: C. 45</b></p>
+    <p>Nhận dạng: đường thẳng song song với một cạnh tạo tam giác nhỏ đồng dạng với tam giác lớn.<br>Ý tưởng: hai tam giác đồng dạng tỉ số k thì tỉ số diện tích là k × k.<br>Bước 1: AD : AB = 3 : (3 + 1) = 3 : 4, nên tam giác ADE đồng dạng ABC tỉ số k = 3/4.<br>Bước 2: Diện tích ADE = 80 × 3/4 × 3/4 = 80 × 9/16 = 45 cm².<br>Vậy diện tích tam giác ADE là 45 cm².</p>
   </details>
 </li>
 <li class="q" id="cau-14">
   <div class="q-head"><span class="q-n">Câu 14</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">The sum of 8 consecutive even numbers is 136. Find the smallest of these numbers.</p><p class="q-stem">Tổng của 8 số chẵn liên tiếp là 136. Tìm số nhỏ nhất trong 8 số đó.</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 6</li><li><b>C.</b> 8</li><li><b>D.</b> 9</li><li><b>E.</b> 10</li></ol>
+  <p class="q-en" lang="en">Find the maximum value of B = −a² − 4a − 2.</p><p class="q-stem">Tìm giá trị lớn nhất của B = −a² − 4a − 2.</p><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 2</li><li><b>C.</b> 3</li><li><b>D.</b> 6</li><li><b>E.</b> 7</li></ol>
   <details><summary>Đáp án và lời giải câu 14</summary>
-    <p><b>Đáp án: E. 10</b></p>
-    <p>Nhận dạng: dãy cách đều (hai số liền nhau hơn kém nhau một lượng không đổi).<br>Ý tưởng: 8 số cách đều 2, trung bình cộng nằm ở chính giữa dãy.<br>Bước 1: Trung bình cộng: 136 : 8 = 17 (nằm giữa hai số chính giữa).<br>Bước 2: Từ chính giữa tới số nhỏ nhất có (8 − 1) : 2 = 3,5 khoảng cách, mỗi khoảng 2: 3,5 × 2 = 7.<br>Bước 3: Số nhỏ nhất: 17 − 7 = 10.<br>Thử lại: 10 + 12 + … + 24 = 136.<br>Vậy số nhỏ nhất là 10.</p>
+    <p><b>Đáp án: B. 2</b></p>
+    <p>Nhận dạng: biểu thức bậc hai, hệ số của a² âm, hỏi giá trị lớn nhất.<br>Ý tưởng: viết thành số − (bình phương), bình phương ≥ 0 nên lớn nhất khi bình phương bằng 0.<br>Bước 1: Đặt −1 chung ở hai hạng tử đầu: B = −(a² + 4a) − 2.<br>Bước 2: a² + 4a = (a + 2)² − 4, nên B = −(a + 2)² + 4 − 2 = 2 − (a + 2)².<br>Bước 3: (a + 2)² ≥ 0 nên B ≤ 2, dấu bằng khi a = −2.<br>Vậy giá trị lớn nhất của B là 2.</p>
   </details>
 </li>
 <li class="q" id="cau-15">
   <div class="q-head"><span class="q-n">Câu 15</span><span class="q-pts">3 điểm</span></div>
-  <p class="q-en" lang="en">Triangle ABC has area 80 cm². D is on AB and E on AC with DE parallel to BC and AD : DB = 3 : 1. Find the area of triangle ADE in cm².</p><p class="q-stem">Tam giác ABC có diện tích 80 cm². Điểm D nằm trên AB, E nằm trên AC sao cho DE song song với BC và AD : DB = 3 : 1. Tính diện tích tam giác ADE.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 15"><svg width="300" height="174" viewBox="0 0 300 174" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="117.5,16 83.4,113.5 200.4,113.5" stroke="#f97316" stroke-width="1" fill="#f97316" fill-opacity="0.3"/><polygon points="117.5,16 72,146 228,146" stroke="#2563eb" stroke-width="2.2" fill="none"/><line x1="83.4" y1="113.5" x2="200.4" y2="113.5" stroke="#f97316" stroke-width="2"/><text x="117.5" y="10" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="64" y="156" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text><text x="236" y="156" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="74.4" y="117.5" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">D</text><text x="209.4" y="117.5" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">E</text><text x="92.4" y="68.8" font-size="10" text-anchor="end" stroke="none" fill="#2563eb" font-weight="bold">3 phần</text><text x="69.7" y="133.8" font-size="10" text-anchor="end" stroke="none" fill="#2563eb" font-weight="bold">1 phần</text><text x="150" y="166" font-size="11" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">diện tích ABC = 80 cm²</text></svg></div><ol class="q-opts"><li><b>A.</b> 35</li><li><b>B.</b> 44</li><li><b>C.</b> 45</li><li><b>D.</b> 60</li><li><b>E.</b> 720</li></ol>
+  <p class="q-en" lang="en">Three-digit numbers with all digits different are formed from the digits 0 to 9. How many of them are even and less than 405?</p><p class="q-stem">Lập các số có ba chữ số khác nhau từ các chữ số 0, 1, 2, …, 9. Có bao nhiêu số chẵn nhỏ hơn 405?</p><ol class="q-opts"><li><b>A.</b> 103</li><li><b>B.</b> 108</li><li><b>C.</b> 109</li><li><b>D.</b> 110</li><li><b>E.</b> 113</li></ol>
   <details><summary>Đáp án và lời giải câu 15</summary>
-    <p><b>Đáp án: C. 45</b></p>
-    <p>Nhận dạng: đường thẳng song song với một cạnh tạo tam giác nhỏ đồng dạng với tam giác lớn.<br>Ý tưởng: hai tam giác đồng dạng tỉ số k thì tỉ số diện tích là k × k.<br>Bước 1: AD : AB = 3 : (3 + 1) = 3 : 4, nên tam giác ADE đồng dạng ABC tỉ số k = 3/4.<br>Bước 2: Diện tích ADE = 80 × 3/4 × 3/4 = 80 × 9/16 = 45 cm².<br>Vậy diện tích tam giác ADE là 45 cm².</p>
+    <p><b>Đáp án: E. 113</b></p>
+    <p>Nhận dạng: đếm số có ba chữ số khác nhau theo điều kiện chẵn lẻ và nhỏ hơn một số.<br>Ý tưởng: xét chữ số trăm nhỏ hơn 4, rồi trăm bằng 4 thì xét tiếp chữ số chục.<br>Bước 1: Trăm từ 1 đến 3: chọn đơn vị chẵn khác chữ số trăm (trăm 2: 4 cách chọn đơn vị; trăm 1, 3: 5 cách chọn đơn vị), chục còn 8 cách: (5 + 4 + 5) × 8 = 112.<br>Bước 2: Trăm 4: chục 0 đã nhỏ nhất, không có chục nhỏ hơn.<br>Bước 3: Trăm 4, chục 0, đơn vị nhỏ hơn 5: 2, có 1 số.<br>Bước 4: Cộng: 112 + 0 + 1 = 113.<br>Vậy có 113 số.</p>
   </details>
 </li>
 </ol><h2>Phần 2: Phần B — điền đáp án <small>(5 câu × 5 điểm)</small></h2>
 <ol class="questions" start="16">
 <li class="q" id="cau-16">
   <div class="q-head"><span class="q-n">Câu 16</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-en" lang="en">A wire is bent exactly into a circle of radius 63 cm. It is cut and bent into 5 equal squares whose sides are whole numbers of cm (take π = 22/7). What is the largest possible side in cm?</p><p class="q-stem">Một sợi dây thép uốn vừa đủ thành đường tròn bán kính 63 cm. Cắt sợi dây đó ra để uốn thành 5 hình vuông bằng nhau có cạnh là số tự nhiên (cm) (lấy π = 22/7). Cạnh hình vuông lớn nhất là bao nhiêu xăng-ti-mét?</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">Find the smallest 4-digit number that leaves remainders 4, 5, 6 when divided by 5, 6, 7 respectively.</p><p class="q-stem">Tìm số nhỏ nhất có 4 chữ số mà chia 5 dư 4, chia 6 dư 5, chia 7 dư 6.</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 16</summary>
-    <p><b>Đáp án: 19</b></p>
-    <p>Nhận dạng: dây uốn hình tròn rồi uốn lại thành hình vuông.<br>Ý tưởng: độ dài dây không đổi, bằng chu vi hình tròn.<br>Bước 1: Gọi r là bán kính, C là chu vi: C = 2 × π × r = 2 × 22/7 × 63 = 396 cm (độ dài dây).<br>Bước 2: 5 hình vuông có tổng cộng 5 × 4 = 20 cạnh, mỗi cạnh nhiều nhất 396 : 20 = 19,8 cm.<br>Bước 3: Cạnh là số tự nhiên nên cạnh lớn nhất là 19 cm.<br>Vậy cạnh lớn nhất là 19 cm.<br>Mẹo: cạnh không làm tròn lên, vì dây không đủ dài.</p>
+    <p><b>Đáp án: 1049</b></p>
+    <p>Nhận dạng: chia cho nhiều số, số dư khác nhau nhưng đều kém số chia cùng một đơn vị.<br>Ý tưởng: gọi N là số cần tìm;<br>thêm 1 vào N thì chia hết cho mọi số chia.<br>Bước 1: Mỗi số dư kém số chia 1 đơn vị (5 − 4 = 1, 6 − 5 = 1, 7 − 6 = 1), nên N + 1 chia hết cho 5, 6, 7.<br>Bước 2: BCNN(5, 6, 7) = 5 × 6 × 7 = 210 (các số đôi một không có ước chung lớn hơn 1).<br>Vậy N + 1 là bội của 210.<br>Bước 3: N nhỏ nhất có 4 chữ số nên N + 1 ≥ 1000 + 1 = 1001;<br>1001 : 210 = 4 (dư 161), lấy bội tiếp theo: 210 × 5 = 1050.<br>Bước 4: N = 1050 − 1 = 1049.<br>Vậy số cần tìm là 1049.<br>Mẹo: số dư bằng số chia trừ 1 (hay trừ 2) thì cộng thêm 1 (hay 2) vào số cần tìm.</p>
   </details>
 </li>
 <li class="q" id="cau-17">
   <div class="q-head"><span class="q-n">Câu 17</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-en" lang="en">For all numbers a, b: a ⊕ b = −2 × a − 3 × b − 8. Find m if 3 ⊕ m = −38.</p><p class="q-stem">Với mọi số a, b: a ⊕ b = −2 × a − 3 × b − 8. Tìm số m biết 3 ⊕ m = −38.</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">The sum of 8 consecutive even numbers is 136. Find the smallest of these numbers.</p><p class="q-stem">Tổng của 8 số chẵn liên tiếp là 136. Tìm số nhỏ nhất trong 8 số đó.</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 17</summary>
-    <p><b>Đáp án: 8</b></p>
-    <p>Nhận dạng: phép toán mới, biết kết quả, tìm số chưa biết.<br>Ý tưởng: thay vào định nghĩa để được phương trình bậc nhất ẩn m, rồi giải.<br>Bước 1: Thay a, b đúng vị trí: −2 × 3 − 3 × m − 8 = −38.<br>Bước 2: Phần đã biết: −2 × 3 − 8 = −14, nên −3m − 14 = −38.<br>Bước 3: Chuyển vế: −3m = −38 + 14 = −24;<br>m = −24 : (−3) = 8.<br>Vậy m = 8.</p>
+    <p><b>Đáp án: 10</b></p>
+    <p>Nhận dạng: dãy cách đều (hai số liền nhau hơn kém nhau một lượng không đổi).<br>Ý tưởng: 8 số cách đều 2, trung bình cộng nằm ở chính giữa dãy.<br>Bước 1: Trung bình cộng: 136 : 8 = 17 (nằm giữa hai số chính giữa).<br>Bước 2: Từ chính giữa tới số nhỏ nhất có (8 − 1) : 2 = 3,5 khoảng cách, mỗi khoảng 2: 3,5 × 2 = 7.<br>Bước 3: Số nhỏ nhất: 17 − 7 = 10.<br>Thử lại: 10 + 12 + … + 24 = 136.<br>Vậy số nhỏ nhất là 10.</p>
   </details>
 </li>
 <li class="q" id="cau-18">
   <div class="q-head"><span class="q-n">Câu 18</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-en" lang="en">Three-digit numbers with all digits different are formed from the digits 0 to 9. How many of them are even and less than 405?</p><p class="q-stem">Lập các số có ba chữ số khác nhau từ các chữ số 0, 1, 2, …, 9. Có bao nhiêu số chẵn nhỏ hơn 405?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 18</summary>
-    <p><b>Đáp án: 113</b></p>
-    <p>Nhận dạng: đếm số có ba chữ số khác nhau theo điều kiện chẵn lẻ và nhỏ hơn một số.<br>Ý tưởng: xét chữ số trăm nhỏ hơn 4, rồi trăm bằng 4 thì xét tiếp chữ số chục.<br>Bước 1: Trăm từ 1 đến 3: chọn đơn vị chẵn khác chữ số trăm (trăm 2: 4 cách chọn đơn vị; trăm 1, 3: 5 cách chọn đơn vị), chục còn 8 cách: (5 + 4 + 5) × 8 = 112.<br>Bước 2: Trăm 4: chục 0 đã nhỏ nhất, không có chục nhỏ hơn.<br>Bước 3: Trăm 4, chục 0, đơn vị nhỏ hơn 5: 2, có 1 số.<br>Bước 4: Cộng: 112 + 0 + 1 = 113.<br>Vậy có 113 số.</p>
-  </details>
-</li>
-<li class="q" id="cau-19">
-  <div class="q-head"><span class="q-n">Câu 19</span><span class="q-pts">5 điểm</span></div>
   <p class="q-en" lang="en">A box has 36 lemon, 19 grape, 41 strawberry sweets. At least how many must be taken to be sure of 3 different flavours?</p><p class="q-stem">Trong hộp có 36 viên kẹo vị chanh, 19 viên kẹo vị nho, 41 viên kẹo vị dâu. Phải lấy ra ít nhất bao nhiêu viên kẹo để chắc chắn có đủ cả các vị?</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 19</summary>
+  <details><summary>Đáp án và lời giải câu 18</summary>
     <p><b>Đáp án: 78</b></p>
     <p>Nhận dạng: trường hợp xấu nhất, cần đủ k vị khác nhau.<br>Ý tưởng: xấu nhất là lấy hết 3 − 1 = 2 vị nhiều nhất mà vẫn chưa đủ 3 vị.<br>Bước 1 (2 vị nhiều nhất: vị dâu, vị chanh): 41 + 36 = 77.<br>Bước 2 (thêm 1): 77 + 1 = 78.<br>Vậy phải lấy ít nhất 78 viên kẹo.</p>
   </details>
 </li>
+<li class="q" id="cau-19">
+  <div class="q-head"><span class="q-n">Câu 19</span><span class="q-pts">5 điểm</span></div>
+  <p class="q-en" lang="en">Each shape ☆, □, ◇ stands for a positive integer. 3☆ + □ = 47, ☆ + □ = 17 and ☆ + 2□ + ◇ = 27. Find 2☆ + ◇ − □.</p><p class="q-stem">Mỗi hình ☆, □, ◇ là một số nguyên dương. Biết 3☆ + □ = 47, ☆ + □ = 17 và ☆ + 2□ + ◇ = 27. Tính 2☆ + ◇ − □.</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 19</summary>
+    <p><b>Đáp án: 36</b></p>
+    <p>Nhận dạng: ba hình;<br>hai dòng chỉ có hai hình, dòng thứ ba có thêm hình còn lại.<br>Ý tưởng: giải hai hình trước từ hai dòng đầu, rồi thế vào dòng ba tìm hình cuối.<br>Bước 1 (chuẩn bị): hai dòng đã gọn, giữ nguyên.<br>Bước 2 (khử một hình): lấy dòng 1 trừ dòng 2 (□ mất đi): 3☆ − ☆ = 47 − 17, tức 2☆ = 30, nên ☆ = 15.<br>Bước 3 (hình □): thay ☆ = 15 vào dòng 1 ban đầu: □ = 47 − 3 × 15 = 2.<br>Bước 4 (hình ◇): từ dòng ba, ◇ = 27 − 1 × 15 − 2 × 2 = 8.<br>Bước 5 (kết quả): 2☆ + ◇ − □ = 2 × 15 + 8 − 2 = 36.<br>Vậy 2☆ + ◇ − □ = 36.</p>
+  </details>
+</li>
 <li class="q" id="cau-20">
   <div class="q-head"><span class="q-n">Câu 20</span><span class="q-pts">5 điểm</span></div>
-  <p class="q-en" lang="en">A basket holds 41 items in all: stamps, cards and stickers. Grandma swaps 6 stamps for 2 cards, then swaps 1 card for 3 stickers. After the two swaps the numbers of stamps, cards and stickers are equal. How many stickers were there at the start?</p><p class="q-stem">Một giỏ có tất cả 41 cái gồm tem, thẻ và nhãn dán. Bà đổi 6 tem lấy 2 thẻ, rồi đổi 1 thẻ lấy 3 nhãn dán. Sau hai lần đổi, số tem, số thẻ và số nhãn dán bằng nhau. Lúc đầu có bao nhiêu nhãn dán?</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">The net of a cuboid (see figure) has a horizontal strip 32 cm long; from the top edge of the lid to the bottom of the strip is 20 cm and the whole net is 29 cm tall. Find the volume in cm³.</p><p class="q-stem">Hình khai triển của một hình hộp chữ nhật (như hình) có hàng ngang dài 32 cm, đoạn đứng từ mép trên mặt nắp tới mép dưới hàng ngang dài 20 cm và cả hình cao 29 cm. Tính thể tích hình hộp.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 20"><svg width="300" height="184" viewBox="0 0 300 184" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="74.3,110.6 116.9,110.6 116.9,58.6 74.3,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="116.9,110.6 150,110.6 150,58.6 116.9,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="150,110.6 192.6,110.6 192.6,58.6 150,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="192.6,110.6 225.7,110.6 225.7,58.6 192.6,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="116.9,58.6 150,58.6 150,16 116.9,16" stroke="#2563eb" stroke-width="1.6" fill="#93c5fd" fill-opacity="1"/><polygon points="192.6,110.6 225.7,110.6 225.7,153.2 192.6,153.2" stroke="#2563eb" stroke-width="1.6" fill="#93c5fd" fill-opacity="1"/><line x1="74.3" y1="156" x2="225.7" y2="156" stroke="#f97316" stroke-width="1.4"/><text x="150" y="174" font-size="11" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">32 cm (cả hàng)</text><line x1="71.5" y1="110.6" x2="71.5" y2="16" stroke="#16a34a" stroke-width="1.4"/><line x1="71.5" y1="16" x2="116.9" y2="16" stroke="#16a34a" stroke-width="1" stroke-dasharray="3 3"/><text x="65.5" y="67.3" font-size="11" text-anchor="end" stroke="none" fill="#16a34a" font-weight="bold">20 cm</text><line x1="228.5" y1="153.2" x2="228.5" y2="16" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="4 3"/><text x="234.5" y="88.6" font-size="11" text-anchor="start" stroke="none" fill="#dc2626" font-weight="bold">29 cm</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 20</summary>
-    <p><b>Đáp án: 10</b></p>
-    <p>Nhận dạng: đổi vật qua nhiều lần rồi ba loại bằng nhau, hỏi số ban đầu.<br>Ý tưởng: tính tổng sau các lần đổi, chia ba để biết số mỗi loại lúc cuối, rồi lùi ngược từng lần đổi.<br>Bước 1 (tổng sau đổi): lần 1 đổi 6 lấy 2 nên tổng thay đổi 2 − 6;<br>lần 2 đổi 1 lấy 3 nên thay đổi 3 − 1;<br>tổng mới = 41 + (2 − 6) + (3 − 1) = 39.<br>Bước 2 (mỗi loại lúc cuối): 39 : 3 = 13.<br>Bước 3 (tem): lúc đầu nhiều hơn lúc cuối 6: 13 + 6 = 19.<br>Bước 4 (thẻ): lúc cuối = lúc đầu + 2 − 1, nên lúc đầu = 13 − 2 + 1 = 12.<br>Bước 5 (nhãn dán): lúc cuối = lúc đầu + 3, nên lúc đầu = 13 − 3 = 10.<br>Vậy lúc đầu có 10 nhãn dán.</p>
+    <p><b>Đáp án: 693</b></p>
+    <p>Nhận dạng: từ hình khai triển tìm ba kích thước.<br>Ý tưởng: gọi a, b, c là chiều dài, chiều rộng, chiều cao;<br>mỗi đoạn trên hình là tổng vài kích thước.<br>Bước 1: Hàng ngang gồm 4 mặt bên: 2 × (a + b) = 32, nên a + b = 16.<br>Bước 2: Đoạn đứng gồm nắp và một mặt bên: b + c = 20;<br>cả hình gồm nắp, mặt bên, đáy: b + c + b = 29.<br>Bước 3: b = 29 − 20 = 9;<br>c = 20 − 9 = 11;<br>a = 16 − 9 = 7.<br>Bước 4: Thể tích = 7 × 9 × 11 = 693 cm³.<br>Vậy thể tích là 693 cm³.</p>
   </details>
 </li>
 </ol><h2>Phần 3: Phần C — điền đáp án <small>(5 câu × 6 điểm)</small></h2>
 <ol class="questions" start="21">
 <li class="q" id="cau-21">
   <div class="q-head"><span class="q-n">Câu 21</span><span class="q-pts">6 điểm</span></div>
-  <p class="q-en" lang="en">Nam, Minh and Long run a relay race, each running one leg of the same length. Their speeds in the order Nam, Minh, Long are in the ratio 2 : 3 : 4. If Long ran the whole distance alone, it would take 4 minutes less than the relay. How many minutes does the relay take?</p><p class="q-stem">Nam, Minh và Long chạy tiếp sức, mỗi bạn chạy một chặng dài bằng nhau. Tốc độ của 3 bạn theo thứ tự Nam, Minh, Long tỉ lệ với 2 : 3 : 4. Nếu Long chạy một mình cả quãng đường thì thời gian ít hơn thời gian tiếp sức 4 phút. Thời gian chạy tiếp sức là bao nhiêu phút?</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">The equation a² − 20a + 99 = 0 has two solutions. Find the larger solution.</p><p class="q-stem">Phương trình a² − 20a + 99 = 0 có hai nghiệm. Tìm nghiệm lớn hơn.</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 21</summary>
-    <p><b>Đáp án: 13</b></p>
-    <p>Nhận dạng: chạy tiếp sức, các chặng bằng nhau, biết tỉ lệ tốc độ và chênh lệch với một mình người nhanh nhất.<br>Ý tưởng: cùng quãng đường thì thời gian tỉ lệ nghịch với tốc độ;<br>đặt thời gian theo một đơn vị chung rồi dùng chênh lệch để tìm đơn vị.<br>Bước 1 (thời gian mỗi chặng): tốc độ tỉ lệ 2 : 3 : 4 nên thời gian mỗi chặng tỉ lệ nghịch;<br>lấy 12 (bội chung nhỏ nhất của 2, 3, 4) làm đơn vị, mỗi chặng mất 12 : 2 = 6, 12 : 3 = 4, 12 : 4 = 3 phần.<br>Bước 2 (hai thời gian): tiếp sức mất 6 + 4 + 3 = 13 phần;<br>Long chạy một mình cả 3 chặng mất 3 × 3 = 9 phần.<br>Bước 3 (chênh lệch): 13 − 9 = 4 phần ứng với 4 phút, nên 1 phần là 4 : 4 = 1 phút.<br>Bước 4 (kết quả): tiếp sức mất 13 × 1 = 13 phút.<br>Vậy thời gian chạy tiếp sức là 13 phút.</p>
+    <p><b>Đáp án: 11</b></p>
+    <p>Nhận dạng: phương trình a² + pa + q = 0.<br>Ý tưởng: phân tích vế trái thành tích (a + m)(a + n), tích bằng 0 thì một thừa số bằng 0.<br>Bước 1: Hai số có tích 99, tổng −20: −1 và −99 (tổng −100), −3 và −33 (tổng −36), −9 và −11 (tổng −20).<br>Bước 2: a² − 20a + 99 = (a − 9)(a − 11) = 0.<br>Bước 3: a − 9 = 0 hoặc a − 11 = 0, nên a = 9 hoặc a = 11.<br>Bước 4: Nghiệm lớn hơn là 11.<br>Vậy kết quả là 11.</p>
   </details>
 </li>
 <li class="q" id="cau-22">
   <div class="q-head"><span class="q-n">Câu 22</span><span class="q-pts">6 điểm</span></div>
-  <p class="q-en" lang="en">12 identical cubes form a solid cuboid. The smallest possible total surface area is 1152 cm². What is the largest possible?</p><p class="q-stem">Ghép 12 khối lập phương giống nhau thành một hình hộp chữ nhật đặc. Diện tích toàn phần nhỏ nhất có thể là 1152 cm². Diện tích toàn phần lớn nhất có thể là bao nhiêu?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 22"><svg width="300" height="130" viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="97.1,83.3 118.2,95.6 118.2,71.1 97.1,58.9" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="139.4,10 160.6,22.2 139.4,34.4 118.2,22.2" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="118.2,95.6 139.4,107.8 139.4,83.3 118.2,71.1" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="202.9,95.6 181.8,107.8 181.8,83.3 202.9,71.1" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="118.2,22.2 139.4,34.4 118.2,46.7 97.1,34.4" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="97.1,58.9 118.2,71.1 118.2,46.7 97.1,34.4" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="160.6,22.2 181.8,34.4 160.6,46.7 139.4,34.4" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="181.8,107.8 160.6,120 160.6,95.6 181.8,83.3" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="139.4,107.8 160.6,120 160.6,95.6 139.4,83.3" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="139.4,34.4 160.6,46.7 139.4,58.9 118.2,46.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="118.2,71.1 139.4,83.3 139.4,58.9 118.2,46.7" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="181.8,34.4 202.9,46.7 181.8,58.9 160.6,46.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="202.9,71.1 181.8,83.3 181.8,58.9 202.9,46.7" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="160.6,46.7 181.8,58.9 160.6,71.1 139.4,58.9" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="181.8,83.3 160.6,95.6 160.6,71.1 181.8,58.9" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="139.4,83.3 160.6,95.6 160.6,71.1 139.4,58.9" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/></svg></div><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">Using the digits 1, 2, 4, 6, 8, 9, each at most once, 5-digit numbers are formed so that no two even digits are next to each other. How many such numbers are there?</p><p class="q-stem">Dùng các chữ số 1, 2, 4, 6, 8, 9, mỗi chữ số dùng nhiều nhất một lần, lập số có 5 chữ số sao cho không có hai chữ số chẵn nào đứng cạnh nhau. Có bao nhiêu số như vậy?</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 22</summary>
-    <p><b>Đáp án: 1800</b></p>
-    <p>Nhận dạng: hộp ghép từ N khối giống nhau, cạnh khối chưa biết.<br>Ý tưởng: đếm diện tích theo số mặt vuông nhỏ (mỗi mặt có diện tích S), rồi tìm S từ dữ kiện.<br>Bước 1: Nhỏ nhất: hộp 2 × 2 × 3 có 32 mặt nhỏ;<br>lớn nhất: 1 × 1 × 12 có 4 × 12 + 2 = 50 mặt nhỏ.<br>Bước 2: Gọi S là diện tích một mặt nhỏ: 32 × S = 1152, nên S = 36 cm².<br>Bước 3: Lớn nhất: 50 × 36 = 1800 cm².<br>Vậy diện tích lớn nhất là 1800 cm².</p>
+    <p><b>Đáp án: 48</b></p>
+    <p>Nhận dạng: lập số có các chữ số chẵn không đứng cạnh nhau.<br>Ý tưởng: chia theo số chữ số chẵn được dùng;<br>mỗi trường hợp chọn chỗ cho chữ số chẵn trước, rồi xếp chữ số chẵn và chữ số lẻ.<br>Bước 1 (số chữ số chẵn): có 4 chữ số chẵn (2, 4, 6, 8), 2 chữ số lẻ;<br>5 chỗ và chẵn không cạnh nhau nên nhiều nhất 3 chữ số chẵn;<br>chữ số lẻ chỉ có 2 nên ít nhất 5 − 2 = 3 chữ số chẵn: dùng 3 chữ số chẵn.<br>Bước 2 (3 chẵn, 2 lẻ): chỗ của 3 chữ số chẵn: (1, 3, 5): 1 cách;<br>xếp chữ số chẵn: 4 × 3 × 2 = 24 cách;<br>xếp chữ số lẻ: 2 × 1 = 2 cách;<br>1 × 24 × 2 = 48 số.<br>Vậy có 48 số.</p>
   </details>
 </li>
 <li class="q" id="cau-23">
   <div class="q-head"><span class="q-n">Câu 23</span><span class="q-pts">6 điểm</span></div>
-  <p class="q-en" lang="en">A is written by repeating the block 8a3 exactly 15 times: A = 8a38a3…8a3 (a is a digit). Find a so that A is divisible by 11.</p><p class="q-stem">Số A được viết bằng cách lặp lại khối 8a3 đúng 15 lần: A = 8a38a3…8a3 (a là một chữ số). Tìm a để A chia hết cho 11.</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">12 identical cubes form a solid cuboid. The smallest possible total surface area is 1152 cm². What is the largest possible?</p><p class="q-stem">Ghép 12 khối lập phương giống nhau thành một hình hộp chữ nhật đặc. Diện tích toàn phần nhỏ nhất có thể là 1152 cm². Diện tích toàn phần lớn nhất có thể là bao nhiêu?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 23"><svg width="300" height="130" viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="97.1,83.3 118.2,95.6 118.2,71.1 97.1,58.9" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="139.4,10 160.6,22.2 139.4,34.4 118.2,22.2" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="118.2,95.6 139.4,107.8 139.4,83.3 118.2,71.1" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="202.9,95.6 181.8,107.8 181.8,83.3 202.9,71.1" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="118.2,22.2 139.4,34.4 118.2,46.7 97.1,34.4" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="97.1,58.9 118.2,71.1 118.2,46.7 97.1,34.4" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="160.6,22.2 181.8,34.4 160.6,46.7 139.4,34.4" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="181.8,107.8 160.6,120 160.6,95.6 181.8,83.3" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="139.4,107.8 160.6,120 160.6,95.6 139.4,83.3" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="139.4,34.4 160.6,46.7 139.4,58.9 118.2,46.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="118.2,71.1 139.4,83.3 139.4,58.9 118.2,46.7" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="181.8,34.4 202.9,46.7 181.8,58.9 160.6,46.7" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="202.9,71.1 181.8,83.3 181.8,58.9 202.9,46.7" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="160.6,46.7 181.8,58.9 160.6,71.1 139.4,58.9" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="181.8,83.3 160.6,95.6 160.6,71.1 181.8,58.9" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="139.4,83.3 160.6,95.6 160.6,71.1 139.4,58.9" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/></svg></div><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 23</summary>
-    <p><b>Đáp án: 0</b></p>
-    <p>Nhận dạng: số lặp lại một khối chữ số, chia hết cho 11.<br>Ý tưởng: dấu hiệu chia hết cho 11 là cộng, trừ xen kẽ các chữ số;<br>xem các khối bù trừ nhau thế nào.<br>Bước 1: Đặt dấu + và − xen kẽ từ phải sang (hàng đơn vị mang dấu +).<br>A chia hết cho 11 khi tổng có dấu đó chia hết cho 11.<br>Bước 2: Khối có 3 chữ số (số lẻ chữ số) nên hai khối liền nhau mang dấu ngược nhau: khối cuối + − +, khối kề trước − + −.<br>Mỗi cặp khối liền nhau bù trừ hết.<br>Bước 3: 15 khối = 7 cặp và 1 khối thừa (khối đầu, dấu + − +): còn 8 − a + 3 = 11 − a.<br>Bước 4: 11 − a chia hết cho 11 với a là chữ số: a = 0.<br>Vậy a = 0.</p>
+    <p><b>Đáp án: 1800</b></p>
+    <p>Nhận dạng: hộp ghép từ N khối giống nhau, cạnh khối chưa biết.<br>Ý tưởng: đếm diện tích theo số mặt vuông nhỏ (mỗi mặt có diện tích S), rồi tìm S từ dữ kiện.<br>Bước 1: Nhỏ nhất: hộp 2 × 2 × 3 có 32 mặt nhỏ;<br>lớn nhất: 1 × 1 × 12 có 4 × 12 + 2 = 50 mặt nhỏ.<br>Bước 2: Gọi S là diện tích một mặt nhỏ: 32 × S = 1152, nên S = 36 cm².<br>Bước 3: Lớn nhất: 50 × 36 = 1800 cm².<br>Vậy diện tích lớn nhất là 1800 cm².</p>
   </details>
 </li>
 <li class="q" id="cau-24">
   <div class="q-head"><span class="q-n">Câu 24</span><span class="q-pts">6 điểm</span></div>
-  <p class="q-en" lang="en">The net of a cuboid (see figure) has a horizontal strip 32 cm long; from the top edge of the lid to the bottom of the strip is 20 cm and the whole net is 29 cm tall. Find the volume in cm³.</p><p class="q-stem">Hình khai triển của một hình hộp chữ nhật (như hình) có hàng ngang dài 32 cm, đoạn đứng từ mép trên mặt nắp tới mép dưới hàng ngang dài 20 cm và cả hình cao 29 cm. Tính thể tích hình hộp.</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 24"><svg width="300" height="184" viewBox="0 0 300 184" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="74.3,110.6 116.9,110.6 116.9,58.6 74.3,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="116.9,110.6 150,110.6 150,58.6 116.9,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="150,110.6 192.6,110.6 192.6,58.6 150,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="192.6,110.6 225.7,110.6 225.7,58.6 192.6,58.6" stroke="#2563eb" stroke-width="1.6" fill="#bfdbfe" fill-opacity="1"/><polygon points="116.9,58.6 150,58.6 150,16 116.9,16" stroke="#2563eb" stroke-width="1.6" fill="#93c5fd" fill-opacity="1"/><polygon points="192.6,110.6 225.7,110.6 225.7,153.2 192.6,153.2" stroke="#2563eb" stroke-width="1.6" fill="#93c5fd" fill-opacity="1"/><line x1="74.3" y1="156" x2="225.7" y2="156" stroke="#f97316" stroke-width="1.4"/><text x="150" y="174" font-size="11" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">32 cm (cả hàng)</text><line x1="71.5" y1="110.6" x2="71.5" y2="16" stroke="#16a34a" stroke-width="1.4"/><line x1="71.5" y1="16" x2="116.9" y2="16" stroke="#16a34a" stroke-width="1" stroke-dasharray="3 3"/><text x="65.5" y="67.3" font-size="11" text-anchor="end" stroke="none" fill="#16a34a" font-weight="bold">20 cm</text><line x1="228.5" y1="153.2" x2="228.5" y2="16" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="4 3"/><text x="234.5" y="88.6" font-size="11" text-anchor="start" stroke="none" fill="#dc2626" font-weight="bold">29 cm</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">Nam, Minh and Long run a relay race, each running one leg of the same length. Their speeds in the order Nam, Minh, Long are in the ratio 2 : 3 : 4. If Long ran the whole distance alone, it would take 4 minutes less than the relay. How many minutes does the relay take?</p><p class="q-stem">Nam, Minh và Long chạy tiếp sức, mỗi bạn chạy một chặng dài bằng nhau. Tốc độ của 3 bạn theo thứ tự Nam, Minh, Long tỉ lệ với 2 : 3 : 4. Nếu Long chạy một mình cả quãng đường thì thời gian ít hơn thời gian tiếp sức 4 phút. Thời gian chạy tiếp sức là bao nhiêu phút?</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 24</summary>
-    <p><b>Đáp án: 693</b></p>
-    <p>Nhận dạng: từ hình khai triển tìm ba kích thước.<br>Ý tưởng: gọi a, b, c là chiều dài, chiều rộng, chiều cao;<br>mỗi đoạn trên hình là tổng vài kích thước.<br>Bước 1: Hàng ngang gồm 4 mặt bên: 2 × (a + b) = 32, nên a + b = 16.<br>Bước 2: Đoạn đứng gồm nắp và một mặt bên: b + c = 20;<br>cả hình gồm nắp, mặt bên, đáy: b + c + b = 29.<br>Bước 3: b = 29 − 20 = 9;<br>c = 20 − 9 = 11;<br>a = 16 − 9 = 7.<br>Bước 4: Thể tích = 7 × 9 × 11 = 693 cm³.<br>Vậy thể tích là 693 cm³.</p>
+    <p><b>Đáp án: 13</b></p>
+    <p>Nhận dạng: chạy tiếp sức, các chặng bằng nhau, biết tỉ lệ tốc độ và chênh lệch với một mình người nhanh nhất.<br>Ý tưởng: cùng quãng đường thì thời gian tỉ lệ nghịch với tốc độ;<br>đặt thời gian theo một đơn vị chung rồi dùng chênh lệch để tìm đơn vị.<br>Bước 1 (thời gian mỗi chặng): tốc độ tỉ lệ 2 : 3 : 4 nên thời gian mỗi chặng tỉ lệ nghịch;<br>lấy 12 (bội chung nhỏ nhất của 2, 3, 4) làm đơn vị, mỗi chặng mất 12 : 2 = 6, 12 : 3 = 4, 12 : 4 = 3 phần.<br>Bước 2 (hai thời gian): tiếp sức mất 6 + 4 + 3 = 13 phần;<br>Long chạy một mình cả 3 chặng mất 3 × 3 = 9 phần.<br>Bước 3 (chênh lệch): 13 − 9 = 4 phần ứng với 4 phút, nên 1 phần là 4 : 4 = 1 phút.<br>Bước 4 (kết quả): tiếp sức mất 13 × 1 = 13 phút.<br>Vậy thời gian chạy tiếp sức là 13 phút.</p>
   </details>
 </li>
 <li class="q" id="cau-25">
   <div class="q-head"><span class="q-n">Câu 25</span><span class="q-pts">6 điểm</span></div>
-  <p class="q-en" lang="en">Each shape ☆, □, ◇ stands for a positive integer. 3☆ + □ = 47, ☆ + □ = 17 and ☆ + 2□ + ◇ = 27. Find 2☆ + ◇ − □.</p><p class="q-stem">Mỗi hình ☆, □, ◇ là một số nguyên dương. Biết 3☆ + □ = 47, ☆ + □ = 17 và ☆ + 2□ + ◇ = 27. Tính 2☆ + ◇ − □.</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-en" lang="en">A is written by repeating the block 8a3 exactly 15 times: A = 8a38a3…8a3 (a is a digit). Find a so that A is divisible by 11.</p><p class="q-stem">Số A được viết bằng cách lặp lại khối 8a3 đúng 15 lần: A = 8a38a3…8a3 (a là một chữ số). Tìm a để A chia hết cho 11.</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 25</summary>
-    <p><b>Đáp án: 36</b></p>
-    <p>Nhận dạng: ba hình;<br>hai dòng chỉ có hai hình, dòng thứ ba có thêm hình còn lại.<br>Ý tưởng: giải hai hình trước từ hai dòng đầu, rồi thế vào dòng ba tìm hình cuối.<br>Bước 1 (chuẩn bị): hai dòng đã gọn, giữ nguyên.<br>Bước 2 (khử một hình): lấy dòng 1 trừ dòng 2 (□ mất đi): 3☆ − ☆ = 47 − 17, tức 2☆ = 30, nên ☆ = 15.<br>Bước 3 (hình □): thay ☆ = 15 vào dòng 1 ban đầu: □ = 47 − 3 × 15 = 2.<br>Bước 4 (hình ◇): từ dòng ba, ◇ = 27 − 1 × 15 − 2 × 2 = 8.<br>Bước 5 (kết quả): 2☆ + ◇ − □ = 2 × 15 + 8 − 2 = 36.<br>Vậy 2☆ + ◇ − □ = 36.</p>
+    <p><b>Đáp án: 0</b></p>
+    <p>Nhận dạng: số lặp lại một khối chữ số, chia hết cho 11.<br>Ý tưởng: dấu hiệu chia hết cho 11 là cộng, trừ xen kẽ các chữ số;<br>xem các khối bù trừ nhau thế nào.<br>Bước 1: Đặt dấu + và − xen kẽ từ phải sang (hàng đơn vị mang dấu +).<br>A chia hết cho 11 khi tổng có dấu đó chia hết cho 11.<br>Bước 2: Khối có 3 chữ số (số lẻ chữ số) nên hai khối liền nhau mang dấu ngược nhau: khối cuối + − +, khối kề trước − + −.<br>Mỗi cặp khối liền nhau bù trừ hết.<br>Bước 3: 15 khối = 7 cặp và 1 khối thừa (khối đầu, dấu + − +): còn 8 − a + 3 = 11 − a.<br>Bước 4: 11 − a chia hết cho 11 với a là chữ số: a = 0.<br>Vậy a = 0.</p>
   </details>
 </li>
 </ol>
 <h2 id="dap-an">Đáp án đề thi AMO lớp 7</h2>
-<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>C. 1275</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>B. 1049</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>C. 15</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>B. 48</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>B. 14</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>D. 11</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>B. 62</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>E. 66</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>B. 3</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>C. 72</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>B. 104</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>B. 2</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>D. 144</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>E. 10</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>C. 45</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>19</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>8</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>113</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>78</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>10</td></tr><tr><td><a href="#cau-21">Câu 21</a></td><td>13</td></tr><tr><td><a href="#cau-22">Câu 22</a></td><td>1800</td></tr><tr><td><a href="#cau-23">Câu 23</a></td><td>0</td></tr><tr><td><a href="#cau-24">Câu 24</a></td><td>693</td></tr><tr><td><a href="#cau-25">Câu 25</a></td><td>36</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>C. 14</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>E. 66</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>C. 62</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>C. 1275</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>C. 15</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>C. 8</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>C. 19</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>A. 104</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>E. 144</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>B. 72</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>A. 10</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>A. 3</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>C. 45</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>B. 2</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>E. 113</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>1049</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>10</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>78</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>36</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>693</td></tr><tr><td><a href="#cau-21">Câu 21</a></td><td>11</td></tr><tr><td><a href="#cau-22">Câu 22</a></td><td>48</td></tr><tr><td><a href="#cau-23">Câu 23</a></td><td>1800</td></tr><tr><td><a href="#cau-24">Câu 24</a></td><td>13</td></tr><tr><td><a href="#cau-25">Câu 25</a></td><td>0</td></tr></tbody></table></div>
 <h2>Đề thi khác</h2>
 <p><b>Cùng cuộc thi AMO, lớp khác:</b> <a href="/de-thi-amo/lop-2/">Lớp 2</a> · <a href="/de-thi-amo/lop-3/">Lớp 3</a> · <a href="/de-thi-amo/lop-4/">Lớp 4</a> · <a href="/de-thi-amo/lop-5/">Lớp 5</a> · <a href="/de-thi-amo/lop-6/">Lớp 6</a> · <a href="/de-thi-amo/lop-8/">Lớp 8</a> · <a href="/de-thi-amo/lop-9/">Lớp 9</a></p>
 <p><b>Đề cùng lớp 7 của cuộc thi khác:</b> <a href="/de-thi-timo/lop-7/">TIMO</a> · <a href="/de-thi-hkimo/lop-7/">HKIMO</a> · <a href="/de-thi-fmo/lop-7/">FMO</a> · <a href="/de-thi-big-bay-bei/lop-7/">Big Bay Bei (BBB)</a> · <a href="/de-thi-asmo/lop-7/">ASMO</a> · <a href="/de-thi-aimo/lop-7/">AIMO</a> · <a href="/de-thi-imas/lop-7/">IMAS</a> · <a href="/de-thi-kangaroo/lop-7/">Kangaroo (IKMC)</a> · <a href="/de-thi-seamo/lop-7/">SEAMO</a> · <a href="/de-thi-viamc/lop-7/">VIAMC</a> · <a href="/de-thi-imec/lop-7/">IMEC</a> · <a href="/de-thi-pimso/lop-7/">PIMSO</a> · <a href="/de-thi-crest/lop-7/">CREST (CMO)</a> · <a href="/de-thi-sil/lop-7/">SiL MSC (Toán)</a> · <a href="/de-thi-sasmo/lop-7/">SASMO</a> · <a href="/de-thi-itmc/lop-7/">ITMC</a></p>

@@ -141,87 +141,57 @@
     {
      "@type": "Question",
      "name": "Câu 1",
-     "text": "Một cửa hàng mở bán sách: ngày đầu bán 1 quyển, mỗi ngày sau bán gấp 3 lần ngày trước. Sau 8 ngày, cửa hàng bán được tất cả bao nhiêu quyển? A. 2187  B. 3280  C. 3282  D. 5467  E. 6560",
+     "text": "Có bao nhiêu cách chia 7 quả bóng giống nhau cho 2 hộp (có hộp có thể không được quả nào)? A. 6  B. 8  C. 9  D. 10  E. 11",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 3280. Nhận dạng: tổng mà mỗi số gấp lên một số lần so với số trước. Gọi S là tổng cần tính. Ý tưởng: nhân S với số lần gấp, rồi trừ S để các số ở giữa mất hết. Lập dãy số sách bán mỗi ngày: 1, 3, 9, 27, 81, 243, 729, 2187 (mỗi số gấp 3 lần số trước). Gọi S là tổng cần tính: S = 1 + 3 + 9 + 27 + 81 + 243 + 729 + 2187. Bước 1: Nhân S với 3: S × 3 = 3 + … + 2187 + 6561 (vì 2187 × 3 = 6561). Bước 2: Hai tổng giống nhau từ 3 đến 2187. Trừ đi: S × 3 − S = 6561 − 1 = 6560. Bước 3: S × 3 − S = S × 2, nên S = 6560 : 2 = 3280. Vậy có tất cả 3280 quyển."
+      "text": "Đáp án: B. 8. Nhận dạng: chia vật giống nhau, mỗi phần ít nhất 0. Ý tưởng: đưa về dạng mỗi phần ít nhất 1, rồi dùng vách ngăn. Bước 1 (mượn thêm): mượn 2 quả, cho mỗi hộp thêm 1: 7 + 2 = 9 quả, bây giờ mỗi hộp có ít nhất 1 (chia xong thì trả lại mỗi hộp 1 quả). Bước 2 (vách ngăn): 9 quả có 9 − 1 = 8 khe; chọn 1 khe đặt vách ngăn: chọn 1 trong 8 khe: 8 cách. Vậy có 8 cách."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 2",
-     "text": "5 bạn vào chung kết cuộc thi. Có bao nhiêu cách trao giải nhất, giải nhì và giải ba (mỗi bạn nhận nhiều nhất một giải)? A. 10  B. 15  C. 59  D. 60  E. 125",
+     "text": "Các nhóm ô tô xếp thành hình chữ nhật: nhóm 1, 2, 3, 4 lần lượt có 2, 6, 12, 20 ô tô (xem hình). Hỏi nhóm thứ 9 có bao nhiêu ô tô? A. 81  B. 86  C. 90  D. 99  E. 100",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: D. 60. Nhận dạng: chọn 3 trong 5 bạn rồi xếp vào 3 vị trí khác nhau. Ý tưởng: điền lần lượt từng vị trí, bạn đã chọn không chọn lại. Bước 1 (từng vị trí): giải nhất: 5 cách; giải nhì: 5 − 1 = 4 cách; giải ba: 5 − 2 = 3 cách. Bước 2: nhân: 5 × 4 × 3 = 60. Vậy có 60 cách."
+      "text": "Đáp án: C. 90. Nhận dạng: nhóm hình xếp thành hình chữ nhật. Ý tưởng: nhìn số hàng và số cột của mỗi nhóm. Bước 1: Nhóm 1 xếp 1 hàng 2 cột, nhóm 2 xếp 2 hàng 3 cột, nhóm 3 xếp 3 hàng 4 cột. Bước 2: Số ô tô = số hàng × số cột: 1 × 2 = 2, 2 × 3 = 6, 3 × 4 = 12, 4 × 5 = 20. Gọi n là số thứ tự của nhóm: nhóm thứ n có n hàng và n + 1 cột. Bước 3: Nhóm thứ 9 có 9 hàng và 9 + 1 = 10 cột: 9 × 10 = 90. Vậy nhóm thứ 9 có 90 ô tô."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 3",
-     "text": "Các nhóm ô tô xếp thành hình chữ nhật: nhóm 1, 2, 3, 4 lần lượt có 2, 6, 12, 20 ô tô (xem hình). Hỏi nhóm thứ 9 có bao nhiêu ô tô? A. 81  B. 90  C. 91  D. 99  E. 100",
+     "text": "5 bạn vào chung kết cuộc thi. Có bao nhiêu cách trao giải nhất, giải nhì và giải ba (mỗi bạn nhận nhiều nhất một giải)? A. 10  B. 15  C. 60  D. 65  E. 125",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 90. Nhận dạng: nhóm hình xếp thành hình chữ nhật. Ý tưởng: nhìn số hàng và số cột của mỗi nhóm. Bước 1: Nhóm 1 xếp 1 hàng 2 cột, nhóm 2 xếp 2 hàng 3 cột, nhóm 3 xếp 3 hàng 4 cột. Bước 2: Số ô tô = số hàng × số cột: 1 × 2 = 2, 2 × 3 = 6, 3 × 4 = 12, 4 × 5 = 20. Gọi n là số thứ tự của nhóm: nhóm thứ n có n hàng và n + 1 cột. Bước 3: Nhóm thứ 9 có 9 hàng và 9 + 1 = 10 cột: 9 × 10 = 90. Vậy nhóm thứ 9 có 90 ô tô."
+      "text": "Đáp án: C. 60. Nhận dạng: chọn 3 trong 5 bạn rồi xếp vào 3 vị trí khác nhau. Ý tưởng: điền lần lượt từng vị trí, bạn đã chọn không chọn lại. Bước 1 (từng vị trí): giải nhất: 5 cách; giải nhì: 5 − 1 = 4 cách; giải ba: 5 − 2 = 3 cách. Bước 2: nhân: 5 × 4 × 3 = 60. Vậy có 60 cách."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 4",
-     "text": "Mai có 15 quyển truyện khác nhau và muốn mang 2 quyển đi cắm trại. Có bao nhiêu cách chọn? A. 30  B. 105  C. 108  D. 120  E. 210",
+     "text": "Một cửa hàng mở bán sách: ngày đầu bán 1 quyển, mỗi ngày sau bán gấp 3 lần ngày trước. Sau 8 ngày, cửa hàng bán được tất cả bao nhiêu quyển? A. 2187  B. 3279  C. 3280  D. 5467  E. 6560",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: B. 105. Nhận dạng: chọn 2 trong 15 (không xếp thứ tự). Ý tưởng: chọn có thứ tự rồi chia cho số cách đổi chỗ. Bước 1 (chọn có thứ tự): 15 × 14 = 210. Bước 2 (bỏ thứ tự): 2 quyển đổi chỗ cho nhau: 2 × 1 = 2 cách, đổi chỗ không tạo nhóm mới. Bước 3 (chia): 210 : 2 = 105. Vậy có 105 cách."
+      "text": "Đáp án: C. 3280. Nhận dạng: tổng mà mỗi số gấp lên một số lần so với số trước. Gọi S là tổng cần tính. Ý tưởng: nhân S với số lần gấp, rồi trừ S để các số ở giữa mất hết. Lập dãy số sách bán mỗi ngày: 1, 3, 9, 27, 81, 243, 729, 2187 (mỗi số gấp 3 lần số trước). Gọi S là tổng cần tính: S = 1 + 3 + 9 + 27 + 81 + 243 + 729 + 2187. Bước 1: Nhân S với 3: S × 3 = 3 + … + 2187 + 6561 (vì 2187 × 3 = 6561). Bước 2: Hai tổng giống nhau từ 3 đến 2187. Trừ đi: S × 3 − S = 6561 − 1 = 6560. Bước 3: S × 3 − S = S × 2, nên S = 6560 : 2 = 3280. Vậy có tất cả 3280 quyển."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 5",
-     "text": "Có bao nhiêu cách chia 7 quả bóng giống nhau cho 2 hộp (có hộp có thể không được quả nào)? A. 4  B. 6  C. 8  D. 9  E. 10",
+     "text": "Mai có 15 quyển truyện khác nhau và muốn mang 2 quyển đi cắm trại. Có bao nhiêu cách chọn? A. 30  B. 102  C. 105  D. 120  E. 210",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 8. Nhận dạng: chia vật giống nhau, mỗi phần ít nhất 0. Ý tưởng: đưa về dạng mỗi phần ít nhất 1, rồi dùng vách ngăn. Bước 1 (mượn thêm): mượn 2 quả, cho mỗi hộp thêm 1: 7 + 2 = 9 quả, bây giờ mỗi hộp có ít nhất 1 (chia xong thì trả lại mỗi hộp 1 quả). Bước 2 (vách ngăn): 9 quả có 9 − 1 = 8 khe; chọn 1 khe đặt vách ngăn: chọn 1 trong 8 khe: 8 cách. Vậy có 8 cách."
+      "text": "Đáp án: C. 105. Nhận dạng: chọn 2 trong 15 (không xếp thứ tự). Ý tưởng: chọn có thứ tự rồi chia cho số cách đổi chỗ. Bước 1 (chọn có thứ tự): 15 × 14 = 210. Bước 2 (bỏ thứ tự): 2 quyển đổi chỗ cho nhau: 2 × 1 = 2 cách, đổi chỗ không tạo nhóm mới. Bước 3 (chia): 210 : 2 = 105. Vậy có 105 cách."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 6",
-     "text": "Mã số của một chiếc tủ là một số có 4 chữ số khác nhau, lấy từ các chữ số 1, 2, 3, 4, 5, 8, 9, và là số chẵn. Có bao nhiêu mã số như vậy? A. 356  B. 360  C. 375  D. 720  E. 882",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 360. Nhận dạng: lập số có các chữ số khác nhau, điều kiện ở chữ số cuối. Ý tưởng: hàng có điều kiện chọn trước: hàng đơn vị, rồi hàng nghìn, rồi các hàng còn lại. Bước 1 (hàng đơn vị): đề cho 7 chữ số; số chẵn nên chữ số cuối là 2, 4 hoặc 8: 3 cách. Bước 2 (hàng nghìn): khác chữ số cuối: 7 − 1 = 6 cách. Bước 3 (hàng trăm): khác 2 chữ số đã chọn: 7 − 2 = 5 cách. Bước 4 (hàng chục): khác 3 chữ số đã chọn: 7 − 3 = 4 cách. Bước 5: nhân số cách các hàng: 3 × 6 × 5 × 4 = 360. Vậy có 360 số."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 7",
-     "text": "Giá chiếc áo lúc đầu là 600 nghìn đồng. Cửa hàng tăng giá 20% rồi sau đó giảm giá 25% (so với giá sau khi tăng). Hỏi giá cuối cùng là bao nhiêu nghìn đồng? A. 536  B. 540  C. 542  D. 543  E. 545",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 540. Nhận dạng: tăng rồi giảm phần trăm. Ý tưởng: mỗi lần tính phần trăm theo giá ngay trước đó, không cộng hay trừ thẳng hai phần trăm. Bước 1: Sau khi tăng 20%: 600 × 120 : 100 = 720 nghìn đồng. Bước 2: Giảm 25% so với 720: 720 × 75 : 100 = 540 nghìn đồng. Vậy giá cuối cùng là 540 nghìn đồng."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 8",
-     "text": "Có bao nhiêu số chẵn có ba chữ số khác nhau và lớn hơn 700? A. 96  B. 107  C. 112  D. 120  E. 150",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: C. 112. Nhận dạng: đếm số trong một khoảng. Ý tưởng: chia trường hợp theo chữ số hàng trăm. Bước 1 (hàng trăm): số lớn hơn 700 có hàng trăm là 7, 8, 9 (số 700 có hai chữ số 0 nên không tính). Bước 2 (hàng đơn vị): số chẵn có chữ số cuối là 0, 2, 4, 6, 8 (5 chữ số). Bước 3 (hàng chục): khác hai chữ số đã chọn: 10 − 2 = 8 cách. Bước 4 (từng trường hợp): hàng trăm chẵn (8): chữ số cuối chẵn khác hàng trăm: 5 − 1 = 4 cách, 1 × 4 × 8 = 32; hàng trăm lẻ (7, 9): chữ số cuối có đủ 5 cách, 2 × 5 × 8 = 80. Bước 5: cộng: 32 + 80 = 112. Vậy có 112 số."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 9",
-     "text": "Bể A hình hộp chữ nhật có đáy dài 38 cm, rộng 24 cm, chứa nước cao 2 cm. Đổ hết nước ở bể A sang bể B (rỗng) có đáy dài 32 cm, rộng 19 cm. Nước ở bể B cao bao nhiêu cm? A. 1  B. 2  C. 3  D. 4  E. 57",
+     "text": "Bể A hình hộp chữ nhật có đáy dài 38 cm, rộng 24 cm, chứa nước cao 2 cm. Đổ hết nước ở bể A sang bể B (rỗng) có đáy dài 32 cm, rộng 19 cm. Nước ở bể B cao bao nhiêu cm? A. 0  B. 2  C. 3  D. 4  E. 57",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -230,38 +200,18 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 10",
-     "text": "Ba bạn hơn kém nhau đều 4 tuổi. Tổng số tuổi của bạn nhỏ nhất và bạn lớn nhất là 18. Hỏi tuổi của bạn lớn nhất là bao nhiêu? A. 9  B. 11  C. 13  D. 27  E. 36",
+     "name": "Câu 7",
+     "text": "Tổng của 9 số chẵn liên tiếp là 810. Tìm số lớn nhất. A. 81  B. 90  C. 98  D. 99  E. 100",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 13. Nhận dạng: các tuổi cách đều, biết tổng hai đầu. Ý tưởng: tuổi người ở giữa bằng một nửa tổng hai đầu. Bước 1: Hai đầu cách đều người giữa: nhỏ nhất = giữa − 4, lớn nhất = giữa + 4, tổng hai đầu = 2 × giữa. Bước 2: Tuổi người giữa: 18 : 2 = 9. Bước 3: Tuổi lớn nhất: 9 + 4 = 13. Vậy bạn lớn nhất 13 tuổi."
+      "text": "Đáp án: C. 98. Nhận dạng: số liên tiếp biết tổng. Ý tưởng: số lẻ số hạng cách đều thì số ở giữa bằng tổng chia số số hạng. Bước 1: Có 9 số, số ở giữa là số thứ 5. Bước 2: Số giữa = 810 : 9 = 90. Bước 3: Số lớn nhất cách số giữa 4 bước, mỗi bước 2: 90 + 8 = 98. Vậy số lớn nhất là 98."
      }
     },
     {
      "@type": "Question",
-     "name": "Câu 11",
-     "text": "Tìm số nhỏ nhất có 3 chữ số mà chia cho 7, 8 hoặc 12 đều dư 4. A. 167  B. 168  C. 169  D. 171  E. 172",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: E. 172. Nhận dạng: chia cho nhiều số đều dư 4. Ý tưởng: bớt 4 thì chia hết cho tất cả, nên là bội của BCNN. Bước 1: Gọi số cần tìm là A. A − 4 chia hết cho 7, 8, 12. Bước 2: BCNN(7, 8, 12): 7 = 7, 8 = 2³, 12 = 2² × 3; lấy mỗi thừa số nguyên tố với số mũ lớn nhất: 2³ × 3 × 7 = 168. Vậy A − 4 là bội của 168. Bước 3: A ≥ 100, nên A − 4 ≥ 100 − 4 = 96. 96 : 168 = 0 (dư 96), bội nhỏ nhất là 168 × 1 = 168. Bước 4: A = 168 + 4 = 172. Vậy số cần tìm là 172."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 12",
-     "text": "Số sách của lớp 6A hơn số sách của lớp 6B 15 quyển. Số sách của lớp 6A gấp 4 lần số sách của lớp 6B. Tìm tổng của số sách của lớp 6A và số sách của lớp 6B. A. 21  B. 25  C. 27  D. 29  E. 30",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: B. 25. Nhận dạng: hiệu – tỉ. Ý tưởng: vẽ sơ đồ đoạn thẳng, phần hơn ứng với hiệu. Bước 1: Coi số sách của lớp 6B là 1 phần thì số sách của lớp 6A là 4 phần bằng nhau. Bước 2: Số sách của lớp 6A hơn số sách của lớp 6B: 4 − 1 = 3 phần, ứng với 15 quyển. Bước 3: Một phần: 15 : 3 = 5 quyển. Số sách của lớp 6A: 5 × 4 = 20 quyển; số sách của lớp 6B: 5 quyển. Bước 4: Tổng: 20 + 5 = 25 quyển. Vậy tổng của số sách của lớp 6A và số sách của lớp 6B là 25 quyển."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 13",
-     "text": "Tính tổng các chữ số của tích 1111 × 1111. A. 9  B. 10  C. 16  D. 20  E. 26",
+     "name": "Câu 8",
+     "text": "Tính tổng các chữ số của tích 1111 × 1111. A. 9  B. 10  C. 16  D. 19  E. 20",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -270,37 +220,77 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 14",
-     "text": "Tổng của 9 số chẵn liên tiếp là 810. Tìm số lớn nhất. A. 81  B. 90  C. 95  D. 98  E. 100",
+     "name": "Câu 9",
+     "text": "Giá chiếc áo lúc đầu là 600 nghìn đồng. Cửa hàng tăng giá 20% rồi sau đó giảm giá 25% (so với giá sau khi tăng). Hỏi giá cuối cùng là bao nhiêu nghìn đồng? A. 540  B. 543  C. 544  D. 545  E. 550",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: D. 98. Nhận dạng: số liên tiếp biết tổng. Ý tưởng: số lẻ số hạng cách đều thì số ở giữa bằng tổng chia số số hạng. Bước 1: Có 9 số, số ở giữa là số thứ 5. Bước 2: Số giữa = 810 : 9 = 90. Bước 3: Số lớn nhất cách số giữa 4 bước, mỗi bước 2: 90 + 8 = 98. Vậy số lớn nhất là 98."
+      "text": "Đáp án: A. 540. Nhận dạng: tăng rồi giảm phần trăm. Ý tưởng: mỗi lần tính phần trăm theo giá ngay trước đó, không cộng hay trừ thẳng hai phần trăm. Bước 1: Sau khi tăng 20%: 600 × 120 : 100 = 720 nghìn đồng. Bước 2: Giảm 25% so với 720: 720 × 75 : 100 = 540 nghìn đồng. Vậy giá cuối cùng là 540 nghìn đồng."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 10",
+     "text": "Có bao nhiêu số chẵn có ba chữ số khác nhau và lớn hơn 700? A. 96  B. 108  C. 112  D. 120  E. 150",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: C. 112. Nhận dạng: đếm số trong một khoảng. Ý tưởng: chia trường hợp theo chữ số hàng trăm. Bước 1 (hàng trăm): số lớn hơn 700 có hàng trăm là 7, 8, 9 (số 700 có hai chữ số 0 nên không tính). Bước 2 (hàng đơn vị): số chẵn có chữ số cuối là 0, 2, 4, 6, 8 (5 chữ số). Bước 3 (hàng chục): khác hai chữ số đã chọn: 10 − 2 = 8 cách. Bước 4 (từng trường hợp): hàng trăm chẵn (8): chữ số cuối chẵn khác hàng trăm: 5 − 1 = 4 cách, 1 × 4 × 8 = 32; hàng trăm lẻ (7, 9): chữ số cuối có đủ 5 cách, 2 × 5 × 8 = 80. Bước 5: cộng: 32 + 80 = 112. Vậy có 112 số."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 11",
+     "text": "Tìm chữ số tận cùng của A = 7 + 17 + 27 + … + 1277. A. 1  B. 4  C. 5  D. 6  E. 7",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: D. 6. Nhận dạng: tổng dãy cách đều. Ý tưởng: tính tổng bằng công thức, rồi nhìn chữ số cuối. Bước 1: Số sau hơn số trước 17 − 7 = 10. Số số hạng: (1277 − 7) : 10 + 1 = 128. Bước 2: Tổng bằng (số đầu + số cuối) × số số hạng : 2. Bước 3: A = (7 + 1277) × 128 : 2 = 1284 × 128 : 2 = 82176. Vậy A có chữ số tận cùng là 6."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 12",
+     "text": "Tính nhanh: 300 × 275 A. 8250  B. 82500  C. 82504  D. 82600  E. 825000",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: B. 82500. Nhận dạng: nhân khéo. Ý tưởng: tách thừa số để ghép 25 × 4 = 100. Bước 1: Tách: 275 = 11 × 25; 300 = 4 × 75. Bước 2: Nhóm: 300 × 275 = (25 × 4) × (11 × 75). Bước 3: 25 × 4 = 100; 11 × 75 = 825. 100 × 825 = 82500. Vậy kết quả là 82500."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 13",
+     "text": "Tìm số nhỏ nhất có 3 chữ số mà chia cho 7, 8 hoặc 12 đều dư 4. A. 162  B. 172  C. 174  D. 175  E. 176",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: B. 172. Nhận dạng: chia cho nhiều số đều dư 4. Ý tưởng: bớt 4 thì chia hết cho tất cả, nên là bội của BCNN. Bước 1: Gọi số cần tìm là A. A − 4 chia hết cho 7, 8, 12. Bước 2: BCNN(7, 8, 12): 7 = 7, 8 = 2³, 12 = 2² × 3; lấy mỗi thừa số nguyên tố với số mũ lớn nhất: 2³ × 3 × 7 = 168. Vậy A − 4 là bội của 168. Bước 3: A ≥ 100, nên A − 4 ≥ 100 − 4 = 96. 96 : 168 = 0 (dư 96), bội nhỏ nhất là 168 × 1 = 168. Bước 4: A = 168 + 4 = 172. Vậy số cần tìm là 172."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 14",
+     "text": "Hình bên gồm các hộp quà hình lập phương bằng nhau xếp sát nhau trên mặt bàn, trong một khung 3 × 2 ô, chồng cao nhất có 3 tầng; khối nào ở trên cũng có khối đỡ ngay bên dưới. Mỗi khối có cạnh 3 cm. Thể tích nhỏ nhất của hình là bao nhiêu cm³? A. 319  B. 322  C. 324  D. 325  E. 326",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: C. 324. Nhận dạng: đếm khối lập phương. Ý tưởng: đếm theo tầng từ dưới lên; khối ở trên cần có khối đỡ bên dưới. Bước 1 (tầng dưới cùng): nhìn từ trên xuống, mỗi cột có một khối ở tầng 1: 5 khối. Bước 2 (các tầng trên): đếm các cột cao từ 2 khối, 3 khối…: tầng 2: 5 khối; tầng 3: 2 khối. Bước 3: cộng các tầng: 5 + 5 + 2 = 12 khối. Bước 4: thể tích một khối = 3 × 3 × 3 = 27 cm³; cả hình: 12 × 27 = 324 cm³. Vậy thể tích nhỏ nhất là 324 cm³."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 15",
-     "text": "Tính nhanh: 300 × 275 A. 8250  B. 82496  C. 82500  D. 82600  E. 825000",
+     "text": "Ba bạn hơn kém nhau đều 4 tuổi. Tổng số tuổi của bạn nhỏ nhất và bạn lớn nhất là 18. Hỏi tuổi của bạn lớn nhất là bao nhiêu? A. 9  B. 12  C. 13  D. 27  E. 36",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: C. 82500. Nhận dạng: nhân khéo. Ý tưởng: tách thừa số để ghép 25 × 4 = 100. Bước 1: Tách: 275 = 11 × 25; 300 = 4 × 75. Bước 2: Nhóm: 300 × 275 = (25 × 4) × (11 × 75). Bước 3: 25 × 4 = 100; 11 × 75 = 825. 100 × 825 = 82500. Vậy kết quả là 82500."
+      "text": "Đáp án: C. 13. Nhận dạng: các tuổi cách đều, biết tổng hai đầu. Ý tưởng: tuổi người ở giữa bằng một nửa tổng hai đầu. Bước 1: Hai đầu cách đều người giữa: nhỏ nhất = giữa − 4, lớn nhất = giữa + 4, tổng hai đầu = 2 × giữa. Bước 2: Tuổi người giữa: 18 : 2 = 9. Bước 3: Tuổi lớn nhất: 9 + 4 = 13. Vậy bạn lớn nhất 13 tuổi."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 16",
-     "text": "Trong hình, đa giác đều 10 cạnh và lục giác đều có chung cạnh BC và nằm ở hai phía của BC. A là đỉnh kề B của hình thứ nhất, E là đỉnh kề B của hình thứ hai. Góc ABE (phía không chứa C) bằng bao nhiêu độ?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 96. Nhận dạng: góc tạo bởi hai đa giác đều ghép. Ý tưởng: tính góc trong từng hình, quanh một điểm là 360°. Bước 1 (góc trong): đa giác đều 10 cạnh: góc ngoài 360° : 10 = 36°, góc trong 180° − 36° = 144°; lục giác đều: góc ngoài 360° : 6 = 60°, góc trong 180° − 60° = 120°. Bước 2 (góc ABE): các góc quanh B cộng lại 360°: góc ABE = 360° − 144° − 120° = 96°. Vậy góc ABE bằng 96°."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 17",
      "text": "Số tự nhiên K chia cho 14 dư 7. Tìm số dư khi chia 3 × K + 1 cho 14.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
@@ -310,22 +300,32 @@
     },
     {
      "@type": "Question",
-     "name": "Câu 18",
-     "text": "Hình bên gồm các hộp quà hình lập phương bằng nhau xếp sát nhau trên mặt bàn, trong một khung 3 × 2 ô, chồng cao nhất có 3 tầng; khối nào ở trên cũng có khối đỡ ngay bên dưới. Mỗi khối có cạnh 3 cm. Thể tích nhỏ nhất của hình là bao nhiêu cm³?",
+     "name": "Câu 17",
+     "text": "Số sách của lớp 6A hơn số sách của lớp 6B 15 quyển. Số sách của lớp 6A gấp 4 lần số sách của lớp 6B. Tìm tổng của số sách của lớp 6A và số sách của lớp 6B.",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 324. Nhận dạng: đếm khối lập phương. Ý tưởng: đếm theo tầng từ dưới lên; khối ở trên cần có khối đỡ bên dưới. Bước 1 (tầng dưới cùng): nhìn từ trên xuống, mỗi cột có một khối ở tầng 1: 5 khối. Bước 2 (các tầng trên): đếm các cột cao từ 2 khối, 3 khối…: tầng 2: 5 khối; tầng 3: 2 khối. Bước 3: cộng các tầng: 5 + 5 + 2 = 12 khối. Bước 4: thể tích một khối = 3 × 3 × 3 = 27 cm³; cả hình: 12 × 27 = 324 cm³. Vậy thể tích nhỏ nhất là 324 cm³."
+      "text": "Đáp án: 25. Nhận dạng: hiệu – tỉ. Ý tưởng: vẽ sơ đồ đoạn thẳng, phần hơn ứng với hiệu. Bước 1: Coi số sách của lớp 6B là 1 phần thì số sách của lớp 6A là 4 phần bằng nhau. Bước 2: Số sách của lớp 6A hơn số sách của lớp 6B: 4 − 1 = 3 phần, ứng với 15 quyển. Bước 3: Một phần: 15 : 3 = 5 quyển. Số sách của lớp 6A: 5 × 4 = 20 quyển; số sách của lớp 6B: 5 quyển. Bước 4: Tổng: 20 + 5 = 25 quyển. Vậy tổng của số sách của lớp 6A và số sách của lớp 6B là 25 quyển."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 18",
+     "text": "Trong hình, đa giác đều 10 cạnh và lục giác đều có chung cạnh BC và nằm ở hai phía của BC. A là đỉnh kề B của hình thứ nhất, E là đỉnh kề B của hình thứ hai. Góc ABE (phía không chứa C) bằng bao nhiêu độ?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 96. Nhận dạng: góc tạo bởi hai đa giác đều ghép. Ý tưởng: tính góc trong từng hình, quanh một điểm là 360°. Bước 1 (góc trong): đa giác đều 10 cạnh: góc ngoài 360° : 10 = 36°, góc trong 180° − 36° = 144°; lục giác đều: góc ngoài 360° : 6 = 60°, góc trong 180° − 60° = 120°. Bước 2 (góc ABE): các góc quanh B cộng lại 360°: góc ABE = 360° − 144° − 120° = 96°. Vậy góc ABE bằng 96°."
      }
     },
     {
      "@type": "Question",
      "name": "Câu 19",
-     "text": "Tìm chữ số tận cùng của A = 7 + 17 + 27 + … + 1277.",
+     "text": "Mã số của một chiếc tủ là một số có 4 chữ số khác nhau, lấy từ các chữ số 1, 2, 3, 4, 5, 8, 9, và là số chẵn. Có bao nhiêu mã số như vậy?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 6. Nhận dạng: tổng dãy cách đều. Ý tưởng: tính tổng bằng công thức, rồi nhìn chữ số cuối. Bước 1: Số sau hơn số trước 17 − 7 = 10. Số số hạng: (1277 − 7) : 10 + 1 = 128. Bước 2: Tổng bằng (số đầu + số cuối) × số số hạng : 2. Bước 3: A = (7 + 1277) × 128 : 2 = 1284 × 128 : 2 = 82176. Vậy A có chữ số tận cùng là 6."
+      "text": "Đáp án: 360. Nhận dạng: lập số có các chữ số khác nhau, điều kiện ở chữ số cuối. Ý tưởng: hàng có điều kiện chọn trước: hàng đơn vị, rồi hàng nghìn, rồi các hàng còn lại. Bước 1 (hàng đơn vị): đề cho 7 chữ số; số chẵn nên chữ số cuối là 2, 4 hoặc 8: 3 cách. Bước 2 (hàng nghìn): khác chữ số cuối: 7 − 1 = 6 cách. Bước 3 (hàng trăm): khác 2 chữ số đã chọn: 7 − 2 = 5 cách. Bước 4 (hàng chục): khác 3 chữ số đã chọn: 7 − 3 = 4 cách. Bước 5: nhân số cách các hàng: 3 × 6 × 5 × 4 = 360. Vậy có 360 số."
      }
     },
     {
@@ -341,31 +341,31 @@
     {
      "@type": "Question",
      "name": "Câu 21",
-     "text": "Trang có số bút chì gấp 3 lần số bút mực. An có số bút mực gấp 2 lần số bút chì. Hai bạn có tất cả 18 cái bút (bút chì và bút mực cộng lại). Hỏi hai bạn có tất cả bao nhiêu bút chì?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 11. Nhận dạng: hai người, mỗi người có hai loại, số loại này gấp mấy lần số loại kia. Ý tưởng: tính số cái của mỗi người theo một số chưa biết, rồi thử lần lượt. Bước 1: Trang: gọi số bút mực là a thì số bút chì là 3 × a, cả hai loại: 3 × a + a = 4 × a. An: gọi số bút chì là b thì số bút mực là 2 × b, cả hai loại: 3 × b. Bước 2: 4 × a + 3 × b = 18. Thử b = 1, 2, 3, …: lấy 18 trừ 3 × b, kết quả phải chia hết cho 4. b = 1, 2, 3, 4, 5: 18 − 3 × b lần lượt là 15, 12, 9, 6, 3. Chỉ có 12 chia hết cho 4 (khi b = 2): a = 12 : 4 = 3. Bước 3: Trang: bút chì = 3 × 3 = 9, bút mực = 3. An: bút chì = 2, bút mực = 2 × 2 = 4. Tổng bút chì: 9 + 2 = 11. Vậy hai bạn có 11 bút chì."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 22",
-     "text": "Bảng ô vuông 3 hàng, 5 cột có ô ở hàng thứ 2 (từ trên xuống), cột thứ 2 (từ trái sang) được tô màu như hình. Có bao nhiêu hình chữ nhật (kể cả hình vuông) không chứa ô tô màu?",
-     "eduQuestionType": "Flashcard",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Đáp án: 58. Nhận dạng: đếm hình chữ nhật không chứa ô đánh dấu. Ý tưởng: lấy tất cả hình chữ nhật trừ đi số hình chứa ô. Bước 1 (tất cả): 6 × 5 : 2 = 15; 4 × 3 : 2 = 6; 15 × 6 = 90. Bước 2 (chứa ô): cạnh trên, dưới: 2 × 2 = 4; cạnh trái, phải: 2 × 4 = 8; 4 × 8 = 32. Bước 3: 90 − 32 = 58. Vậy có 58 hình chữ nhật."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Câu 23",
      "text": "Có 4 bạn chuyền bóng cho nhau, trong đó có An và Mai. An cầm bóng đầu tiên; mỗi lần chuyền, người cầm bóng chuyền cho một bạn khác. Có bao nhiêu cách chuyền để sau lần chuyền thứ 5, bóng ở trong tay Mai?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "Đáp án: 61. Nhận dạng: chuyền bóng nhiều lần. Ý tưởng: lập bảng từng lần chuyền, đếm số cách bóng ở An và ở người khác. Bước 1 (quy tắc): An cầm bóng thì chuyền cho 4 − 1 = 3 người khác; người khác cầm bóng thì chuyền cho An (1 cách) hoặc 4 − 2 = 2 người còn lại; nên số cách bóng ở An = số cách bóng ở người khác ở lần trước. Bước 2 (lập bảng, lúc đầu ở An 1, ở người khác 0): lần 1: ở An 0, ở người khác 1 × 3 + 0 × 2 = 3; lần 2: ở An 3, ở người khác 0 × 3 + 3 × 2 = 6; lần 3: ở An 6, ở người khác 3 × 3 + 6 × 2 = 21; lần 4: ở An 21, ở người khác 6 × 3 + 21 × 2 = 60; lần 5: ở An 60, ở người khác 21 × 3 + 60 × 2 = 183. Bước 3: 3 người khác giống nhau, nên ở Mai: 183 : 3 = 61 cách. Vậy có 61 cách."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 22",
+     "text": "Một cái máy nhận số n: nếu n lẻ thì máy cho ra n × 3 + 1, nếu không thì máy cho ra n : 2. Số ra được đưa vào máy lại, làm hai lần liên tiếp thì máy cho ra 23. Biết số ban đầu là số nguyên dương nhỏ hơn 60. Hỏi số ban đầu là bao nhiêu?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 15. Nhận dạng: tìm số nhập, biết kết quả sau nhiều lần. Ý tưởng: đi ngược từng lần; mỗi lần thử cả hai nhánh, giữ số thoả đúng điều kiện của nhánh đó. Bước 1: Lần thứ hai cho ra 23. Nhánh n × 3 + 1: n = (23 − 1) : 3 không ra số tự nhiên, loại; nhánh n : 2: n = 23 × 2 = 46, được. Bước 2: Lần thứ nhất cho ra 46. Nhánh n × 3 + 1: n = (46 − 1) : 3 = 15, được; nhánh n : 2: n = 46 × 2 = 92, nhưng 92 không nhỏ hơn 60, loại. Bước 3: Chỉ có số 15 thoả. Kiểm tra: 15 thoả \"n lẻ\", tính 15 × 3 + 1 = 46; 46 không thoả \"n lẻ\", tính 46 : 2 = 23. Vậy số ban đầu là 15."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Câu 23",
+     "text": "Bảng ô vuông 3 hàng, 5 cột có ô ở hàng thứ 2 (từ trên xuống), cột thứ 2 (từ trái sang) được tô màu như hình. Có bao nhiêu hình chữ nhật (kể cả hình vuông) không chứa ô tô màu?",
+     "eduQuestionType": "Flashcard",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Đáp án: 58. Nhận dạng: đếm hình chữ nhật không chứa ô đánh dấu. Ý tưởng: lấy tất cả hình chữ nhật trừ đi số hình chứa ô. Bước 1 (tất cả): 6 × 5 : 2 = 15; 4 × 3 : 2 = 6; 15 × 6 = 90. Bước 2 (chứa ô): cạnh trên, dưới: 2 × 2 = 4; cạnh trái, phải: 2 × 4 = 8; 4 × 8 = 32. Bước 3: 90 − 32 = 58. Vậy có 58 hình chữ nhật."
      }
     },
     {
@@ -381,11 +381,11 @@
     {
      "@type": "Question",
      "name": "Câu 25",
-     "text": "Một cái máy nhận số n: nếu n lẻ thì máy cho ra n × 3 + 1, nếu không thì máy cho ra n : 2. Số ra được đưa vào máy lại, làm hai lần liên tiếp thì máy cho ra 23. Biết số ban đầu là số nguyên dương nhỏ hơn 60. Hỏi số ban đầu là bao nhiêu?",
+     "text": "Trang có số bút chì gấp 3 lần số bút mực. An có số bút mực gấp 2 lần số bút chì. Hai bạn có tất cả 18 cái bút (bút chì và bút mực cộng lại). Hỏi hai bạn có tất cả bao nhiêu bút chì?",
      "eduQuestionType": "Flashcard",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Đáp án: 15. Nhận dạng: tìm số nhập, biết kết quả sau nhiều lần. Ý tưởng: đi ngược từng lần; mỗi lần thử cả hai nhánh, giữ số thoả đúng điều kiện của nhánh đó. Bước 1: Lần thứ hai cho ra 23. Nhánh n × 3 + 1: n = (23 − 1) : 3 không ra số tự nhiên, loại; nhánh n : 2: n = 23 × 2 = 46, được. Bước 2: Lần thứ nhất cho ra 46. Nhánh n × 3 + 1: n = (46 − 1) : 3 = 15, được; nhánh n : 2: n = 46 × 2 = 92, nhưng 92 không nhỏ hơn 60, loại. Bước 3: Chỉ có số 15 thoả. Kiểm tra: 15 thoả \"n lẻ\", tính 15 × 3 + 1 = 46; 46 không thoả \"n lẻ\", tính 46 : 2 = 23. Vậy số ban đầu là 15."
+      "text": "Đáp án: 11. Nhận dạng: hai người, mỗi người có hai loại, số loại này gấp mấy lần số loại kia. Ý tưởng: tính số cái của mỗi người theo một số chưa biết, rồi thử lần lượt. Bước 1: Trang: gọi số bút mực là a thì số bút chì là 3 × a, cả hai loại: 3 × a + a = 4 × a. An: gọi số bút chì là b thì số bút mực là 2 × b, cả hai loại: 3 × b. Bước 2: 4 × a + 3 × b = 18. Thử b = 1, 2, 3, …: lấy 18 trừ 3 × b, kết quả phải chia hết cho 4. b = 1, 2, 3, 4, 5: 18 − 3 × b lần lượt là 15, 12, 9, 6, 3. Chỉ có 12 chia hết cho 4 (khi b = 2): a = 12 : 4 = 3. Bước 3: Trang: bút chì = 3 × 3 = 9, bút mực = 3. An: bút chì = 2, bút mực = 2 × 2 = 4. Tổng bút chì: 9 + 2 = 11. Vậy hai bạn có 11 bút chì."
      }
     }
    ]
@@ -468,156 +468,156 @@
 <ol class="questions" start="1">
 <li class="q" id="cau-1">
   <div class="q-head"><span class="q-n">Câu 1</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Một cửa hàng mở bán sách: ngày đầu bán 1 quyển, mỗi ngày sau bán gấp 3 lần ngày trước. Sau 8 ngày, cửa hàng bán được tất cả bao nhiêu quyển?</p><p class="q-en" lang="en">A shop sells 1 books on the first day and each day sells 3 times as many as the day before. How many books are sold in 8 days?</p><ol class="q-opts"><li><b>A.</b> 2187</li><li><b>B.</b> 3280</li><li><b>C.</b> 3282</li><li><b>D.</b> 5467</li><li><b>E.</b> 6560</li></ol>
+  <p class="q-stem">Có bao nhiêu cách chia 7 quả bóng giống nhau cho 2 hộp (có hộp có thể không được quả nào)?</p><p class="q-en" lang="en">In how many ways can 7 identical balls be shared among 2 boxes (some may get none)?</p><ol class="q-opts"><li><b>A.</b> 6</li><li><b>B.</b> 8</li><li><b>C.</b> 9</li><li><b>D.</b> 10</li><li><b>E.</b> 11</li></ol>
   <details><summary>Đáp án và lời giải câu 1</summary>
-    <p><b>Đáp án: B. 3280</b></p>
-    <p>Nhận dạng: tổng mà mỗi số gấp lên một số lần so với số trước.<br>Gọi S là tổng cần tính.<br>Ý tưởng: nhân S với số lần gấp, rồi trừ S để các số ở giữa mất hết.<br>Lập dãy số sách bán mỗi ngày: 1, 3, 9, 27, 81, 243, 729, 2187 (mỗi số gấp 3 lần số trước).<br>Gọi S là tổng cần tính: S = 1 + 3 + 9 + 27 + 81 + 243 + 729 + 2187.<br>Bước 1: Nhân S với 3: S × 3 = 3 + … + 2187 + 6561 (vì 2187 × 3 = 6561).<br>Bước 2: Hai tổng giống nhau từ 3 đến 2187.<br>Trừ đi: S × 3 − S = 6561 − 1 = 6560.<br>Bước 3: S × 3 − S = S × 2, nên S = 6560 : 2 = 3280.<br>Vậy có tất cả 3280 quyển.</p>
+    <p><b>Đáp án: B. 8</b></p>
+    <p>Nhận dạng: chia vật giống nhau, mỗi phần ít nhất 0.<br>Ý tưởng: đưa về dạng mỗi phần ít nhất 1, rồi dùng vách ngăn.<br>Bước 1 (mượn thêm): mượn 2 quả, cho mỗi hộp thêm 1: 7 + 2 = 9 quả, bây giờ mỗi hộp có ít nhất 1 (chia xong thì trả lại mỗi hộp 1 quả).<br>Bước 2 (vách ngăn): 9 quả có 9 − 1 = 8 khe;<br>chọn 1 khe đặt vách ngăn: chọn 1 trong 8 khe: 8 cách.<br>Vậy có 8 cách.</p>
   </details>
 </li>
 <li class="q" id="cau-2">
   <div class="q-head"><span class="q-n">Câu 2</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">5 bạn vào chung kết cuộc thi. Có bao nhiêu cách trao giải nhất, giải nhì và giải ba (mỗi bạn nhận nhiều nhất một giải)?</p><p class="q-en" lang="en">5 children reach the final. In how many ways can the first prize, second prize and third prize be awarded (at most one prize each)?</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 15</li><li><b>C.</b> 59</li><li><b>D.</b> 60</li><li><b>E.</b> 125</li></ol>
+  <p class="q-stem">Các nhóm ô tô xếp thành hình chữ nhật: nhóm 1, 2, 3, 4 lần lượt có 2, 6, 12, 20 ô tô (xem hình). Hỏi nhóm thứ 9 có bao nhiêu ô tô?</p><p class="q-en" lang="en">Groups of cars are arranged in rectangles: groups 1, 2, 3, 4 have 2, 6, 12, 20 respectively (see the picture). How many cars are in group 9?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 2"><svg width="300" height="73" viewBox="0 0 300 73" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(79.5,32.0) scale(1.000)"><circle cx="4" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/></g><text x="91.5" y="59" font-size="11" text-anchor="middle" stroke="none" fill="currentColor">Nhóm 1</text><g transform="translate(121.5,21.0) scale(1.000)"><circle cx="4" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="4" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/></g><text x="139" y="59" font-size="11" text-anchor="middle" stroke="none" fill="currentColor">Nhóm 2</text><g transform="translate(174.5,10.0) scale(1.000)"><circle cx="4" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="37" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="4" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="37" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="4" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="37" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/></g><text x="197.5" y="59" font-size="11" text-anchor="middle" stroke="none" fill="currentColor">Nhóm 3</text></svg></div><ol class="q-opts"><li><b>A.</b> 81</li><li><b>B.</b> 86</li><li><b>C.</b> 90</li><li><b>D.</b> 99</li><li><b>E.</b> 100</li></ol>
   <details><summary>Đáp án và lời giải câu 2</summary>
-    <p><b>Đáp án: D. 60</b></p>
-    <p>Nhận dạng: chọn 3 trong 5 bạn rồi xếp vào 3 vị trí khác nhau.<br>Ý tưởng: điền lần lượt từng vị trí, bạn đã chọn không chọn lại.<br>Bước 1 (từng vị trí): giải nhất: 5 cách;<br>giải nhì: 5 − 1 = 4 cách;<br>giải ba: 5 − 2 = 3 cách.<br>Bước 2: nhân: 5 × 4 × 3 = 60.<br>Vậy có 60 cách.</p>
+    <p><b>Đáp án: C. 90</b></p>
+    <p>Nhận dạng: nhóm hình xếp thành hình chữ nhật.<br>Ý tưởng: nhìn số hàng và số cột của mỗi nhóm.<br>Bước 1: Nhóm 1 xếp 1 hàng 2 cột, nhóm 2 xếp 2 hàng 3 cột, nhóm 3 xếp 3 hàng 4 cột.<br>Bước 2: Số ô tô = số hàng × số cột: 1 × 2 = 2, 2 × 3 = 6, 3 × 4 = 12, 4 × 5 = 20.<br>Gọi n là số thứ tự của nhóm: nhóm thứ n có n hàng và n + 1 cột.<br>Bước 3: Nhóm thứ 9 có 9 hàng và 9 + 1 = 10 cột: 9 × 10 = 90.<br>Vậy nhóm thứ 9 có 90 ô tô.</p>
   </details>
 </li>
 <li class="q" id="cau-3">
   <div class="q-head"><span class="q-n">Câu 3</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Các nhóm ô tô xếp thành hình chữ nhật: nhóm 1, 2, 3, 4 lần lượt có 2, 6, 12, 20 ô tô (xem hình). Hỏi nhóm thứ 9 có bao nhiêu ô tô?</p><p class="q-en" lang="en">Groups of cars are arranged in rectangles: groups 1, 2, 3, 4 have 2, 6, 12, 20 respectively (see the picture). How many cars are in group 9?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 3"><svg width="300" height="73" viewBox="0 0 300 73" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(79.5,32.0) scale(1.000)"><circle cx="4" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/></g><text x="91.5" y="59" font-size="11" text-anchor="middle" stroke="none" fill="currentColor">Nhóm 1</text><g transform="translate(121.5,21.0) scale(1.000)"><circle cx="4" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="4" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/></g><text x="139" y="59" font-size="11" text-anchor="middle" stroke="none" fill="currentColor">Nhóm 2</text><g transform="translate(174.5,10.0) scale(1.000)"><circle cx="4" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="37" cy="4" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="4" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="37" cy="15" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="4" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="15" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="26" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/><circle cx="37" cy="26" r="3.2" stroke="currentColor" stroke-width="1" fill="currentColor" fill-opacity="1"/></g><text x="197.5" y="59" font-size="11" text-anchor="middle" stroke="none" fill="currentColor">Nhóm 3</text></svg></div><ol class="q-opts"><li><b>A.</b> 81</li><li><b>B.</b> 90</li><li><b>C.</b> 91</li><li><b>D.</b> 99</li><li><b>E.</b> 100</li></ol>
+  <p class="q-stem">5 bạn vào chung kết cuộc thi. Có bao nhiêu cách trao giải nhất, giải nhì và giải ba (mỗi bạn nhận nhiều nhất một giải)?</p><p class="q-en" lang="en">5 children reach the final. In how many ways can the first prize, second prize and third prize be awarded (at most one prize each)?</p><ol class="q-opts"><li><b>A.</b> 10</li><li><b>B.</b> 15</li><li><b>C.</b> 60</li><li><b>D.</b> 65</li><li><b>E.</b> 125</li></ol>
   <details><summary>Đáp án và lời giải câu 3</summary>
-    <p><b>Đáp án: B. 90</b></p>
-    <p>Nhận dạng: nhóm hình xếp thành hình chữ nhật.<br>Ý tưởng: nhìn số hàng và số cột của mỗi nhóm.<br>Bước 1: Nhóm 1 xếp 1 hàng 2 cột, nhóm 2 xếp 2 hàng 3 cột, nhóm 3 xếp 3 hàng 4 cột.<br>Bước 2: Số ô tô = số hàng × số cột: 1 × 2 = 2, 2 × 3 = 6, 3 × 4 = 12, 4 × 5 = 20.<br>Gọi n là số thứ tự của nhóm: nhóm thứ n có n hàng và n + 1 cột.<br>Bước 3: Nhóm thứ 9 có 9 hàng và 9 + 1 = 10 cột: 9 × 10 = 90.<br>Vậy nhóm thứ 9 có 90 ô tô.</p>
+    <p><b>Đáp án: C. 60</b></p>
+    <p>Nhận dạng: chọn 3 trong 5 bạn rồi xếp vào 3 vị trí khác nhau.<br>Ý tưởng: điền lần lượt từng vị trí, bạn đã chọn không chọn lại.<br>Bước 1 (từng vị trí): giải nhất: 5 cách;<br>giải nhì: 5 − 1 = 4 cách;<br>giải ba: 5 − 2 = 3 cách.<br>Bước 2: nhân: 5 × 4 × 3 = 60.<br>Vậy có 60 cách.</p>
   </details>
 </li>
 <li class="q" id="cau-4">
   <div class="q-head"><span class="q-n">Câu 4</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Mai có 15 quyển truyện khác nhau và muốn mang 2 quyển đi cắm trại. Có bao nhiêu cách chọn?</p><p class="q-en" lang="en">Mai has 15 different storybooks and wants to take 2 on a camping trip. How many ways are there?</p><ol class="q-opts"><li><b>A.</b> 30</li><li><b>B.</b> 105</li><li><b>C.</b> 108</li><li><b>D.</b> 120</li><li><b>E.</b> 210</li></ol>
+  <p class="q-stem">Một cửa hàng mở bán sách: ngày đầu bán 1 quyển, mỗi ngày sau bán gấp 3 lần ngày trước. Sau 8 ngày, cửa hàng bán được tất cả bao nhiêu quyển?</p><p class="q-en" lang="en">A shop sells 1 books on the first day and each day sells 3 times as many as the day before. How many books are sold in 8 days?</p><ol class="q-opts"><li><b>A.</b> 2187</li><li><b>B.</b> 3279</li><li><b>C.</b> 3280</li><li><b>D.</b> 5467</li><li><b>E.</b> 6560</li></ol>
   <details><summary>Đáp án và lời giải câu 4</summary>
-    <p><b>Đáp án: B. 105</b></p>
-    <p>Nhận dạng: chọn 2 trong 15 (không xếp thứ tự).<br>Ý tưởng: chọn có thứ tự rồi chia cho số cách đổi chỗ.<br>Bước 1 (chọn có thứ tự): 15 × 14 = 210.<br>Bước 2 (bỏ thứ tự): 2 quyển đổi chỗ cho nhau: 2 × 1 = 2 cách, đổi chỗ không tạo nhóm mới.<br>Bước 3 (chia): 210 : 2 = 105.<br>Vậy có 105 cách.</p>
+    <p><b>Đáp án: C. 3280</b></p>
+    <p>Nhận dạng: tổng mà mỗi số gấp lên một số lần so với số trước.<br>Gọi S là tổng cần tính.<br>Ý tưởng: nhân S với số lần gấp, rồi trừ S để các số ở giữa mất hết.<br>Lập dãy số sách bán mỗi ngày: 1, 3, 9, 27, 81, 243, 729, 2187 (mỗi số gấp 3 lần số trước).<br>Gọi S là tổng cần tính: S = 1 + 3 + 9 + 27 + 81 + 243 + 729 + 2187.<br>Bước 1: Nhân S với 3: S × 3 = 3 + … + 2187 + 6561 (vì 2187 × 3 = 6561).<br>Bước 2: Hai tổng giống nhau từ 3 đến 2187.<br>Trừ đi: S × 3 − S = 6561 − 1 = 6560.<br>Bước 3: S × 3 − S = S × 2, nên S = 6560 : 2 = 3280.<br>Vậy có tất cả 3280 quyển.</p>
   </details>
 </li>
 <li class="q" id="cau-5">
   <div class="q-head"><span class="q-n">Câu 5</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Có bao nhiêu cách chia 7 quả bóng giống nhau cho 2 hộp (có hộp có thể không được quả nào)?</p><p class="q-en" lang="en">In how many ways can 7 identical balls be shared among 2 boxes (some may get none)?</p><ol class="q-opts"><li><b>A.</b> 4</li><li><b>B.</b> 6</li><li><b>C.</b> 8</li><li><b>D.</b> 9</li><li><b>E.</b> 10</li></ol>
+  <p class="q-stem">Mai có 15 quyển truyện khác nhau và muốn mang 2 quyển đi cắm trại. Có bao nhiêu cách chọn?</p><p class="q-en" lang="en">Mai has 15 different storybooks and wants to take 2 on a camping trip. How many ways are there?</p><ol class="q-opts"><li><b>A.</b> 30</li><li><b>B.</b> 102</li><li><b>C.</b> 105</li><li><b>D.</b> 120</li><li><b>E.</b> 210</li></ol>
   <details><summary>Đáp án và lời giải câu 5</summary>
-    <p><b>Đáp án: C. 8</b></p>
-    <p>Nhận dạng: chia vật giống nhau, mỗi phần ít nhất 0.<br>Ý tưởng: đưa về dạng mỗi phần ít nhất 1, rồi dùng vách ngăn.<br>Bước 1 (mượn thêm): mượn 2 quả, cho mỗi hộp thêm 1: 7 + 2 = 9 quả, bây giờ mỗi hộp có ít nhất 1 (chia xong thì trả lại mỗi hộp 1 quả).<br>Bước 2 (vách ngăn): 9 quả có 9 − 1 = 8 khe;<br>chọn 1 khe đặt vách ngăn: chọn 1 trong 8 khe: 8 cách.<br>Vậy có 8 cách.</p>
+    <p><b>Đáp án: C. 105</b></p>
+    <p>Nhận dạng: chọn 2 trong 15 (không xếp thứ tự).<br>Ý tưởng: chọn có thứ tự rồi chia cho số cách đổi chỗ.<br>Bước 1 (chọn có thứ tự): 15 × 14 = 210.<br>Bước 2 (bỏ thứ tự): 2 quyển đổi chỗ cho nhau: 2 × 1 = 2 cách, đổi chỗ không tạo nhóm mới.<br>Bước 3 (chia): 210 : 2 = 105.<br>Vậy có 105 cách.</p>
   </details>
 </li>
 <li class="q" id="cau-6">
   <div class="q-head"><span class="q-n">Câu 6</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Mã số của một chiếc tủ là một số có 4 chữ số khác nhau, lấy từ các chữ số 1, 2, 3, 4, 5, 8, 9, và là số chẵn. Có bao nhiêu mã số như vậy?</p><p class="q-en" lang="en">A locker code is a 4-digit number with different digits taken from 1, 2, 3, 4, 5, 8, 9, and it is even. How many such codes are there?</p><ol class="q-opts"><li><b>A.</b> 356</li><li><b>B.</b> 360</li><li><b>C.</b> 375</li><li><b>D.</b> 720</li><li><b>E.</b> 882</li></ol>
+  <p class="q-stem">Bể A hình hộp chữ nhật có đáy dài 38 cm, rộng 24 cm, chứa nước cao 2 cm. Đổ hết nước ở bể A sang bể B (rỗng) có đáy dài 32 cm, rộng 19 cm. Nước ở bể B cao bao nhiêu cm?</p><p class="q-en" lang="en">Tank A has a rectangular base 38 cm by 24 cm and holds water 2 cm deep. All of it is poured into empty tank B with a base 32 cm by 19 cm. How deep is the water in tank B, in cm?</p><ol class="q-opts"><li><b>A.</b> 0</li><li><b>B.</b> 2</li><li><b>C.</b> 3</li><li><b>D.</b> 4</li><li><b>E.</b> 57</li></ol>
   <details><summary>Đáp án và lời giải câu 6</summary>
-    <p><b>Đáp án: B. 360</b></p>
-    <p>Nhận dạng: lập số có các chữ số khác nhau, điều kiện ở chữ số cuối.<br>Ý tưởng: hàng có điều kiện chọn trước: hàng đơn vị, rồi hàng nghìn, rồi các hàng còn lại.<br>Bước 1 (hàng đơn vị): đề cho 7 chữ số;<br>số chẵn nên chữ số cuối là 2, 4 hoặc 8: 3 cách.<br>Bước 2 (hàng nghìn): khác chữ số cuối: 7 − 1 = 6 cách.<br>Bước 3 (hàng trăm): khác 2 chữ số đã chọn: 7 − 2 = 5 cách.<br>Bước 4 (hàng chục): khác 3 chữ số đã chọn: 7 − 3 = 4 cách.<br>Bước 5: nhân số cách các hàng: 3 × 6 × 5 × 4 = 360.<br>Vậy có 360 số.</p>
-  </details>
-</li>
-<li class="q" id="cau-7">
-  <div class="q-head"><span class="q-n">Câu 7</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Giá chiếc áo lúc đầu là 600 nghìn đồng. Cửa hàng tăng giá 20% rồi sau đó giảm giá 25% (so với giá sau khi tăng). Hỏi giá cuối cùng là bao nhiêu nghìn đồng?</p><p class="q-en" lang="en">A shirt first costs 600 thousand dong. The shop raises the price by 20% and then lowers it by 25% of the raised price. What is the final price in thousand dong?</p><ol class="q-opts"><li><b>A.</b> 536</li><li><b>B.</b> 540</li><li><b>C.</b> 542</li><li><b>D.</b> 543</li><li><b>E.</b> 545</li></ol>
-  <details><summary>Đáp án và lời giải câu 7</summary>
-    <p><b>Đáp án: B. 540</b></p>
-    <p>Nhận dạng: tăng rồi giảm phần trăm.<br>Ý tưởng: mỗi lần tính phần trăm theo giá ngay trước đó, không cộng hay trừ thẳng hai phần trăm.<br>Bước 1: Sau khi tăng 20%: 600 × 120 : 100 = 720 nghìn đồng.<br>Bước 2: Giảm 25% so với 720: 720 × 75 : 100 = 540 nghìn đồng.<br>Vậy giá cuối cùng là 540 nghìn đồng.</p>
-  </details>
-</li>
-<li class="q" id="cau-8">
-  <div class="q-head"><span class="q-n">Câu 8</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Có bao nhiêu số chẵn có ba chữ số khác nhau và lớn hơn 700?</p><p class="q-en" lang="en">How many even 3-digit numbers with different digits are greater than 700?</p><ol class="q-opts"><li><b>A.</b> 96</li><li><b>B.</b> 107</li><li><b>C.</b> 112</li><li><b>D.</b> 120</li><li><b>E.</b> 150</li></ol>
-  <details><summary>Đáp án và lời giải câu 8</summary>
-    <p><b>Đáp án: C. 112</b></p>
-    <p>Nhận dạng: đếm số trong một khoảng.<br>Ý tưởng: chia trường hợp theo chữ số hàng trăm.<br>Bước 1 (hàng trăm): số lớn hơn 700 có hàng trăm là 7, 8, 9 (số 700 có hai chữ số 0 nên không tính).<br>Bước 2 (hàng đơn vị): số chẵn có chữ số cuối là 0, 2, 4, 6, 8 (5 chữ số).<br>Bước 3 (hàng chục): khác hai chữ số đã chọn: 10 − 2 = 8 cách.<br>Bước 4 (từng trường hợp): hàng trăm chẵn (8): chữ số cuối chẵn khác hàng trăm: 5 − 1 = 4 cách, 1 × 4 × 8 = 32;<br>hàng trăm lẻ (7, 9): chữ số cuối có đủ 5 cách, 2 × 5 × 8 = 80.<br>Bước 5: cộng: 32 + 80 = 112.<br>Vậy có 112 số.</p>
-  </details>
-</li>
-<li class="q" id="cau-9">
-  <div class="q-head"><span class="q-n">Câu 9</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Bể A hình hộp chữ nhật có đáy dài 38 cm, rộng 24 cm, chứa nước cao 2 cm. Đổ hết nước ở bể A sang bể B (rỗng) có đáy dài 32 cm, rộng 19 cm. Nước ở bể B cao bao nhiêu cm?</p><p class="q-en" lang="en">Tank A has a rectangular base 38 cm by 24 cm and holds water 2 cm deep. All of it is poured into empty tank B with a base 32 cm by 19 cm. How deep is the water in tank B, in cm?</p><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 2</li><li><b>C.</b> 3</li><li><b>D.</b> 4</li><li><b>E.</b> 57</li></ol>
-  <details><summary>Đáp án và lời giải câu 9</summary>
     <p><b>Đáp án: C. 3</b></p>
     <p>Nhận dạng: đổ nước sang bể khác.<br>Ý tưởng: thể tích nước không đổi;<br>chiều cao = thể tích : diện tích đáy.<br>Bước 1: thể tích nước = 38 × 24 × 2 = 1824 cm³.<br>Bước 2: đáy bể B = 32 × 19 = 608 cm².<br>Bước 3: chiều cao nước bể B = 1824 : 608 = 3 cm.<br>Vậy nước cao 3 cm.</p>
   </details>
 </li>
-<li class="q" id="cau-10">
-  <div class="q-head"><span class="q-n">Câu 10</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Ba bạn hơn kém nhau đều 4 tuổi. Tổng số tuổi của bạn nhỏ nhất và bạn lớn nhất là 18. Hỏi tuổi của bạn lớn nhất là bao nhiêu?</p><p class="q-en" lang="en">Three friends&#x27; ages differ by 4 years between neighbours. The youngest and the oldest are 18 years old together. How old is the oldest?</p><ol class="q-opts"><li><b>A.</b> 9</li><li><b>B.</b> 11</li><li><b>C.</b> 13</li><li><b>D.</b> 27</li><li><b>E.</b> 36</li></ol>
-  <details><summary>Đáp án và lời giải câu 10</summary>
-    <p><b>Đáp án: C. 13</b></p>
-    <p>Nhận dạng: các tuổi cách đều, biết tổng hai đầu.<br>Ý tưởng: tuổi người ở giữa bằng một nửa tổng hai đầu.<br>Bước 1: Hai đầu cách đều người giữa: nhỏ nhất = giữa − 4, lớn nhất = giữa + 4, tổng hai đầu = 2 × giữa.<br>Bước 2: Tuổi người giữa: 18 : 2 = 9.<br>Bước 3: Tuổi lớn nhất: 9 + 4 = 13.<br>Vậy bạn lớn nhất 13 tuổi.</p>
+<li class="q" id="cau-7">
+  <div class="q-head"><span class="q-n">Câu 7</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
+  <p class="q-stem">Tổng của 9 số chẵn liên tiếp là 810. Tìm số lớn nhất.</p><p class="q-en" lang="en">The sum of 9 consecutive even numbers is 810. Find the largest one.</p><ol class="q-opts"><li><b>A.</b> 81</li><li><b>B.</b> 90</li><li><b>C.</b> 98</li><li><b>D.</b> 99</li><li><b>E.</b> 100</li></ol>
+  <details><summary>Đáp án và lời giải câu 7</summary>
+    <p><b>Đáp án: C. 98</b></p>
+    <p>Nhận dạng: số liên tiếp biết tổng.<br>Ý tưởng: số lẻ số hạng cách đều thì số ở giữa bằng tổng chia số số hạng.<br>Bước 1: Có 9 số, số ở giữa là số thứ 5.<br>Bước 2: Số giữa = 810 : 9 = 90.<br>Bước 3: Số lớn nhất cách số giữa 4 bước, mỗi bước 2: 90 + 8 = 98.<br>Vậy số lớn nhất là 98.</p>
   </details>
 </li>
-<li class="q" id="cau-11">
-  <div class="q-head"><span class="q-n">Câu 11</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Tìm số nhỏ nhất có 3 chữ số mà chia cho 7, 8 hoặc 12 đều dư 4.</p><p class="q-en" lang="en">Find the smallest 3-digit number that leaves a remainder of 4 when divided by each of 7, 8 and 12.</p><ol class="q-opts"><li><b>A.</b> 167</li><li><b>B.</b> 168</li><li><b>C.</b> 169</li><li><b>D.</b> 171</li><li><b>E.</b> 172</li></ol>
-  <details><summary>Đáp án và lời giải câu 11</summary>
-    <p><b>Đáp án: E. 172</b></p>
-    <p>Nhận dạng: chia cho nhiều số đều dư 4.<br>Ý tưởng: bớt 4 thì chia hết cho tất cả, nên là bội của BCNN.<br>Bước 1: Gọi số cần tìm là A.<br>A − 4 chia hết cho 7, 8, 12.<br>Bước 2: BCNN(7, 8, 12): 7 = 7, 8 = 2³, 12 = 2² × 3;<br>lấy mỗi thừa số nguyên tố với số mũ lớn nhất: 2³ × 3 × 7 = 168.<br>Vậy A − 4 là bội của 168.<br>Bước 3: A ≥ 100, nên A − 4 ≥ 100 − 4 = 96.<br>96 : 168 = 0 (dư 96), bội nhỏ nhất là 168 × 1 = 168.<br>Bước 4: A = 168 + 4 = 172.<br>Vậy số cần tìm là 172.</p>
-  </details>
-</li>
-<li class="q" id="cau-12">
-  <div class="q-head"><span class="q-n">Câu 12</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Số sách của lớp 6A hơn số sách của lớp 6B 15 quyển. Số sách của lớp 6A gấp 4 lần số sách của lớp 6B. Tìm tổng của số sách của lớp 6A và số sách của lớp 6B.</p><p class="q-en" lang="en">The number of books of class 6A is 15 more than the number of books of class 6B. The number of books of class 6A is 4 times the number of books of class 6B. Find the sum of the number of books of class 6A and the number of books of class 6B.</p><ol class="q-opts"><li><b>A.</b> 21</li><li><b>B.</b> 25</li><li><b>C.</b> 27</li><li><b>D.</b> 29</li><li><b>E.</b> 30</li></ol>
-  <details><summary>Đáp án và lời giải câu 12</summary>
-    <p><b>Đáp án: B. 25</b></p>
-    <p>Nhận dạng: hiệu – tỉ.<br>Ý tưởng: vẽ sơ đồ đoạn thẳng, phần hơn ứng với hiệu.<br>Bước 1: Coi số sách của lớp 6B là 1 phần thì số sách của lớp 6A là 4 phần bằng nhau.<br>Bước 2: Số sách của lớp 6A hơn số sách của lớp 6B: 4 − 1 = 3 phần, ứng với 15 quyển.<br>Bước 3: Một phần: 15 : 3 = 5 quyển.<br>Số sách của lớp 6A: 5 × 4 = 20 quyển;<br>số sách của lớp 6B: 5 quyển.<br>Bước 4: Tổng: 20 + 5 = 25 quyển.<br>Vậy tổng của số sách của lớp 6A và số sách của lớp 6B là 25 quyển.</p>
-  </details>
-</li>
-<li class="q" id="cau-13">
-  <div class="q-head"><span class="q-n">Câu 13</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Tính tổng các chữ số của tích 1111 × 1111.</p><p class="q-en" lang="en">Find the sum of the digits of 1111 × 1111.</p><ol class="q-opts"><li><b>A.</b> 9</li><li><b>B.</b> 10</li><li><b>C.</b> 16</li><li><b>D.</b> 20</li><li><b>E.</b> 26</li></ol>
-  <details><summary>Đáp án và lời giải câu 13</summary>
+<li class="q" id="cau-8">
+  <div class="q-head"><span class="q-n">Câu 8</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
+  <p class="q-stem">Tính tổng các chữ số của tích 1111 × 1111.</p><p class="q-en" lang="en">Find the sum of the digits of 1111 × 1111.</p><ol class="q-opts"><li><b>A.</b> 9</li><li><b>B.</b> 10</li><li><b>C.</b> 16</li><li><b>D.</b> 19</li><li><b>E.</b> 20</li></ol>
+  <details><summary>Đáp án và lời giải câu 8</summary>
     <p><b>Đáp án: C. 16</b></p>
     <p>Nhận dạng: số toàn chữ số 1 nhân với nhau.<br>Ý tưởng: đặt tính, phép nhân thành 4 dòng 1111, dòng sau lùi sang trái một hàng.<br>Bước 1: 1111 × 1111 = 1111 × 1 + 1111 × 10 + … (có 4 dòng 1111).<br>Bước 2: Đếm số chữ số 1 ở mỗi cột: hàng đơn vị có 1, hàng chục có 2, …, cột giữa có 4, rồi giảm dần về 1.<br>Bước 3: Tổng mỗi cột không quá 9 nên không phải nhớ: viết lần lượt 1, 2, 3, 4, 3, 2, 1.<br>Tích là 1234321.<br>Bước 4: Tổng các chữ số: 1 + 2 + … + 4 + … + 2 + 1 = 4 × 4 = 16 (tổng đi lên rồi đi xuống).<br>Vậy tổng các chữ số là 16.</p>
   </details>
 </li>
+<li class="q" id="cau-9">
+  <div class="q-head"><span class="q-n">Câu 9</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
+  <p class="q-stem">Giá chiếc áo lúc đầu là 600 nghìn đồng. Cửa hàng tăng giá 20% rồi sau đó giảm giá 25% (so với giá sau khi tăng). Hỏi giá cuối cùng là bao nhiêu nghìn đồng?</p><p class="q-en" lang="en">A shirt first costs 600 thousand dong. The shop raises the price by 20% and then lowers it by 25% of the raised price. What is the final price in thousand dong?</p><ol class="q-opts"><li><b>A.</b> 540</li><li><b>B.</b> 543</li><li><b>C.</b> 544</li><li><b>D.</b> 545</li><li><b>E.</b> 550</li></ol>
+  <details><summary>Đáp án và lời giải câu 9</summary>
+    <p><b>Đáp án: A. 540</b></p>
+    <p>Nhận dạng: tăng rồi giảm phần trăm.<br>Ý tưởng: mỗi lần tính phần trăm theo giá ngay trước đó, không cộng hay trừ thẳng hai phần trăm.<br>Bước 1: Sau khi tăng 20%: 600 × 120 : 100 = 720 nghìn đồng.<br>Bước 2: Giảm 25% so với 720: 720 × 75 : 100 = 540 nghìn đồng.<br>Vậy giá cuối cùng là 540 nghìn đồng.</p>
+  </details>
+</li>
+<li class="q" id="cau-10">
+  <div class="q-head"><span class="q-n">Câu 10</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
+  <p class="q-stem">Có bao nhiêu số chẵn có ba chữ số khác nhau và lớn hơn 700?</p><p class="q-en" lang="en">How many even 3-digit numbers with different digits are greater than 700?</p><ol class="q-opts"><li><b>A.</b> 96</li><li><b>B.</b> 108</li><li><b>C.</b> 112</li><li><b>D.</b> 120</li><li><b>E.</b> 150</li></ol>
+  <details><summary>Đáp án và lời giải câu 10</summary>
+    <p><b>Đáp án: C. 112</b></p>
+    <p>Nhận dạng: đếm số trong một khoảng.<br>Ý tưởng: chia trường hợp theo chữ số hàng trăm.<br>Bước 1 (hàng trăm): số lớn hơn 700 có hàng trăm là 7, 8, 9 (số 700 có hai chữ số 0 nên không tính).<br>Bước 2 (hàng đơn vị): số chẵn có chữ số cuối là 0, 2, 4, 6, 8 (5 chữ số).<br>Bước 3 (hàng chục): khác hai chữ số đã chọn: 10 − 2 = 8 cách.<br>Bước 4 (từng trường hợp): hàng trăm chẵn (8): chữ số cuối chẵn khác hàng trăm: 5 − 1 = 4 cách, 1 × 4 × 8 = 32;<br>hàng trăm lẻ (7, 9): chữ số cuối có đủ 5 cách, 2 × 5 × 8 = 80.<br>Bước 5: cộng: 32 + 80 = 112.<br>Vậy có 112 số.</p>
+  </details>
+</li>
+<li class="q" id="cau-11">
+  <div class="q-head"><span class="q-n">Câu 11</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
+  <p class="q-stem">Tìm chữ số tận cùng của A = 7 + 17 + 27 + … + 1277.</p><p class="q-en" lang="en">Find the units digit of A = 7 + 17 + 27 + … + 1277.</p><ol class="q-opts"><li><b>A.</b> 1</li><li><b>B.</b> 4</li><li><b>C.</b> 5</li><li><b>D.</b> 6</li><li><b>E.</b> 7</li></ol>
+  <details><summary>Đáp án và lời giải câu 11</summary>
+    <p><b>Đáp án: D. 6</b></p>
+    <p>Nhận dạng: tổng dãy cách đều.<br>Ý tưởng: tính tổng bằng công thức, rồi nhìn chữ số cuối.<br>Bước 1: Số sau hơn số trước 17 − 7 = 10.<br>Số số hạng: (1277 − 7) : 10 + 1 = 128.<br>Bước 2: Tổng bằng (số đầu + số cuối) × số số hạng : 2.<br>Bước 3: A = (7 + 1277) × 128 : 2 = 1284 × 128 : 2 = 82176.<br>Vậy A có chữ số tận cùng là 6.</p>
+  </details>
+</li>
+<li class="q" id="cau-12">
+  <div class="q-head"><span class="q-n">Câu 12</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
+  <p class="q-stem">Tính nhanh: 300 × 275</p><p class="q-en" lang="en">Calculate quickly: 300 × 275</p><ol class="q-opts"><li><b>A.</b> 8250</li><li><b>B.</b> 82500</li><li><b>C.</b> 82504</li><li><b>D.</b> 82600</li><li><b>E.</b> 825000</li></ol>
+  <details><summary>Đáp án và lời giải câu 12</summary>
+    <p><b>Đáp án: B. 82500</b></p>
+    <p>Nhận dạng: nhân khéo.<br>Ý tưởng: tách thừa số để ghép 25 × 4 = 100.<br>Bước 1: Tách: 275 = 11 × 25;<br>300 = 4 × 75.<br>Bước 2: Nhóm: 300 × 275 = (25 × 4) × (11 × 75).<br>Bước 3: 25 × 4 = 100;<br>11 × 75 = 825.<br>100 × 825 = 82500.<br>Vậy kết quả là 82500.</p>
+  </details>
+</li>
+<li class="q" id="cau-13">
+  <div class="q-head"><span class="q-n">Câu 13</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
+  <p class="q-stem">Tìm số nhỏ nhất có 3 chữ số mà chia cho 7, 8 hoặc 12 đều dư 4.</p><p class="q-en" lang="en">Find the smallest 3-digit number that leaves a remainder of 4 when divided by each of 7, 8 and 12.</p><ol class="q-opts"><li><b>A.</b> 162</li><li><b>B.</b> 172</li><li><b>C.</b> 174</li><li><b>D.</b> 175</li><li><b>E.</b> 176</li></ol>
+  <details><summary>Đáp án và lời giải câu 13</summary>
+    <p><b>Đáp án: B. 172</b></p>
+    <p>Nhận dạng: chia cho nhiều số đều dư 4.<br>Ý tưởng: bớt 4 thì chia hết cho tất cả, nên là bội của BCNN.<br>Bước 1: Gọi số cần tìm là A.<br>A − 4 chia hết cho 7, 8, 12.<br>Bước 2: BCNN(7, 8, 12): 7 = 7, 8 = 2³, 12 = 2² × 3;<br>lấy mỗi thừa số nguyên tố với số mũ lớn nhất: 2³ × 3 × 7 = 168.<br>Vậy A − 4 là bội của 168.<br>Bước 3: A ≥ 100, nên A − 4 ≥ 100 − 4 = 96.<br>96 : 168 = 0 (dư 96), bội nhỏ nhất là 168 × 1 = 168.<br>Bước 4: A = 168 + 4 = 172.<br>Vậy số cần tìm là 172.</p>
+  </details>
+</li>
 <li class="q" id="cau-14">
   <div class="q-head"><span class="q-n">Câu 14</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Tổng của 9 số chẵn liên tiếp là 810. Tìm số lớn nhất.</p><p class="q-en" lang="en">The sum of 9 consecutive even numbers is 810. Find the largest one.</p><ol class="q-opts"><li><b>A.</b> 81</li><li><b>B.</b> 90</li><li><b>C.</b> 95</li><li><b>D.</b> 98</li><li><b>E.</b> 100</li></ol>
+  <p class="q-stem">Hình bên gồm các hộp quà hình lập phương bằng nhau xếp sát nhau trên mặt bàn, trong một khung 3 × 2 ô, chồng cao nhất có 3 tầng; khối nào ở trên cũng có khối đỡ ngay bên dưới. Mỗi khối có cạnh 3 cm. Thể tích nhỏ nhất của hình là bao nhiêu cm³?</p><p class="q-en" lang="en">The figure shows equal cube-shaped gift boxes stacked on a table inside an 3 × 2 frame, at most 3 high; every cube not on the table sits on a cube directly below it. Each cube has edge 3 cm. What is the least possible volume of the figure, in cm³?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 14"><svg width="300" height="168" viewBox="0 0 300 168" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="85,130 111,145 111,115 85,100" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="163,145 137,160 137,130 163,115" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="111,145 137,160 137,130 111,115" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="214.9,145 189,160 189,130 214.9,115" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="163,145 189,160 189,130 163,115" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="85,100 111,115 111,85 85,70" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="163,55 189,70 163,85 137,70" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="137,10 163,25 137,40 111,25" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="163,55 137,70 137,40 163,25" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="137,70 163,85 137,100 111,85" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="163,115 137,130 137,100 163,85" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="111,115 137,130 137,100 111,85" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="189,70 214.9,85 189,100 163,85" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="214.9,115 189,130 189,100 214.9,85" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="163,115 189,130 189,100 163,85" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="111,25 137,40 111,55 85,40" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="137,70 111,85 111,55 137,40" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="85,70 111,85 111,55 85,40" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/></svg></div><ol class="q-opts"><li><b>A.</b> 319</li><li><b>B.</b> 322</li><li><b>C.</b> 324</li><li><b>D.</b> 325</li><li><b>E.</b> 326</li></ol>
   <details><summary>Đáp án và lời giải câu 14</summary>
-    <p><b>Đáp án: D. 98</b></p>
-    <p>Nhận dạng: số liên tiếp biết tổng.<br>Ý tưởng: số lẻ số hạng cách đều thì số ở giữa bằng tổng chia số số hạng.<br>Bước 1: Có 9 số, số ở giữa là số thứ 5.<br>Bước 2: Số giữa = 810 : 9 = 90.<br>Bước 3: Số lớn nhất cách số giữa 4 bước, mỗi bước 2: 90 + 8 = 98.<br>Vậy số lớn nhất là 98.</p>
+    <p><b>Đáp án: C. 324</b></p>
+    <p>Nhận dạng: đếm khối lập phương.<br>Ý tưởng: đếm theo tầng từ dưới lên;<br>khối ở trên cần có khối đỡ bên dưới.<br>Bước 1 (tầng dưới cùng): nhìn từ trên xuống, mỗi cột có một khối ở tầng 1: 5 khối.<br>Bước 2 (các tầng trên): đếm các cột cao từ 2 khối, 3 khối…: tầng 2: 5 khối;<br>tầng 3: 2 khối.<br>Bước 3: cộng các tầng: 5 + 5 + 2 = 12 khối.<br>Bước 4: thể tích một khối = 3 × 3 × 3 = 27 cm³;<br>cả hình: 12 × 27 = 324 cm³.<br>Vậy thể tích nhỏ nhất là 324 cm³.</p>
   </details>
 </li>
 <li class="q" id="cau-15">
   <div class="q-head"><span class="q-n">Câu 15</span><span class="q-pts">2 điểm · sai trừ 1</span></div>
-  <p class="q-stem">Tính nhanh: 300 × 275</p><p class="q-en" lang="en">Calculate quickly: 300 × 275</p><ol class="q-opts"><li><b>A.</b> 8250</li><li><b>B.</b> 82496</li><li><b>C.</b> 82500</li><li><b>D.</b> 82600</li><li><b>E.</b> 825000</li></ol>
+  <p class="q-stem">Ba bạn hơn kém nhau đều 4 tuổi. Tổng số tuổi của bạn nhỏ nhất và bạn lớn nhất là 18. Hỏi tuổi của bạn lớn nhất là bao nhiêu?</p><p class="q-en" lang="en">Three friends&#x27; ages differ by 4 years between neighbours. The youngest and the oldest are 18 years old together. How old is the oldest?</p><ol class="q-opts"><li><b>A.</b> 9</li><li><b>B.</b> 12</li><li><b>C.</b> 13</li><li><b>D.</b> 27</li><li><b>E.</b> 36</li></ol>
   <details><summary>Đáp án và lời giải câu 15</summary>
-    <p><b>Đáp án: C. 82500</b></p>
-    <p>Nhận dạng: nhân khéo.<br>Ý tưởng: tách thừa số để ghép 25 × 4 = 100.<br>Bước 1: Tách: 275 = 11 × 25;<br>300 = 4 × 75.<br>Bước 2: Nhóm: 300 × 275 = (25 × 4) × (11 × 75).<br>Bước 3: 25 × 4 = 100;<br>11 × 75 = 825.<br>100 × 825 = 82500.<br>Vậy kết quả là 82500.</p>
+    <p><b>Đáp án: C. 13</b></p>
+    <p>Nhận dạng: các tuổi cách đều, biết tổng hai đầu.<br>Ý tưởng: tuổi người ở giữa bằng một nửa tổng hai đầu.<br>Bước 1: Hai đầu cách đều người giữa: nhỏ nhất = giữa − 4, lớn nhất = giữa + 4, tổng hai đầu = 2 × giữa.<br>Bước 2: Tuổi người giữa: 18 : 2 = 9.<br>Bước 3: Tuổi lớn nhất: 9 + 4 = 13.<br>Vậy bạn lớn nhất 13 tuổi.</p>
   </details>
 </li>
 </ol><h2>Phần 2: Điền đáp án <small>(10 câu × 4 điểm)</small></h2>
 <ol class="questions" start="16">
 <li class="q" id="cau-16">
   <div class="q-head"><span class="q-n">Câu 16</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Trong hình, đa giác đều 10 cạnh và lục giác đều có chung cạnh BC và nằm ở hai phía của BC. A là đỉnh kề B của hình thứ nhất, E là đỉnh kề B của hình thứ hai. Góc ABE (phía không chứa C) bằng bao nhiêu độ?</p><p class="q-en" lang="en">In the figure, a regular 10-sided polygon and a regular hexagon share side BC and lie on opposite sides of it. A is the vertex next to B in the first shape, E is the vertex next to B in the second. What is angle ABE (on the side away from C), in degrees?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 16"><svg width="300" height="172" viewBox="0 0 300 172" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="124.6,66.1 124.6,103.9 146.8,134.4 182.6,146 218.5,134.4 240.7,103.9 240.7,66.1 218.5,35.6 182.6,24 146.8,35.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.12"/><polygon points="124.6,103.9 124.6,66.1 92,47.3 59.3,66.1 59.3,103.9 92,122.7" stroke="#7c3aed" stroke-width="2" fill="#7c3aed" fill-opacity="0.12"/><line x1="146.8" y1="35.6" x2="92" y2="47.3" stroke="#f97316" stroke-width="2" stroke-dasharray="5 3"/><path d="M130.5,58.1 A10,10 0 0 0 116.0,61.1" stroke="#f97316" stroke-width="2" fill="none"/><text x="116.9" y="34.7" font-size="12" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">?</text><text x="146.3" y="27.7" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="115.2" y="115.3" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="82" y="44.7" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">E</text><text x="143.7" y="76.3" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 16</summary>
-    <p><b>Đáp án: 96</b></p>
-    <p>Nhận dạng: góc tạo bởi hai đa giác đều ghép.<br>Ý tưởng: tính góc trong từng hình, quanh một điểm là 360°.<br>Bước 1 (góc trong): đa giác đều 10 cạnh: góc ngoài 360° : 10 = 36°, góc trong 180° − 36° = 144°;<br>lục giác đều: góc ngoài 360° : 6 = 60°, góc trong 180° − 60° = 120°.<br>Bước 2 (góc ABE): các góc quanh B cộng lại 360°: góc ABE = 360° − 144° − 120° = 96°.<br>Vậy góc ABE bằng 96°.</p>
-  </details>
-</li>
-<li class="q" id="cau-17">
-  <div class="q-head"><span class="q-n">Câu 17</span><span class="q-pts">4 điểm</span></div>
   <p class="q-stem">Số tự nhiên K chia cho 14 dư 7. Tìm số dư khi chia 3 × K + 1 cho 14.</p><p class="q-en" lang="en">A whole number K leaves a remainder of 7 when divided by 14. Find the remainder when 3 × K + 1 is divided by 14.</p><p class="q-fill">Điền đáp số: ……</p>
-  <details><summary>Đáp án và lời giải câu 17</summary>
+  <details><summary>Đáp án và lời giải câu 16</summary>
     <p><b>Đáp án: 8</b></p>
     <p>Nhận dạng: biết số dư của K, tìm số dư của biểu thức.<br>Ý tưởng: viết K = số chia × a + số dư, rồi thay vào.<br>Bước 1: K = 14 × a + 7 (a là số tự nhiên).<br>Bước 2: 3 × K + 1 = 3 × 14 × a + 3 × 7 + 1 = 42 × a + 22.<br>Bước 3: 42 × a chia hết cho 14.<br>Còn 22 : 14 = 1 (dư 8).<br>Vậy số dư là 8.</p>
   </details>
 </li>
+<li class="q" id="cau-17">
+  <div class="q-head"><span class="q-n">Câu 17</span><span class="q-pts">4 điểm</span></div>
+  <p class="q-stem">Số sách của lớp 6A hơn số sách của lớp 6B 15 quyển. Số sách của lớp 6A gấp 4 lần số sách của lớp 6B. Tìm tổng của số sách của lớp 6A và số sách của lớp 6B.</p><p class="q-en" lang="en">The number of books of class 6A is 15 more than the number of books of class 6B. The number of books of class 6A is 4 times the number of books of class 6B. Find the sum of the number of books of class 6A and the number of books of class 6B.</p><p class="q-fill">Điền đáp số: ……</p>
+  <details><summary>Đáp án và lời giải câu 17</summary>
+    <p><b>Đáp án: 25</b></p>
+    <p>Nhận dạng: hiệu – tỉ.<br>Ý tưởng: vẽ sơ đồ đoạn thẳng, phần hơn ứng với hiệu.<br>Bước 1: Coi số sách của lớp 6B là 1 phần thì số sách của lớp 6A là 4 phần bằng nhau.<br>Bước 2: Số sách của lớp 6A hơn số sách của lớp 6B: 4 − 1 = 3 phần, ứng với 15 quyển.<br>Bước 3: Một phần: 15 : 3 = 5 quyển.<br>Số sách của lớp 6A: 5 × 4 = 20 quyển;<br>số sách của lớp 6B: 5 quyển.<br>Bước 4: Tổng: 20 + 5 = 25 quyển.<br>Vậy tổng của số sách của lớp 6A và số sách của lớp 6B là 25 quyển.</p>
+  </details>
+</li>
 <li class="q" id="cau-18">
   <div class="q-head"><span class="q-n">Câu 18</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Hình bên gồm các hộp quà hình lập phương bằng nhau xếp sát nhau trên mặt bàn, trong một khung 3 × 2 ô, chồng cao nhất có 3 tầng; khối nào ở trên cũng có khối đỡ ngay bên dưới. Mỗi khối có cạnh 3 cm. Thể tích nhỏ nhất của hình là bao nhiêu cm³?</p><p class="q-en" lang="en">The figure shows equal cube-shaped gift boxes stacked on a table inside an 3 × 2 frame, at most 3 high; every cube not on the table sits on a cube directly below it. Each cube has edge 3 cm. What is the least possible volume of the figure, in cm³?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 18"><svg width="300" height="168" viewBox="0 0 300 168" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="85,130 111,145 111,115 85,100" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="163,145 137,160 137,130 163,115" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="111,145 137,160 137,130 111,115" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="214.9,145 189,160 189,130 214.9,115" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="163,145 189,160 189,130 163,115" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="85,100 111,115 111,85 85,70" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="163,55 189,70 163,85 137,70" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="137,10 163,25 137,40 111,25" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="163,55 137,70 137,40 163,25" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="137,70 163,85 137,100 111,85" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="163,115 137,130 137,100 163,85" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="111,115 137,130 137,100 111,85" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="189,70 214.9,85 189,100 163,85" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="214.9,115 189,130 189,100 214.9,85" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="163,115 189,130 189,100 163,85" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/><polygon points="111,25 137,40 111,55 85,40" stroke="currentColor" stroke-width="1.2" fill="#bfdbfe"/><polygon points="137,70 111,85 111,55 137,40" stroke="currentColor" stroke-width="1.2" fill="#60a5fa"/><polygon points="85,70 111,85 111,55 85,40" stroke="currentColor" stroke-width="1.2" fill="#93c5fd"/></svg></div><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Trong hình, đa giác đều 10 cạnh và lục giác đều có chung cạnh BC và nằm ở hai phía của BC. A là đỉnh kề B của hình thứ nhất, E là đỉnh kề B của hình thứ hai. Góc ABE (phía không chứa C) bằng bao nhiêu độ?</p><p class="q-en" lang="en">In the figure, a regular 10-sided polygon and a regular hexagon share side BC and lie on opposite sides of it. A is the vertex next to B in the first shape, E is the vertex next to B in the second. What is angle ABE (on the side away from C), in degrees?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 18"><svg width="300" height="172" viewBox="0 0 300 172" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="124.6,66.1 124.6,103.9 146.8,134.4 182.6,146 218.5,134.4 240.7,103.9 240.7,66.1 218.5,35.6 182.6,24 146.8,35.6" stroke="#2563eb" stroke-width="2" fill="#2563eb" fill-opacity="0.12"/><polygon points="124.6,103.9 124.6,66.1 92,47.3 59.3,66.1 59.3,103.9 92,122.7" stroke="#7c3aed" stroke-width="2" fill="#7c3aed" fill-opacity="0.12"/><line x1="146.8" y1="35.6" x2="92" y2="47.3" stroke="#f97316" stroke-width="2" stroke-dasharray="5 3"/><path d="M130.5,58.1 A10,10 0 0 0 116.0,61.1" stroke="#f97316" stroke-width="2" fill="none"/><text x="116.9" y="34.7" font-size="12" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">?</text><text x="146.3" y="27.7" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">A</text><text x="115.2" y="115.3" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">C</text><text x="82" y="44.7" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">E</text><text x="143.7" y="76.3" font-size="12" text-anchor="middle" stroke="none" fill="currentColor" font-weight="bold">B</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 18</summary>
-    <p><b>Đáp án: 324</b></p>
-    <p>Nhận dạng: đếm khối lập phương.<br>Ý tưởng: đếm theo tầng từ dưới lên;<br>khối ở trên cần có khối đỡ bên dưới.<br>Bước 1 (tầng dưới cùng): nhìn từ trên xuống, mỗi cột có một khối ở tầng 1: 5 khối.<br>Bước 2 (các tầng trên): đếm các cột cao từ 2 khối, 3 khối…: tầng 2: 5 khối;<br>tầng 3: 2 khối.<br>Bước 3: cộng các tầng: 5 + 5 + 2 = 12 khối.<br>Bước 4: thể tích một khối = 3 × 3 × 3 = 27 cm³;<br>cả hình: 12 × 27 = 324 cm³.<br>Vậy thể tích nhỏ nhất là 324 cm³.</p>
+    <p><b>Đáp án: 96</b></p>
+    <p>Nhận dạng: góc tạo bởi hai đa giác đều ghép.<br>Ý tưởng: tính góc trong từng hình, quanh một điểm là 360°.<br>Bước 1 (góc trong): đa giác đều 10 cạnh: góc ngoài 360° : 10 = 36°, góc trong 180° − 36° = 144°;<br>lục giác đều: góc ngoài 360° : 6 = 60°, góc trong 180° − 60° = 120°.<br>Bước 2 (góc ABE): các góc quanh B cộng lại 360°: góc ABE = 360° − 144° − 120° = 96°.<br>Vậy góc ABE bằng 96°.</p>
   </details>
 </li>
 <li class="q" id="cau-19">
   <div class="q-head"><span class="q-n">Câu 19</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Tìm chữ số tận cùng của A = 7 + 17 + 27 + … + 1277.</p><p class="q-en" lang="en">Find the units digit of A = 7 + 17 + 27 + … + 1277.</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Mã số của một chiếc tủ là một số có 4 chữ số khác nhau, lấy từ các chữ số 1, 2, 3, 4, 5, 8, 9, và là số chẵn. Có bao nhiêu mã số như vậy?</p><p class="q-en" lang="en">A locker code is a 4-digit number with different digits taken from 1, 2, 3, 4, 5, 8, 9, and it is even. How many such codes are there?</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 19</summary>
-    <p><b>Đáp án: 6</b></p>
-    <p>Nhận dạng: tổng dãy cách đều.<br>Ý tưởng: tính tổng bằng công thức, rồi nhìn chữ số cuối.<br>Bước 1: Số sau hơn số trước 17 − 7 = 10.<br>Số số hạng: (1277 − 7) : 10 + 1 = 128.<br>Bước 2: Tổng bằng (số đầu + số cuối) × số số hạng : 2.<br>Bước 3: A = (7 + 1277) × 128 : 2 = 1284 × 128 : 2 = 82176.<br>Vậy A có chữ số tận cùng là 6.</p>
+    <p><b>Đáp án: 360</b></p>
+    <p>Nhận dạng: lập số có các chữ số khác nhau, điều kiện ở chữ số cuối.<br>Ý tưởng: hàng có điều kiện chọn trước: hàng đơn vị, rồi hàng nghìn, rồi các hàng còn lại.<br>Bước 1 (hàng đơn vị): đề cho 7 chữ số;<br>số chẵn nên chữ số cuối là 2, 4 hoặc 8: 3 cách.<br>Bước 2 (hàng nghìn): khác chữ số cuối: 7 − 1 = 6 cách.<br>Bước 3 (hàng trăm): khác 2 chữ số đã chọn: 7 − 2 = 5 cách.<br>Bước 4 (hàng chục): khác 3 chữ số đã chọn: 7 − 3 = 4 cách.<br>Bước 5: nhân số cách các hàng: 3 × 6 × 5 × 4 = 360.<br>Vậy có 360 số.</p>
   </details>
 </li>
 <li class="q" id="cau-20">
@@ -630,26 +630,26 @@
 </li>
 <li class="q" id="cau-21">
   <div class="q-head"><span class="q-n">Câu 21</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Trang có số bút chì gấp 3 lần số bút mực. An có số bút mực gấp 2 lần số bút chì. Hai bạn có tất cả 18 cái bút (bút chì và bút mực cộng lại). Hỏi hai bạn có tất cả bao nhiêu bút chì?</p><p class="q-en" lang="en">Trang has 3 times as many pencils as pens. An has 2 times as many pens as pencils. Together they have 18 of these items in total. How many pencils do they have in total?</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Có 4 bạn chuyền bóng cho nhau, trong đó có An và Mai. An cầm bóng đầu tiên; mỗi lần chuyền, người cầm bóng chuyền cho một bạn khác. Có bao nhiêu cách chuyền để sau lần chuyền thứ 5, bóng ở trong tay Mai?</p><p class="q-en" lang="en">4 children pass a ball, including An and Mai. An has the ball first; each pass goes to a different child. In how many ways can the ball be with Mai after the 5th pass?</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 21</summary>
-    <p><b>Đáp án: 11</b></p>
-    <p>Nhận dạng: hai người, mỗi người có hai loại, số loại này gấp mấy lần số loại kia.<br>Ý tưởng: tính số cái của mỗi người theo một số chưa biết, rồi thử lần lượt.<br>Bước 1: Trang: gọi số bút mực là a thì số bút chì là 3 × a, cả hai loại: 3 × a + a = 4 × a.<br>An: gọi số bút chì là b thì số bút mực là 2 × b, cả hai loại: 3 × b.<br>Bước 2: 4 × a + 3 × b = 18.<br>Thử b = 1, 2, 3, …: lấy 18 trừ 3 × b, kết quả phải chia hết cho 4.<br>b = 1, 2, 3, 4, 5: 18 − 3 × b lần lượt là 15, 12, 9, 6, 3.<br>Chỉ có 12 chia hết cho 4 (khi b = 2): a = 12 : 4 = 3.<br>Bước 3: Trang: bút chì = 3 × 3 = 9, bút mực = 3.<br>An: bút chì = 2, bút mực = 2 × 2 = 4.<br>Tổng bút chì: 9 + 2 = 11.<br>Vậy hai bạn có 11 bút chì.</p>
+    <p><b>Đáp án: 61</b></p>
+    <p>Nhận dạng: chuyền bóng nhiều lần.<br>Ý tưởng: lập bảng từng lần chuyền, đếm số cách bóng ở An và ở người khác.<br>Bước 1 (quy tắc): An cầm bóng thì chuyền cho 4 − 1 = 3 người khác;<br>người khác cầm bóng thì chuyền cho An (1 cách) hoặc 4 − 2 = 2 người còn lại;<br>nên số cách bóng ở An = số cách bóng ở người khác ở lần trước.<br>Bước 2 (lập bảng, lúc đầu ở An 1, ở người khác 0): lần 1: ở An 0, ở người khác 1 × 3 + 0 × 2 = 3;<br>lần 2: ở An 3, ở người khác 0 × 3 + 3 × 2 = 6;<br>lần 3: ở An 6, ở người khác 3 × 3 + 6 × 2 = 21;<br>lần 4: ở An 21, ở người khác 6 × 3 + 21 × 2 = 60;<br>lần 5: ở An 60, ở người khác 21 × 3 + 60 × 2 = 183.<br>Bước 3: 3 người khác giống nhau, nên ở Mai: 183 : 3 = 61 cách.<br>Vậy có 61 cách.</p>
   </details>
 </li>
 <li class="q" id="cau-22">
   <div class="q-head"><span class="q-n">Câu 22</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Bảng ô vuông 3 hàng, 5 cột có ô ở hàng thứ 2 (từ trên xuống), cột thứ 2 (từ trái sang) được tô màu như hình. Có bao nhiêu hình chữ nhật (kể cả hình vuông) không chứa ô tô màu?</p><p class="q-en" lang="en">In a grid with 3 row(s) and 5 columns, the square in row 2 (from the top), column 2 (from the left) is shaded. How many rectangles (squares included) do not contain the shaded square?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 22"><svg width="300" height="128" viewBox="0 0 300 128" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="65" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="99" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="133" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="167" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="201" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="65" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="99" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="#2563eb" fill-opacity="0.55"/><rect x="133" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="167" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="201" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="65" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="99" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="133" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="167" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="201" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Một cái máy nhận số n: nếu n lẻ thì máy cho ra n × 3 + 1, nếu không thì máy cho ra n : 2. Số ra được đưa vào máy lại, làm hai lần liên tiếp thì máy cho ra 23. Biết số ban đầu là số nguyên dương nhỏ hơn 60. Hỏi số ban đầu là bao nhiêu?</p><p class="q-en" lang="en">A machine takes a number n: if n is odd it outputs n × 3 + 1, otherwise it outputs n ÷ 2. The output is fed back in, twice in a row, and the machine outputs 23. The starting number is a positive integer below 60. What is it?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 22"><svg width="300" height="136" viewBox="0 0 300 136" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="110" y="4" width="80" height="22" rx="11" stroke="#2563eb" stroke-width="1.5" fill="#2563eb" fill-opacity="0.12"/><text x="150" y="19" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">n</text><line x1="150" y1="26" x2="150" y2="36" stroke="currentColor" stroke-width="1.5"/><polygon points="150,36 215,62 150,88 85,62" stroke="#f97316" stroke-width="2" fill="#f97316" fill-opacity="0.1"/><text x="150" y="66" font-size="11" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">n lẻ</text><line x1="85" y1="62" x2="55" y2="62" stroke="currentColor" stroke-width="1.5"/><line x1="55" y1="62" x2="55" y2="100" stroke="currentColor" stroke-width="1.5"/><text x="70" y="56" font-size="10" text-anchor="middle" stroke="none" fill="currentColor">Có</text><line x1="215" y1="62" x2="245" y2="62" stroke="currentColor" stroke-width="1.5"/><line x1="245" y1="62" x2="245" y2="100" stroke="currentColor" stroke-width="1.5"/><text x="230" y="56" font-size="10" text-anchor="middle" stroke="none" fill="currentColor">Không</text><rect x="8" y="100" width="94" height="22" rx="4" stroke="#16a34a" stroke-width="1.5" fill="#16a34a" fill-opacity="0.12"/><text x="55" y="115" font-size="11" text-anchor="middle" stroke="none" fill="#16a34a" font-weight="bold">n × 3 + 1</text><rect x="198" y="100" width="94" height="22" rx="4" stroke="#16a34a" stroke-width="1.5" fill="#16a34a" fill-opacity="0.12"/><text x="245" y="115" font-size="11" text-anchor="middle" stroke="none" fill="#16a34a" font-weight="bold">n : 2</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 22</summary>
-    <p><b>Đáp án: 58</b></p>
-    <p>Nhận dạng: đếm hình chữ nhật không chứa ô đánh dấu.<br>Ý tưởng: lấy tất cả hình chữ nhật trừ đi số hình chứa ô.<br>Bước 1 (tất cả): 6 × 5 : 2 = 15;<br>4 × 3 : 2 = 6;<br>15 × 6 = 90.<br>Bước 2 (chứa ô): cạnh trên, dưới: 2 × 2 = 4;<br>cạnh trái, phải: 2 × 4 = 8;<br>4 × 8 = 32.<br>Bước 3: 90 − 32 = 58.<br>Vậy có 58 hình chữ nhật.</p>
+    <p><b>Đáp án: 15</b></p>
+    <p>Nhận dạng: tìm số nhập, biết kết quả sau nhiều lần.<br>Ý tưởng: đi ngược từng lần;<br>mỗi lần thử cả hai nhánh, giữ số thoả đúng điều kiện của nhánh đó.<br>Bước 1: Lần thứ hai cho ra 23.<br>Nhánh n × 3 + 1: n = (23 − 1) : 3 không ra số tự nhiên, loại;<br>nhánh n : 2: n = 23 × 2 = 46, được.<br>Bước 2: Lần thứ nhất cho ra 46.<br>Nhánh n × 3 + 1: n = (46 − 1) : 3 = 15, được;<br>nhánh n : 2: n = 46 × 2 = 92, nhưng 92 không nhỏ hơn 60, loại.<br>Bước 3: Chỉ có số 15 thoả.<br>Kiểm tra: 15 thoả &quot;n lẻ&quot;, tính 15 × 3 + 1 = 46;<br>46 không thoả &quot;n lẻ&quot;, tính 46 : 2 = 23.<br>Vậy số ban đầu là 15.</p>
   </details>
 </li>
 <li class="q" id="cau-23">
   <div class="q-head"><span class="q-n">Câu 23</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Có 4 bạn chuyền bóng cho nhau, trong đó có An và Mai. An cầm bóng đầu tiên; mỗi lần chuyền, người cầm bóng chuyền cho một bạn khác. Có bao nhiêu cách chuyền để sau lần chuyền thứ 5, bóng ở trong tay Mai?</p><p class="q-en" lang="en">4 children pass a ball, including An and Mai. An has the ball first; each pass goes to a different child. In how many ways can the ball be with Mai after the 5th pass?</p><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Bảng ô vuông 3 hàng, 5 cột có ô ở hàng thứ 2 (từ trên xuống), cột thứ 2 (từ trái sang) được tô màu như hình. Có bao nhiêu hình chữ nhật (kể cả hình vuông) không chứa ô tô màu?</p><p class="q-en" lang="en">In a grid with 3 row(s) and 5 columns, the square in row 2 (from the top), column 2 (from the left) is shaded. How many rectangles (squares included) do not contain the shaded square?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 23"><svg width="300" height="128" viewBox="0 0 300 128" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="65" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="99" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="133" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="167" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="201" y="14" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="65" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="99" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="#2563eb" fill-opacity="0.55"/><rect x="133" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="167" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="201" y="48" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="65" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="99" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="133" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="167" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="201" y="82" width="34" height="34" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 23</summary>
-    <p><b>Đáp án: 61</b></p>
-    <p>Nhận dạng: chuyền bóng nhiều lần.<br>Ý tưởng: lập bảng từng lần chuyền, đếm số cách bóng ở An và ở người khác.<br>Bước 1 (quy tắc): An cầm bóng thì chuyền cho 4 − 1 = 3 người khác;<br>người khác cầm bóng thì chuyền cho An (1 cách) hoặc 4 − 2 = 2 người còn lại;<br>nên số cách bóng ở An = số cách bóng ở người khác ở lần trước.<br>Bước 2 (lập bảng, lúc đầu ở An 1, ở người khác 0): lần 1: ở An 0, ở người khác 1 × 3 + 0 × 2 = 3;<br>lần 2: ở An 3, ở người khác 0 × 3 + 3 × 2 = 6;<br>lần 3: ở An 6, ở người khác 3 × 3 + 6 × 2 = 21;<br>lần 4: ở An 21, ở người khác 6 × 3 + 21 × 2 = 60;<br>lần 5: ở An 60, ở người khác 21 × 3 + 60 × 2 = 183.<br>Bước 3: 3 người khác giống nhau, nên ở Mai: 183 : 3 = 61 cách.<br>Vậy có 61 cách.</p>
+    <p><b>Đáp án: 58</b></p>
+    <p>Nhận dạng: đếm hình chữ nhật không chứa ô đánh dấu.<br>Ý tưởng: lấy tất cả hình chữ nhật trừ đi số hình chứa ô.<br>Bước 1 (tất cả): 6 × 5 : 2 = 15;<br>4 × 3 : 2 = 6;<br>15 × 6 = 90.<br>Bước 2 (chứa ô): cạnh trên, dưới: 2 × 2 = 4;<br>cạnh trái, phải: 2 × 4 = 8;<br>4 × 8 = 32.<br>Bước 3: 90 − 32 = 58.<br>Vậy có 58 hình chữ nhật.</p>
   </details>
 </li>
 <li class="q" id="cau-24">
@@ -662,15 +662,15 @@
 </li>
 <li class="q" id="cau-25">
   <div class="q-head"><span class="q-n">Câu 25</span><span class="q-pts">4 điểm</span></div>
-  <p class="q-stem">Một cái máy nhận số n: nếu n lẻ thì máy cho ra n × 3 + 1, nếu không thì máy cho ra n : 2. Số ra được đưa vào máy lại, làm hai lần liên tiếp thì máy cho ra 23. Biết số ban đầu là số nguyên dương nhỏ hơn 60. Hỏi số ban đầu là bao nhiêu?</p><p class="q-en" lang="en">A machine takes a number n: if n is odd it outputs n × 3 + 1, otherwise it outputs n ÷ 2. The output is fed back in, twice in a row, and the machine outputs 23. The starting number is a positive integer below 60. What is it?</p><div class="q-viz" role="img" aria-label="Hình minh hoạ câu 25"><svg width="300" height="136" viewBox="0 0 300 136" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="110" y="4" width="80" height="22" rx="11" stroke="#2563eb" stroke-width="1.5" fill="#2563eb" fill-opacity="0.12"/><text x="150" y="19" font-size="12" text-anchor="middle" stroke="none" fill="#2563eb" font-weight="bold">n</text><line x1="150" y1="26" x2="150" y2="36" stroke="currentColor" stroke-width="1.5"/><polygon points="150,36 215,62 150,88 85,62" stroke="#f97316" stroke-width="2" fill="#f97316" fill-opacity="0.1"/><text x="150" y="66" font-size="11" text-anchor="middle" stroke="none" fill="#f97316" font-weight="bold">n lẻ</text><line x1="85" y1="62" x2="55" y2="62" stroke="currentColor" stroke-width="1.5"/><line x1="55" y1="62" x2="55" y2="100" stroke="currentColor" stroke-width="1.5"/><text x="70" y="56" font-size="10" text-anchor="middle" stroke="none" fill="currentColor">Có</text><line x1="215" y1="62" x2="245" y2="62" stroke="currentColor" stroke-width="1.5"/><line x1="245" y1="62" x2="245" y2="100" stroke="currentColor" stroke-width="1.5"/><text x="230" y="56" font-size="10" text-anchor="middle" stroke="none" fill="currentColor">Không</text><rect x="8" y="100" width="94" height="22" rx="4" stroke="#16a34a" stroke-width="1.5" fill="#16a34a" fill-opacity="0.12"/><text x="55" y="115" font-size="11" text-anchor="middle" stroke="none" fill="#16a34a" font-weight="bold">n × 3 + 1</text><rect x="198" y="100" width="94" height="22" rx="4" stroke="#16a34a" stroke-width="1.5" fill="#16a34a" fill-opacity="0.12"/><text x="245" y="115" font-size="11" text-anchor="middle" stroke="none" fill="#16a34a" font-weight="bold">n : 2</text></svg></div><p class="q-fill">Điền đáp số: ……</p>
+  <p class="q-stem">Trang có số bút chì gấp 3 lần số bút mực. An có số bút mực gấp 2 lần số bút chì. Hai bạn có tất cả 18 cái bút (bút chì và bút mực cộng lại). Hỏi hai bạn có tất cả bao nhiêu bút chì?</p><p class="q-en" lang="en">Trang has 3 times as many pencils as pens. An has 2 times as many pens as pencils. Together they have 18 of these items in total. How many pencils do they have in total?</p><p class="q-fill">Điền đáp số: ……</p>
   <details><summary>Đáp án và lời giải câu 25</summary>
-    <p><b>Đáp án: 15</b></p>
-    <p>Nhận dạng: tìm số nhập, biết kết quả sau nhiều lần.<br>Ý tưởng: đi ngược từng lần;<br>mỗi lần thử cả hai nhánh, giữ số thoả đúng điều kiện của nhánh đó.<br>Bước 1: Lần thứ hai cho ra 23.<br>Nhánh n × 3 + 1: n = (23 − 1) : 3 không ra số tự nhiên, loại;<br>nhánh n : 2: n = 23 × 2 = 46, được.<br>Bước 2: Lần thứ nhất cho ra 46.<br>Nhánh n × 3 + 1: n = (46 − 1) : 3 = 15, được;<br>nhánh n : 2: n = 46 × 2 = 92, nhưng 92 không nhỏ hơn 60, loại.<br>Bước 3: Chỉ có số 15 thoả.<br>Kiểm tra: 15 thoả &quot;n lẻ&quot;, tính 15 × 3 + 1 = 46;<br>46 không thoả &quot;n lẻ&quot;, tính 46 : 2 = 23.<br>Vậy số ban đầu là 15.</p>
+    <p><b>Đáp án: 11</b></p>
+    <p>Nhận dạng: hai người, mỗi người có hai loại, số loại này gấp mấy lần số loại kia.<br>Ý tưởng: tính số cái của mỗi người theo một số chưa biết, rồi thử lần lượt.<br>Bước 1: Trang: gọi số bút mực là a thì số bút chì là 3 × a, cả hai loại: 3 × a + a = 4 × a.<br>An: gọi số bút chì là b thì số bút mực là 2 × b, cả hai loại: 3 × b.<br>Bước 2: 4 × a + 3 × b = 18.<br>Thử b = 1, 2, 3, …: lấy 18 trừ 3 × b, kết quả phải chia hết cho 4.<br>b = 1, 2, 3, 4, 5: 18 − 3 × b lần lượt là 15, 12, 9, 6, 3.<br>Chỉ có 12 chia hết cho 4 (khi b = 2): a = 12 : 4 = 3.<br>Bước 3: Trang: bút chì = 3 × 3 = 9, bút mực = 3.<br>An: bút chì = 2, bút mực = 2 × 2 = 4.<br>Tổng bút chì: 9 + 2 = 11.<br>Vậy hai bạn có 11 bút chì.</p>
   </details>
 </li>
 </ol>
 <h2 id="dap-an">Đáp án đề thi SASMO lớp 6</h2>
-<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>B. 3280</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>D. 60</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>B. 90</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>B. 105</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>C. 8</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>B. 360</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>B. 540</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>C. 112</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>C. 3</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>C. 13</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>E. 172</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>B. 25</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>C. 16</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>D. 98</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>C. 82500</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>96</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>8</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>324</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>6</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>78</td></tr><tr><td><a href="#cau-21">Câu 21</a></td><td>11</td></tr><tr><td><a href="#cau-22">Câu 22</a></td><td>58</td></tr><tr><td><a href="#cau-23">Câu 23</a></td><td>61</td></tr><tr><td><a href="#cau-24">Câu 24</a></td><td>9</td></tr><tr><td><a href="#cau-25">Câu 25</a></td><td>15</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="answer-key"><thead><tr><th scope="col">Câu</th><th scope="col">Đáp án</th></tr></thead><tbody><tr><td><a href="#cau-1">Câu 1</a></td><td>B. 8</td></tr><tr><td><a href="#cau-2">Câu 2</a></td><td>C. 90</td></tr><tr><td><a href="#cau-3">Câu 3</a></td><td>C. 60</td></tr><tr><td><a href="#cau-4">Câu 4</a></td><td>C. 3280</td></tr><tr><td><a href="#cau-5">Câu 5</a></td><td>C. 105</td></tr><tr><td><a href="#cau-6">Câu 6</a></td><td>C. 3</td></tr><tr><td><a href="#cau-7">Câu 7</a></td><td>C. 98</td></tr><tr><td><a href="#cau-8">Câu 8</a></td><td>C. 16</td></tr><tr><td><a href="#cau-9">Câu 9</a></td><td>A. 540</td></tr><tr><td><a href="#cau-10">Câu 10</a></td><td>C. 112</td></tr><tr><td><a href="#cau-11">Câu 11</a></td><td>D. 6</td></tr><tr><td><a href="#cau-12">Câu 12</a></td><td>B. 82500</td></tr><tr><td><a href="#cau-13">Câu 13</a></td><td>B. 172</td></tr><tr><td><a href="#cau-14">Câu 14</a></td><td>C. 324</td></tr><tr><td><a href="#cau-15">Câu 15</a></td><td>C. 13</td></tr><tr><td><a href="#cau-16">Câu 16</a></td><td>8</td></tr><tr><td><a href="#cau-17">Câu 17</a></td><td>25</td></tr><tr><td><a href="#cau-18">Câu 18</a></td><td>96</td></tr><tr><td><a href="#cau-19">Câu 19</a></td><td>360</td></tr><tr><td><a href="#cau-20">Câu 20</a></td><td>78</td></tr><tr><td><a href="#cau-21">Câu 21</a></td><td>61</td></tr><tr><td><a href="#cau-22">Câu 22</a></td><td>15</td></tr><tr><td><a href="#cau-23">Câu 23</a></td><td>58</td></tr><tr><td><a href="#cau-24">Câu 24</a></td><td>9</td></tr><tr><td><a href="#cau-25">Câu 25</a></td><td>11</td></tr></tbody></table></div>
 <h2>Đề thi khác</h2>
 <p><b>Cùng cuộc thi SASMO, lớp khác:</b> <a href="/de-thi-sasmo/lop-2/">Lớp 2</a> · <a href="/de-thi-sasmo/lop-3/">Lớp 3</a> · <a href="/de-thi-sasmo/lop-4/">Lớp 4</a> · <a href="/de-thi-sasmo/lop-5/">Lớp 5</a> · <a href="/de-thi-sasmo/lop-7/">Lớp 7</a> · <a href="/de-thi-sasmo/lop-8/">Lớp 8</a> · <a href="/de-thi-sasmo/lop-9/">Lớp 9</a></p>
 <p><b>Đề cùng lớp 6 của cuộc thi khác:</b> <a href="/de-thi-timo/lop-6/">TIMO</a> · <a href="/de-thi-hkimo/lop-6/">HKIMO</a> · <a href="/de-thi-fmo/lop-6/">FMO</a> · <a href="/de-thi-big-bay-bei/lop-6/">Big Bay Bei (BBB)</a> · <a href="/de-thi-asmo/lop-6/">ASMO</a> · <a href="/de-thi-aimo/lop-6/">AIMO</a> · <a href="/de-thi-imas/lop-6/">IMAS</a> · <a href="/de-thi-jmmc/lop-6/">JMMC</a> · <a href="/de-thi-kangaroo/lop-6/">Kangaroo (IKMC)</a> · <a href="/de-thi-seamo/lop-6/">SEAMO</a> · <a href="/de-thi-viamc/lop-6/">VIAMC</a> · <a href="/de-thi-imec/lop-6/">IMEC</a> · <a href="/de-thi-pimso/lop-6/">PIMSO</a> · <a href="/de-thi-crest/lop-6/">CREST (CMO)</a> · <a href="/de-thi-sil/lop-6/">SiL MSC (Toán)</a> · <a href="/de-thi-amo/lop-6/">AMO</a> · <a href="/de-thi-itmc/lop-6/">ITMC</a></p>
