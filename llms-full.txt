@@ -1,6 +1,6 @@
-# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-11-06)
+# Cú Pi Math — dữ liệu chi tiết (cập nhật 2026-11-09)
 
-Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non, học sinh tiểu học lớp 1–5 và THCS lớp 6–9. Tổng: 734 dạng toán, 35.102 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
+Ứng dụng học toán tư duy và thi thử Toán quốc tế cho bé mầm non, học sinh tiểu học lớp 1–5 và THCS lớp 6–9. Tổng: 739 dạng toán, 35.726 câu hỏi có lời giải. Học tại https://cupimath.com/app/.
 
 ## Cấu trúc đề thi Toán quốc tế (theo đề thi thử Cú Pi Math)
 
@@ -81,7 +81,8 @@
 - PIMSO — Vòng quốc gia (Toán) (lớp 1–9): 30 câu, 90 phút, tối đa 150 điểm; ngôn ngữ: tiếng anh. Câu 1–10: 10 câu × 5 điểm, trắc nghiệm 4 lựa chọn; Câu 11–20: 10 câu × 5 điểm, trắc nghiệm 4 lựa chọn; Câu 21–30: 10 câu × 5 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: Không trừ điểm. Mốc giải 130/115/100 trên 150. Trắc nghiệm 4 phương án A–D. Mốc giải theo nguồn Malaysia; thông báo Việt Nam 2026–27 ghi khác.
 
 ### ELMO
-- ELMO — TP.HCM (lớp 1–5): 40 câu, 50 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Phần 1 — tính toán: 20 câu × 1.5 điểm, trắc nghiệm 4 lựa chọn; Phần 2 — toán lời văn: 10 câu × 3 điểm, điền đáp số; Phần 3 — tư duy (trắc nghiệm): 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Phần 3 — tư duy (điền đáp số): 5 câu × 4 điểm, điền đáp số. Ghi chú: Chỉ dành cho học sinh tiểu học TP.HCM. Giải trao theo số lượng mỗi khối, không công bố mốc điểm. Điểm câu phần 3 và số phương án là ước tính.
+- ELMO — TP.HCM (lớp 1–2): 40 câu, 50 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Phần 1 — tính toán: 20 câu × 1.5 điểm, trắc nghiệm 4 lựa chọn; Phần 2 — toán lời văn: 10 câu × 3 điểm, điền đáp số; Phần 3 — tư duy (trắc nghiệm): 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Phần 3 — tư duy (điền đáp số): 5 câu × 4 điểm, điền đáp số. Ghi chú: Chỉ dành cho học sinh tiểu học TP.HCM. Giải trao theo số lượng mỗi khối, không công bố mốc điểm. Điểm câu phần 3 và số phương án là ước tính.
+- ELMO — TP.HCM (lớp 3–5): 40 câu, 50 phút, tối đa 100 điểm; ngôn ngữ: song ngữ việt – anh. Phần 1 — tính toán: 20 câu × 1.5 điểm, trắc nghiệm 4 lựa chọn; Phần 2 — toán lời văn: 10 câu × 3 điểm, điền đáp số; Phần 3 — tư duy (trắc nghiệm): 5 câu × 4 điểm, trắc nghiệm 4 lựa chọn; Phần 3 — tư duy (điền đáp số): 5 câu × 4 điểm, điền đáp số. Ghi chú: Chỉ dành cho học sinh tiểu học TP.HCM. Giải trao theo số lượng mỗi khối, không công bố mốc điểm. Điểm câu phần 3 và số phương án là ước tính.
 
 ### CREST (CMO)
 - CREST Mathematics Olympiad (lớp 1–4): 35 câu, 60 phút, tối đa 45 điểm; ngôn ngữ: tiếng anh. Practical Mathematics: 25 câu × 1 điểm, trắc nghiệm 4 lựa chọn; Achievers' Section: 10 câu × 2 điểm, trắc nghiệm 4 lựa chọn. Ghi chú: Thi online, toàn bộ trắc nghiệm, không trừ điểm. Bằng điểm thì ai làm nhanh hơn xếp trên. Giải theo phần trăm thí sinh — mốc điểm là ước tính.
@@ -111,41 +112,41 @@
 - Hình học: Hình trong tranh, Gọi tên hình, Đếm hình vuông, tam giác, Hình tròn chồng nhau, Khối lập phương, Cạnh và góc, Đếm đoạn thẳng
 - Tổ hợp / Đếm: So sánh và xếp thứ tự số, Chọn nhóm số, Đếm số chữ số, số chẵn, số lẻ, Đếm số trong khoảng, Lập số hai chữ số, Lập số ba chữ số, Tiền, Tiền trả lại
 
-### Lớp 1 (48 dạng, 1.341 câu luyện tập)
+### Lớp 1 (49 dạng, 1.414 câu luyện tập)
 - Tư duy logic: Cái cân, Cân thay thế, Xếp hàng, Tính tuổi, Thứ, tháng và giờ, Đọc đồng hồ, Tìm quy luật trong bảng, Suy luận vui, Xem lịch, Trồng cây thành hàng, Leo cầu thang
-- Số học: Tính nhẩm cộng trừ, Chữ số bị che, Toán có lời văn, Nhóm bằng nhau, Tìm số còn thiếu, Đố hình, Ghép phép tính, Que diêm, Sửa phép tính que diêm
+- Số học: Tính nhẩm cộng trừ, Chữ số bị che, Tính nhẩm phạm vi 100, Toán có lời văn, Nhóm bằng nhau, Tìm số còn thiếu, Đố hình, Ghép phép tính, Que diêm, Sửa phép tính que diêm
 - Lý thuyết số: Số chẵn, số lẻ, Đếm số, Số khác nhóm, Chia đều và chia khác nhau, Chia đều nâng cao, Dãy số, Dãy chữ, Chục và đơn vị, Liền trước, liền sau, Tách và gộp số
 - Hình học: Trái, phải, ở giữa, Nhận biết các hình, Dãy hình, Đếm hình, Khối lập phương, Đo độ dài, Hình khối và cắt ghép hình
 - Tổ hợp / Đếm: So sánh số, Tổng lớn nhất và số đặc biệt, Mua bán, Mua được nhiều nhất, Đổi tiền, Lập số, So sánh có phép tính, Chọn phép tính đúng
 - Thống kê: Bảng và biểu đồ cột, Biểu đồ kí hiệu, Phân loại và sơ đồ Venn
 
-### Lớp 2 (58 dạng, 1.576 câu luyện tập)
+### Lớp 2 (59 dạng, 1.648 câu luyện tập)
 - Tư duy logic: Dãy số có quy luật, Dãy chữ có quy luật, Tuổi, Thứ trong tuần và ngày trong tháng, Xếp hàng và bạn đứng giữa, Anh chị em và đếm chân, Cái cân và xếp hạng, Bảng loại trừ, Câu đố số, Đường đi trên lưới, Đếm số đường đi, Thử và chọn khéo, Bắn cung, Xem đồng hồ, Giờ bắt đầu, giờ kết thúc, Đổi đơn vị thời gian và giờ chiều, Trồng cây và tầng nhà, Xếp quanh một hình, Tổng số tuổi, Nghĩ tới trường hợp xấu nhất, Đong nước bằng hai can, Tìm hình còn thiếu, Bài toán gà – thỏ, Tổng – hiệu
-- Số học: Cộng trừ số có 2 và 3 chữ số, Chữ số viết sai, Phép nhân, Đoán hai số (tổng và tích), Tìm số bị giấu, Tìm số chưa biết trong nhân chia, Cân bằng phép tính, Đố hình và phép tính có chữ, Bài toán nhiều hơn, ít hơn, Phép tính khuyết chữ số, Đơn vị đo: m, dm, cm, kg, lít
+- Số học: Cộng trừ số có 2 và 3 chữ số, Chữ số viết sai, Tính nhanh tay, Phép nhân, Đoán hai số (tổng và tích), Tìm số bị giấu, Tìm số chưa biết trong nhân chia, Cân bằng phép tính, Đố hình và phép tính có chữ, Bài toán nhiều hơn, ít hơn, Phép tính khuyết chữ số, Đơn vị đo: m, dm, cm, kg, lít
 - Lý thuyết số: Số chẵn và số lẻ, Đếm số theo điều kiện, Số hạng của dãy cách đều, Tổng của dãy cách đều, Điền dấu và ký hiệu lạ, Chia đều, San bằng, Cho và nhận
 - Hình học: Đếm hình, Điểm và đoạn thẳng, Cạnh, đỉnh và chu vi, Dãy hình có quy luật, Hình đối xứng, Khối lập phương
 - Tổ hợp / Đếm: So sánh và sắp xếp số, Dấu so sánh và cấu tạo số, Thành lập số, Số lớn nhất, nhỏ nhất rồi tính, Đi chợ, Đổi tiền, Quy tắc nhân và đếm cách chọn
 - Thống kê: Đọc biểu đồ, Chắc chắn, có thể, không thể
 
-### Lớp 3 (58 dạng, 1.845 câu luyện tập)
+### Lớp 3 (59 dạng, 1.920 câu luyện tập)
 - Tư duy logic: Dãy hình và dãy lặp, Toán có lời văn, Tìm số chưa biết & tính ngược, Đoán số & chép nhầm chữ số, Viết thêm chữ số vào số, Cái cân và so sánh, Thay thế và khử vật, Đồng hồ và lịch lặp đều, Thứ và ngày trong tháng, Bài toán tuổi, Trồng cây thẳng hàng, Trồng cây quanh đường khép kín, Cưa gỗ, chuông và cầu thang, Xếp hàng, vòng tròn & toa tàu, Cho và nhận, Sơ đồ Venn (hai nhóm), Ô số kì diệu & tháp số, Giả thiết tạm & chia thừa – thiếu, Suy luận logic
-- Số học: Tính nhanh bằng cách ghép cặp, Dãy lên xuống & dãy đan dấu, Tính chất phân phối & thứ tự phép tính, Bỏ dấu ngoặc, Bài toán rút về đơn vị, Bán bớt rồi còn lại, Một phần mấy, Gấp, giảm nhiều bước, Đổi đơn vị độ dài & khối lượng, Đổi đơn vị thời gian, Nhân với 25, 125 và 11, Nhân với số gần tròn
+- Số học: Tính nhanh bằng cách ghép cặp, Dãy lên xuống & dãy đan dấu, Tính chất phân phối & thứ tự phép tính, Bỏ dấu ngoặc, Nhân, chia số nhiều chữ số, Bài toán rút về đơn vị, Bán bớt rồi còn lại, Một phần mấy, Gấp, giảm nhiều bước, Đổi đơn vị độ dài & khối lượng, Đổi đơn vị thời gian, Nhân với 25, 125 và 11, Nhân với số gần tròn
 - Lý thuyết số: Số chẵn, số lẻ, Chia hết, Chia có dư, Dãy số có quy luật, Phép toán mới & quy luật ẩn, Tổng–hiệu, tổng–tỉ & hiệu–tỉ, Số liên tiếp & tích–hiệu, Tỉ số trong bài toán thực tế, Đếm số theo chữ số
 - Hình học: Chu vi & diện tích, Hình ghép & đường đi trên lưới, Đếm hình, Nối điểm, chia hình & trục đối xứng, Hình khối 3D, Thay đổi kích thước hình
 - Tổ hợp / Đếm: Đổi tiền & đóng hộp, Mua được nhiều nhất, Khuyến mãi & đổi vỏ, Lập số từ các chữ số, Đếm số theo điều kiện, Quy tắc nhân, Đếm đường đi, Đếm cách lên cầu thang, Dạng toán trường hợp xấu nhất
 - Thống kê: Biểu đồ cột, Biểu đồ tranh, Biểu đồ tròn
 
-### Lớp 4 (65 dạng, 1.930 câu luyện tập)
+### Lớp 4 (66 dạng, 2.005 câu luyện tập)
 - Tư duy logic: Dãy số, Dãy hình & dãy lặp lại, Lịch & đồng hồ, Bài toán tuổi, Tuổi ở thời điểm khác, Trung bình cộng 1, Trung bình cộng 2, Trồng cây & đếm khoảng, Đếm khoảng trong đời sống, Bài toán làm ngược, Số trong hình & bảng quy luật, Suy luận logic, Giả thiết tạm, Chia thừa – thiếu, Đếm số hạng của dãy cách đều, Tổng dãy lặp lại, Muộn – sớm & ghép nhóm
-- Số học: Tính nhanh, tính hợp lí 1, Tính nhanh, tính hợp lí 2, Tổng dãy số 1, Tổng dãy số 2, Mật thư, Viết sai & viết thêm chữ số, Phân số 1, Phân số 2
+- Số học: Tính nhanh, tính hợp lí 1, Tính nhanh, tính hợp lí 2, Tổng dãy số 1, Tổng dãy số 2, Mật thư, Viết sai & viết thêm chữ số, Nhân, chia số nhiều chữ số, Phân số 1, Phân số 2
 - Lý thuyết số: Phép toán mới, Đếm bội và ước, Chia hết & số dư, Chia đồ hai cách: thừa, thiếu, Chữ số tận cùng, Số liên tiếp, Hai số biết có mấy số ở giữa, Tổng-tỉ, hiệu-tỉ, tích-tỉ, Tỉ số nâng cao, Phân số của một số, Đánh số trang sách, Tờ sách bị rơi, Sơ đồ đoạn thẳng với ba số, Tổng – hiệu ẩn, Tổng – tỉ, hiệu – tỉ với tỉ số phân số, Chuyển đồ & hiệu không đổi với tỉ số
 - Hình học: Chu vi & diện tích 1, Chu vi & diện tích 2, Đếm hình 1, Đếm hình 2, Chu vi, diện tích lớn nhất – nhỏ nhất, Hình chóp, lăng trụ & xúc xắc, Đếm khối lập phương & sơn mặt, Hình bình hành, Hình thoi, Cắt & biến đổi hình vuông, hình chữ nhật
 - Tổ hợp / Đếm: Cái cân & tìm xu giả, Đố hình, Lập số từ các chữ số, Đếm số theo điều kiện, Rút về đơn vị & công việc, Qua sông, Đếm trận đấu & đoạn thẳng, Nối điểm & chia hình tròn, Đếm cách & đường đi, Trường hợp xấu nhất, Nguyên lí ngăn kéo, So sánh hai lần mua
 - Thống kê: Biểu đồ cột, Biểu đồ tranh
 
-### Lớp 5 (78 dạng, 2.987 câu luyện tập)
+### Lớp 5 (79 dạng, 3.062 câu luyện tập)
 - Tư duy logic: Dãy số & dãy hình, Dãy lặp, Vị trí trong hàng & vòng tròn, Tìm quy luật ẩn & ma phương, Mật mã số & mật mã chữ, Suy luận: nói thật – nói dối, Lịch, tháng & đồng hồ, Cưa gỗ & làm việc có nghỉ, Trồng cây & đếm khoảng, Bài toán làm ngược, Tổng từng cặp & cho qua lại, Trung bình cộng & điểm số, Bài toán tuổi, Cái cân & hệ biểu tượng, Giả thiết tạm & chia thừa – thiếu, Công việc & rút về đơn vị, Vận tốc & gặp nhau, Đuổi nhau & chuyển động đặc biệt, Giả thiết tạm nâng cao, Số đo thời gian, Đổi đơn vị thời gian, Vận tốc trung bình & dòng nước, Đến sớm – đến muộn
-- Số học: Tìm số chưa biết, Tính nhanh phép nhân 1, Tính nhanh phép nhân 2, Tính tổng dãy số 1, Tính tổng dãy số 2, Phân số 1, Phân số 2, Phân số của một lượng, Dãy đan dấu & phân số sai phân, Số thập phân 1, Số thập phân 2, Tính với số thập phân 1, Tính với số thập phân 2, Tỉ số phần trăm 1, Tỉ số phần trăm 2, Tỉ số phần trăm 3, Tính nhanh cộng trừ & dấu ngoặc 1, Tính nhanh cộng trừ & dấu ngoặc 2
+- Số học: Tìm số chưa biết, Tính nhanh phép nhân 1, Tính nhanh phép nhân 2, Tính tổng dãy số 1, Tính tổng dãy số 2, Phân số 1, Phân số 2, Phân số của một lượng, Dãy đan dấu & phân số sai phân, Số thập phân 1, Số thập phân 2, Tính với số thập phân 1, Tính với số thập phân 2, Tỉ số phần trăm 1, Tỉ số phần trăm 2, Tỉ số phần trăm 3, Tính nhanh cộng trừ & dấu ngoặc 1, Tính nhanh cộng trừ & dấu ngoặc 2, Nhân, chia số lớn
 - Lý thuyết số: Chia hết & chia có dư, Chữ số ẩn & số lớn nhất, nhỏ nhất, Chữ số tận cùng, Bội chung nhỏ nhất (BCNN), Ước chung lớn nhất & số ước, Chia nhóm, chở xe & mua hộp, Định nghĩa phép toán mới, Tổng–tỉ, hiệu–tỉ & tích–tỉ, Tích–hiệu & số liên tiếp, Tỉ số nâng cao, Số nguyên tố, Chia hết cho 11, 8, 25, 125
 - Hình học: Chu vi & diện tích hình phẳng 1, Chu vi & diện tích hình phẳng 2, Chu vi & diện tích: biến đổi và lớn nhất, nhỏ nhất, Đếm hình & chia phần, Đa giác đều & phép biến hình, Khối 3D & đếm khối lập phương, Hình hộp: thể tích & diện tích 1, Hình hộp: thể tích & diện tích 2, Tam giác & hình thang 1, Tam giác & hình thang 2, Hình tròn 1, Hình tròn 2, Hình hộp & hình lập phương nâng cao
 - Tổ hợp / Đếm: Lập số & quy tắc nhân, Đếm số theo điều kiện, Đếm đường đi & đếm cách, Trường hợp xấu nhất, Sơ đồ Venn & phần chung, Sắp xếp: hàng & vật giống nhau, Chọn nhóm & chọn có xếp thứ tự, Đếm cách trả tiền & gieo xúc xắc
