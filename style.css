@@ -136,10 +136,21 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .site-nav a:hover { background: var(--paper-2); color: var(--ink); }
 .site-nav a[aria-current="page"] { color: var(--ink); background: var(--paper-2); }
 .header-cta { flex-shrink: 0; }
-/* logo + 9 mục menu + nút cần ~1150px cho một dòng; hẹp hơn thì menu xuống hàng riêng, cuộn ngang */
-@media (max-width: 1179px) {
+.header-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+/* nút tải app trên header: nền đen như huy hiệu Google Play, cao bằng .btn-sm */
+.header-play { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 6px 13px 6px 10px; border-radius: 12px;
+  background: #000; color: #fff; border: 1px solid #a6a6a6; font-weight: 700; font-size: 0.925rem; white-space: nowrap; text-decoration: none;
+  transition: transform var(--duration-fast) var(--ease-out); }
+.header-play:hover { text-decoration: none; transform: translateY(-1px); }
+.header-play .play-logo { width: 17px; height: 19px; flex-shrink: 0; }
+/* điện thoại: không đủ chỗ cho logo + 2 nút có chữ → nút tải chỉ còn logo Google Play (có aria-label) */
+@media (max-width: 479px) { .header-play { padding: 6px 11px; } .header-play span { display: none; } }
+@media (max-width: 374px) { .site-header .brand span { display: none; } }
+@media (prefers-reduced-motion: reduce) { .header-play, .header-play:hover { transition: none; transform: none; } }
+/* logo + 7 mục menu + 2 nút (Tải app, Học trên web) cần ~1120px nội dung (màn ~1200px) cho một dòng; hẹp hơn thì menu xuống hàng riêng, cuộn ngang */
+@media (max-width: 1219px) {
   .site-header .wrap { flex-wrap: wrap; gap: 0 12px; padding-top: 10px; }
-  .header-cta { margin-left: auto; }
+  .header-actions { margin-left: auto; }
   .site-nav { order: 3; width: 100%; margin: 4px 0 6px; overflow-x: auto; scrollbar-width: none; mask-image: linear-gradient(90deg, #000 88%, transparent); }
   .site-nav::-webkit-scrollbar { display: none; }
   .site-nav a { white-space: nowrap; padding: 6px 12px; font-size: 0.9rem; }
@@ -190,6 +201,28 @@ button.btn:not(.btn-ghost) { border: 0; cursor: pointer; }
 .hero-note { margin-top: 18px; font-size: var(--text-sm); color: var(--ink-3); display: flex; gap: 8px 18px; flex-wrap: wrap; }
 .hero-note span { display: inline-flex; align-items: center; gap: 6px; }
 .hero-note svg { width: 16px; height: 16px; color: var(--teal); flex-shrink: 0; }
+
+/* ---------- Tải app Android: huy hiệu Google Play (đúng mẫu: nền đen, viền xám, chữ trắng) + mã QR chỉ trên máy tính ---------- */
+.get-app { margin-top: 22px; }
+.get-app-note { margin: 0 0 12px; font-size: var(--text-sm); color: var(--ink-2); }
+.tag-new { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--orange-ink);
+  background: var(--orange); border-radius: 999px; padding: 2px 9px; margin-right: 8px; display: inline-block; }
+.get-app-row { display: flex; align-items: center; gap: 16px 22px; flex-wrap: wrap; }
+.play-badge { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 7px 16px 7px 12px; border-radius: 10px;
+  background: #000; color: #fff; border: 1px solid #a6a6a6; line-height: 1.05; text-decoration: none;
+  transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out); }
+.play-badge:hover { text-decoration: none; transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+.play-badge:active { transform: translateY(1px); }
+.play-badge .play-logo { width: 26px; height: 28px; flex-shrink: 0; }
+.play-badge span { display: flex; flex-direction: column; }
+.play-badge small { font-size: 0.625rem; font-weight: 700; letter-spacing: 0.03em; }
+.play-badge b { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.01em; }
+.play-qr { display: none; margin: 0; align-items: center; gap: 12px; max-width: 250px; }
+.play-qr img { width: 88px; height: 88px; padding: 6px; background: #fff; border-radius: var(--radius-sm); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.play-qr figcaption { font-size: var(--text-sm); color: var(--ink-3); line-height: 1.4; }
+/* điện thoại / máy cảm ứng chỉ cần nút; máy tính chuột + màn rộng mới hiện mã để quét */
+@media (hover: hover) and (pointer: fine) and (min-width: 900px) { .play-qr { display: flex; } }
+@media (prefers-reduced-motion: reduce) { .play-badge, .play-badge:hover, .play-badge:active { transition: none; transform: none; } }
 
 /* bộ đôi điện thoại */
 .hero-visual { position: relative; width: 100%; max-width: 520px; margin: 0 auto; aspect-ratio: 10 / 13; display: grid; place-items: center; }
