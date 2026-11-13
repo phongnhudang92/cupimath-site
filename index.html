@@ -28,7 +28,7 @@
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preload" href="fonts/be-vietnam-pro-800-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=21">
+<link rel="stylesheet" href="style.css?v=23">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -218,13 +218,16 @@
   <div class="wrap">
     <a class="brand" href="./" aria-label="Cú Pi Math — trang chủ"><img src="img/owl.webp" alt="Chú cú Cú Pi, linh vật Cú Pi Math" width="38" height="38"><span>Cú Pi Math</span></a>
     <nav class="site-nav" aria-label="Điều hướng chính">
-      <a href="#tinh-nang">Tính năng</a>
-      <a href="#video-bai-giang">Video</a>
-      <a href="#thi-thu">Thi thử</a>
-      <a href="#dau-truong">Đấu trường</a>
-      <a href="#phu-huynh">Phụ huynh</a>
-      <a href="tra-cuu-diem-thi/">Tra cứu điểm</a>
-      <a href="#hoi-dap">Hỏi đáp</a>
+      <!-- nav:start -->
+      <a href="/toan-tu-duy/">Toán tư duy</a>
+      <a href="/toan-mam-non/">Mầm non</a>
+      <a href="/toan-tieu-hoc/">Tiểu học</a>
+      <a href="/toan-thcs/">THCS</a>
+      <a href="/toan-quoc-te/">Kỳ thi</a>
+      <a href="/de-thi/">Đề thi</a>
+      <a href="/lich-thi/">Lịch thi</a>
+      <a href="/tra-cuu-diem-thi/">Tra cứu điểm</a>
+<!-- nav:end -->
     </nav>
     <div class="header-actions">
       <a class="header-play" href="https://play.google.com/store/apps/details?id=com.phongnhudang.CuPiApp" target="_blank" rel="noopener" data-track="header_play" aria-label="Tải app Cú Pi Math trên Google Play"><svg class="play-logo" viewBox="0 0 24 26" aria-hidden="true" stroke-linejoin="round" stroke-width="1.2"><path d="M1 1.2 12.2 13 1 24.8z" fill="#00A0FF" stroke="#00A0FF"/><path d="M1 1.2 16.4 9.6 12.2 13z" fill="#00D46A" stroke="#00D46A"/><path d="M16.4 9.6 22.4 13l-6 3.4-4.2-3.4z" fill="#FFC400" stroke="#FFC400"/><path d="M12.2 13l4.2 3.4L1 24.8z" fill="#FF3A44" stroke="#FF3A44"/></svg><span>Tải app</span></a>
@@ -246,6 +249,9 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn-ghost" href="#tinh-nang" data-track="hero">Xem con học gì</a>
       </div>
+      <!-- hero-proof:start -->
+      <p class="hero-proof"><span><i aria-hidden="true">★</i><b>4,6/5</b> từ 109 đánh giá của phụ huynh</span><span><b>3.300</b> gia đình đã đăng ký</span></p>
+<!-- hero-proof:end -->
       <div class="get-app">
         <p class="get-app-note"><span class="tag-new">Mới</span>App Cú Pi Math đã có trên Google Play cho điện thoại Android.</p>
         <div class="get-app-row">
@@ -291,6 +297,41 @@
     </ul>
   </div>
 </section>
+
+<!-- proof:start -->
+<section class="proof" aria-labelledby="proof-title">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <span class="kicker">Phụ huynh đang dùng</span>
+      <h2 id="proof-title">3.300 gia đình đã đăng ký cho con học cùng Cú Pi.</h2>
+    </header>
+    <div class="proof-grid reveal">
+      <div class="proof-rate">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <b>4,6<small>/5</small></b>
+        <span>109 đánh giá của phụ huynh trong app, 81% chấm 5 sao</span>
+      </div>
+      <div><b>3.300</b><span>gia đình đã đăng ký</span></div>
+      <div><b>250</b><span>bé học mỗi ngày</span></div>
+      <div><b>8.910</b><span>lượt tra cứu điểm thi</span></div>
+    </div>
+    <p class="proof-note">Số liệu tính đến 13/11/2026. Số bé học mỗi ngày là trung bình 7 ngày gần nhất.</p>
+  </div>
+</section>
+<!-- proof:end -->
+
+<nav class="page-toc" aria-label="Trên trang này">
+  <div class="wrap">
+    <span>Trên trang này</span>
+    <a href="#tinh-nang">Lộ trình học</a>
+    <a href="#video-bai-giang">Video bài giảng</a>
+    <a href="#thi-thu">Thi thử</a>
+    <a href="#ky-thi">Kỳ thi sắp tới</a>
+    <a href="#con-tu-hoc">Con tự học</a>
+    <a href="#phu-huynh">Dành cho bố mẹ</a>
+    <a href="#hoi-dap">Hỏi đáp</a>
+  </div>
+</nav>
 
 <section class="section" id="tinh-nang" aria-labelledby="features-title">
   <div class="wrap">
@@ -522,79 +563,79 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="motivate-title">
+<section class="section" id="con-tu-hoc" aria-labelledby="selfdrive-title">
   <div class="wrap">
-    <article class="feature is-flipped reveal">
-      <div class="feature-media tint-orange">
-        <figure class="phone tilt-r">
-          <img src="img/home.webp?v=2" alt="Màn hình chính: Cú Pi tên Bông trong tổ đã trang trí cành đào, hoa cúc, bướm; chuỗi 20 ngày học, 358 sao, 7 lượt quay may mắn và nhiệm vụ hôm nay" width="600" height="1299" loading="lazy" decoding="async">
-        </figure>
+    <header class="section-head reveal">
+      <span class="kicker">Để con tự muốn học</span>
+      <h2 id="selfdrive-title">Con tự muốn học: Cú Pi, sticker, bảng xếp hạng, Đấu trường.</h2>
+      <p>Học xong bài thì Cú Pi lớn dần, con sưu tầm sticker, thi đua cùng bạn cùng lớp và đấu trường giải toán. Bố mẹ giữ quyền đặt giới hạn.</p>
+    </header>
+    <details class="more-block">
+      <summary><span>Xem Cú Pi, sticker, bảng xếp hạng và Đấu trường</span></summary>
+      <div class="more-body">
+        <article class="feature is-flipped reveal" id="cu-pi-sticker" aria-labelledby="motivate-title">
+          <div class="feature-media tint-orange">
+            <figure class="phone tilt-r">
+              <img src="img/home.webp?v=2" alt="Màn hình chính: Cú Pi tên Bông trong tổ đã trang trí cành đào, hoa cúc, bướm; chuỗi 20 ngày học, 358 sao, 7 lượt quay may mắn và nhiệm vụ hôm nay" width="600" height="1299" loading="lazy" decoding="async">
+            </figure>
+          </div>
+          <div class="feature-copy">
+            <span class="step" aria-hidden="true">★</span>
+            <h3 id="motivate-title">Cú Pi — bạn đồng hành để con tự muốn học</h3>
+            <p>Con đặt tên cho Cú Pi của mình. Học xong bài, Cú Pi được ăn và lớn dần; học đều mỗi ngày thì chuỗi ngày học dài thêm.</p>
+            <ul class="ticks">
+              <li><span><b>Nhiệm vụ hằng ngày</b>: làm xong được quay vòng quay may mắn. Chuỗi ngày học tính theo tháng: chạm mốc 3, 6, 9… ngày thì vòng quay có quà to hơn; lỡ một ngày, con dùng sao để bù.</span></li>
+              <li><span><b>Sao Cú Pi và cửa hàng ổ</b>: con dùng sao mua đồ trang trí ổ cho Cú Pi.</span></li>
+              <li><span><b>Bộ sưu tập sticker</b>: làm chủ dạng toán mới hoặc đạt mức giải trong đề thi thử thì nhận sticker; giải càng cao, sticker càng hiếm.</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="feature reveal" id="bang-xep-hang" aria-labelledby="board-title">
+          <div class="feature-media tint-blue">
+            <figure class="phone tilt-l">
+              <img src="img/leaderboard.webp?v=2" alt="Bảng xếp hạng lớp 3, TIMO vòng loại tuần này: top 3 có cúp vàng, bạc, đồng; dòng của con (Minh An, hạng 5, 84/100) được tô nổi bật" width="600" height="1299" loading="lazy" decoding="async">
+            </figure>
+            <div class="chip-float board-chip">
+              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+              <span><b>Bố mẹ quyết định</b><small>Ẩn tên con chỉ với một chạm</small></span>
+            </div>
+          </div>
+          <div class="feature-copy">
+            <span class="step" aria-hidden="true">#1</span>
+            <h3 id="board-title">Thi đua cùng các bạn cùng lớp</h3>
+            <p>Bảng xếp hạng gom điểm thi thử của các bạn cùng lớp theo từng cuộc thi, từng vòng, theo tuần, tháng hoặc năm. Con biết mình đang đứng ở đâu và có thêm lý do để luyện tiếp.</p>
+            <ul class="ticks">
+              <li><span><b>Chỉ so với bạn cùng lớp</b>: lớp tính theo năm sinh và tự lên lớp vào ngày 1/9.</span></li>
+              <li><span><b>Tặng hạt cho bạn</b> để Cú Pi của bạn có thêm bữa ăn, và ghé xem ổ của bạn.</span></li>
+              <li><span><b>Chỉ hiện tên hồ sơ và Cú Pi</b>: không có ảnh, email, trường học hay thông tin liên lạc. Nên đặt biệt danh cho con.</span></li>
+              <li><span><b>Bố mẹ chọn ẩn hay hiện</b>: bỏ chọn “Cho con xuất hiện trên Bảng xếp hạng” khi tạo hoặc sửa hồ sơ; con vẫn xem được bảng và hạng của mình.</span></li>
+            </ul>
+          </div>
+        </article>
+        <article class="feature is-flipped reveal" id="dau-truong" aria-labelledby="battle-title">
+          <div class="feature-media tint-teal">
+            <figure class="phone tilt-r">
+              <img src="img/battle.webp" alt="Trận Đấu trường lớp 3, câu 2 trên 20: Cú Pi Hoàng Đế Pi của bé đối đầu Cú Pi của bạn, thanh máu, Ngôi sao hi vọng, đồng hồ 59 giây và câu hỏi biểu đồ cột" width="600" height="1299" loading="lazy" decoding="async">
+            </figure>
+            <div class="chip-float board-chip">
+              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
+              <span><b>Bố mẹ đặt giới hạn</b><small>Số trận, ngày và giờ được chơi</small></span>
+            </div>
+          </div>
+          <div class="feature-copy">
+            <span class="step" aria-hidden="true">VS</span>
+            <h3 id="battle-title">Đấu trường: giải toán cùng bạn, ai đúng nhanh thì Cú Pi ra chiêu</h3>
+            <p>Hai bạn cùng làm một câu toán. Ai trả lời đúng trước thì Cú Pi của mình tấn công; hết máu hoặc hết 20 câu thì phân thắng thua. Cú Pi thuộc 5 hệ Kim, Mộc, Thuỷ, Hoả, Thổ, chọn đúng hệ khắc đối thủ là có lợi thế.</p>
+            <ul class="ticks">
+              <li><span><b>Đấu với bạn hoặc với máy</b>: Cú Pi tìm bạn cùng lớp hoặc chênh tối đa 2 lớp; đấu máy có ba mức Tập sự, Thường, Cao thủ.</span></li>
+              <li><span><b>Chơi cũng là ôn bài</b>: câu hỏi lấy từ ngân hàng đề đúng lớp của con, có cả câu hình và biểu đồ.</span></li>
+              <li><span><b>Học trước, chơi sau</b>: Đấu trường mở khi con học xong 1 bài hoặc làm 1 đề thi thử trong ngày.</span></li>
+              <li><span><b>An toàn cho con</b>: trong trận chỉ có biểu cảm dựng sẵn, không có ô nhắn tin; bố mẹ chọn số trận mỗi ngày, ngày và khung giờ được chơi khi tạo hoặc sửa hồ sơ.</span></li>
+            </ul>
+          </div>
+        </article>
       </div>
-      <div class="feature-copy">
-        <span class="step" aria-hidden="true">★</span>
-        <h3 id="motivate-title">Cú Pi — bạn đồng hành để con tự muốn học</h3>
-        <p>Con đặt tên cho Cú Pi của mình. Học xong bài, Cú Pi được ăn và lớn dần; học đều mỗi ngày thì chuỗi ngày học dài thêm.</p>
-        <ul class="ticks">
-          <li><span><b>Nhiệm vụ hằng ngày</b>: làm xong được quay vòng quay may mắn. Chuỗi ngày học tính theo tháng: chạm mốc 3, 6, 9… ngày thì vòng quay có quà to hơn; lỡ một ngày, con dùng sao để bù.</span></li>
-          <li><span><b>Sao Cú Pi và cửa hàng ổ</b>: con dùng sao mua đồ trang trí ổ cho Cú Pi.</span></li>
-          <li><span><b>Bộ sưu tập sticker</b>: làm chủ dạng toán mới hoặc đạt mức giải trong đề thi thử thì nhận sticker; giải càng cao, sticker càng hiếm.</span></li>
-        </ul>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="section" id="bang-xep-hang" aria-labelledby="board-title">
-  <div class="wrap">
-    <article class="feature reveal">
-      <div class="feature-media tint-blue">
-        <figure class="phone tilt-l">
-          <img src="img/leaderboard.webp?v=2" alt="Bảng xếp hạng lớp 3, TIMO vòng loại tuần này: top 3 có cúp vàng, bạc, đồng; dòng của con (Minh An, hạng 5, 84/100) được tô nổi bật" width="600" height="1299" loading="lazy" decoding="async">
-        </figure>
-        <div class="chip-float board-chip">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
-          <span><b>Bố mẹ quyết định</b><small>Ẩn tên con chỉ với một chạm</small></span>
-        </div>
-      </div>
-      <div class="feature-copy">
-        <span class="step" aria-hidden="true">#1</span>
-        <h3 id="board-title">Thi đua cùng các bạn cùng lớp</h3>
-        <p>Bảng xếp hạng gom điểm thi thử của các bạn cùng lớp theo từng cuộc thi, từng vòng, theo tuần, tháng hoặc năm. Con biết mình đang đứng ở đâu và có thêm lý do để luyện tiếp.</p>
-        <ul class="ticks">
-          <li><span><b>Chỉ so với bạn cùng lớp</b>: lớp tính theo năm sinh và tự lên lớp vào ngày 1/9.</span></li>
-          <li><span><b>Tặng hạt cho bạn</b> để Cú Pi của bạn có thêm bữa ăn, và ghé xem ổ của bạn.</span></li>
-          <li><span><b>Chỉ hiện tên hồ sơ và Cú Pi</b>: không có ảnh, email, trường học hay thông tin liên lạc. Nên đặt biệt danh cho con.</span></li>
-          <li><span><b>Bố mẹ chọn ẩn hay hiện</b>: bỏ chọn “Cho con xuất hiện trên Bảng xếp hạng” khi tạo hoặc sửa hồ sơ; con vẫn xem được bảng và hạng của mình.</span></li>
-        </ul>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section class="section" id="dau-truong" aria-labelledby="battle-title">
-  <div class="wrap">
-    <article class="feature is-flipped reveal">
-      <div class="feature-media tint-teal">
-        <figure class="phone tilt-r">
-          <img src="img/battle.webp" alt="Trận Đấu trường lớp 3, câu 2 trên 20: Cú Pi Hoàng Đế Pi của bé đối đầu Cú Pi của bạn, thanh máu, Ngôi sao hi vọng, đồng hồ 59 giây và câu hỏi biểu đồ cột" width="600" height="1299" loading="lazy" decoding="async">
-        </figure>
-        <div class="chip-float board-chip">
-          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>
-          <span><b>Bố mẹ đặt giới hạn</b><small>Số trận, ngày và giờ được chơi</small></span>
-        </div>
-      </div>
-      <div class="feature-copy">
-        <span class="step" aria-hidden="true">VS</span>
-        <h3 id="battle-title">Đấu trường: giải toán cùng bạn, ai đúng nhanh thì Cú Pi ra chiêu</h3>
-        <p>Hai bạn cùng làm một câu toán. Ai trả lời đúng trước thì Cú Pi của mình tấn công; hết máu hoặc hết 20 câu thì phân thắng thua. Cú Pi thuộc 5 hệ Kim, Mộc, Thuỷ, Hoả, Thổ, chọn đúng hệ khắc đối thủ là có lợi thế.</p>
-        <ul class="ticks">
-          <li><span><b>Đấu với bạn hoặc với máy</b>: Cú Pi tìm bạn cùng lớp hoặc chênh tối đa 2 lớp; đấu máy có ba mức Tập sự, Thường, Cao thủ.</span></li>
-          <li><span><b>Chơi cũng là ôn bài</b>: câu hỏi lấy từ ngân hàng đề đúng lớp của con, có cả câu hình và biểu đồ.</span></li>
-          <li><span><b>Học trước, chơi sau</b>: Đấu trường mở khi con học xong 1 bài hoặc làm 1 đề thi thử trong ngày.</span></li>
-          <li><span><b>An toàn cho con</b>: trong trận chỉ có biểu cảm dựng sẵn, không có ô nhắn tin; bố mẹ chọn số trận mỗi ngày, ngày và khung giờ được chơi khi tạo hoặc sửa hồ sơ.</span></li>
-        </ul>
-      </div>
-    </article>
+    </details>
   </div>
 </section>
 
