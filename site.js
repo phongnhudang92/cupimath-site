@@ -17,6 +17,11 @@
     var from = Date.parse(el.getAttribute('data-season-from') || ''), until = Date.parse(el.getAttribute('data-season-until'));
     if (now < until && !(now < from)) el.hidden = false;
   });
+  // Lịch thi: dòng/thẻ có data-end (ngày cuối dạng yyyy-mm-dd) tự ẩn khi đã qua ngày hôm nay, không cần build lại trang
+  var d = new Date(), today = d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+  document.querySelectorAll('[data-end]').forEach(function (el) {
+    if (el.getAttribute('data-end') < today) el.hidden = true;
+  });
   var calm = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   if (calm && document.querySelector('.season-ribbon:not([hidden])')) batsLater(9000);
 
@@ -31,6 +36,23 @@
 
   firstTouch();
   track();
+
+  // Khối gập "Con tự muốn học": mở khi liên kết #bang-xep-hang, #dau-truong… trỏ vào bên trong, và hiện luôn các thẻ .reveal bên trong
+  // (IntersectionObserver không thấy nội dung đang gập).
+  function openMore() {
+    var id = location.hash.slice(1);
+    try { id = decodeURIComponent(id); } catch (err) { /* hash hỏng: dùng nguyên chuỗi */ }
+    var t = id && document.getElementById(id);
+    var box = t ? t.closest('details.more-block') : null;
+    if (box && !box.open) { box.open = true; t.scrollIntoView(); }
+  }
+  document.querySelectorAll('details.more-block').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open) d.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+    });
+  });
+  window.addEventListener('hashchange', openMore);
+  openMore();
 
   var items = document.querySelectorAll('.reveal');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -104,7 +126,7 @@
       var href = a.getAttribute('href') || '';
       send('site_cta_click', { where: a.getAttribute('data-track'), target: href.indexOf('app') === 0 ? 'app' : href.slice(0, 40) });
     });
-    document.querySelectorAll('details').forEach(function (d) {
+    document.querySelectorAll('details:not(.more-block)').forEach(function (d) {
       d.addEventListener('toggle', function () {
         var q = d.querySelector('summary');
         if (d.open && q) send('site_faq_open', { q: q.textContent.trim().slice(0, 80) });

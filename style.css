@@ -156,6 +156,12 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   .site-nav a { white-space: nowrap; padding: 6px 12px; font-size: 0.9rem; }
   html { scroll-padding-top: 120px; }
 }
+/* điện thoại hẹp: mục menu xuống dòng thay vì cuộn ngang, để không mục nào bị mờ hay cắt chữ ở mép phải */
+@media (max-width: 479px) {
+  .site-nav { flex-wrap: wrap; overflow: visible; mask-image: none; -webkit-mask-image: none; }
+  .site-nav a { padding: 5px 9px; font-size: 0.875rem; }
+  html { scroll-padding-top: 150px; }
+}
 
 /* ---------- Nút ---------- */
 .btn {
@@ -575,6 +581,7 @@ figure.phone { margin: 0; }
   .crumbs ol { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; mask-image: linear-gradient(90deg, #000 90%, transparent); -webkit-mask-image: linear-gradient(90deg, #000 90%, transparent); }
   .crumbs ol::-webkit-scrollbar { display: none; }
   .crumbs li, .crumbs a, .crumbs span { white-space: nowrap; }
+  .crumbs li { flex: none; }   /* không co: đường dẫn 5 cấp co lại là chữ đè lên nhau */
 }
 .kpis { list-style: none; padding: 0; margin: 1.5em 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
 .prose .kpis li { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; }
@@ -628,6 +635,7 @@ figure.phone { margin: 0; }
 .prose .q-opts li { margin: 0; }
 .q-opts b { color: var(--ink-3); margin-right: 4px; }
 .q-fill { color: var(--ink-3); margin: 8px 0; }
+.pdf-dl { margin: 1.2em 0; }
 .q details { margin-top: 8px; }
 .q summary { cursor: pointer; color: var(--teal); font-weight: 700; font-size: var(--text-sm); }
 .q summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; border-radius: 4px; }
@@ -772,3 +780,15 @@ figure.phone { margin: 0; }
 @keyframes bats-cross-rtl { from { transform: translateX(calc(100vw + 40px)) scaleX(-1); } to { transform: translateX(-200px) scaleX(-1); } }
 @keyframes bat-bob { from { translate: 0 -10px; } to { translate: 0 10px; } }
 @keyframes bat-flap { from { transform: scaleY(1); } to { transform: scaleY(0.45); } }
+
+/* ---------- Khối gập "Con tự muốn học" (trang chủ): nội dung vẫn nằm trong HTML, chỉ ẩn tới khi bấm ---------- */
+.more-block > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 10px 20px;
+  border: 2px solid var(--ink); border-radius: 999px; background: var(--surface); color: var(--ink); font-weight: 700; }
+.more-block > summary::-webkit-details-marker { display: none; }
+.more-block > summary::after { content: ""; width: 9px; height: 9px; border-right: 2.5px solid currentColor; border-bottom: 2.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px); transition: transform var(--duration-fast); }
+.more-block[open] > summary::after { transform: rotate(-135deg); }
+.more-block > summary:hover { background: var(--paper-2); }
+.more-block > summary:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+.more-body { display: grid; gap: clamp(3rem, 2rem + 4vw, 6rem); margin-top: clamp(2rem, 1.5rem + 2vw, 3.5rem); }
+@media (prefers-reduced-motion: reduce) { .more-block > summary::after { transition: none; } }

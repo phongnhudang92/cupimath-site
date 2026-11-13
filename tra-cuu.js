@@ -324,6 +324,49 @@
     return box;
   }
 
+  // Bản đồ trang đề thi thử do build sinh (data-practice trên form): { timo: { name, base, grades, next: { base, grades, label } } }.
+  var PRACTICE = {};
+  try { PRACTICE = JSON.parse(form.getAttribute('data-practice') || '{}'); } catch (err) { PRACTICE = {}; }
+
+  // "Lớp 3" / "3" / "Mầm non" / "Kindergarten" → 0..9; không đoán được thì null.
+  function gradeOf(raw) {
+    var t = String(raw || '');
+    if (/mầm non|kindergarten/i.test(t)) return 0;
+    var m = t.match(/(?:^|\D)([1-9])(?:\D|$)/);
+    return m ? Number(m[1]) : null;
+  }
+
+  // Lớp chung của mọi bé trong kết quả (khác nhau hoặc không rõ thì null → dẫn về trang tổng hợp của kỳ thi).
+  function commonGrade(list) {
+    var gs = list.map(function (c) { return gradeOf(c.grade); });
+    return gs.length && gs[0] !== null && gs.every(function (g) { return g === gs[0]; }) ? gs[0] : null;
+  }
+
+  function gradeSlug(g) { return g === 0 ? 'mam-non' : 'lop-' + g; }
+
+  // Lời mời làm thử đề đúng kỳ thi và lớp: vòng sau nếu có trang đề (TIMO vòng quốc gia), không thì đề vòng đầu, không có lớp thì trang tổng hợp.
+  function practice(list) {
+    var info = PRACTICE[exam.key.split('-')[0]];
+    if (!info) return null;
+    var g = /-vqt$/.test(exam.key) ? null : commonGrade(list);
+    var nxt = info.next && g !== null && info.next.grades.indexOf(g) >= 0 ? info.next : null;
+    var round = nxt ? ' ' + nxt.label : '';
+    var href = info.base;
+    if (nxt) href = nxt.base + gradeSlug(g) + '/';
+    else if (g !== null && info.grades.indexOf(g) >= 0) href = info.base + gradeSlug(g) + '/';
+    var where = g !== null && (nxt || href !== info.base) ? ' ' + (g === 0 ? 'mầm non' : 'lớp ' + g) : '';
+    var box = el('aside', 'cta-box lookup-practice');
+    var text = el('div');
+    text.append(
+      el('h2', null, where ? 'Làm thử đề ' + info.name + round + where : 'Đề thi thử ' + info.name + ' có đáp án'),
+      el('p', null, 'Đề do Cú Pi Math biên soạn theo cấu trúc đã công bố, có đáp án và lời giải từng câu, xem miễn phí.'));
+    var a = el('a', 'btn', where ? 'Xem đề ' + info.name + round + where : 'Xem đề thi thử ' + info.name);
+    a.href = href;
+    a.setAttribute('data-track', 'tra-cuu-de');
+    box.append(text, a);
+    return box;
+  }
+
   function showFound(list) {
     var hasScore = list.some(hasResult);
     // cùng 1 SBD nhiều thẻ = 1 bé thi nhiều môn (ASMO), không phải nhiều thí sinh
@@ -332,7 +375,8 @@
       : list.length > 1 ? 'Tìm thấy ' + list.length + ' thí sinh' : 'Kết quả của con');
     var cards = el('div', 'lookup-cards');
     list.forEach(function (c) { cards.append(card(c)); });
-    out.replaceChildren(title, cards, invite(hasScore));
+    var practiceBox = practice(list);
+    out.replaceChildren.apply(out, [title, cards].concat(practiceBox ? [practiceBox] : [], [invite(hasScore)]));
     focusOn(title);
   }
 
