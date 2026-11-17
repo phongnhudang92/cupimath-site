@@ -246,6 +246,17 @@
     return 'Ban tổ chức chưa cập nhật điểm của ' + who + '. Bố mẹ quay lại sau vài giờ nhé.';
   }
 
+  // Link mở thẳng đề thi thử trong app (khách làm thử vài câu rồi mới cần tài khoản), chỉ khi có đề học thử
+  // cho đúng cuộc thi + lớp; vòng sau nếu có (TIMO vòng quốc gia), không thì vòng đầu. Không có thì null.
+  function appExamHref(g) {
+    var code = exam.key.split('-')[0];
+    var info = PRACTICE[code];
+    if (!info || g === null || /-vqt$/.test(exam.key)) return null;
+    var nxt = info.next && info.next.app && info.next.app.indexOf(g) >= 0 ? info.next.round : null;
+    var round = nxt || (info.app && info.app[String(g)]) || null;
+    return round ? '/app/quiz?mode=exam&grade=' + g + '&round=' + round + '&contest=' + code + '&src=seo' : null;
+  }
+
   // Lời mời nhỏ cuối thẻ, theo kết quả của từng bé.
   function nudge(c) {
     var who = callName(c.name);
@@ -253,7 +264,7 @@
       : hasResult(c) ? (isTimo() ? 'Luyện đề vòng quốc gia cho ' : 'Luyện đề vòng tiếp theo cho ') + who
       : 'Cho ' + who + ' luyện đề trong lúc chờ điểm';
     var a = el('a', 'lookup-nudge', text);
-    a.href = '/app/';
+    a.href = appExamHref(gradeOf(c.grade)) || '/app/';
     a.setAttribute('data-track', 'tra-cuu-the');
     return a;
   }
@@ -360,8 +371,9 @@
     text.append(
       el('h2', null, where ? 'Làm thử đề ' + info.name + round + where : 'Đề thi thử ' + info.name + ' có đáp án'),
       el('p', null, 'Đề do Cú Pi Math biên soạn theo cấu trúc đã công bố, có đáp án và lời giải từng câu, xem miễn phí.'));
-    var a = el('a', 'btn', where ? 'Xem đề ' + info.name + round + where : 'Xem đề thi thử ' + info.name);
-    a.href = href;
+    var app = where ? appExamHref(g) : null;
+    var a = el('a', 'btn', app ? 'Cho con làm thử ngay' : where ? 'Xem đề ' + info.name + round + where : 'Xem đề thi thử ' + info.name);
+    a.href = app || href;
     a.setAttribute('data-track', 'tra-cuu-de');
     box.append(text, a);
     return box;

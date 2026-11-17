@@ -44,11 +44,11 @@
   <div class="wrap">
     <span class="kicker">Pháp lý</span>
     <h1>Chính sách bảo mật</h1>
-    <p>Cú Pi Math là ứng dụng luyện toán cho bé mầm non và học sinh lớp 1–9. Tài khoản do <b>phụ huynh</b> tạo và quản lý; trẻ học trong các hồ sơ con
+    <p>Cú Pi Math là ứng dụng luyện toán cho học sinh tiểu học. Tài khoản do <b>phụ huynh</b> tạo và quản lý; trẻ học trong các hồ sơ con
     thuộc tài khoản đó. Chúng tôi chỉ thu thập dữ liệu cần thiết để app hoạt động, <b>không hiển thị quảng cáo</b> và
     <b>không bán hay chia sẻ dữ liệu</b> cho bên thứ ba vì mục đích quảng cáo.</p>
     <div class="page-meta">
-      <span>Cập nhật: 17/11/2026</span>
+      <span>Cập nhật: 17/10/2026</span>
       <span>Đơn vị vận hành: Hộ kinh doanh Phong Như Đăng</span>
       <span>Liên hệ: <a href="mailto:hello@cupimath.com">hello@cupimath.com</a></span>
     </div>
@@ -87,8 +87,7 @@ Khuyến nghị dùng biệt danh cho tên hồ sơ, nhất là khi để con hi
 
 <h2><span class="n">3.</span> Nơi lưu trữ và đơn vị xử lý</h2>
 <ul>
-  <li><b>Amazon Web Services (AWS)</b> — máy chủ lưu trữ tài khoản và dữ liệu học (đặt tại Sydney, Úc, vùng ap-southeast-2). Máy chủ do Cú Pi Math tự vận hành bằng phần mềm mã nguồn mở Supabase; AWS chỉ cho thuê hạ tầng, không truy cập nội dung dữ liệu.</li>
-  <li><b>Cloudflare</b> — chuyển tiếp kết nối mã hoá giữa app và máy chủ (api.cupimath.com), lưu file âm thanh đọc to và video bài giảng (không chứa dữ liệu cá nhân).</li>
+  <li><b>Supabase</b> — lưu trữ tài khoản và dữ liệu học (máy chủ đặt tại Singapore, AWS ap-southeast-1).</li>
   <li><b>Sentry</b> — nhận báo cáo lỗi kỹ thuật, không chứa dữ liệu cá nhân (máy chủ đặt tại Đức, EU).</li>
   <li><b>Cloudflare Web Analytics</b> — đếm lượt xem trang cupimath.com (trang giới thiệu), không dùng cookie, không nhận dạng từng người.</li>
   <li><b>Resend</b> — gửi email từ địa chỉ <b>hello@cupimath.com</b>: email giao dịch (xác nhận tài khoản, mã đặt lại mật khẩu) và thỉnh thoảng email nhắc học, giới thiệu tính năng mới của Cú Pi Math. Mỗi email nhắc / giới thiệu đều có link huỷ nhận một chạm. Chúng tôi không gửi quảng cáo của bên khác.</li>
@@ -97,7 +96,7 @@ Khuyến nghị dùng biệt danh cho tên hồ sơ, nhất là khi để con hi
 </ul>
 <p>Dữ liệu được truyền qua kết nối mã hoá (HTTPS). Mỗi tài khoản chỉ truy cập được dữ liệu của chính mình.</p>
 <p>Khi học trên web (cupimath.com/app), phiên đăng nhập được lưu trong bộ nhớ của trình duyệt trên máy bạn.
-Dữ liệu sử dụng app được lưu trên máy chủ của chúng tôi (AWS Sydney), không chia sẻ cho bên thứ ba, không dùng để quảng cáo.
+Dữ liệu sử dụng app được lưu trên máy chủ của chúng tôi (Supabase), không chia sẻ cho bên thứ ba, không dùng để quảng cáo.
 Chúng tôi không dùng cookie quảng cáo hay công cụ theo dõi của bên thứ ba trong app.</p>
 
 <h2><span class="n">4.</span> Thời gian lưu và quyền của bạn</h2>
