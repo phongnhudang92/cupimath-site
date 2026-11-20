@@ -515,6 +515,9 @@ figure.phone { margin: 0; }
 .site-footer .legal { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 /* Thông tin đơn vị vận hành (bắt buộc với website TMĐT): chiếm cả dòng, chữ đậm hơn phần bản quyền. */
 .site-footer .legal-org { flex-basis: 100%; margin: 0; color: var(--ink-2); line-height: 1.6; overflow-wrap: anywhere; }
+.site-footer .bct-badge { flex-basis: 100%; display: inline-flex; width: max-content; }
+.site-footer .bct-badge img { display: block; height: 44px; width: auto; }
+.site-footer .bct-badge:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .site-footer .legal-links { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px 20px; }
 .site-footer .legal-links a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); }
 .site-footer .legal-links a:hover { text-decoration-color: currentColor; }
